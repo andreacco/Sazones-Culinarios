@@ -7,15 +7,8 @@ export interface Products extends mongoose.Document{
     description: string,
     category: [string],
     cover_image: string,
-    barcode: string,
     price: number,
-    stock: number,
-    rating: [{
-        idComment: string, 
-        idUser: string, 
-        rate: number, 
-        comment: string
-    }],
+    rating: [number],
 }
 
 const ProductsSchema = new Schema({
@@ -61,8 +54,5 @@ const ProductsSchema = new Schema({
 
 ProductsSchema.plugin(paginate);
 
-const Product = mongoose.model<
-Products,
-mongoose.PaginateModel<Products>
->('Product', ProductsSchema)
+const Product = mongoose.model<Products, mongoose.PaginateModel<Products>>('Product', ProductsSchema)
 export default Product
