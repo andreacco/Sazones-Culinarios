@@ -4,15 +4,21 @@ const {Schema} = mongoose
 
 export interface Products extends mongoose.Document{
     name: string,
+    producer: string,
     description: string,
     category: [string],
     cover_image: string,
     price: number,
     rating: [number],
+    links: [object]
 }
 
 const ProductsSchema = new Schema({
     name: {
+        type: String,
+        required: true
+    },
+    producer: {
         type: String,
         required: true
     },
@@ -28,26 +34,17 @@ const ProductsSchema = new Schema({
         type: String,
         required: true
     },
-    barcode: {
-        type: String,
-        required: true
-    },
     price: {
         type: Number,
         required: true
     },
-    stock: {
-        type: Number,
-        required: true
-    },
     rating: {
-        type: [{
-            idComment: String, 
-            idUser: String, 
-            rate: Number, 
-            comment: String
-        }],
-        // enum: [ 1 , 2 , 3 , 4 , 5 ]
+        type: [Number],
+        enum: [ 1 , 2 , 3 , 4 , 5 ],
+        default: []
+    },
+    links: {
+        type: [Object],
         default: []
     }
 })

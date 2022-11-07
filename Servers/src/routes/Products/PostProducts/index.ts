@@ -4,10 +4,11 @@ import { Router } from "express";
 const router = Router()
 
 router.post('/postProduct', async(req, res, next) => {
-    const data = req.body
+    const { name, producer, description, category, cover_image, price, rating, links } = req.body
     try {
-        const response = await Product.find()
-        res.status(200).send(data)
+        const prod = new Product({name, producer, description, category, cover_image, price, rating, links})
+        await prod.save()
+        res.status(200).send('Product added succesfully')
     } catch (error) {
         next(error)
     }

@@ -16,10 +16,11 @@ const Products_1 = __importDefault(require("../../../models/Products/Products"))
 const express_1 = require("express");
 const router = (0, express_1.Router)();
 router.post('/postProduct', (req, res, next) => __awaiter(void 0, void 0, void 0, function* () {
-    const data = req.body;
+    const { name, producer, description, category, cover_image, price, rating, links } = req.body;
     try {
-        const response = yield Products_1.default.find();
-        res.status(200).send(data);
+        const prod = new Products_1.default({ name, producer, description, category, cover_image, price, rating, links });
+        yield prod.save();
+        res.status(200).send('Product added succesfully');
     }
     catch (error) {
         next(error);
