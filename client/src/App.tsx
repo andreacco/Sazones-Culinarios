@@ -1,30 +1,23 @@
-import { useEffect, useState } from 'react'
-import reactLogo from './assets/react.svg'
+import { Routes, Route, useLocation} from 'react-router-dom';
+import Home from './components/Home/Home';
+import ProductCard from './components/ProductCard/ProductCard';
 import './App.css'
-import { useDispatch } from 'react-redux'
-import { getAllProducts } from './redux/actions/index'
-import { useSelector } from 'react-redux'
+import NavBar from './components/NavBar/NavBar';
+import Footer from './components/Footer/Footer';
 
 function App() {
-  const [count, setCount] = useState(0)
-  const dispatch: any = useDispatch()
 
-  useEffect(() => {
-    dispatch(getAllProducts())
-  }, [dispatch])
+  const location = useLocation()
   
-  const allProds = useSelector((state: any) => state.products)
-
   return (
-    <div className="App">
-      {allProds?.map((p:any) => {
-        return (
-        <div key={p.id}>
-          <img src={p.cover_image} alt="coverImg" height={200}/>
-        </div>
-        )
-      })}
-    </div>
+    <div>
+      <NavBar></NavBar>
+      <Routes location={location} key={location.pathname}>
+        <Route path="/" element={<Home/>} />
+        <Route path='/productos' element={<ProductCard/>}/>
+      </Routes>
+      <Footer></Footer>
+  </div>
   )
 }
 
