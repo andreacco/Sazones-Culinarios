@@ -11,8 +11,9 @@ const rootReducer = (state: productState = initialState, action: productAction):
             ...state,
             products: action.payload
         }
+        default: 
+        return state
     }
-    return state
 }
     
     export default rootReducer;
