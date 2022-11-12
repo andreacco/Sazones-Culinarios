@@ -8,7 +8,7 @@
     "lint": "eslint . --ext .ts",
     "lint:fix": "npm run lint -- --fix",
     "tsc": "tsc -w",
-    "dev": "nodemon ./src/index.js",
+    "dev": "tsc && nodemon ./src/index.js",
     "start": "node ./src/index.js",
     "prepare": "npm run build",
     "prestart": "npm run build",
