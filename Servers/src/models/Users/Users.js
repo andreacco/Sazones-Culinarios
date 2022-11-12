@@ -31,6 +31,11 @@ const UserSchema = new Schema({
         required: true,
         default: false
     },
+    unsuscribed: {
+        type: Boolean,
+        required: true,
+        default: false
+    },
 });
 const Users = mongoose_1.default.model('Users', UserSchema);
 exports.default = Users;

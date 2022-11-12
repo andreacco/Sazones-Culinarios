@@ -12,22 +12,30 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const express_1 = require("express");
-const Users_1 = __importDefault(require("../../../models/Users/Users"));
-const router = (0, express_1.Router)();
-router.put('/unsubscribeUser/:id', (req, res, next) => __awaiter(void 0, void 0, void 0, function* () {
-    const { id } = req.params;
+const nodemailer_1 = __importDefault(require("nodemailer"));
+const Config_1 = __importDefault(require("../../../config/ConfigEntorno/Config"));
+const sendEmail = (email, subject, html) => __awaiter(void 0, void 0, void 0, function* () {
     try {
-        const user = yield Users_1.default.findById(id);
-        if (user) {
-            user.
-                unsuscribed = true;
-            yield user.save();
-            res.status(200).json('Te has dado de baja exitosamente!');
-        }
+        const transporter = nodemailer_1.default.createTransport({
+            service: 'gmail',
+            port: 465,
+            secure: true,
+            auth: {
+                user: Config_1.default.email,
+                pass: Config_1.default.password
+            }
+        });
+        const mailOptions = {
+            from: Config_1.default.email,
+            to: email,
+            subject,
+            html: html
+        };
+        const mailSent = yield transporter.sendMail(mailOptions);
+        return mailSent;
     }
     catch (error) {
-        next(error);
+        console.log('Hubo un error al enviar este mensaje!', error);
     }
-}));
-exports.default = router;
+});
+exports.default = sendEmail;

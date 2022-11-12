@@ -14,9 +14,12 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = require("express");
 const Users_1 = __importDefault(require("../../../models/Users/Users"));
+const ConfirmEmail_1 = __importDefault(require("../../../controllers/Email/Template/ConfirmEmail"));
+const SendEmail_1 = __importDefault(require("../../../controllers/Email/SendEmail"));
+const Welcome_1 = __importDefault(require("../../../controllers/Email/Template/Welcome"));
 const router = (0, express_1.Router)();
 router.post('/postUser', (req, res, next) => __awaiter(void 0, void 0, void 0, function* () {
-    const { name, lastname, email, phoneNumber, verified } = req.body;
+    const { name, lastname, email, phoneNumber, verified, unsuscribed } = req.body;
     try {
         const user = yield Users_1.default.findOne({ email });
         if (user) {
@@ -26,8 +29,18 @@ router.post('/postUser', (req, res, next) => __awaiter(void 0, void 0, void 0, f
             res.status(200).json('Por favor, llena todos los datos requeridos');
         }
         else {
-            const newuser = new Users_1.default({ name, user, lastname, email, phoneNumber, verified });
+            const newuser = new Users_1.default({ name, user, lastname, email, phoneNumber, verified, unsuscribed });
             yield newuser.save();
+            res.status(200).json('Usuario registrado correctamente!');
+            let template;
+            if (newuser.verified === false) {
+                template = (0, ConfirmEmail_1.default)(name, newuser._id);
+                (0, SendEmail_1.default)(email, 'Confirma tu correo - Sazones Culinarios', template);
+            }
+            else {
+                template = (0, Welcome_1.default)(newuser._id);
+                (0, SendEmail_1.default)(email, '¡Bienvenido a Sazones Culinarios!', template);
+            }
         }
     }
     catch (error) {

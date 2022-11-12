@@ -8,4 +8,6 @@ dotenv_1.default.config();
 exports.default = {
     //------mongodb------//
     Db: process.env.URI,
+    email: process.env.EMAIL,
+    password: process.env.PASSWORD
 };
