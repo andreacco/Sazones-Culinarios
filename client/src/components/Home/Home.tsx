@@ -33,7 +33,7 @@ const Home = () => {
 
     const handleSubmit = (e: any) => {
         e.preventDefault()
-        dispatch(subcribeUser)
+        dispatch(subcribeUser(input))
     }
     
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
