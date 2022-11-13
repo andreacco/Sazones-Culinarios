@@ -20,7 +20,6 @@ router.get('/getAllCategories', (req, res) => __awaiter(void 0, void 0, void 0, 
         const products = yield Products_1.default.find();
         const categories = products.map((p) => p.category).flat();
         const categArray = new Set(categories);
-        console.log([...categArray]);
         res.status(200).send([...categArray]);
     }
     catch (error) {

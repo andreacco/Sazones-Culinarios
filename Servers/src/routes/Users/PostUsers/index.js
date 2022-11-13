@@ -19,17 +19,17 @@ const SendEmail_1 = __importDefault(require("../../../controllers/Email/SendEmai
 const Welcome_1 = __importDefault(require("../../../controllers/Email/Template/Welcome"));
 const router = (0, express_1.Router)();
 router.post('/postUser', (req, res, next) => __awaiter(void 0, void 0, void 0, function* () {
-    const { name, lastname, email, phoneNumber, verified, unsuscribed } = req.body;
+    const { name, lastname, email, phoneNumber, interests, verified, unsuscribed } = req.body;
     try {
         const user = yield Users_1.default.findOne({ email });
         if (user) {
             res.status(200).json('Ya estás suscrito a nuestra lista de correos!');
         }
-        else if (!name && !lastname && !email && !phoneNumber) {
+        else if (!name && !lastname && !email && !phoneNumber && !interests) {
             res.status(200).json('Por favor, llena todos los datos requeridos');
         }
         else {
-            const newuser = new Users_1.default({ name, user, lastname, email, phoneNumber, verified, unsuscribed });
+            const newuser = new Users_1.default({ name, user, lastname, email, phoneNumber, interests, verified, unsuscribed });
             yield newuser.save();
             res.status(200).json('Usuario registrado correctamente!');
             let template;

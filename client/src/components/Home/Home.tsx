@@ -19,9 +19,9 @@ const Home = () => {
     const dispatch: any = useDispatch()
     const [input, setInput] = useState<any>({
         name: "",
-        lastName: "",
+        lastname: "",
         email: "",
-        phone: "",
+        phoneNumber: "",
         interests: [],
     })
     const allCategories = useSelector((state: any) => state.categories)
@@ -36,9 +36,9 @@ const Home = () => {
         dispatch(subcribeUser(input))
         setInput({
             name: "",
-            lastName: "",
+            lastname: "",
             email: "",
-            phone: "",
+            phoneNumber: "",
             interests: [],
         })
     }
@@ -84,8 +84,8 @@ const Home = () => {
                         {error.name && (<p className="error--p">{error.name}</p>)} */}
                         <label htmlFor="name">Nombre</label>
                         <input type="text" name="name" value={input.name} onChange={(e) => handleChange(e)}/>
-                        <label htmlFor="lastName">Apellido</label>
-                        <input type="text" name="lastName" value={input.lastName} onChange={(e) => handleChange(e)}/>
+                        <label htmlFor="lastname">Apellido</label>
+                        <input type="text" name="lastname" value={input.lastname} onChange={(e) => handleChange(e)}/>
                     </div>
                     <div className="input-group">
                         <label htmlFor="email">Correo electrónico</label>
@@ -95,8 +95,8 @@ const Home = () => {
                         <label htmlFor="phoneNumber">Teléfono</label>
                         <TelefonoInput
                         country={'us'}
-                        value={input.phone}
-                        onChange={(phone: string) => setInput({ phone })}
+                        value={input.phoneNumber}
+                        onChange={(phoneNumber: string) => setInput({ phoneNumber })}
                         />
                     </div>
                     {/* <div className="input-group">

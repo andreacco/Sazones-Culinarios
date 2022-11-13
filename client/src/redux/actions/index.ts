@@ -32,7 +32,7 @@ export const getAllCategories = () => async (dispatch:any) => {
 export const subcribeUser = (newUser: Object) => {
         return async (dispatch:any) => {
         try{
-            let res = await axios.post('https://sazones-culinarios-back.onrender.com/api/user/postUser', newUser)
+            let res = await axios.post('http://localhost:5000/api/user/postUser', newUser)
             return dispatch({type: SUBSCRIBE_USER, payload: res.data})
         }
         catch(error) {
