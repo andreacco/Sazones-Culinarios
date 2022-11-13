@@ -6,7 +6,7 @@ export interface IUser extends mongoose.Document{
     lastname: string,
     email: string,
     phoneNumber: string,
-    interests: array,
+    interests: Array,
     verified: boolean,
     unsuscribed: boolean 
 }

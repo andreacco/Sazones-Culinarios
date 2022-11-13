@@ -10,7 +10,10 @@
 import React, { useEffect, useState } from "react"
 import { useSelector } from "react-redux"
 import { useDispatch } from "react-redux"
-import { getAllCategories } from '../../redux/actions/index'
+import { getAllCategories, subcribeUser } from '../../redux/actions/index'
+import TelefonoInput from 'react-phone-input-2'
+// import 'react-phone-input-2/lib/bootstrap.css'
+import 'react-phone-input-2/lib/material.css'
 
 const Home = () => {
     const dispatch: any = useDispatch()
@@ -18,7 +21,7 @@ const Home = () => {
         name: "",
         lastName: "",
         email: "",
-        phoneNumber: "",
+        phone: "",
         interests: [],
     })
     const allCategories = useSelector((state: any) => state.categories)
@@ -30,6 +33,7 @@ const Home = () => {
 
     const handleSubmit = (e: any) => {
         e.preventDefault()
+        dispatch(subcribeUser)
     }
     
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -37,6 +41,8 @@ const Home = () => {
             ...input,
             [e.target.name]: e.target.value
         })
+        console.log(input);
+        
     }
     
     const handleSelect = (e: React.ChangeEvent<HTMLSelectElement>) => {
@@ -80,9 +86,13 @@ const Home = () => {
                     </div>
                     <div className="input-group">
                         <label htmlFor="phoneNumber">Teléfono</label>
-                        <input type="text" name="phoneNumber" value={input.phoneNumber} onChange={(e) => handleChange(e)}/>
+                        <TelefonoInput
+                        country={'us'}
+                        value={input.phone}
+                        onChange={(phone: string) => setInput({ phone })}
+                        />
                     </div>
-                    <div className="input-group">
+                    {/* <div className="input-group">
                         <label htmlFor="interests">Áreas de interés</label>
                         <select name="interests" value={input.interests} onChange={(e) => handleSelect(e)}>
                             <option>Selecciona tus intereses</option>
@@ -98,7 +108,7 @@ const Home = () => {
                                 <button className="delete" onClick={() => handleDelete(c)}>X</button>
                             </div>
                         )}
-                    </div>
+                    </div> */}
                     <button onClick={(e) => handleSubmit(e)}>Suscribirse</button>
                 </form>
             </div>
