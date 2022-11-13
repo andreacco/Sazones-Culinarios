@@ -34,6 +34,13 @@ const Home = () => {
     const handleSubmit = (e: any) => {
         e.preventDefault()
         dispatch(subcribeUser(input))
+        setInput({
+            name: "",
+            lastName: "",
+            email: "",
+            phone: "",
+            interests: [],
+        })
     }
     
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
