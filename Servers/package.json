@@ -4,7 +4,6 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint . --ext .ts",
     "lint:fix": "npm run lint -- --fix",
     "tsc": "tsc -w",
@@ -12,7 +11,7 @@
     "start": "node ./src/index.js",
     "prepare": "npm run build",
     "prestart": "npm run build",
-    "build": "npm run lint && npm test && tsc"
+    "build": "npm run lint && tsc"
   },
   "keywords": [],
   "author": "Andrea Carvajal Osorio [andreacc9199@gmail.com](mailto:andreacc9199@gmail.com) ([https://andreacco.com](https://andreacco.com/))",
