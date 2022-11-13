@@ -1,5 +1,6 @@
 import { Router } from "express";
 import GetAllProducts from './Products/GetAllProducts/index'
+import GetAllCategories from './Products/GetAllCategories/index'
 import PostProducts from './Products/PostProducts/index'
 import PostUsers from './Users/PostUsers/index'
 import PutUsers from './Users/PutUsers/index'
@@ -12,6 +13,7 @@ router.get('/', (req, res) => {
 })
 
 router.use('/', GetAllProducts)
+router.use('/', GetAllCategories)
 router.use('/', PostProducts)
 router.use('/user', PostUsers)
 router.use('/user', PutUsers)

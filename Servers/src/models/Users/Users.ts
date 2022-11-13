@@ -6,6 +6,7 @@ export interface IUser extends mongoose.Document{
     lastname: string,
     email: string,
     phoneNumber: string,
+    interests: array,
     verified: boolean,
     unsuscribed: boolean 
 }
@@ -29,6 +30,11 @@ const UserSchema = new Schema({
     phoneNumber: {
         type: String,
         default: "",
+        required: true
+    },
+    interests: {
+        type: Array,
+        default: [],
         required: true
     },
     verified: {

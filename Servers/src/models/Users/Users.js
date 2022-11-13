@@ -26,6 +26,11 @@ const UserSchema = new Schema({
         default: "",
         required: true
     },
+    interests: {
+        type: Array,
+        default: [],
+        required: true
+    },
     verified: {
         type: Boolean,
         required: true,
