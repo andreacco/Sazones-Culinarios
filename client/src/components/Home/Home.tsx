@@ -11,9 +11,9 @@ import { useEffect, useState } from "react"
 import { useSelector } from "react-redux"
 import { useDispatch } from "react-redux"
 import { getAllCategories, subcribeUser } from '../../redux/actions/index'
-// import PhoneInput from 'react-phone-input-2'
+import PhoneInput from 'react-phone-input-2'
 // import 'react-phone-input-2/lib/bootstrap.css'
-// import 'react-phone-input-2/lib/material.css'
+import 'react-phone-input-2/lib/material.css'
 
 const Home = () => {
     const dispatch: any = useDispatch()
@@ -24,6 +24,8 @@ const Home = () => {
         phoneNumber: "",
         interests: [],
     })
+    const [phone, setPhone] = useState<any>("")
+
     const allCategories: any = useSelector((state: any) => state.categories)
 
     useEffect(() => {
@@ -33,6 +35,14 @@ const Home = () => {
 
     const handleSubmit = (e: any) => {
         e.preventDefault()
+        console.log(input);
+        console.log(phone);
+        setInput({
+            ...input,
+            phoneNumber: phone
+        })
+        console.log(input);
+        console.log(phone);
         dispatch(subcribeUser(input))
         setInput({
             name: "",
@@ -48,7 +58,8 @@ const Home = () => {
             ...input,
             [e.target.name]: e.target.value
         })
-        console.log(input);
+        // console.log(input, "INPUUUUUT");
+        console.log(phone, "PHONE NUMBEEEER");
         
     }
     
@@ -60,7 +71,6 @@ const Home = () => {
             }) 
         }
         console.log(input);
-        
     }
 
     const handleDelete = (c: any) => {
@@ -93,11 +103,11 @@ const Home = () => {
                     </div>
                     <div className="input-group">
                         <label htmlFor="phoneNumber">Teléfono</label>
-                        {/* <PhoneInput
+                        <PhoneInput
                         country='us'
-                        value={input.phoneNumber}
-                        onChange={(phoneNumber: any) => setInput(phoneNumber)}
-                        /> */}
+                        value={phone}
+                        onChange={(phone: any) => setPhone(phone)}
+                        />
                     </div>
                     <div className="input-group">
                         <label htmlFor="interests">Áreas de interés</label>
