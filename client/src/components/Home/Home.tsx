@@ -24,7 +24,7 @@ const Home = () => {
         phoneNumber: "",
         interests: [],
     })
-    const allCategories = useSelector((state: any) => state.categories)
+    const allCategories: any = useSelector((state: any) => state.categories)
 
     useEffect(() => {
         dispatch(getAllCategories())
@@ -96,10 +96,10 @@ const Home = () => {
                         <TelefonoInput
                         country={'us'}
                         value={input.phoneNumber}
-                        onChange={(phoneNumber: string) => setInput(phoneNumber)}
+                        onChange={(phoneNumber: any) => setInput(phoneNumber)}
                         />
                     </div>
-                    {/* <div className="input-group">
+                    <div className="input-group">
                         <label htmlFor="interests">Áreas de interés</label>
                         <select name="interests" value={input.interests} onChange={(e) => handleSelect(e)}>
                             <option>Selecciona tus intereses</option>
@@ -115,7 +115,7 @@ const Home = () => {
                                 <button className="delete" onClick={() => handleDelete(c)}>X</button>
                             </div>
                         )}
-                    </div> */}
+                    </div>
                     <button onClick={(e) => handleSubmit(e)}>Suscribirse</button>
                 </form>
             </div>
