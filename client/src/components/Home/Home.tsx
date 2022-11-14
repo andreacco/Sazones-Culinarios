@@ -11,11 +11,6 @@ import { useEffect, useState } from "react"
 import { useSelector } from "react-redux"
 import { useDispatch } from "react-redux"
 import { getAllCategories, subcribeUser } from '../../redux/actions/index'
-
-
-import PhoneNumberInput2 from "./PhoneInput"
-
-
 // import PhoneInput from 'react-phone-input-2'
 // import 'react-phone-input-2/lib/bootstrap.css'
 // import 'react-phone-input-2/lib/material.css'
@@ -98,17 +93,6 @@ const Home = () => {
                     </div>
                     <div className="input-group">
                         <label htmlFor="phoneNumber">Teléfono</label>
-
-                        <PhoneNumberInput2
-                        disabled={false}
-                        id={"contact-phone-input"}
-                        name={"phone_number"}
-                        value={input.phoneNumber}
-                        onChange={(phoneNumber: any) => setInput(phoneNumber)}
-                        placeholder={"Enter a phone number (optional)"}
-                        />
-
-
                         {/* <PhoneInput
                         country='us'
                         value={input.phoneNumber}
