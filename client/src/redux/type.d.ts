@@ -4,7 +4,7 @@ interface IProducts {
   
   type productState = {
     products: any
-    categories: array
+    categories: any
   }
   
   type productAction = {
