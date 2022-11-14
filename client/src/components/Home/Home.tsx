@@ -96,7 +96,7 @@ const Home = () => {
                         <TelefonoInput
                         country={'us'}
                         value={input.phoneNumber}
-                        onChange={(phoneNumber: string) => setInput({ phoneNumber })}
+                        onChange={(phoneNumber: string) => setInput(phoneNumber)}
                         />
                     </div>
                     {/* <div className="input-group">
