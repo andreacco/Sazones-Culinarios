@@ -7,11 +7,11 @@
 // Nuestras redes Sociales y un pequeño vistazo de ellas 
 // Un footer que contenga links importanes o datos interesantes y ademas la seccion del igreso para el admin
 
-import React, { useEffect, useState } from "react"
+import { useEffect, useState } from "react"
 import { useSelector } from "react-redux"
 import { useDispatch } from "react-redux"
 import { getAllCategories, subcribeUser } from '../../redux/actions/index'
-import TelefonoInput from 'react-phone-input-2'
+import PhoneInput from 'react-phone-input-2'
 // import 'react-phone-input-2/lib/bootstrap.css'
 import 'react-phone-input-2/lib/material.css'
 
@@ -93,7 +93,7 @@ const Home = () => {
                     </div>
                     <div className="input-group">
                         <label htmlFor="phoneNumber">Teléfono</label>
-                        <TelefonoInput
+                        <PhoneInput
                         country={'us'}
                         value={input.phoneNumber}
                         onChange={(phoneNumber: any) => setInput(phoneNumber)}
