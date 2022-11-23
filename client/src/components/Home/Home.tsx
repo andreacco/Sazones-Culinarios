@@ -24,6 +24,8 @@ const Home = () => {
         phoneNumber: "",
         interests: [],
     })
+    const [phone, setPhone] = useState<any>("")
+
     const allCategories: any = useSelector((state: any) => state.categories)
 
     useEffect(() => {
@@ -33,6 +35,14 @@ const Home = () => {
 
     const handleSubmit = (e: any) => {
         e.preventDefault()
+        // console.log(input);
+        // console.log(phone);
+        // setInput({
+        //     ...input,
+        //     phoneNumber: phone
+        // })
+        // console.log(input);
+        // console.log(phone);
         dispatch(subcribeUser(input))
         setInput({
             name: "",
@@ -48,7 +58,8 @@ const Home = () => {
             ...input,
             [e.target.name]: e.target.value
         })
-        console.log(input);
+        // console.log(input, "INPUUUUUT");
+        // console.log(phone, "PHONE NUMBEEEER");
         
     }
     
@@ -60,7 +71,6 @@ const Home = () => {
             }) 
         }
         console.log(input);
-        
     }
 
     const handleDelete = (c: any) => {
@@ -95,9 +105,9 @@ const Home = () => {
                         <label htmlFor="phoneNumber">Teléfono</label>
                         <PhoneInput
                         country='us'
-                        value={input.phoneNumber}
-                        onChange={(phoneNumber: any) => setInput(phoneNumber)}
-                        />
+                        value={phone}
+                        onChange={(phone: any) => setInput(phone)}
+                        /> 
                     </div>
                     <div className="input-group">
                         <label htmlFor="interests">Áreas de interés</label>
