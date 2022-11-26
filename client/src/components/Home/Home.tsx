@@ -11,9 +11,9 @@ import { useEffect, useState } from "react"
 import { useSelector } from "react-redux"
 import { useDispatch } from "react-redux"
 import { getAllCategories, subcribeUser } from '../../redux/actions/index'
-import PhoneInput from 'react-phone-input-2'
+// import PhoneInput from 'react-phone-input-2'
 // import 'react-phone-input-2/lib/bootstrap.css'
-import 'react-phone-input-2/lib/material.css'
+// import 'react-phone-input-2/lib/material.css'
 
 const Home = () => {
     const dispatch: any = useDispatch()
@@ -24,7 +24,7 @@ const Home = () => {
         phoneNumber: "",
         interests: [],
     })
-    const [phone, setPhone] = useState<any>("")
+    // const [phone, setPhone] = useState<any>("")
 
     const allCategories: any = useSelector((state: any) => state.categories)
 
@@ -103,11 +103,11 @@ const Home = () => {
                     </div>
                     <div className="input-group">
                         <label htmlFor="phoneNumber">Teléfono</label>
-                        <PhoneInput
+                        {/* <PhoneInput
                         country='us'
                         value={phone}
                         onChange={(phone: any) => setInput(phone)}
-                        /> 
+                        />  */}
                     </div>
                     <div className="input-group">
                         <label htmlFor="interests">Áreas de interés</label>
