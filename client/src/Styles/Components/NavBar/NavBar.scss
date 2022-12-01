@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Adamina&display=swap');
+
+.appNavbar {
+    display: flex;
+    background-color: var(--navbarBackground);
+    justify-content: space-between;
+    height: 17vh;
+    .left-side{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 15.5em;
+        margin-left: 0.9em;
+        .logo{
+            height: 100px;
+        }
+        .title{
+            font-family: 'Lobster', cursive;
+            font-size: 27px;
+            text-align-last: right;
+            margin-left: 10px;
+            color: var(--blacky);
+            font-weight: 100;
+        }
+    }
+    .right-side{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 570px;
+        margin-right: 20px;
+        .navBar-links{
+            font-size: 20px;
+        }
+        .searchBar {
+            margin-right: 0.9em;
+        }
+        svg {
+            color: var(--blacky);
+        }
+    }
+}

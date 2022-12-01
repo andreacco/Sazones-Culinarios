@@ -10,30 +10,10 @@ const index_1 = __importDefault(require("./routes/index"));
 const cookie_parser_1 = __importDefault(require("cookie-parser"));
 const body_parser_1 = __importDefault(require("body-parser"));
 const morgan_1 = __importDefault(require("morgan"));
-// import passportmiddleware from './middlewares/Passport/Passport';
 require("./config/MongoDb/Db");
 const cors_1 = __importDefault(require("cors"));
-// import http from 'http'
-// import {Server} from '../node_modules/socket.io';
 const server = (0, express_1.default)();
 exports.server = server;
-// const IoServer = http.createServer(server);
-// const io = new Server(IoServer,{
-//   cors:{
-//     origin: '*',
-//     methods: ['GET', 'POST']
-//   },
-// });
-// io.on('connection',(socket)=> {
-//   console.log(`User Connected: ${socket.id}`);
-//   // socket.on('join_room', (data) => {
-//   //   socket.join(data);
-//   // })
-//   socket.on('send_message',(data) => {
-//     socket.broadcast.emit('receive_message', data)
-//   })
-// })
-// server.use(express.json());
 //-------------------cors config--------------------//
 server.use(body_parser_1.default.urlencoded({ extended: true, limit: '50mb' }));
 server.use(body_parser_1.default.json({ limit: '50mb' }));
@@ -47,8 +27,6 @@ server.use((_req, res, next) => {
     next();
 });
 //--------------------------------------------------//
-// server.use(passport.initialize());
-// passport.use(passportmiddleware);
 server.use('/api', index_1.default);
 server.use((0, cors_1.default)());
 // eslint-disable-next-line @typescript-eslint/no-explicit-any, @typescript-eslint/no-unused-vars

@@ -4,35 +4,11 @@ import routes from './routes/index';
 import cookieParser from 'cookie-parser';
 import bodyParser from 'body-parser';
 import morgan from 'morgan';
-// import passportmiddleware from './middlewares/Passport/Passport';
 import './config/MongoDb/Db';
 import cors from 'cors';
-// import http from 'http'
-// import {Server} from '../node_modules/socket.io';
 
 const server = express();
 
-// const IoServer = http.createServer(server);
-
-// const io = new Server(IoServer,{
-//   cors:{
-//     origin: '*',
-//     methods: ['GET', 'POST']
-//   },
-// });
-
-// io.on('connection',(socket)=> {
-//   console.log(`User Connected: ${socket.id}`);
-  
-//   // socket.on('join_room', (data) => {
-//   //   socket.join(data);
-//   // })
-//   socket.on('send_message',(data) => {
-//     socket.broadcast.emit('receive_message', data)
-//   })
-// })
-
-// server.use(express.json());
 
 //-------------------cors config--------------------//
 server.use(bodyParser.urlencoded({ extended: true, limit: '50mb' }));
@@ -48,9 +24,6 @@ server.use((_req, res, next) => {
 });
 //--------------------------------------------------//
 
-// server.use(passport.initialize());
-// passport.use(passportmiddleware);
-
 server.use('/api', routes);
 server.use(cors());
 
@@ -64,4 +37,4 @@ server.use((err:any, _req:any, res:any, _next:any) => {
 
 
 
-export {/* IoServer, */ server };
+export { server };

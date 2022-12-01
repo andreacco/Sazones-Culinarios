@@ -1,0 +1,23 @@
+:root {
+    background: var(--background);
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: var(--blacky);
+  }
+  
+  button {
+    cursor: pointer;
+    border: none;
+  }

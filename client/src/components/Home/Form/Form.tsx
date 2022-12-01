@@ -1,0 +1,124 @@
+import { useEffect, useState } from "react"
+import { useSelector } from "react-redux"
+import { useDispatch } from "react-redux"
+import { getAllCategories, subcribeUser, setTitle } from '../../../redux/actions/index'
+// import PhoneInput from 'react-phone-input-2'
+// import 'react-phone-input-2/lib/bootstrap.css'
+// import 'react-phone-input-2/lib/material.css'
+
+const Form = () => {
+    const dispatch: any = useDispatch()
+    const [input, setInput] = useState<any>({
+        name: "",
+        lastname: "",
+        email: "",
+        phoneNumber: "",
+        interests: [],
+    })
+    // const [phone, setPhone] = useState<any>("")
+
+    const allCategories: any = useSelector((state: any) => state.categories)
+
+    useEffect(() => {
+        dispatch(getAllCategories())
+        dispatch(setTitle())
+    }, [dispatch])
+    
+
+    const handleSubmit = (e: any) => {
+        e.preventDefault()
+        // console.log(input);
+        // console.log(phone);
+        // setInput({
+        //     ...input,
+        //     phoneNumber: phone
+        // })
+        // console.log(input);
+        // console.log(phone);
+        dispatch(subcribeUser(input))
+        setInput({
+            name: "",
+            lastname: "",
+            email: "",
+            phoneNumber: "",
+            interests: [],
+        })
+    }
+    
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        setInput({
+            ...input,
+            [e.target.name]: e.target.value
+        })
+        // console.log(input, "INPUUUUUT");
+        // console.log(phone, "PHONE NUMBEEEER");
+        
+    }
+    
+    const handleSelect = (e: React.ChangeEvent<HTMLSelectElement>) => {
+        if(!input.interests.includes(e.target.value)){
+            setInput({
+                ...input,
+                interests: [...input.interests, e.target.value]
+            }) 
+        }
+        console.log(input);
+    }
+
+    const handleDelete = (c: any) => {
+        setInput({
+            ...input,
+            interests: input.interests.filter((i: any) => i !== c)
+        })
+    }
+    
+    return (
+        <div>
+            <h2>Suscríbete a nuestro newsletter!</h2>
+            <p>Entérate de las novedades, promociones y nuevos productos que tenemos para ti!</p>
+            <form onSubmit={(e) => handleSubmit(e)}>
+                <div className="input-group">
+                    <label htmlFor="name">Nombre</label>
+                    <input type="text" name="name" value={input.name} onChange={(e) => handleChange(e)}/>
+                    <label htmlFor="lastname">Apellido</label>
+                    <input type="text" name="lastname" value={input.lastname} onChange={(e) => handleChange(e)}/>
+                </div>
+                <div className="input-group">
+                    <label htmlFor="email">Correo electrónico</label>
+                    <input type="text" name="email" value={input.email} onChange={(e) => handleChange(e)}/>
+                </div>
+                <div className="input-group">
+                    <label htmlFor="phoneNumber">Teléfono</label>
+                    {/* <PhoneInput
+                    country='us'
+                    value={phone}
+                    onChange={(phone: any) => setInput(phone)}
+                    />  */}
+                </div>
+                <div className="input-group">
+                    <label htmlFor="interests">Áreas de interés</label>
+                    <select name="interests" value={input.interests} onChange={(e) => handleSelect(e)}>
+                        <option>Selecciona tus intereses</option>
+                        {allCategories.map((c: any) => {
+                            return <option value={c}>{c}</option>
+                        })}
+                    </select>
+                </div>
+                <div className="categories">
+                    {input.interests.map((c: any) =>
+                        <div className='category'>
+                            <h5>{c}</h5>
+                            <button className="delete" onClick={() => handleDelete(c)}>X</button>
+                        </div>
+                    )}
+                </div>
+                <button onClick={(e) => handleSubmit(e)}>Suscribirse</button>
+            </form>
+            {/* Suscripción realizada con éxito!
+            Gracias por tu interés en Sazones culinarios! Te hemos enviado un email de verificación al correo electrónico que ingresaste, por favor verifícalo cuanto antes para que empieces a recibir nuestros correos!
+            boton que dice: Empezar desde cero */}
+        </div>
+    )
+}
+
+export default Form

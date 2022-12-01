@@ -7,137 +7,39 @@
 // Nuestras redes Sociales y un pequeño vistazo de ellas 
 // Un footer que contenga links importanes o datos interesantes y ademas la seccion del igreso para el admin
 
-import { useEffect, useState } from "react"
-import { useSelector } from "react-redux"
+import { useEffect } from "react"
 import { useDispatch } from "react-redux"
-import { getAllCategories, subcribeUser } from '../../redux/actions/index'
-// import PhoneInput from 'react-phone-input-2'
-// import 'react-phone-input-2/lib/bootstrap.css'
-// import 'react-phone-input-2/lib/material.css'
+import { setTitle } from '../../redux/actions/index'
+import Form from "./Form/Form"
+import Banner from "./Banner/Banner"
+import BestSellers from "./BestSellers/BestSellers"
+import { BsInstagram, BsFacebook, BsTwitter } from "react-icons/bs";
+import { Link } from "react-router-dom"
+import '../../Styles/Components/Home/Home.scss'
+
 
 const Home = () => {
     const dispatch: any = useDispatch()
-    const [input, setInput] = useState<any>({
-        name: "",
-        lastname: "",
-        email: "",
-        phoneNumber: "",
-        interests: [],
-    })
-    // const [phone, setPhone] = useState<any>("")
-
-    const allCategories: any = useSelector((state: any) => state.categories)
 
     useEffect(() => {
-        dispatch(getAllCategories())
+        dispatch(setTitle())
     }, [dispatch])
-    
-
-    const handleSubmit = (e: any) => {
-        e.preventDefault()
-        // console.log(input);
-        // console.log(phone);
-        // setInput({
-        //     ...input,
-        //     phoneNumber: phone
-        // })
-        // console.log(input);
-        // console.log(phone);
-        dispatch(subcribeUser(input))
-        setInput({
-            name: "",
-            lastname: "",
-            email: "",
-            phoneNumber: "",
-            interests: [],
-        })
-    }
-    
-    const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        setInput({
-            ...input,
-            [e.target.name]: e.target.value
-        })
-        // console.log(input, "INPUUUUUT");
-        // console.log(phone, "PHONE NUMBEEEER");
-        
-    }
-    
-    const handleSelect = (e: React.ChangeEvent<HTMLSelectElement>) => {
-        if(!input.interests.includes(e.target.value)){
-            setInput({
-                ...input,
-                interests: [...input.interests, e.target.value]
-            }) 
-        }
-        console.log(input);
-    }
-
-    const handleDelete = (c: any) => {
-        setInput({
-            ...input,
-            interests: input.interests.filter((i: any) => i !== c)
-        })
-    }
     
     return (
         <div>
-            <div>
-                <p>Banner</p>
-            </div>
-            <div>
-                <h2>Suscríbete a nuestro newsletter!</h2>
-                <p>Entérate de las novedades, promociones y nuevos productos que tenemos para ti!</p>
-                <form onSubmit={(e) => handleSubmit(e)}>
-                    <div className="input-group">
-                    {/* <input placeholder="Breed Name:" type="text" name="name" value={input.name} onChange={(e) => handleChange(e)} />
-                        {error.name && (<p className="error--p">{error.name}</p>)} */}
-                        <label htmlFor="name">Nombre</label>
-                        <input type="text" name="name" value={input.name} onChange={(e) => handleChange(e)}/>
-                        <label htmlFor="lastname">Apellido</label>
-                        <input type="text" name="lastname" value={input.lastname} onChange={(e) => handleChange(e)}/>
-                    </div>
-                    <div className="input-group">
-                        <label htmlFor="email">Correo electrónico</label>
-                        <input type="text" name="email" value={input.email} onChange={(e) => handleChange(e)}/>
-                    </div>
-                    <div className="input-group">
-                        <label htmlFor="phoneNumber">Teléfono</label>
-                        {/* <PhoneInput
-                        country='us'
-                        value={phone}
-                        onChange={(phone: any) => setInput(phone)}
-                        />  */}
-                    </div>
-                    <div className="input-group">
-                        <label htmlFor="interests">Áreas de interés</label>
-                        <select name="interests" value={input.interests} onChange={(e) => handleSelect(e)}>
-                            <option>Selecciona tus intereses</option>
-                            {allCategories.map((c: any) => {
-                                return <option value={c}>{c}</option>
-                            })}
-                        </select>
-                    </div>
-                    <div className="categories">
-                        {input.interests.map((c: any) =>
-                            <div className='category'>
-                                <h5>{c}</h5>
-                                <button className="delete" onClick={() => handleDelete(c)}>X</button>
-                            </div>
-                        )}
-                    </div>
-                    <button onClick={(e) => handleSubmit(e)}>Suscribirse</button>
-                </form>
-            </div>
-            {/* Suscripción realizada con éxito!
-
-Gracias por tu interés en Sazones culinarios! Te hemos enviado un email de verificación al correo electrónico que ingresaste, por favor verifícalo cuanto antes para que empieces a recibir nuestros correos!
-boton que dice: Empezar desde cero */}
-            <div>
-                <h2>Los más vendidos</h2>
-            </div>
-            <div>
-                <h2>RRSS</h2>
+            <Banner/>
+            <Form/>
+            <BestSellers/>
+            <div className="RRSS-container">
+                <Link to='/'>
+                    <BsInstagram size={30}/>
+                </Link>
+                <Link to='/'>
+                    <BsFacebook size={30}/>
+                </Link>
+                <Link to='/'>
+                    <BsTwitter size={30}/>
+                </Link>
             </div>
         </div>
     )

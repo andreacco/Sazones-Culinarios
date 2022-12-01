@@ -5,6 +5,7 @@ interface IProducts {
   type productState = {
     products: any
     categories: any
+    title: any
   }
   
   type productAction = {
