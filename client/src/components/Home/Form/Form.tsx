@@ -2,9 +2,6 @@ import { useEffect, useState } from "react"
 import { useSelector } from "react-redux"
 import { useDispatch } from "react-redux"
 import { getAllCategories, subcribeUser, setTitle } from '../../../redux/actions/index'
-// import PhoneInput from 'react-phone-input-2'
-// import 'react-phone-input-2/lib/bootstrap.css'
-// import 'react-phone-input-2/lib/material.css'
 
 const Form = () => {
     const dispatch: any = useDispatch()
@@ -15,7 +12,6 @@ const Form = () => {
         phoneNumber: "",
         interests: [],
     })
-    // const [phone, setPhone] = useState<any>("")
 
     const allCategories: any = useSelector((state: any) => state.categories)
 
@@ -27,14 +23,6 @@ const Form = () => {
 
     const handleSubmit = (e: any) => {
         e.preventDefault()
-        // console.log(input);
-        // console.log(phone);
-        // setInput({
-        //     ...input,
-        //     phoneNumber: phone
-        // })
-        // console.log(input);
-        // console.log(phone);
         dispatch(subcribeUser(input))
         setInput({
             name: "",
@@ -50,9 +38,6 @@ const Form = () => {
             ...input,
             [e.target.name]: e.target.value
         })
-        // console.log(input, "INPUUUUUT");
-        // console.log(phone, "PHONE NUMBEEEER");
-        
     }
     
     const handleSelect = (e: React.ChangeEvent<HTMLSelectElement>) => {
@@ -89,11 +74,6 @@ const Form = () => {
                 </div>
                 <div className="input-group">
                     <label htmlFor="phoneNumber">Teléfono</label>
-                    {/* <PhoneInput
-                    country='us'
-                    value={phone}
-                    onChange={(phone: any) => setInput(phone)}
-                    />  */}
                 </div>
                 <div className="input-group">
                     <label htmlFor="interests">Áreas de interés</label>
