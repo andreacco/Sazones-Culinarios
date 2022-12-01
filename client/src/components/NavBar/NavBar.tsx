@@ -6,7 +6,7 @@ import { setTitle } from '../../redux/actions/index'
 import { useDispatch } from "react-redux";
 import { useEffect } from "react";
 import { BsInstagram, BsFacebook, BsTwitter } from "react-icons/bs";
-import '../../Styles/Components/NavBar/NavBar.scss'
+import '../../Styles/Components/NavBar.scss'
 
 export default function NavBar() {
   const dispatch: any = useDispatch()
