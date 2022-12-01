@@ -1,5 +1,5 @@
 {
-  "name": "supermarket-app",
+  "name": "sazones-culinarios",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -19,7 +19,8 @@
     "redux": "^4.2.0",
     "redux-devtools-extension": "^2.13.9",
     "redux-thunk": "^2.4.2",
-    "sass": "^1.56.1"
+    "sass": "^1.56.1",
+    "swiper": "^8.4.5"
   },
   "devDependencies": {
     "@types/react": "^18.0.17",
