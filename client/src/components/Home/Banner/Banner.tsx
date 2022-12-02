@@ -1,7 +1,7 @@
 // import OnePiceBanner from '../../../Images/one-peace-banner.jpg'
 // import DragonBall from '../../../Images/dbz.jpg';
 // import Shingeki from '../../../Images/shingeki.jpg';
-import '../../../Styles/Components/Banner.scss'
+import '../../../styles/components/Banner.scss'
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles

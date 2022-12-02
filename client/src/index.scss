@@ -1,9 +1,9 @@
 //-------- abstracts ------------//
-@use './styles/utils/variables';
+@use './styles/utils/variables.scss';
 
 //----------- base --------------//
-@use './styles/base/base';
-@use './styles/base/resets';
+@use './styles/base/base.scss';
+@use './styles/base/resets.scss';
 
 // @import url('https://fonts.googleapis.com/css2?family=Adamina&display=swap');
 // :root {
