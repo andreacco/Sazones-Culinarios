@@ -15,7 +15,7 @@ import Banner from "./Banner/Banner"
 import BestSellers from "./BestSellers/BestSellers"
 import { BsInstagram, BsFacebook, BsTwitter } from "react-icons/bs";
 import { Link } from "react-router-dom"
-import '../../styles/components/Home.scss'
+import '../../scss/components/Home.scss'
 
 
 const Home = () => {

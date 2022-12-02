@@ -1,10 +1,10 @@
 // import OnePiceBanner from '../../../Images/one-peace-banner.jpg'
 // import DragonBall from '../../../Images/dbz.jpg';
 // import Shingeki from '../../../Images/shingeki.jpg';
-import '../../../styles/components/Banner.scss'
+import '../../../scss/components/Banner.scss'
 import { Swiper, SwiperSlide } from "swiper/react";
 
-// Import Swiper styles
+// Import Swiper scss
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -88,7 +88,7 @@ export default Banner;
 
 
 
-// import '../../../Styles/Components/Banner/Banner.scss'
+// import '../../../scss/Components/Banner/Banner.scss'
 
 // const Banner = () => {
 //   return (
