@@ -75,7 +75,7 @@ const Form = () => {
                 <div className="input-group">
                     <label htmlFor="phoneNumber">Teléfono</label>
                 </div>
-                <div className="input-group">
+                {/* <div className="input-group">
                     <label htmlFor="interests">Áreas de interés</label>
                     <select name="interests" value={input.interests} onChange={(e) => handleSelect(e)}>
                         <option>Selecciona tus intereses</option>
@@ -83,7 +83,7 @@ const Form = () => {
                             return <option value={c}>{c}</option>
                         })}
                     </select>
-                </div>
+                </div> */}
                 <div className="categories">
                     {input.interests.map((c: any) =>
                         <div className='category'>
