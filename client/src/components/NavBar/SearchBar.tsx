@@ -1,4 +1,5 @@
-import '../../Styles/components/NavBar/NavBar.scss'
+import '../../Styles/Components/NavBar.scss'
+
 
 
 const SearchBar = () => {
