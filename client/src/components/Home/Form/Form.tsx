@@ -96,10 +96,9 @@ const Form = () => {
                         </div>
                         <div className="inputs-abajo">
                             <div className="input-groupy">
-                                <select name="interests" value={input.interests} onChange={(e) => handleSelect(e)} className="input">
-                                    <option>Selecciona tus intereses</option>
+                                <select name="interests" value={input.interests} onChange={(e) => handleSelect(e)} className="input" /* multiple={true} */ >
                                     {allCategories.map((c: any) => {
-                                        return <option value={c}>{c}</option>
+                                        return <option key={c} value={c}>{c}</option>
                                     })}
                                 </select>
                                 <label className="user-label">Tus áreas de interés</label>
