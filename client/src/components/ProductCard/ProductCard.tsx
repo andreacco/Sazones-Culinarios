@@ -13,8 +13,6 @@ function ProductCard() {
 
     const productsArr = useSelector((state: any) => state.products)
 
-    const prod = productsArr[0].description.substring(0,90)
-    console.log(`${prod}...`)
     return (
         <div className="products-container">
             {productsArr?.map((p: any) => {
