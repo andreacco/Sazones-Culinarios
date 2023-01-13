@@ -1,6 +1,15 @@
-// import OnePiceBanner from '../../../Images/one-peace-banner.jpg'
-// import DragonBall from '../../../Images/dbz.jpg';
-// import Shingeki from '../../../Images/shingeki.jpg';
+import cocinaInternacional from "../../../Images/1.png";
+import bartender from "../../../Images/8.png";
+import quesos from "../../../Images/11.png";
+import catering from "../../../Images/12.png";
+import cocinaInternacionalFondo from "../../../Images/cocina-internacional-fondo.jpg";
+import bartenderFondo from "../../../Images/bartender-fondo.jpg";
+import quesosFondo from "../../../Images/quesos-fondo.jpg";
+import cateringFondo from "../../../Images/catering-fondo.jpg";
+import portadaCocinaInternacional from "../../../Images/1-der.png";
+import portadaBartender from "../../../Images/8-der.png";
+import portadaQuesos from "../../../Images/11-der.png";
+import portadaCatering from "../../../Images/12-der.png";
 import '../../../scss/components/Banner.scss'
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -13,6 +22,8 @@ import "swiper/css/navigation";
 import { Autoplay, Pagination, Navigation } from "swiper";
 import { useNavigate } from 'react-router-dom';
 
+
+
 const Banner = () => {
 
   const navigate = useNavigate()
@@ -24,7 +35,7 @@ const Banner = () => {
           spaceBetween={30}
           centeredSlides={true}
           autoplay={{
-            delay: 3500,
+            delay: 7000,
             disableOnInteraction: false,
           }}
           pagination={{
@@ -33,49 +44,73 @@ const Banner = () => {
           navigation={true}
           modules={[Autoplay, Pagination, Navigation]}
           className="mySwiper"
+          loop={true}
         >
           <SwiperSlide>
-            <img src='' alt='' />
+            <img src={cocinaInternacionalFondo} alt='cocina-internacional-wallpaper' />
             <div className="text">
-              <div>
-                <h2>One Piece</h2>
-                <p>Seeking to be the greatest pirate in the world, young Monkey D. Luffy, endowed with stretching powers from the legendary "Gomu Gomu" Devil's fruit, travels towards the Grand Line in search of One Piece, the greatest treasure in the world.</p>
+              <div className="div-Texto">
+                <h2 className="titulo">Cocina internacional: 14 cursos incluidos</h2>
+                <p className="parrafo">Aprende cocina internacional y conviértete en el mejor chef de todos!</p>
               </div>
               <div className="picture">
-                <section className="shingeki">
-                  <img src="https://res.cloudinary.com/den9jelya/image/upload/v1657553565/Action/action%20adventure%20comedy%20drama%20fantasy%20shoune/One_Piece_1/one_piece_otdmi2.jpg" alt="" />
+                <section className="portada">
+                  <img src={portadaCocinaInternacional} alt="Cocina-internacional" />
                 </section>
-                <button onClick={() => {navigate("/mangas/detail/62c855e1b65f7bbce6cadc81", { replace: true })}}>Read</button>  
+                <button className="boton boton-Cocina-internacional" onClick={() => {navigate("/mangas/detail/62c855e1b65f7bbce6cadc81", { replace: true })}}>
+                  <span>Más Información</span>
+                </button>
               </div>
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <img src='' alt='' />
+            <img src={bartenderFondo} alt='' />
             <div className="text">
-              <div>
-                <h2>Dragon Ball</h2>
-                <p>Son Goku's adventure starts with Bulma crashing into to him while she is searching for the seven magical Dragon Balls, which can grant any wish. Together, they meet many people and many foes in their adventure chasing after the Dragon Balls.</p>
+              <div className="div-Texto">
+                <h2 className="titulo">Bartender Profesional</h2>
+                <p className="parrafo">Diviertete mientras aprendes una de las mejores profesiones en el mundo culinario!.</p>
               </div>
               <div className="picture">
-                <section className="shingeki">
-                  <img src="https://res.cloudinary.com/den9jelya/image/upload/v1657216979/Action/action%20adventure%20comedy%20fantasy%20Historic%20martial%20arts%20shounen%20supernatural/Dragon_Ball_1/dragon_ball_1_1_brcjdy.jpg" alt="" />
+                <section className="portada">
+                  <img src={portadaBartender} alt="Bartender" />
                 </section>
-                <button onClick={() => {navigate("/mangas/detail/62c8580cb65f7bbce6cadc88", { replace: true })}}>Read</button>  
+                <button className="boton boton-bartender" onClick={() => {navigate("/mangas/detail/62c8580cb65f7bbce6cadc88", { replace: true })}}>
+                  <span>Más Información</span>
+                </button>  
               </div>
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <img src='' alt='' />
+            <img src={quesosFondo} alt='' />
             <div className="text">
-              <div>
-                <h2>Shingeki no Kyojin</h2>
-                <p>Several hundred years ago, humans were nearly exterminated by giants. Giants are typically several stories tall, seem to have no intelligence, devour human beings and, worst of all, seem to do it for the pleasure rather than as a food source.</p>
+              <div className="div-Texto">
+                <h2 className="titulo">Elaboración de quesos artesanales</h2>
+                <p className="parrafo">Empieza a elaborar quesos artesanales y emprende tu negocio exitoso este 2023!</p>
               </div>
               <div className="picture">
-                <section className="shingeki">
-                  <img src="https://res.cloudinary.com/den9jelya/image/upload/v1657554105/Drama/Drama%20Action%20Fantasy%20Historical%20Horror%20Mystery%20Shounen%20Tragedy/Shingeki_No_Kyojin_1/shingeki_no_kyojin_c6dzqx.jpg" alt="" />
+                <section className="portada">
+                  <img src={portadaQuesos} alt="" />
                 </section>
-                <button onClick={() => {navigate("/mangas/detail/62c8f5e7b65f7bbce6cadcce", { replace: true })}}>Read</button>  
+                <button className="boton boton-quesos" onClick={() => {navigate("/mangas/detail/62c8f5e7b65f7bbce6cadcce", { replace: true })}}>
+                  <span>Más Información</span>
+                </button>  
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={cateringFondo} alt='' />
+            <div className="text">
+              <div className="div-Texto">
+                <h2 className="titulo">Catering de eventos</h2>
+                <p className="parrafo">Empieza un negocio exitoso y lidera el campo gastronómico!</p>
+              </div>
+              <div className="picture">
+                <section className="portada">
+                  <img src={portadaCatering} alt="" />
+                </section>
+                <button className="boton boton-catering" onClick={() => {navigate("/mangas/detail/62c8f5e7b65f7bbce6cadcce", { replace: true })}}> 
+                  <span>Más Información</span>
+                </button>  
               </div>
             </div>
           </SwiperSlide>

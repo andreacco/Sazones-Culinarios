@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Adamina&display=swap');
 
 .appNavbar {
     display: flex;
@@ -16,7 +14,7 @@
             height: 100px;
         }
         .title{
-            font-family: 'Lobster', cursive;
+            font-family: var(--titulo-font);
             font-size: 27px;
             text-align-last: right;
             margin-left: 10px;

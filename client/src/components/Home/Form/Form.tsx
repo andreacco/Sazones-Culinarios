@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import { useSelector } from "react-redux"
 import { useDispatch } from "react-redux"
 import { getAllCategories, subcribeUser, setTitle } from '../../../redux/actions/index'
+import '../../../scss/components/Form.scss'
 
 const Form = () => {
     const dispatch: any = useDispatch()
@@ -12,6 +13,7 @@ const Form = () => {
         phoneNumber: "",
         interests: [],
     })
+    const [open, setOpen] = useState<boolean>(false)
 
     const allCategories: any = useSelector((state: any) => state.categories)
 
@@ -40,7 +42,7 @@ const Form = () => {
         })
     }
     
-    const handleSelect = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    const handleSelect = (e: any) => {
         if(!input.interests.includes(e.target.value)){
             setInput({
                 ...input,
@@ -56,47 +58,100 @@ const Form = () => {
             interests: input.interests.filter((i: any) => i !== c)
         })
     }
+
+    const handleOpen = () => {
+        setOpen(!open)
+    }
     
     return (
-        <div>
-            <h2>Suscríbete a nuestro newsletter!</h2>
-            <p>Entérate de las novedades, promociones y nuevos productos que tenemos para ti!</p>
-            <form onSubmit={(e) => handleSubmit(e)}>
-                <div className="input-group">
-                    <label htmlFor="name">Nombre</label>
-                    <input type="text" name="name" value={input.name} onChange={(e) => handleChange(e)}/>
-                    <label htmlFor="lastname">Apellido</label>
-                    <input type="text" name="lastname" value={input.lastname} onChange={(e) => handleChange(e)}/>
+        <div className="div-form">
+            <div className="form-container">
+                <div className="titulo-form">
+                    <h2>Suscríbete a nuestro newsletter!</h2>
+                    <p>Entérate de las novedades, promociones y nuevos productos que tenemos para ti!</p>
                 </div>
-                <div className="input-group">
-                    <label htmlFor="email">Correo electrónico</label>
-                    <input type="text" name="email" value={input.email} onChange={(e) => handleChange(e)}/>
-                </div>
-                <div className="input-group">
-                    <label htmlFor="phoneNumber">Teléfono</label>
-                </div>
-                {/* <div className="input-group">
-                    <label htmlFor="interests">Áreas de interés</label>
-                    <select name="interests" value={input.interests} onChange={(e) => handleSelect(e)}>
-                        <option>Selecciona tus intereses</option>
-                        {allCategories.map((c: any) => {
-                            return <option value={c}>{c}</option>
-                        })}
-                    </select>
-                </div> */}
-                <div className="categories">
-                    {input.interests.map((c: any) =>
-                        <div className='category'>
-                            <h5>{c}</h5>
-                            <button className="delete" onClick={() => handleDelete(c)}>X</button>
+                <div className="form">
+                    <form className="registration" onSubmit={(e) => handleSubmit(e)}>
+                        <div className="nombres">
+                            <div className="input-groupy">
+                                <input required type="text" name="name" autoComplete="new-password" className="input" value={input.name} onChange={(e) => handleChange(e)}/>
+                                <label className="user-label">Tu Nombre</label>
+                            </div>
+                            <div className="input-groupy">
+                                <input required type="text" name="lastname" autoComplete="new-password" className="input" value={input.lastname} onChange={(e) => handleChange(e)}/>
+                                <label className="user-label">Tu Apellido</label>
+                            </div>
                         </div>
-                    )}
+                        <div className="inputs-abajo">
+                            <div className="input-groupy">
+                                <input required type="text" name="email" autoComplete="new-password" className="input" value={input.email} onChange={(e) => handleChange(e)}/>
+                                <label className="user-label">Tu mejor email</label>
+                            </div>
+                        </div>
+                        <div className="inputs-abajo">
+                            <div className="input-groupy">
+                                <input required type="text" name="phoneNumber" autoComplete="new-password" className="input" value={input.phoneNumber} onChange={(e) => handleChange(e)}/>
+                                <label className="user-label">Tu número de teléfono</label>
+                            </div>
+                        </div>
+                        <div className="inputs-abajo">
+                            <div className="input-groupy">
+                                <select name="interests" value={input.interests} onChange={(e) => handleSelect(e)} className="input">
+                                    <option>Selecciona tus intereses</option>
+                                    {allCategories.map((c: any) => {
+                                        return <option value={c}>{c}</option>
+                                    })}
+                                </select>
+                                <label className="user-label">Tus áreas de interés</label>
+                            </div>
+                        </div>
+
+
+
+                        {/* <div className="inputs-abajo">
+                            <div className={open == false ? "closey input-groupy" : "openy input-groupy"}>
+                                <div className="select-input" onClick={() => handleOpen()}>
+                                    <div className={open == false ? "close input" : "open input"}>
+                                        <ul>
+                                            {allCategories.map((c: any) => {
+                                                return <li className="opciones" value={c} onClick={(e) => handleSelect(e)}>{c}</li>
+                                            })}
+                                        </ul>
+                                    </div>
+                                </div>
+                                <label className="user-label-i">Tus áreas de interés</label>
+                            </div>
+                        </div> */}
+
+
+
+                        {/* <div className="input-group">
+                            <span>Teléfono</span>
+                            <input placeholder="Ingresa tu numero de  teléfono" type="number" name="phoneNumber" value={input.phoneNumber} onChange={(e) => handleChange(e)} required/>
+                        </div> */}
+                        <div className="categories">
+                            {input.interests.map((c: any) =>
+                                <div className='category'>
+                                    <h5>{c}</h5>
+                                    <div className="div-boton" >
+                                        <button className="delete" onClick={() => handleDelete(c)}>
+                                            <span>X</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            )}
+                        </div>
+                        <div className="boton-div">
+                            <button className="boton" onClick={(e) => handleSubmit(e)}>
+                                <span>Suscribirse</span>
+                            </button>
+                        </div>
+                    </form>
                 </div>
-                <button onClick={(e) => handleSubmit(e)}>Suscribirse</button>
-            </form>
-            {/* Suscripción realizada con éxito!
-            Gracias por tu interés en Sazones culinarios! Te hemos enviado un email de verificación al correo electrónico que ingresaste, por favor verifícalo cuanto antes para que empieces a recibir nuestros correos!
-            boton que dice: Empezar desde cero */}
+                {/* Suscripción realizada con éxito!
+                Gracias por tu interés en Sazones culinarios! Te hemos enviado un email de verificación al correo electrónico que ingresaste, por favor verifícalo cuanto antes para que empieces a recibir nuestros correos!
+                boton que dice: Empezar desde cero */}
+            </div>
         </div>
     )
 }
