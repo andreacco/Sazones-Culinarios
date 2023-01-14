@@ -19,13 +19,6 @@ export default function BestSellers() {
     <div className='BestSellers-container'>
       <h2>BestSellers</h2>
       <div className='cards-container'>
-        {/* <div className="card">
-            <div className="card-details">
-              <p className="text-title">Bartender Profesional</p>
-              <p className="text-body">La carrera del futuro</p>
-            </div>
-            <button className="card-button">Haz click para más información</button>
-        </div> */}
         {bestSellers.map((p: any) => {
           return (
             <div className="container">

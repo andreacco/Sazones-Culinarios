@@ -17,7 +17,29 @@ function ProductCard() {
         <div className="products-container">
             {productsArr?.map((p: any) => {
                 return (
-                    <div key={p._id} className="card">
+                    <div className="card-container"  key={p._id}>
+                        <div className={`card ${p.name.length > 39 ? 
+                                                            p.name.slice(22,25) : 
+                                                            p.name.length === 35 ?
+                                                            p.name.split(",")[0] :
+                                                            p.name.split(" ")[0]}`}>
+                            <div className="img-box">
+                                <img src={p.cover_image} alt="cover-img" className="imagen"/>
+                            </div>
+                            <div className="card-details">
+                                <p className="text-title">{p.name}</p>
+                                <p className="text-body">{(p.description).substring(0,90)}...</p>
+                            </div>
+                            <button className="card-button">Haz click para más información</button>
+                        </div>
+                    </div>
+                )
+            })}
+        </div>
+    )
+}
+
+                    {/* <div key={p._id} className="card">
                         <div className="header">
                             <div className="img-box">
                                 <img src={p.cover_image} alt="cover-img" height={200}/>
@@ -33,11 +55,6 @@ function ProductCard() {
                                 <span>Más Información</span>
                             </button>  
                         </div>
-                    </div>
-                )
-            })}
-        </div>
-    )
-}
+                    </div> */}
 
 export default ProductCard
