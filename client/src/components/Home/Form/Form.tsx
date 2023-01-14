@@ -4,9 +4,9 @@ import { useDispatch } from "react-redux"
 import { getAllCategories, subcribeUser, setTitle } from '../../../redux/actions/index'
 import '../../../scss/components/Form.scss'
 
-import Input, { getCountries, getCountryCallingCode } from 'react-phone-number-input/input';
-import es from 'react-phone-number-input/locale/es.json';
-import 'react-phone-number-input/style.css';
+// import Input, { getCountries, getCountryCallingCode } from 'react-phone-number-input/input';
+// import es from 'react-phone-number-input/locale/es.json';
+// import 'react-phone-number-input/style.css';
 
 const Form = () => {
     const dispatch: any = useDispatch()
@@ -67,50 +67,22 @@ const Form = () => {
         setOpen(!open)
     }
 
-    const CountrySelect = ({ value, onChange, labels, ...rest }: any) => (
-        <select {...rest} value={value} onChange={(event) => onChange(event.target.value || undefined)}>
-            <option value="">{labels.ZZ}</option>
-            {getCountries().map((country) => (
-                <option key={country} value={country}>
-                {labels[country]} +{getCountryCallingCode(country)}
-                </option>
-            ))}
-        </select>
-    )
+    // const CountrySelect = ({ value, onChange, labels, ...rest }: any) => (
+    //     <select {...rest} value={value} onChange={(event) => onChange(event.target.value || undefined)}>
+    //         <option value="">{labels.ZZ}</option>
+    //         {getCountries().map((country) => (
+    //             <option key={country} value={country}>
+    //             {labels[country]} +{getCountryCallingCode(country)}
+    //             </option>
+    //         ))}
+    //     </select>
+    // )
 
-    // Set default state for location, phone number and country.
-    const [phoneNumber, setPhoneNumber] = useState();
-    const [country, setCountry] = useState();
+    // // Set default state for location, phone number and country.
+    // const [phoneNumber, setPhoneNumber] = useState();
+    // const [country, setCountry] = useState();
 
-    // async function lookupCountry({ latitude, longitude }: any) {
-    //     // Prefix the env file with REACT_APP for react to find it
-    //     const URL = `https://maps.googleapis.com/maps/api/geocode/json?latlng=${latitude},${longitude}&key=${process.env.REACT_APP_GOOGLE_MAPS_API_KEY}`;
-      
-    //     const locationData = await fetch(URL).then((res) => res.json());
-      
-    //     /* eslint-disable */
-    //     const [{ address_components }] = locationData.results.filter(({ types }: any) => types.includes('country'));
-      
-    //     const [{ short_name }] = address_components;
-        
-    //     return short_name;
-    //     /* eslint-enable */
-    //   }
 
-    // Define handler function for browser Navigator API
-    // async function handleNavigator(pos: any) {
-    //     const { latitude, longitude } = pos.coords;
-
-    //     const userCountryCode = await lookupCountry({ latitude, longitude });
-    //     setCountry(userCountryCode);
-    // }
-
-    // useEffect to run the navigator API on initial render
-    // useEffect(() => {
-    //     navigator.geolocation.getCurrentPosition(handleNavigator, () => console.warn('permission was rejected'));
-    // }, []);
-    
-    
     return (
         <div className="div-form">
             <div className="form-container">
@@ -142,7 +114,9 @@ const Form = () => {
                                 <label className="user-label">Tu número de teléfono</label>
                             </div>
                         </div>
-                        <div className="inputs-abajo">
+
+
+                        {/* <div className="inputs-abajo">
                             <div>
                                 <CountrySelect labels={es} value={country} onChange={setCountry} name="countrySelect" />
                             </div>
@@ -151,7 +125,9 @@ const Form = () => {
                                 <Input country={country} value={phoneNumber} onChange={(e: any) => handleChange(e)} placeholder="Enter phone number" name="phoneNumber" international
                                 countryCallingCodeEditable={false}/>
                             </div>
-                        </div>
+                        </div> */}
+
+                        
                         <div className="inputs-abajo">
                             <div className="input-groupy">
                                 <select name="interests" value={input.interests} onChange={(e) => handleSelect(e)} className="input" /* multiple={true} */ >
