@@ -4,6 +4,9 @@ import { useDispatch } from "react-redux"
 import { getAllCategories, subcribeUser, setTitle } from '../../../redux/actions/index'
 import '../../../scss/components/Form.scss'
 
+import 'react-phone-number-input/style.css'
+import PhoneInput from 'react-phone-number-input'
+
 // import Input, { getCountries, getCountryCallingCode } from 'react-phone-number-input/input';
 // import es from 'react-phone-number-input/locale/es.json';
 // import 'react-phone-number-input/style.css';
@@ -18,6 +21,8 @@ const Form = () => {
         interests: [],
     })
     const [open, setOpen] = useState<boolean>(false)
+    
+    const [value, setValue] = useState<any>()
 
     const allCategories: any = useSelector((state: any) => state.categories)
 
@@ -114,6 +119,13 @@ const Form = () => {
                                 <label className="user-label">Tu número de teléfono</label>
                             </div>
                         </div>
+
+
+                            <PhoneInput
+                                international
+                                countryCallingCodeEditable={false}
+                                value={value}
+                                onChange={setValue}/>
 
 
                         {/* <div className="inputs-abajo">
