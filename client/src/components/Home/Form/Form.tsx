@@ -6,6 +6,7 @@ import '../../../scss/components/Form.scss'
 
 import 'react-phone-number-input/style.css'
 import PhoneInput from 'react-phone-number-input'
+import es from 'react-phone-number-input/locale/es.json'
 
 const Form = () => {
     const dispatch: any = useDispatch()
@@ -36,8 +37,8 @@ const Form = () => {
     
 
     const handleSubmit = (e: any) => {
+        ponerMayusculas()
         e.preventDefault()
-        console.log(input, "DEBERIA ESTAR LLENO");
         dispatch(subcribeUser(input))
         setInput({
             name: "",
@@ -54,7 +55,6 @@ const Form = () => {
             ...input,
             [e.target.name]: e.target.value
         })
-        
     }
     
     const handleSelect = (e: any) => {
@@ -71,6 +71,17 @@ const Form = () => {
             ...input,
             interests: input.interests.filter((i: any) => i !== c)
         })
+    }
+    
+    const ponerMayusculas = () => {
+        let nombre = input.name
+        let apellido = input.lastname
+        const mayusculaNombre = nombre.substring(0,1).toUpperCase();
+        const minusculaNombre = nombre.substring(1).toLowerCase();
+        const mayusculaApellido = apellido.substring(0,1).toUpperCase();
+        const minusculaApellido = apellido.substring(1).toLowerCase();
+        input.name = mayusculaNombre.concat(minusculaNombre);
+        input.lastname = mayusculaApellido.concat(minusculaApellido);
     }
 
     const [clicked, setClicked] = useState<boolean>(false)
@@ -91,7 +102,7 @@ const Form = () => {
                     <form className="registration">
                         <div className="nombres">
                             <div className="input-groupy">
-                                <input required type="text" name="name" autoComplete="new-password" className="input" value={input.name} onChange={(e) => handleChange(e)}/>
+                                <input required type="text" name="name" autoComplete="new-password" className="input" value={input.name} onChange={(e) => handleChange(e)} />
                                 <label className="user-label">Tu Nombre</label>
                             </div>
                             <div className="input-groupy">
@@ -116,7 +127,8 @@ const Form = () => {
                                     onChange={(value) => handlePhone(value)}
                                     className="phone-input"
                                     autoComplete="new-password"
-                                    onClick={() => handleClicked()} />
+                                    onClick={() => handleClicked()} 
+                                    labels={es} />
                             </div>
                         </div> 
 

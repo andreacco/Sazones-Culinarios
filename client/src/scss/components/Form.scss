@@ -40,6 +40,7 @@
                     .input-groupy {
                         .input{
                             width: 13.29em;
+                            text-transform: capitalize;
                         }
                     }
                 }
@@ -49,6 +50,7 @@
                     .div-phone-input{
                         width: 27.5em;
                         position: relative;
+                        margin-bottom: 7px;
                         .user-label-phone {
                             position: absolute;
                             left: 15px;
@@ -74,6 +76,8 @@
                             select{
                                 background-color: rgba(219, 153, 158, 0.9);
                                 font-family: var(--primary-font);
+                                color: #a60715;
+                                font-size: 0.9em;
                             }
                             input{
                             border: solid 1.5px #db999f00;
