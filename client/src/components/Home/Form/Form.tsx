@@ -20,9 +20,16 @@ const Form = () => {
         phoneNumber: "",
         interests: [],
     })
-    const [open, setOpen] = useState<boolean>(false)
     
     const [value, setValue] = useState<any>()
+
+    const handlePhone = (value: any) => {
+        setInput({
+            ...input,
+            "phoneNumber": value
+        })
+    }
+    
 
     const allCategories: any = useSelector((state: any) => state.categories)
 
@@ -34,6 +41,7 @@ const Form = () => {
 
     const handleSubmit = (e: any) => {
         e.preventDefault()
+        console.log(input, "DEBERIA ESTAR LLENO");
         dispatch(subcribeUser(input))
         setInput({
             name: "",
@@ -42,13 +50,15 @@ const Form = () => {
             phoneNumber: "",
             interests: [],
         })
+        setValue("")
     }
     
-    const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const handleChange = (e: any) => {
         setInput({
             ...input,
             [e.target.name]: e.target.value
         })
+        
     }
     
     const handleSelect = (e: any) => {
@@ -58,7 +68,6 @@ const Form = () => {
                 interests: [...input.interests, e.target.value]
             }) 
         }
-        console.log(input);
     }
 
     const handleDelete = (c: any) => {
@@ -68,35 +77,22 @@ const Form = () => {
         })
     }
 
-    const handleOpen = () => {
-        setOpen(!open)
+    const [clicked, setClicked] = useState<boolean>(false)
+
+    const handleClicked = () => {
+        setClicked(true)
     }
-
-    // const CountrySelect = ({ value, onChange, labels, ...rest }: any) => (
-    //     <select {...rest} value={value} onChange={(event) => onChange(event.target.value || undefined)}>
-    //         <option value="">{labels.ZZ}</option>
-    //         {getCountries().map((country) => (
-    //             <option key={country} value={country}>
-    //             {labels[country]} +{getCountryCallingCode(country)}
-    //             </option>
-    //         ))}
-    //     </select>
-    // )
-
-    // // Set default state for location, phone number and country.
-    // const [phoneNumber, setPhoneNumber] = useState();
-    // const [country, setCountry] = useState();
-
+    
 
     return (
         <div className="div-form">
-            <div className="form-container">
-                <div className="titulo-form">
+            <div className="form-container" >
+                <div className="titulo-form" >
                     <h2>Suscríbete a nuestro newsletter!</h2>
                     <p>Entérate de las novedades, promociones y nuevos productos que tenemos para ti!</p>
                 </div>
-                <div className="form">
-                    <form className="registration" onSubmit={(e) => handleSubmit(e)}>
+                <div className="form" >
+                    <form className="registration">
                         <div className="nombres">
                             <div className="input-groupy">
                                 <input required type="text" name="name" autoComplete="new-password" className="input" value={input.name} onChange={(e) => handleChange(e)}/>
@@ -113,19 +109,26 @@ const Form = () => {
                                 <label className="user-label">Tu mejor email</label>
                             </div>
                         </div>
-                        <div className="inputs-abajo">
+                        {/* <div className="inputs-abajo">
                             <div className="input-groupy">
                                 <input required type="text" name="phoneNumber" autoComplete="new-password" className="input" value={input.phoneNumber} onChange={(e) => handleChange(e)}/>
                                 <label className="user-label">Tu número de teléfono</label>
                             </div>
-                        </div>
+                        </div> */}
 
-
-                            <PhoneInput
-                                international
-                                countryCallingCodeEditable={false}
-                                value={value}
-                                onChange={setValue}/>
+                        <div className="inputs-abajo">
+                            <div className={clicked === true || input.phoneNumber.length > 1 ? "div-phone-input clicked" : "div-phone-input"} onClick={() => handleClicked()}>
+                                <label className="user-label-phone">Tu número de teléfono</label>
+                                <PhoneInput
+                                    international
+                                    countryCallingCodeEditable={false}
+                                    value={value}
+                                    onChange={(value) => handlePhone(value)}
+                                    className="phone-input"
+                                    autoComplete="new-password"
+                                    onClick={() => handleClicked()} />
+                            </div>
+                        </div> 
 
 
                         {/* <div className="inputs-abajo">
@@ -143,6 +146,7 @@ const Form = () => {
                         <div className="inputs-abajo">
                             <div className="input-groupy">
                                 <select name="interests" value={input.interests} onChange={(e) => handleSelect(e)} className="input" /* multiple={true} */ >
+                                    <option>Selecciona tus áreas de interés</option>
                                     {allCategories.map((c: any) => {
                                         return <option key={c} value={c}>{c}</option>
                                     })}
