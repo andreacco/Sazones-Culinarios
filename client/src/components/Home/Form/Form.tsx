@@ -7,10 +7,6 @@ import '../../../scss/components/Form.scss'
 import 'react-phone-number-input/style.css'
 import PhoneInput from 'react-phone-number-input'
 
-// import Input, { getCountries, getCountryCallingCode } from 'react-phone-number-input/input';
-// import es from 'react-phone-number-input/locale/es.json';
-// import 'react-phone-number-input/style.css';
-
 const Form = () => {
     const dispatch: any = useDispatch()
     const [input, setInput] = useState<any>({
@@ -109,12 +105,6 @@ const Form = () => {
                                 <label className="user-label">Tu mejor email</label>
                             </div>
                         </div>
-                        {/* <div className="inputs-abajo">
-                            <div className="input-groupy">
-                                <input required type="text" name="phoneNumber" autoComplete="new-password" className="input" value={input.phoneNumber} onChange={(e) => handleChange(e)}/>
-                                <label className="user-label">Tu número de teléfono</label>
-                            </div>
-                        </div> */}
 
                         <div className="inputs-abajo">
                             <div className={clicked === true || input.phoneNumber.length > 1 ? "div-phone-input clicked" : "div-phone-input"} onClick={() => handleClicked()}>
@@ -130,22 +120,10 @@ const Form = () => {
                             </div>
                         </div> 
 
-
-                        {/* <div className="inputs-abajo">
-                            <div>
-                                <CountrySelect labels={es} value={country} onChange={setCountry} name="countrySelect" />
-                            </div>
-                            <div>
-                                <label htmlFor="phoneNumber">Phone Number</label>
-                                <Input country={country} value={phoneNumber} onChange={(e: any) => handleChange(e)} placeholder="Enter phone number" name="phoneNumber" international
-                                countryCallingCodeEditable={false}/>
-                            </div>
-                        </div> */}
-
                         
                         <div className="inputs-abajo">
                             <div className="input-groupy">
-                                <select name="interests" value={input.interests} onChange={(e) => handleSelect(e)} className="input" /* multiple={true} */ >
+                                <select name="interests" value={input.interests} onChange={(e) => handleSelect(e)} className="input">
                                     <option>Selecciona tus áreas de interés</option>
                                     {allCategories.map((c: any) => {
                                         return <option key={c} value={c}>{c}</option>
@@ -154,30 +132,6 @@ const Form = () => {
                                 <label className="user-label">Tus áreas de interés</label>
                             </div>
                         </div>
-
-
-
-                        {/* <div className="inputs-abajo">
-                            <div className={open == false ? "closey input-groupy" : "openy input-groupy"}>
-                                <div className="select-input" onClick={() => handleOpen()}>
-                                    <div className={open == false ? "close input" : "open input"}>
-                                        <ul>
-                                            {allCategories.map((c: any) => {
-                                                return <li className="opciones" value={c} onClick={(e) => handleSelect(e)}>{c}</li>
-                                            })}
-                                        </ul>
-                                    </div>
-                                </div>
-                                <label className="user-label-i">Tus áreas de interés</label>
-                            </div>
-                        </div> */}
-
-
-
-                        {/* <div className="input-group">
-                            <span>Teléfono</span>
-                            <input placeholder="Ingresa tu numero de  teléfono" type="number" name="phoneNumber" value={input.phoneNumber} onChange={(e) => handleChange(e)} required/>
-                        </div> */}
                         <div className="categories">
                             {input.interests.map((c: any) =>
                                 <div className='category'>
