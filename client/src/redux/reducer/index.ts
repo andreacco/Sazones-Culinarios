@@ -1,9 +1,10 @@
-import { GET_ALL_PRODUCTS, SUBSCRIBE_USER, GET_ALL_CATEGORIES, SET_TITLE } from '../actions/index'
+import { GET_ALL_PRODUCTS, SUBSCRIBE_USER, GET_ALL_CATEGORIES, SET_TITLE, RESET } from '../actions/index'
 
 const initialState: productState = {
     products: [],
     categories: [],
-    title: ''
+    title: '',
+    subscribeResponse: ''
 }
 
 const rootReducer = (state: productState = initialState, action: productAction): productState => {
@@ -16,7 +17,8 @@ const rootReducer = (state: productState = initialState, action: productAction):
 
         case SUBSCRIBE_USER: 
             return {
-                ...state
+                ...state,
+                subscribeResponse: action.payload
             }
 
         case GET_ALL_CATEGORIES:
@@ -29,6 +31,12 @@ const rootReducer = (state: productState = initialState, action: productAction):
             return {
                 ...state,
                 title: action.payload
+            }
+            
+        case RESET:
+            return {
+                ...state,
+                subscribeResponse: ''
             }
 
         default: 

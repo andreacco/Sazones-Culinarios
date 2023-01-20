@@ -12,6 +12,16 @@
         background-color: rgba(166, 7, 21, 0.6);
         border-radius: 2em;
         width: 31em;
+        min-height: 28.1em;
+        .already-subscribed{
+            display: none;
+        }
+        .sub-error{
+            display: none;
+        }
+        .no-suscrito{
+            display: none;
+        }
         .titulo-form{
             display: flex;
             flex-direction: column;
@@ -50,7 +60,7 @@
                     .div-phone-input{
                         width: 27.5em;
                         position: relative;
-                        margin-bottom: 7px;
+                        margin-bottom: 10px;
                         .user-label-phone {
                             position: absolute;
                             left: 15px;
@@ -290,9 +300,99 @@
                         }
                         button:hover {
                         background-color: #a60715;
-                        
                         }
                     }
+                }
+            }
+        }
+    }
+    .suscrito {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .titulo-form{
+            display: none;
+        }
+        .form{
+            display: none;
+        }
+        .gracias{
+            background-color: rgba(219, 153, 158, 0.9);
+            width:28em;
+            height: 19em;
+            border-radius: 3em;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2em;
+            font-family: var(--primary-font);
+            h2{
+                margin-bottom: 1em;
+                text-align: center;
+                text-shadow: 1px 1px 5px #e3c3c5;
+            }
+            p{
+                margin-bottom: 1em;
+                text-align: center;
+            }
+        
+
+            .boton-div{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 15px;
+                .boton {
+                    position: relative;
+                    font-family: var(--primary-font);
+                    font-weight: 500;
+                    font-size: 14px;
+                    letter-spacing: 0.05em;
+                    border-radius: 0.9em;
+                    color: ghostwhite;
+                    overflow: hidden;
+                    width: 13em;
+                    height: 2em;
+                    display: flex;
+                    justify-content: center;
+                    background: #a60715;
+        
+                    span {
+                    position: relative;
+                    z-index: 10;
+                    transition: color 0.4s;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 0.3em;
+                    }
+                }
+                .boton::before,
+                .boton::after {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    z-index: 0;
+                }
+                
+                .boton::before {
+                    content: "";
+                    background: #000;
+                    width: 120%;
+                    left: -10%;
+                    transform: skew(30deg);
+                    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+                }
+                
+                .boton:hover::before {
+                    transform: translate3d(100%, 0, 0);
+                }
+                
+                .boton:active {
+                    transform: scale(0.95);
                 }
             }
         }

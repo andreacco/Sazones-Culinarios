@@ -6,6 +6,7 @@ interface IProducts {
     products: any
     categories: any
     title: any
+    subscribeResponse: any
   }
   
   type productAction = {

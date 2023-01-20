@@ -1,9 +1,8 @@
 import { useEffect, useState } from "react"
 import { useSelector } from "react-redux"
 import { useDispatch } from "react-redux"
-import { getAllCategories, subcribeUser, setTitle } from '../../../redux/actions/index'
+import { getAllCategories, subcribeUser, setTitle, resetSub } from '../../../redux/actions/index'
 import '../../../scss/components/Form.scss'
-
 import 'react-phone-number-input/style.css'
 import PhoneInput from 'react-phone-number-input'
 import es from 'react-phone-number-input/locale/es.json'
@@ -17,8 +16,6 @@ const Form = () => {
         phoneNumber: "",
         interests: [],
     })
-    
-    const [value, setValue] = useState<any>()
 
     const handlePhone = (value: any) => {
         setInput({
@@ -29,11 +26,14 @@ const Form = () => {
     
 
     const allCategories: any = useSelector((state: any) => state.categories)
+    
+    let subResponse: any = useSelector((state: any) => state.subscribeResponse)
 
     useEffect(() => {
         dispatch(getAllCategories())
         dispatch(setTitle())
-    }, [dispatch])
+        handleSubscribed()
+    }, [dispatch, subResponse])
     
 
     const handleSubmit = (e: any) => {
@@ -47,7 +47,6 @@ const Form = () => {
             phoneNumber: "",
             interests: [],
         })
-        setValue("")
     }
     
     const handleChange = (e: any) => {
@@ -90,10 +89,48 @@ const Form = () => {
         setClicked(true)
     }
     
+    const [subscribed, setSubscribed] = useState<boolean>(false)
+    const [subscribeError, setSubscribeError] = useState<boolean>(false)
+    const [alreadySubscribed, setAlreadySubscribed] = useState<boolean>(false)
+    
+
+    const handleSubscribed = () => {
+        if (typeof subResponse === "object") {
+            setSubscribeError(true)
+            setAlreadySubscribed(false)
+            setSubscribed(false)
+        }
+        if (typeof subResponse === "string" /* && subResponse.length */){
+            if (subResponse === "Ya estás suscrito a nuestra lista de correos!") {
+                setAlreadySubscribed(true)
+                setSubscribeError(false)
+                setSubscribed(false)
+            }
+            if (subResponse === "Usuario registrado correctamente!") {
+                setSubscribed(true)
+                setSubscribeError(false)
+                setAlreadySubscribed(false)
+            }
+        }
+    }
+
+    const reset = () => {
+        setInput({
+            name: "",
+            lastname: "",
+            email: "",
+            phoneNumber: "",
+            interests: [],
+        })
+        dispatch(resetSub())
+        setAlreadySubscribed(false)
+        setSubscribeError(false)
+        setSubscribed(false)
+    }
 
     return (
         <div className="div-form">
-            <div className="form-container" >
+            <div className={subscribed === true || subscribeError === true || alreadySubscribed === true ? "form-container suscrito": "form-container no-suscrito"} >
                 <div className="titulo-form" >
                     <h2>Suscríbete a nuestro newsletter!</h2>
                     <p>Entérate de las novedades, promociones y nuevos productos que tenemos para ti!</p>
@@ -123,7 +160,7 @@ const Form = () => {
                                 <PhoneInput
                                     international
                                     countryCallingCodeEditable={false}
-                                    value={value}
+                                    value={input.phoneNumber}
                                     onChange={(value) => handlePhone(value)}
                                     className="phone-input"
                                     autoComplete="new-password"
@@ -163,9 +200,48 @@ const Form = () => {
                         </div>
                     </form>
                 </div>
-                {/* Suscripción realizada con éxito!
-                Gracias por tu interés en Sazones culinarios! Te hemos enviado un email de verificación al correo electrónico que ingresaste, por favor verifícalo cuanto antes para que empieces a recibir nuestros correos!
-                boton que dice: Empezar desde cero */}
+                <div className={subscribed === true && subscribeError === false && alreadySubscribed === false ? "suscrito" : "no-suscrito"}>
+                    <div className="gracias">
+                        <h2>Suscripción realizada con éxito!</h2>
+                        <p>¡Gracias por tu interés en Sazones culinarios!
+                            <br />
+                            <br />
+                            Te hemos enviado un email de verificación al correo electrónico que ingresaste, por favor verifícalo cuanto antes para que empieces a recibir nuestros correos!</p>
+                        <div className="boton-div">
+                            <button className="boton" onClick={() => reset()}>
+                                <span>Empezar desde cero</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div className={subscribed === false && subscribeError === true && alreadySubscribed === false ? "suscrito" : "no-suscrito"}>
+                    <div className="gracias">
+                        <h2>Ups... Hubo un error en tu subscripción</h2>
+                        <p>¡Gracias por tu interés en Sazones culinarios!
+                            <br />
+                            <br />
+                            Lamentablemente hubo un error con tu subscripción, si lo deseas, puedes intentarlo nuevamente y si el problema persiste por favor, contáctanos!</p>
+                        <div className="boton-div">
+                            <button className="boton" onClick={() => reset()}>
+                                <span>Intentar de nuevo</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div className={subscribed === false && subscribeError === false && alreadySubscribed === true ? "suscrito" : "no-suscrito"}>
+                    <div className="gracias">
+                        <h2>Hola de nuevo!</h2>
+                        <p>¡Gracias por tu interés en Sazones culinarios!
+                            <br />
+                            <br />
+                            ¡Parece que ya estás registrado con nosotros! Si crees que se trata de un error, por favor revisa los datos que ingresaste, de persistir el error, por favor contáctanos lo antes posible y te ayudaremos con mucho gusto!</p>
+                        <div className="boton-div">
+                            <button className="boton" onClick={() => reset()}>
+                                <span>Intentar de nuevo</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     )
