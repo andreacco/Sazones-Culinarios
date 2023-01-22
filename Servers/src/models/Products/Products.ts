@@ -8,9 +8,11 @@ export interface Products extends mongoose.Document{
     description: string,
     category: [string],
     cover_image: string,
+    mockups: [object],
     price: number,
     rating: [number],
-    links: [object]
+    links: [object],
+    beMaster: [object]
 }
 
 const ProductsSchema = new Schema({
@@ -34,6 +36,10 @@ const ProductsSchema = new Schema({
         type: String,
         required: true
     },
+    mockups: {
+        type: [Object],
+        required: true
+    },
     price: {
         type: Number,
         required: true
@@ -46,7 +52,11 @@ const ProductsSchema = new Schema({
     links: {
         type: [Object],
         default: []
-    }
+    },
+    beMaster: {
+        type: [Object],
+        default: []
+    },
 })
 
 ProductsSchema.plugin(paginate);

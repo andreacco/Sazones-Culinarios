@@ -350,3 +350,484 @@
         }]
     }
 ]
+
+
+
+{
+    "name": ""
+    "producer": ""
+    "description": ""
+    "category": [string]
+    "cover_image": ""
+    "mockups": [object]
+    "price": ""
+    "rating": [number]
+    "links": [object]
+    "beMaster": [object]
+}
+
+1 {
+    "name": "Gastronomía Internacional Online: 7 cursos incluidos",
+    "producer": "Cursos de Cocina",
+    "description": "¡YA CASI ESTÁS ADENTRO! Bienvenido al curso más completo de capacitación online gastronómica. Saber cocinar requiere técnica, y tu podrás aprenderla ahora mismo. Tener una alimentación variada, más saludable y apetitosa sin gastar de más será posible con este curso. Tus hijos, familia y amigos aplaudirán cada preparación que hagas. Podrás por fin independizarte, generar negocios y ver la luz en el ámbito del progreso personal y económico. ¡Capacítate desde hoy y mejora tus conocimientos!",
+    "category": ["Cocina", "Gastronomía"],
+    "cover_image": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1668023748/productos/Gastronom%C3%ADa%20Internacional:%207%20cursos%20incluidos/Gastronomia_internacional_aajgja.png",
+    "mockups": [{
+        "mockup-der": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1674175528/productos/Gastronom%C3%ADa%20Internacional:%207%20cursos%20incluidos/der-Gastronomiainternacional7c_hb7d5y.png",
+        "mockup-izq": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1674175528/productos/Gastronom%C3%ADa%20Internacional:%207%20cursos%20incluidos/izq-Gastronomiainternacional7c_b39bnj.png",
+        "mockup-cent": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1674175528/productos/Gastronom%C3%ADa%20Internacional:%207%20cursos%20incluidos/centro-Gastronomiainternacional7c_qkyixc.png",
+    }]
+    "price": "178",
+    "rating": [5],
+    "links": [{
+        "hotmart": "https://app.hotmart.com/market/details?producerUcode=f54ee082-38a1-43d7-aca5-69bf0c190071&productUcode=d6d219db-20f2-4685-8255-eb8046d0c06e&bookmarked=true", 
+            "infoAfiliados": "https://www.cursosdecocina.tv/afiliados", 
+            "grupoTelegram": "https://t.me/cursosdecocina_afiliados", 
+            "encuestaAfiliados": "https://form.typeform.com/to/fafUqnaC", 
+            "paginaVentas": "https://cursosdecocina.tv/cursos/gastronomia-online/?ref=X71601077I", 
+            "materialDivulgacion": {
+                "paginaVentas": "https://go.hotmart.com/X71601077I", 
+                "paginaProducto": "https://go.hotmart.com/X71601077I?dp=1", 
+                "LinkCrashing": "https://go.hotmart.com/X71601077I?ap=56cd", 
+                "Valor80DCTO95usd": "https://go.hotmart.com/X71601077I?ap=4017", 
+                "ValorNormal139usd": "https://go.hotmart.com/X71601077I?ap=bc69", 
+                "ModeloTweet": "El curso tiene módulos de repostería, panadería y cocina internacional. Además agregamos los cursos de especialidad de barista, coctelería, sushi y banquetería. Son más de 240 lecciones, videos y recetas para descargar. En total son 7 cursos ya disponibles en el programa.", 
+                "Video1": "https://www.youtube.com/watch?v=fol-IqWzUVI", 
+                "Video2": "https://www.youtube.com/watch?v=VVNb9MAT-1Q&t=1s"
+            }
+    }],
+    "beMaster": [{
+        "descripcion": ""
+    }],
+}
+2 {
+    "name": "Diplomado Online en Gastronomía Internacional",
+    "producer": "Cursos de Cocina",
+    "description": "Tomar un diplomado es por sobre todo un compromiso contigo mismo. Significa que te atreves a mejorar profesionalmente, a enfrentarte a nuevos retos y a superar con éxito lo que se te ponga por delante. Toma este desafío que te entrega cursosdecocina, la mejor escuela de gastronomía online, y puedes empezar desde hoy. Este diplomado de 23 módulos en línea es la herramienta más sólida que encontrarás en el mundo de la enseñanza gastronómica para capacitarte en forma integral en los más variados aspectos del arte del buen comer y beber. Hemos diseñado este sólido diplomado para ti, que trabajas o quieres trabajar en el área de la alimentación, si eres un emprendedor o deseas emprender en este rubro siempre demandado de la comida y la bebida.",
+    "category": ["Gastronomía", "Diplomado"],
+    "cover_image": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1668023744/productos/Diplomado%20online%20en%20Gastronom%C3%ADa%20Internacional/Diplomado_gastronomia_internacional_bvbyzi.png",
+    "mockups": [{
+        "mockup-der": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1674175528/productos/Diplomado%20online%20en%20Gastronom%C3%ADa%20Internacional/der-diplomadogastronomiainternacional14c_p9i9dk.png",
+        "mockup-izq": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1674175530/productos/Diplomado%20online%20en%20Gastronom%C3%ADa%20Internacional/izq-diplomadogastronomiainternacional14c_nwxclt.png",
+        "mockup-cent": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1674175528/productos/Diplomado%20online%20en%20Gastronom%C3%ADa%20Internacional/centro-diplomadogastronomiainternacional14c_mibnyj.png",
+    }],
+    "price": "178",
+    "rating": [5],
+    "links": [{
+        "hotmart": "https://app.hotmart.com/market/details?producerUcode=f54ee082-38a1-43d7-aca5-69bf0c190071&productUcode=03f1707d-2e29-4c76-ab8a-ba3ad9ffea28&bookmarked=false",
+            "paginaVentas": "https://cursosdecocina.tv/diplomado-online-en-gastronomia-internacional/?ref=P75690339C",
+            "materialDivulgacion": {
+                "paginaVentas": "https://go.hotmart.com/P75690339C",
+                "valorNormal178usd": "https://go.hotmart.com/P75690339C?ap=74a3",
+                "valorDCTO89usd": "https://go.hotmart.com/P75690339C?ap=f5da",
+                "driveMaterial": "https://drive.google.com/drive/folders/1WPuA8MJrI3dO834hc-l99VwdZGWripvN?usp=sharing"
+            }
+    }],
+    "beMaster": [{
+        "descripcion": "",
+    }],
+}
+3 {
+    "name": "Diplomado Online en Cocina Internacional",
+    "producer": "Cursos de Cocina",
+    "description": "Tomar un diplomado es por sobre todo un compromiso contigo mismo. Significa que te atreves a mejorar profesionalmente, a enfrentarte a nuevos retos y a superar con éxito lo que se te ponga por delante. Toma este desafío que te entrega cursosdecocina, la mejor escuela de gastronomía online, y puedes empezar desde hoy. ¡Cursos de cocina sorprende otra vez! ¡Conviértete en un experto en la comida y la bebida con este sensacional diplomado! ✓ Aprende las recetas de las más importantes cocinas de todo el mundo ✓ Conoce todos los secretos para preparar sushi como un verdadero profesional ✓ Prepara los más finos tragos con nuestro curso de coctelería Todo esto desde la comodidad de tu hogar y por una módica suma en comparación a todo el material que te ofrecemos. Este es el diplomado indicado si eres o quieres ser un emprendedor en el ámbito gastronómico, pues gracias a estos cursos completos que forman este diplomado podrás ampliar enormemente tu clientela.",
+    "category": ["Cocina", "Diplomado"],
+    "cover_image": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1668023743/productos/Diplomado%20online%20en%20cocina%20internacional/Diplomado_cocina_internacional_hussvm.png",
+    "mockups": [{
+        "mockup-der": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1674175529/productos/Diplomado%20online%20en%20cocina%20internacional/der-diplomadococinainternacional_mtbli7.png",
+        "mockup-izq": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1674175529/productos/Diplomado%20online%20en%20cocina%20internacional/izq-diplomadococinainternacional_n3gvid.png",
+        "mockup-cent": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1674175529/productos/Diplomado%20online%20en%20cocina%20internacional/centro-diplomadococinainternacional_walfpe.png",
+    }],
+    "price": "138",
+    "rating": [5],
+    "links": [{
+        "hotmart": "https://app.hotmart.com/market/details?producerUcode=f54ee082-38a1-43d7-aca5-69bf0c190071&productUcode=e6043603-1e10-43c7-a157-94a9761904a6&bookmarked=true", 
+            "paginaVentas": "https://cursosdecocina.tv/diplomado-online-en-cocina-internacional/?ref=O73473208F", 
+            "materialDivulgacion": {
+                "paginaVentas": "https://go.hotmart.com/O73473208F", 
+                "valorNormal138usd": "https://go.hotmart.com/O73473208F?ap=3f84", 
+                "valorDCTO69usd": "https://go.hotmart.com/O73473208F?ap=0a3b", 
+                "driveMaterial": "https://drive.google.com/drive/folders/1WPuA8MJrI3dO834hc-l99VwdZGWripvN?usp=sharing"
+            }
+    }],
+    "beMaster": [{
+        "descripcion": "",
+    }],
+}
+4 {
+    "name": "Diplomado Online de Repostería y Pastelería",
+    "producer": "Cursos de Cocina",
+    "description": "Tomar un diplomado es por sobre todo un compromiso contigo mismo. Significa que te atreves a mejorar profesionalmente, a enfrentarte a nuevos retos y a superar con éxito lo que se te ponga por delante. Toma este desafío que te entrega cursosdecocina, la mejor escuela de gastronomía online, y puedes empezar desde hoy. Tú que disfrutas preparando dulces y pasteles o trabajas en el ámbito de la panadería o repostería, tenemos una oferta especial para ti.¡Un completo diplomado de repostería y pastelería online con 8 magníficos módulos a un precio increíble! Aprende desde la comodidad de tu hogar ocho módulos que te harán un experto o experta en panadería artesanal, repostería y decoración, repostería vegana, repostería casera, creación de tortas modernas , chocolatería , pastelería sin gluten y pastelería vegana. ¡Haz magia con tu horno! ¡Sorprende a tus amigos, familia, o clientes con tus ricas creaciones!",
+    "category": ["Repostería", "Pastelería", "Decoración", "Diplomado"],
+    "cover_image": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1668023746/productos/Diplomado%20online%20en%20Reposter%C3%ADa%20y%20pasteler%C3%ADa/Diplomado_Reposteria_xpryot.png",
+    "mockups": [{
+        "mockup-der": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1674175531/productos/Diplomado%20online%20en%20Reposter%C3%ADa%20y%20pasteler%C3%ADa/der-diplomadoreposteriaypasteleria_axypy7.png",
+        "mockup-izq": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1674175530/productos/Diplomado%20online%20en%20Reposter%C3%ADa%20y%20pasteler%C3%ADa/izq-diplomadoreposteriaypasteleria_yljjv6.png",
+        "mockup-cent": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1674175529/productos/Diplomado%20online%20en%20Reposter%C3%ADa%20y%20pasteler%C3%ADa/centro-diplomadoreposteriaypasteleria_pypbsz.png",
+    }],
+    "price": "98",
+    "rating": [5],
+    "links": [{
+        "hotmart": "https://app.hotmart.com/market/details?producerUcode=f54ee082-38a1-43d7-aca5-69bf0c190071&productUcode=88d9f47a-3e9b-4e10-a603-54a6e976960b&bookmarked=true",
+            "paginaVentas": "https://cursosdecocina.tv/diplomado-online-reposteria-y-pasteleria/?ref=L73472998N", 
+            "materialDivulgacion": {
+                "paginaVentas": "https://go.hotmart.com/L73472998N", 
+                "valorNormal98usd": "https://go.hotmart.com/L73472998N?ap=5644", 
+                "valorDCTO49usd": "https://go.hotmart.com/L73472998N?ap=b089", 
+                "driveMaterial": "https://drive.google.com/drive/folders/1WPuA8MJrI3dO834hc-l99VwdZGWripvN?usp=sharing"
+    }],
+    "beMaster": [{
+        "descripcion": "",
+    }],
+}
+5 {
+    "name": "Pasteles con Diseño Interno",
+    "producer": "Pasteles con Diseño Interno",
+    "description": "¿Quieres ser pionero(a) de esta fabulosa técnica en tu país? En este curso aprenderás a hacer diseños dentro de tus pasteles, lo que te convertirá en la pastelera con mayor reconocimiento en tu rubro, además de darte un sin fin de beneficios como el incremento de tus ingresos. En este programa harás tu mejor inversión, ya que, tendrás e retorno de tu inversión en poco tiempo gracias a la cantidad de clientes nuevos que llegarán a tu negocio a consumir tus pasteles con diseños novedosos, serás pionero(a) en tu localidad, ciudad o país dónde te encuentres. Pero eso no es todo, te obsequiaremos talleres adicionales para complementar tu aprendizaje, por ello, hemos adicionado interesantes técnicas de pastelería moderna y un curso de marketing para pastelerías como introducción al curso. La vacantes son limitadas, aprovecha y registra tu participación a tiempo.",
+    "category": ["Decoracion", "Pastelería", "Repostería"],
+    "cover_image": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1668023744/productos/Pasteles%20con%20dise%C3%B1o%20interno/Pasteles_con_dise%C3%B1o_interno_cdzwf9.png",
+    "mockups": [{
+        "mockup-der": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1674175530/productos/Pasteles%20con%20dise%C3%B1o%20interno/der-pastelescondisenointerno_zuknph.png",
+        "mockup-izq": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1674175530/productos/Pasteles%20con%20dise%C3%B1o%20interno/izq-pastelescondisenointerno_zx0du5.png",
+        "mockup-cent": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1674175530/productos/Pasteles%20con%20dise%C3%B1o%20interno/centro-pastelescondisenointerno_fk78f0.png",
+    }],
+    "price": "140",
+    "rating": [5],
+    "links": [{
+        "hotmart": "https://app.hotmart.com/market/details?producerUcode=db3c48ed-3884-4dcb-924c-9e78437203ff&productUcode=02821f07-dd7b-4866-a386-e7a07abf7c9c&bookmarked=true", 
+        "infoAfiliados": "Gana hasta el 80% de comisión con este producto fabuloso, una técnica turca que revoluciona la pastelería contemporánea, Los clientes relacionados a este rubro estarán muy interesado por el novedoso método. El producto posee una alta taza de conversión con el precio base. (Revisa los hotlink alternativos) 🔥 Beneficios para afiliados: 30 ventas - 80% comisión * 📢IMPORTANTE❗❗❗ Para evitar reembolsos NO promocionar en Europa, porque hay algunos ingredientes difíciles de conseguir allá. RECOMENDADO promocionar sólo América del Norte, América del centro y América del sur. *Nos reservamos a realizar el cambio de porcentajes de beneficios según las fechas de promociones para afiliados. *Afiliados inactivos 10 días regresan a la comisión de ingreso.", 
+        "paginaVentas": "https://pasteleriamoderna.com/", 
+        "materialDivulgacion": {
+            "paginaVentas": "https://go.hotmart.com/U76260765N", 
+            "paginaProducto": "https://go.hotmart.com/U76260765N?dp=1", 
+            "checkout105usd": "https://go.hotmart.com/U76260765N?ap=5808", 
+            "checkout25usd": "https://go.hotmart.com/U76260765N?ap=1c17", 
+            "checkout60usd": "https://go.hotmart.com/U76260765N?ap=fe6e", 
+            "checkout35usd": "https://go.hotmart.com/U76260765N?ap=0f4d"
+    }],
+    "beMaster": [{
+        "descripcion": ""
+    }],
+}
+6 {
+    "name": "Aprende Cocina Vegana",
+    "producer": "EduClases by Flash Afiliados",
+    "description": "¿Has tenido como propósito cambiar tu alimentación a una más saludable y balanceada pero nunca llega ese momento de empezar?
+    ¿Has querido acercarte a un estilo de vida vegano pero no sabes cómo hacerlo? si tu respuesta es si, este curso es para ti.
+    En este curso online aprenderás recetas muy nutritivas, fáciles y sobre todo deliciosas. Así mismo vas a comprobar que una alimentación vegana también puede ser variada, económica y mucho más saludable que la tradicional.
+    Conoce con nuestro curso el estilo de vida vegano, las preparaciones, los pasteles y las técnicas culinarias con sabores increíbles que jamás imaginaste que existían.
+    Aprenderás a preparar un menú completo:
+    a. Sopa de quinua
+    b. Arroz oriental
+    c. Ensalada verde
+    d. Infusión de cúrcuma
+    e. Mermelada de chía
+    También aprenderás sobre postres y snacks:
+    a. Pie de frutos rojos.
+    b. Brownie sin gluten
+    c. Helado vegano
+    d. Flan de fruta
+    e. Crema de chocolate
+    Y muchas recetas más, ¡nos vemos adentro!",
+    "category": ["Cocina", "Vegana", "Saludable"],
+    "cover_image": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1674159516/productos/Aprende%20cocina%20vegana/Aprende_cocina_vegana_jx2mb5.png",
+    "mockups": [{
+        "mockup-der": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1674175203/productos/Aprende%20cocina%20vegana/der-aprendecocinavegana_udd81m.png",
+        "mockup-izq": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1674175203/productos/Aprende%20cocina%20vegana/izq-aprendecocinavegana_f423rt.png",
+        "mockup-cent": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1674175203/productos/Aprende%20cocina%20vegana/centro-aprendecocinavegana_ycyjih.png",
+    }],
+    "price": "50",
+    "rating": [5],
+    "links": [{
+        "hotmart": "https://app.hotmart.com/market/details?producerUcode=7576bfdc-7141-4a84-9f57-6a8674caf5ba&productUcode=61a712d6-7e00-4923-b0dd-eeac9c944a0d&bookmarked=true&searchId=",  
+        "infoAfiliados": "", 
+        "paginaVentas": "https://go.hotmart.com/R78434785E", 
+        "materialDivulgacion": {
+            "HotlinkQueLlevaASusProspectosAlCheckoutLimpioParaCrashing": "https://go.hotmart.com/R78434785E?ap=e717",
+            "CarpetaDrive": "https://drive.google.com/drive/folders/1Zg_F0_9yqqRs8lokBS1Z0gA-QUG4O3LB?usp=sharing".
+        }
+    }],
+    "beMaster": [{
+        "descripcion": "",
+    }],
+}
+7 {
+    "name": "Barista Princpiante",
+    "producer": "EduClases by Flash Afiliados",
+    "description": "",
+    "category": [""],
+    "cover_image": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1674159603/productos/Barista%20principiante/Barista_principiante_cry8tx.png",
+    "mockups": [{
+        "mockup-der": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1674175204/productos/Barista%20principiante/der-baristaprincipiante_zndq0j.png",
+        "mockup-izq": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1674175203/productos/Barista%20principiante/izq-baristaprincipiante_nfreen.png",
+        "mockup-cent": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1674175203/productos/Barista%20principiante/centro-baristaprincipiante_xxrqsb.png",
+    }],
+    "price": "",
+    "rating": [number],
+    "links": [{
+
+    }],
+    "beMaster": [{
+        "descripcion": "",
+    }],
+}
+8 {
+    "name": "Bartender para Princpiantes",
+    "producer": "EduClases by Flash Afiliados",
+    "description": "",
+    "category": [""],
+    "cover_image": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1674159449/productos/Bartender%20para%20principiantes/Bartender_para_principiantes_ac08me.png",
+    "mockups": [{
+        "mockup-der": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1674175204/productos/Bartender%20para%20principiantes/der-bartenderparaprincipiantes_ss5faz.png",
+        "mockup-izq": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1674175203/productos/Bartender%20para%20principiantes/izq-bartenderparaprincipiantes_mrfq4x.png",
+        "mockup-cent": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1674175204/productos/Bartender%20para%20principiantes/centro-bartenderparaprincipiantes_zedqug.png",
+    }],
+    "price": "",
+    "rating": [number],
+    "links": [{
+
+    }],
+    "beMaster": [{
+        "descripcion": "",
+    }],
+}
+9 {
+    "name": "Chocofresas Irresistibles",
+    "producer": "EduClases by Flash Afiliados",
+    "description": "",
+    "category": [""],
+    "cover_image": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1674159697/productos/Chocofresas%20irresistibles/Chocofresas_irresistibles_o4rvdv.png",
+    "mockups": [{
+        "mockup-der": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1674175206/productos/Chocofresas%20irresistibles/der-chocofresasiresistibles_myqtzy.png",
+        "mockup-izq": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1674175206/productos/Chocofresas%20irresistibles/izq-chocofresasiresistibles_ln9qid.png",
+        "mockup-cent": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1674175205/productos/Chocofresas%20irresistibles/centro-chocofresasiresistibles_rhjwpo.png",
+    }],
+    "price": "",
+    "rating": [number],
+    "links": [{
+
+    }],
+    "beMaster": [{
+        "descripcion": "",
+    }],
+}
+10 {
+    "name": "Cocina Mexicana",
+    "producer": "EduClases by Flash Afiliados",
+    "description": "",
+    "category": [""],
+    "cover_image": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1674159546/productos/Cocina%20Mexicana/Cocina_Mexicana_dda5pq.png",
+    "mockups": [{
+        "mockup-der": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1674175206/productos/Cocina%20Mexicana/der-cocinamexicana_dsisc7.png",
+        "mockup-izq": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1674175206/productos/Cocina%20Mexicana/izq-cocinamexicana_wwwg4w.png",
+        "mockup-cent": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1674175206/productos/Cocina%20Mexicana/centro-cocinamexicana_tbk2kx.png",
+    }],
+    "price": "",
+    "rating": [number],
+    "links": [{
+
+    }],
+    "beMaster": [{
+        "descripcion": "",
+    }],
+}
+11 {
+    "name": "Curso Chocolatería Online",
+    "producer": "Cursos de Cocina",
+    "description": "",
+    "category": [""],
+    "cover_image": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1674159781/productos/Curso%20Chocolater%C3%ADa%20Online/Chocolateria_dydtmg.png",
+    "mockups": [{
+        "mockup-der": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1674175207/productos/Curso%20Chocolater%C3%ADa%20Online/der-chocolateria_mqmnaz.png",
+        "mockup-izq": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1674175206/productos/Curso%20Chocolater%C3%ADa%20Online/izq-chocolateria_ccjbwn.png",
+        "mockup-cent": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1674175207/productos/Curso%20Chocolater%C3%ADa%20Online/centro-chocolateria_u3tpjt.png",
+    }],
+    "price": "",
+    "rating": [number],
+    "links": [{
+
+    }],
+    "beMaster": [{
+        "descripcion": "",
+    }],
+}
+12 {
+    "name": "Curso Cocina Árabe Online",
+    "producer": "Cursos de Cocina",
+    "description": "",
+    "category": [""],
+    "cover_image": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1674159726/productos/Curso%20Cocina%20%C3%81rabe/Cocina_arabe_twvafz.png",
+    "mockups": [{
+        "mockup-der": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1674175207/productos/Curso%20Cocina%20%C3%81rabe/der--cocinaarabe_ex0alt.png",
+        "mockup-izq": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1674175207/productos/Curso%20Cocina%20%C3%81rabe/izq-cocinaarabe_eh04yr.png",
+        "mockup-cent": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1674175208/productos/Curso%20Cocina%20%C3%81rabe/centro-cocinaarabe_pn0lps.png",
+    }],
+    "price": "",
+    "rating": [number],
+    "links": [{
+
+    }],
+    "beMaster": [{
+        "descripcion": "",
+    }],
+}
+13 {
+    "name": "Curso Cocina Brasilera Online",
+    "producer": "Cursos de Cocina",
+    "description": "",
+    "category": [""],
+    "cover_image": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1674159777/productos/Curso%20Cocina%20Brasilera/Cocina_brasilera_qdqkn1.png",
+    "mockups": [{
+        "mockup-der": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1674175209/productos/Curso%20Cocina%20Brasilera/der-cocinabrasilera_qootpo.png",
+        "mockup-izq": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1674175209/productos/Curso%20Cocina%20Brasilera/izq-cocinabrasilera_mfp7n1.png",
+        "mockup-cent": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1674175209/productos/Curso%20Cocina%20Brasilera/der-cocinabrasilera_qootpo.png",
+    }],
+    "price": "",
+    "rating": [number],
+    "links": [{
+
+    }],
+    "beMaster": [{
+        "descripcion": "",
+    }],
+}
+14 {
+    "name": "Curso Cocina Coreana Online",
+    "producer": "Cursos de Cocina",
+    "description": "",
+    "category": [""],
+    "cover_image": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1674159770/productos/Curso%20Cocina%20Coreana/Cocina_Coreana_dmnnl0.png",
+    "mockups": [{
+        "mockup-der": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1674175211/productos/Curso%20Cocina%20Coreana/der-cocinacoreana_tvrcc4.png",
+        "mockup-izq": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1674175210/productos/Curso%20Cocina%20Coreana/izq-cocinacoreana_khckp1.png",
+        "mockup-cent": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1674175210/productos/Curso%20Cocina%20Coreana/cento-cocinacoreana_kd5brd.png",
+    }],
+    "price": "",
+    "rating": [number],
+    "links": [{
+
+    }],
+    "beMaster": [{
+        "descripcion": "",
+    }],
+}
+15 {
+    "name": "Curso Cocina Francesa Online",
+    "producer": "Cursos de Cocina",
+    "description": "",
+    "category": [""],
+    "cover_image": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1674159837/productos/Curso%20Cocina%20Francesa/Cocina_Francesa_bjrm43.png",
+    "mockups": [{
+        "mockup-der": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1674175212/productos/Curso%20Cocina%20Francesa/der-cocinafrancesa_rvq85j.png",
+        "mockup-izq": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1674175212/productos/Curso%20Cocina%20Francesa/izq-cocinafrancesa_rxrff2.png",
+        "mockup-cent": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1674175212/productos/Curso%20Cocina%20Francesa/centro-cocinafrancesa_aqpgii.png",
+    }],
+    "price": "",
+    "rating": [number],
+    "links": [{
+
+    }],
+    "beMaster": [{
+        "descripcion": "",
+    }],
+}
+16 {
+    "name": "Curso Cocina India Online",
+    "producer": "Cursos de Cocina",
+    "description": "",
+    "category": [""],
+    "cover_image": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1674159829/productos/Curso%20Cocina%20India/Cocina_India_xfwejl.png",
+    "mockups": [{
+        "mockup-der": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1674175213/productos/Curso%20Cocina%20India/der-cocinaindia_hrwbxx.png",
+        "mockup-izq": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1674175212/productos/Curso%20Cocina%20India/izq-cocinaindia_aka9db.png",
+        "mockup-cent": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1674175212/productos/Curso%20Cocina%20India/centro-cocinaindia_acr0wh.png",
+    }],
+    "price": "",
+    "rating": [number],
+    "links": [{
+
+    }],
+    "beMaster": [{
+        "descripcion": "",
+    }],
+}
+17 {
+    "name": "Curso Cocina Mexicana Online",
+    "producer": "Cursos de Cocina",
+    "description": "",
+    "category": [""],
+    "cover_image": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1674159796/productos/Curso%20Cocina%20Mexicana/Cocina_Mexicana_Online_xzuers.png",
+    "mockups": [{
+        "mockup-der": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1674175213/productos/Curso%20Cocina%20Mexicana/der-cocinamexicanaonline_lvuob2.png",
+        "mockup-izq": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1674175213/productos/Curso%20Cocina%20Mexicana/izq-cocinamexicanaonline_vfnq3z.png",
+        "mockup-cent": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1674175213/productos/Curso%20Cocina%20Mexicana/centro-cocinamexicanaonline_eb9e0d.png",
+    }],
+    "price": "",
+    "rating": [number],
+    "links": [{
+
+    }],
+    "beMaster": [{
+        "descripcion": "",
+    }],
+}
+18 {
+    "name": "Curso Cocina Nikkei Online",
+    "producer": "Cursos de Cocina",
+    "description": "",
+    "category": [""],
+    "cover_image": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1674159941/productos/Curso%20Cocina%20Nikkei/Cocina_Nikkei_pt43tw.png",
+    "mockups": [{
+        "mockup-der": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1674175214/productos/Curso%20Cocina%20Nikkei/der-cocinanikkei_ph4cff.png",
+        "mockup-izq": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1674175213/productos/Curso%20Cocina%20Nikkei/izq-cocinanikkei_gtya41.png",
+        "mockup-cent": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1674175214/productos/Curso%20Cocina%20Nikkei/centro-cocinanikkei_uv82as.png",
+    }],
+    "price": "",
+    "rating": [number],
+    "links": [{
+
+    }],
+    "beMaster": [{
+        "descripcion": "",
+    }],
+}
+19 {
+    "name": "Curso Coctelería en Casa",
+    "producer": "Rafael dos Santos",
+    "description": "",
+    "category": [""],
+    "cover_image": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1674159636/productos/Curso%20cocteler%C3%ADa%20en%20casa/Cocteler%C3%ADa_en_casa_bmrua2.png",
+    "mockups": [{
+        "mockup-der": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1674175214/productos/Curso%20cocteler%C3%ADa%20en%20casa/der-cocteleriaencasa_kshtlq.png",
+        "mockup-izq": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1674175214/productos/Curso%20cocteler%C3%ADa%20en%20casa/izq-cocteleriaencasa_x3ctge.png",
+        "mockup-cent": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1674175215/productos/Curso%20cocteler%C3%ADa%20en%20casa/centro-cocteleriaencasa_a7rinh.png",
+    }],
+    "price": "",
+    "rating": [number],
+    "links": [{
+
+    }],
+    "beMaster": [{
+        "descripcion": "",
+    }],
+}
+20 {
+    "name": "Cerveza Artesanal Casera",
+    "producer": "Rafael dos Santos",
+    "description": "",
+    "category": [""],
+    "cover_image": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1674159722/productos/Cerveza%20artesanal%20casera/Cerveza_artesanal_wgb0lg.png",
+    "mockups": [{
+        "mockup-der": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1674175215/productos/Cerveza%20artesanal%20casera/der-cervezaartesanal_lmh1r7.png",
+        "mockup-izq": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1674175215/productos/Cerveza%20artesanal%20casera/izq-cervezaartesanal_eap1jp.png",
+        "mockup-cent": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1674175216/productos/Cerveza%20artesanal%20casera/centro-cervezaartesanal_glfwm1.png",
+    }],
+    "price": "",
+    "rating": [number],
+    "links": [{
+
+    }],
+    "beMaster": [{
+        "descripcion": "",
+    }],
+}
