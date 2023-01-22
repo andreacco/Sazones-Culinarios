@@ -16,7 +16,7 @@ function App() {
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Home/>} />
         <Route path='/productos' element={<ProductCard/>}/>
-        <Route path='/verificateUser/:id' element={<VerifyEmail/>}/>
+        <Route path='/:id' element={<VerifyEmail/>}/>
       </Routes>
       <Footer></Footer>
   </div>
