@@ -70,7 +70,7 @@ export const validate = (input: any, e: any, err: any) => {
         validatePhoneNumber(input)
     }
     
-    if (e === "name" || err.lastname.length > 1) {
+    if (e === "name" || err.name.length > 1) {
         validateName(input)
     }
 
