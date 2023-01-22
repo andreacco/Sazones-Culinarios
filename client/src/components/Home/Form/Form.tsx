@@ -80,7 +80,22 @@ const Form = () => {
             )
         }
         else if (errors.name || errors.lastname || errors.email || errors.phoneNumber || errors.interests) {
-            alert("Datos incorrectos")
+            const MySwal = withReactContent(Swal)
+            MySwal.fire({
+                html: <div className="alert">
+                        <h2 className='PopUpText'>
+                            Datos incorrectos!
+                        </h2>
+                    </div>,
+                background: "#a60715",
+                showConfirmButton: false,
+                confirmButtonAriaLabel: 'Ok',
+                timer: 2500,
+                buttonsStyling: false,
+                customClass: {
+                confirmButton: 'confirmButton'
+                }
+            })
         }
 
         else {
