@@ -2,6 +2,9 @@ import { useEffect, useState } from "react"
 import { useSelector } from "react-redux"
 import { useDispatch } from "react-redux"
 import { getAllCategories, subcribeUser, setTitle, resetSub } from '../../../redux/actions/index'
+import { validate } from './validate'
+import Swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content'
 import '../../../scss/components/Form.scss'
 import 'react-phone-number-input/style.css'
 import PhoneInput from 'react-phone-number-input'
@@ -17,13 +20,27 @@ const Form = () => {
         interests: [],
     })
 
+    const [errors, setErrors] = useState<any>({
+        name: "",
+        lastname: "",
+        email: "",
+        phoneNumber: "",
+        interests: "",
+    })
+
+    console.log(errors, "ERROOOOORS FORM");
+
     const handlePhone = (value: any) => {
         setInput({
             ...input,
-            "phoneNumber": value
+            phoneNumber: value
         })
+        setErrors(
+            validate({
+                ...input,
+            }, "phoneNumber", errors),
+        )
     }
-    
 
     const allCategories: any = useSelector((state: any) => state.categories)
     
@@ -39,14 +56,50 @@ const Form = () => {
     const handleSubmit = (e: any) => {
         ponerMayusculas()
         e.preventDefault()
-        dispatch(subcribeUser(input))
-        setInput({
-            name: "",
-            lastname: "",
-            email: "",
-            phoneNumber: "",
-            interests: [],
-        })
+        if (!input.name || !input.lastname || !input.email || !input.phoneNumber || !input.interests.length) {
+            const MySwal = withReactContent(Swal)
+            MySwal.fire({
+                html: <div className="alert">
+                        <h2 className='PopUpText'>
+                            Debes llenar todos los campos requeridos!
+                        </h2>
+                    </div>,
+                background: "#a60715",
+                showConfirmButton: false,
+                confirmButtonAriaLabel: 'Ok',
+                timer: 2500,
+                buttonsStyling: false,
+                customClass: {
+                confirmButton: 'confirmButton'
+                }
+            })
+            setErrors(
+                validate({
+                    ...input,
+                }, null, errors),
+            )
+        }
+        else if (errors.name || errors.lastname || errors.email || errors.phoneNumber || errors.interests) {
+            alert("Datos incorrectos")
+        }
+
+        else {
+            dispatch(subcribeUser(input))
+            setInput({
+                name: "",
+                lastname: "",
+                email: "",
+                phoneNumber: "",
+                interests: [],
+            })
+            setErrors({
+                name: "",
+                lastname: "",
+                email: "",
+                phoneNumber: "",
+                interests: [],
+            })
+        }
     }
     
     const handleChange = (e: any) => {
@@ -54,6 +107,12 @@ const Form = () => {
             ...input,
             [e.target.name]: e.target.value
         })
+        setErrors(
+            validate({
+                ...input,
+                [e.target.name]: e.target.value,
+            }, e.target.name, errors)
+        )
     }
     
     const handleSelect = (e: any) => {
@@ -63,6 +122,12 @@ const Form = () => {
                 interests: [...input.interests, e.target.value]
             }) 
         }
+        setErrors(
+            validate({
+                ...input,
+                interests: e.target.value,
+            }, "interests", errors)
+        )
     }
 
     const handleDelete = (c: any) => {
@@ -140,23 +205,32 @@ const Form = () => {
                         <div className="nombres">
                             <div className="input-groupy">
                                 <input required type="text" name="name" autoComplete="new-password" className="input" value={input.name} onChange={(e) => handleChange(e)} />
-                                <label className="user-label">Tu Nombre</label>
+                                <label className="user-label">Tu Nombre*</label>
+                                <div className="errors">
+                                    {errors.name.length > 1 && <p>{errors.name}</p>}
+                                </div>
                             </div>
                             <div className="input-groupy">
                                 <input required type="text" name="lastname" autoComplete="new-password" className="input" value={input.lastname} onChange={(e) => handleChange(e)}/>
-                                <label className="user-label">Tu Apellido</label>
+                                <label className="user-label">Tu Apellido*</label>
+                                <div className="errors">
+                                    {errors.lastname.length > 1 && <p>{errors.lastname}</p>}
+                                </div>
                             </div>
                         </div>
                         <div className="inputs-abajo">
                             <div className="input-groupy">
                                 <input required type="text" name="email" autoComplete="new-password" className="input" value={input.email} onChange={(e) => handleChange(e)}/>
-                                <label className="user-label">Tu mejor email</label>
+                                <label className="user-label">Tu mejor email*</label>
+                                <div className="errors">
+                                    {errors.email.length > 1 && <p>{errors.email}</p>}
+                                </div>
                             </div>
                         </div>
 
                         <div className="inputs-abajo">
                             <div className={clicked === true || input.phoneNumber.length > 1 ? "div-phone-input clicked" : "div-phone-input"} onClick={() => handleClicked()}>
-                                <label className="user-label-phone">Tu número de teléfono</label>
+                                <label className="user-label-phone">Tu número de teléfono*</label>
                                 <PhoneInput
                                     international
                                     countryCallingCodeEditable={false}
@@ -165,7 +239,11 @@ const Form = () => {
                                     className="phone-input"
                                     autoComplete="new-password"
                                     onClick={() => handleClicked()} 
-                                    labels={es} />
+                                    labels={es} 
+                                    maxlength="21"/>
+                                    <div className="errors">
+                                        {errors.phoneNumber.length > 1 && <p>{errors.phoneNumber}</p>}
+                                    </div>
                             </div>
                         </div> 
 
@@ -178,7 +256,10 @@ const Form = () => {
                                         return <option key={c} value={c}>{c}</option>
                                     })}
                                 </select>
-                                <label className="user-label">Tus áreas de interés</label>
+                                <label className="user-label">Tus áreas de interés*</label>
+                                <div className="errors">
+                                    {errors.interests.length > 1 && <p>{errors.interests}</p>}
+                                </div>
                             </div>
                         </div>
                         <div className="categories">
