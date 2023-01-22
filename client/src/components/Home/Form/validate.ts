@@ -82,7 +82,7 @@ export const validate = (input: any, e: any, err: any) => {
         validateEmail(input)
     }
     
-    if (e === "phoneNumber" || err.email.length > 1) {
+    if (e === "phoneNumber" || err.phoneNumber.length > 1) {
         validatePhoneNumber(input)
     }
     
