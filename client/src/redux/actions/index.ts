@@ -64,3 +64,15 @@ export const resetSub = () => {
         type: RESET
     }
 }
+
+
+export const verifyUser: any = (id: any) => {
+        return async () => {
+        try{
+            await axios.get(`http://localhost:5000/api/user/verified/${id}`)
+        }
+        catch(error) {
+            console.log(error, "error, actions");
+        }
+    }
+}

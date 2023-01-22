@@ -5,6 +5,7 @@ import PostProducts from './Products/PostProducts/index'
 import PostUsers from './Users/PostUsers/index'
 import PutUsers from './Users/PutUsers/index'
 import UnsubscribeUsers from './Users/UnsubscribeEmail/index'
+import EmailVerification from './Users/EmailVerification/index'
 
 const router = Router();
 
@@ -18,5 +19,6 @@ router.use('/', PostProducts)
 router.use('/user', PostUsers)
 router.use('/user', PutUsers)
 router.use('/user', UnsubscribeUsers)
+router.use('/user', EmailVerification)
 
 export default router

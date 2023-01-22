@@ -221,14 +221,14 @@ const Form = () => {
                             <div className="input-groupy">
                                 <input required type="text" name="name" autoComplete="new-password" className="input" value={input.name} onChange={(e) => handleChange(e)} />
                                 <label className="user-label">Tu Nombre*</label>
-                                <div className="errors">
+                                <div className="errors ErrNombres">
                                     {errors.name.length > 1 && <p>{errors.name}</p>}
                                 </div>
                             </div>
                             <div className="input-groupy">
                                 <input required type="text" name="lastname" autoComplete="new-password" className="input" value={input.lastname} onChange={(e) => handleChange(e)}/>
                                 <label className="user-label">Tu Apellido*</label>
-                                <div className="errors">
+                                <div className="errors ErrNombres">
                                     {errors.lastname.length > 1 && <p>{errors.lastname}</p>}
                                 </div>
                             </div>
