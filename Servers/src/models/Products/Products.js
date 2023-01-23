@@ -27,6 +27,10 @@ const ProductsSchema = new Schema({
         type: String,
         required: true
     },
+    mockups: {
+        type: [Object],
+        required: true
+    },
     price: {
         type: Number,
         required: true
@@ -39,7 +43,11 @@ const ProductsSchema = new Schema({
     links: {
         type: [Object],
         default: []
-    }
+    },
+    beMaster: {
+        type: [Object],
+        default: []
+    },
 });
 ProductsSchema.plugin(mongoose_paginate_v2_1.default);
 const Product = mongoose_1.default.model('Product', ProductsSchema);
