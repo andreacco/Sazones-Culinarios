@@ -17,8 +17,10 @@ const Products_1 = __importDefault(require("../../../models/Products/Products"))
 const router = (0, express_1.Router)();
 router.get('/getBestSellers', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     try {
-        const response = yield Products_1.default.find();
-        res.status(200).send(response);
+        const vendido = yield Products_1.default.find({ name: "Gastronomía Internacional Online: 7 cursos incluidos" });
+        const querido = yield Products_1.default.find({ name: "Aprende Cocina Vegana" });
+        const caliente = yield Products_1.default.find({ name: "Curso Chocolatería Online" });
+        res.status(200).send([vendido, caliente, querido]);
     }
     catch (error) {
         console.log(error);

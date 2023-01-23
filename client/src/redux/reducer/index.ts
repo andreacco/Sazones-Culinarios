@@ -1,7 +1,8 @@
-import { GET_ALL_PRODUCTS, SUBSCRIBE_USER, GET_ALL_CATEGORIES, SET_TITLE, RESET } from '../actions/index'
+import { GET_ALL_PRODUCTS, SUBSCRIBE_USER, GET_ALL_CATEGORIES, SET_TITLE, RESET, GET_BEST_SELLERS } from '../actions/index'
 
 const initialState: productState = {
     products: [],
+    bestSellers: [],
     categories: [],
     title: '',
     subscribeResponse: ''
@@ -13,6 +14,12 @@ const rootReducer = (state: productState = initialState, action: productAction):
             return {
                 ...state,
                 products: action.payload
+            }
+
+        case GET_BEST_SELLERS:
+            return {
+                ...state,
+                bestSellers: action.payload
             }
 
         case SUBSCRIBE_USER: 

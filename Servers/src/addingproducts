@@ -380,8 +380,8 @@
     "mockups": [{
         "mockup-der": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1674175528/productos/Gastronom%C3%ADa%20Internacional:%207%20cursos%20incluidos/der-Gastronomiainternacional7c_hb7d5y.png",
         "mockup-izq": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1674175528/productos/Gastronom%C3%ADa%20Internacional:%207%20cursos%20incluidos/izq-Gastronomiainternacional7c_b39bnj.png",
-        "mockup-cent": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1674175528/productos/Gastronom%C3%ADa%20Internacional:%207%20cursos%20incluidos/centro-Gastronomiainternacional7c_qkyixc.png",
-    }]
+        "mockup-cent": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1674175528/productos/Gastronom%C3%ADa%20Internacional:%207%20cursos%20incluidos/centro-Gastronomiainternacional7c_qkyixc.png"
+    }],
     "price": "178",
     "rating": [5],
     "links": [{
@@ -404,7 +404,7 @@
     }],
     "beMaster": [{
         "descripcion": ""
-    }],
+    }]
 }
 2 {
     "name": "Diplomado Online en Gastronomía Internacional",

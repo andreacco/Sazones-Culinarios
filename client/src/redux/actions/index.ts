@@ -1,5 +1,6 @@
 import axios from "axios"
 export const GET_ALL_PRODUCTS = "GET_ALL_PRODUCTS"
+export const GET_BEST_SELLERS = "GET_BEST_SELLERS"
 export const SUBSCRIBE_USER = "SUBSCRIBE_USER"
 export const GET_ALL_CATEGORIES = "GET_ALL_CATEGORIES"
 export const SET_TITLE = "SET_TITLE"
@@ -26,6 +27,20 @@ export const getAllCategories = () => async (dispatch:any) => {
         .then(response => response.data)
         .then(allCategories => {
             return dispatch({type: GET_ALL_CATEGORIES, payload: allCategories})
+        })
+    }
+    catch(error) {
+        console.log(error, "error, actions");
+    }
+}
+
+export const getBestSellers = () => async (dispatch:any) => {
+    try{
+        await axios.get('http://localhost:5000/api/getBestSellers')
+        // await axios.get('https://sazones-culinarios-back.onrender.com/api/getBestSellers')
+        .then(response => response.data)
+        .then(bestSellers => {
+            return dispatch({type: GET_BEST_SELLERS, payload: bestSellers})
         })
     }
     catch(error) {

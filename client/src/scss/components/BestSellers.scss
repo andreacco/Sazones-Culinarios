@@ -16,7 +16,6 @@
           align-items: center;
           justify-content: center;
         }
-        
         .card_box {
           width: 23em;
           height: 28em;
@@ -38,7 +37,7 @@
             justify-content: center;
           }
           .cinta-tarjeta::before {
-            content: 'Más Valorado';
+            // content: 'Más Valorado';
             position: absolute;
             width: 150%;
             height: 40px;
@@ -64,6 +63,16 @@
             box-shadow: 140px -140px #cc3f47;
             background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%);
           }
+          .nal::before {
+            content: 'Más Vendido';
+          }
+          .Aprende::before {
+            content: 'Más Caliente';
+          }
+          .ter::before {
+            content: 'Más Querido';
+          }
+
           .content{
             display: flex;
             flex-direction: column;
@@ -133,7 +142,5 @@
             }
           }
         }
-        
-        
     }
 }
