@@ -5,6 +5,7 @@ interface IProducts {
   type productState = {
     products: any
     bestSellers: any
+    bannerProducts: any
     categories: any
     title: any
     subscribeResponse: any

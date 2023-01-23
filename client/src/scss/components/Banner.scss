@@ -35,7 +35,7 @@
       height: 100%;
       object-fit: cover;
       object-position: top;
-      opacity: .6;
+      opacity: .75;
     }
   
     .text {
@@ -131,20 +131,23 @@
           transform: scale(0.95);
         }
 
-        .boton-Cocina-internacional{
-          background: rgb(78, 57, 42);
+        .Barista{
+          background: var(--producto-siete);
         }
 
-        .boton-bartender{
-          background: rgb(159, 132, 255);
+        .Bartender{
+          background: var(--producto-ocho);
         }
 
-        .boton-quesos{
-          background: rgb(120, 103, 16);
+        .Chocofresas{
+          background: var(--producto-nueve);
         }
 
-        .boton-catering{
-          background: rgb(217, 140, 94);
+        .Cor{
+          background: var(--producto-catorce);
+        }
+        .Nik{
+          background-color: var(--producto-dieciocho);
         }
       }
     }
