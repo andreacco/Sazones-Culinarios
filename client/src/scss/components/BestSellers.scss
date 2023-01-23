@@ -79,6 +79,10 @@
             justify-content: space-between;
             .imagen{
               padding: 1em 1em 0.2em 1em;
+              height: 22em;
+              width: 20em;
+              margin-left: 1.5em;
+              // size: 1em;
             }
             h5{
               font-family: var(--primary-font);
@@ -102,7 +106,6 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                background-color: #6d4d35;
       
                 .span-boton {
                   position: relative;
@@ -142,5 +145,20 @@
             }
           }
         }
-    }
+      }
+      .nal-card{
+        .boton{
+          background-color: var(--producto-uno);
+        }
+      }
+      .Aprende-card{
+        .boton{
+          background-color: var(--producto-seis);
+        }
+      }
+      .ter-card{
+        .boton{
+          background-color: var(--producto-once);
+        }
+      }
 }

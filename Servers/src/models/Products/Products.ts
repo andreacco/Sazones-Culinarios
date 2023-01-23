@@ -12,7 +12,7 @@ export interface Products extends mongoose.Document{
     price: number,
     rating: [number],
     links: [object],
-    beMaster: [object]
+    beMaster: [object],
 }
 
 const ProductsSchema = new Schema({
@@ -38,7 +38,7 @@ const ProductsSchema = new Schema({
     },
     mockups: {
         type: [Object],
-        required: true
+        default: []
     },
     price: {
         type: Number,

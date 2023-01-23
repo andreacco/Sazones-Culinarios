@@ -3,6 +3,7 @@ import GetAllProducts from './Products/GetAllProducts/index'
 import GetAllCategories from './Products/GetAllCategories/index'
 import PostProducts from './Products/PostProducts/index'
 import GetBestSellers from './Products/GetBestSellers/index'
+import GetBannerProducts from './Products/GetBannerProducts/index'
 import PostUsers from './Users/PostUsers/index'
 import PutUsers from './Users/PutUsers/index'
 import UnsubscribeUsers from './Users/UnsubscribeEmail/index'
@@ -18,6 +19,7 @@ router.use('/', GetAllProducts)
 router.use('/', GetAllCategories)
 router.use('/', PostProducts)
 router.use('/', GetBestSellers)
+router.use('/', GetBannerProducts)
 router.use('/user', PostUsers)
 router.use('/user', PutUsers)
 router.use('/user', UnsubscribeUsers)

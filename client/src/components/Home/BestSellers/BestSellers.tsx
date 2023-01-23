@@ -21,15 +21,24 @@ export default function BestSellers() {
       <div className='cards-container'>
         {bestSellers.map((p: any) => p.map((best: any) => {
           return (
-            <div className="container">
+            <div className={`container ${best.name.length > 39 ? 
+                                        `${best.name.slice(22,25)}-card` : 
+                                        best.name.split(" ")[0] === "Curso" ?
+                                        `${best.name.slice(13, 16)}-card` :
+                                        `${best.name.split(" ")[0]}-card`}`}>
                 <div className="card_box">
                     <span className={`cinta-tarjeta ${best.name.length > 39 ? 
-                                                            best.name.slice(22,25) : 
-                                                            best.name.split(" ")[0] === "Curso" ?
-                                                            best.name.slice(13, 16) :
-                                                            best.name.split(" ")[0]}`}></span>
+                                                      best.name.slice(22,25) : 
+                                                      best.name.split(" ")[0] === "Curso" ?
+                                                      best.name.slice(13, 16) :
+                                                      best.name.split(" ")[0]}`}></span>
                     <div className='content'>
-                      <img src={best.name.split(" ") === "Gastronomía" ? "" : ""} alt="" className='imagen'/>
+                      <img src={best.name.split(" ")[0] === "Gastronomía" ? 
+                                best.mockups[0].izq : 
+                                best.name.split(" ")[0] === "Curso" ?
+                                best.mockups[0].cent :
+                                best.mockups[0].der
+                              } alt="" className='imagen'/>
                       <h5>{best.name}</h5>
                       <div className='div-boton'>
                         <button className="boton" >

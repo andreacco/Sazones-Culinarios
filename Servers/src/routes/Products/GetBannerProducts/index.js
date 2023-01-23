@@ -12,19 +12,20 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const Products_1 = __importDefault(require("../../../models/Products/Products"));
 const express_1 = require("express");
+const Products_1 = __importDefault(require("../../../models/Products/Products"));
 const router = (0, express_1.Router)();
-router.post('/postProduct', (req, res, next) => __awaiter(void 0, void 0, void 0, function* () {
-    const { name, producer, description, category, cover_image, mockups, price, rating, links, beMaster } = req.body;
+router.get('/getBannerProducts', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     try {
-        // eslint-disable-next-line max-len
-        const prod = new Products_1.default({ name, producer, description, category, cover_image, mockups, price, rating, links, beMaster });
-        yield prod.save();
-        res.status(200).send('Product added succesfully');
+        const primero = yield Products_1.default.find({ name: "Barista Princpiante" });
+        const segundo = yield Products_1.default.find({ name: "Bartender para Princpiantes" });
+        const tercero = yield Products_1.default.find({ name: "Chocofresas Irresistibles" });
+        const cuarto = yield Products_1.default.find({ name: "Curso Cocina Coreana Online" });
+        const quinto = yield Products_1.default.find({ name: "Curso Cocina Nikkei Online" });
+        res.status(200).send([primero, segundo, tercero, cuarto, quinto]);
     }
     catch (error) {
-        next(error);
+        console.log(error);
     }
 }));
 exports.default = router;

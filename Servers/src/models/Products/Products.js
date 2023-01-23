@@ -29,7 +29,7 @@ const ProductsSchema = new Schema({
     },
     mockups: {
         type: [Object],
-        required: true
+        default: []
     },
     price: {
         type: Number,
