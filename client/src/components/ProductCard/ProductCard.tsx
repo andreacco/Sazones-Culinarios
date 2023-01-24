@@ -39,22 +39,4 @@ function ProductCard() {
     )
 }
 
-                    {/* <div key={p._id} className="card">
-                        <div className="header">
-                            <div className="img-box">
-                                <img src={p.cover_image} alt="cover-img" height={200}/>
-                            </div>
-                            <h1 className="title">{p.name}</h1>
-                        </div>
-
-                        <div className="content">
-                            <p>
-                                {(p.description).substring(0,90)}...
-                            </p>
-                            <button className="boton btn-link">
-                                <span>Más Información</span>
-                            </button>  
-                        </div>
-                    </div> */}
-
 export default ProductCard

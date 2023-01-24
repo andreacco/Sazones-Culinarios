@@ -21,8 +21,6 @@ const Banner = () => {
   const navigate = useNavigate()
 
   const bannerP = useSelector((state: any) => state.bannerProducts)
-  console.log(bannerP, "BANEEEEEER");
-  
   
   useEffect(() => {
     dispatch(getBannerProducts())
@@ -60,7 +58,7 @@ const Banner = () => {
                                 "https://res.cloudinary.com/dgcn9sprj/image/upload/v1674508192/Fondos%20Banner/coreana_b6msma.jpg" :
                                 "https://res.cloudinary.com/dgcn9sprj/image/upload/v1674510021/Fondos%20Banner/Nikkei_s1t07h.jpg"
                               } 
-                                alt='cocina-internacional-wallpaper' />
+                                alt='fondo-curso'/>
                       <div className="text">
                         <div className="div-Texto">
                           <h2 className="titulo">{pBanner.name}</h2>
@@ -68,7 +66,7 @@ const Banner = () => {
                         </div>
                         <div className="picture">
                           <section className="portada">
-                            <img src={pBanner.mockups[0].der} alt="Cocina-internacional" />
+                            <img src={pBanner.mockups[0].der} alt="product-image" />
                           </section>
                           <button className={`boton ${pBanner.name.length > 39 ? 
                                                       pBanner.name.slice(22,25) : 
@@ -85,90 +83,9 @@ const Banner = () => {
             )
           }
         </Swiper>
-          {/* <SwiperSlide>
-            <img src={cocinaInternacionalFondo} alt='cocina-internacional-wallpaper' />
-            <div className="text">
-              <div className="div-Texto">
-                <h2 className="titulo">Cocina internacional: 14 cursos incluidos</h2>
-                <p className="parrafo">Aprende cocina internacional y conviértete en el mejor chef de todos!</p>
-              </div>
-              <div className="picture">
-                <section className="portada">
-                  <img src={portadaCocinaInternacional} alt="Cocina-internacional" />
-                </section>
-                <button className="boton boton-Cocina-internacional" onClick={() => {navigate("/mangas/detail/62c855e1b65f7bbce6cadc81", { replace: true })}}>
-                  <span>Más Información</span>
-                </button>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={bartenderFondo} alt='' />
-            <div className="text">
-              <div className="div-Texto">
-                <h2 className="titulo">Bartender Profesional</h2>
-                <p className="parrafo">Diviertete mientras aprendes una de las mejores profesiones en el mundo culinario!.</p>
-              </div>
-              <div className="picture">
-                <section className="portada">
-                  <img src={portadaBartender} alt="Bartender" />
-                </section>
-                <button className="boton boton-bartender" onClick={() => {navigate("/mangas/detail/62c8580cb65f7bbce6cadc88", { replace: true })}}>
-                  <span>Más Información</span>
-                </button>  
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={quesosFondo} alt='' />
-            <div className="text">
-              <div className="div-Texto">
-                <h2 className="titulo">Elaboración de quesos artesanales</h2>
-                <p className="parrafo">Empieza a elaborar quesos artesanales y emprende tu negocio exitoso este 2023!</p>
-              </div>
-              <div className="picture">
-                <section className="portada">
-                  <img src={portadaQuesos} alt="" />
-                </section>
-                <button className="boton boton-quesos" onClick={() => {navigate("/mangas/detail/62c8f5e7b65f7bbce6cadcce", { replace: true })}}>
-                  <span>Más Información</span>
-                </button>  
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={cateringFondo} alt='' />
-            <div className="text">
-              <div className="div-Texto">
-                <h2 className="titulo">Catering de eventos</h2>
-                <p className="parrafo">Empieza un negocio exitoso y lidera el campo gastronómico!</p>
-              </div>
-              <div className="picture">
-                <section className="portada">
-                  <img src={portadaCatering} alt="" />
-                </section>
-                <button className="boton boton-catering" onClick={() => {navigate("/mangas/detail/62c8f5e7b65f7bbce6cadcce", { replace: true })}}> 
-                  <span>Más Información</span>
-                </button>  
-              </div>
-            </div>
-          </SwiperSlide> */}
+          
       </section>
   )
 };
 
 export default Banner;
-
-
-
-// import '../../../scss/Components/Banner/Banner.scss'
-
-// const Banner = () => {
-//   return (
-//     <div className='banner-container'>
-//       Banner
-//     </div>
-//   )
-// }
-
-// export default Banner

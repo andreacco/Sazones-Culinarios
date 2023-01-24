@@ -28,8 +28,6 @@ const Form = () => {
         interests: "",
     })
 
-    console.log(errors, "ERROOOOORS FORM");
-
     const handlePhone = (value: any) => {
         setInput({
             ...input,
