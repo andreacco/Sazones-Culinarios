@@ -1,9 +1,12 @@
 
 .appNavbar {
     display: flex;
-    background-color: var(--navbarBackground);
+    background-color: var(--blacky);
     justify-content: space-between;
     height: 17vh;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
     .left-side{
         display: flex;
         justify-content: space-between;
@@ -18,7 +21,7 @@
             font-size: 27px;
             text-align-last: right;
             margin-left: 10px;
-            color: var(--blacky);
+            color: var(--background);
             font-weight: 100;
         }
     }
@@ -30,6 +33,9 @@
         margin-right: 20px;
         .navBar-links{
             font-size: 20px;
+            a{
+                color: var(--background);
+            }
         }
         .container {
             position: relative;
@@ -79,7 +85,7 @@
         }
         
         svg {
-            color: var(--blacky);
+            color: var(--background);
         }
     }
 }
