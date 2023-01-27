@@ -18,17 +18,17 @@ function ProductCard() {
                 {productsArr?.map((p: any) => {
                     return (
                         <div className="card-container"  key={p._id}>
-                            <div className={`card ${p.name.length > 39 ? 
-                                                                p.name.slice(22,25) : 
-                                                                p.name.split(" ")[0] === "Curso" ?
-                                                                p.name.slice(13, 16) :
-                                                                p.name.split(" ")[0]}`}>
+                            <div className={`card ${p?.name.length > 39 ? 
+                                                                p?.name.slice(22,25) : 
+                                                                p?.name.split(" ")[0] === "Curso" ?
+                                                                p?.name.slice(13, 16) :
+                                                                p?.name.split(" ")[0]}`}>
                                 <div className="img-box">
-                                    <img src={p.cover_image} alt="cover-img" className="imagen"/>
+                                    <img src={p?.cover_image} alt="cover-img" className="imagen"/>
                                 </div>
                                 <div className="card-details">
-                                    <p className="text-title">{p.name}</p>
-                                    <p className="text-body">{(p.description).substring(0,90)}...</p>
+                                    <p className="text-title">{p?.name}</p>
+                                    <p className="text-body">{(p?.description).substring(0,90)}...</p>
                                 </div>
                                 <button className="card-button">Haz click para más información</button>
                             </div>

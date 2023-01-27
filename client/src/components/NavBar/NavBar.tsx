@@ -1,7 +1,7 @@
 import { useSelector } from "react-redux";
 import logo from '../../assets/logo.png'
 import SearchBar from "./SearchBar";
-import { Link, useParams } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { setTitle } from '../../redux/actions/index'
 import { useDispatch } from "react-redux";
 import { useEffect } from "react";
@@ -12,7 +12,6 @@ export default function NavBar() {
   const dispatch: any = useDispatch()
 
   const pages = ['Inicio', 'Nuestros Productos'];
-  const patch = useParams()
 
   const title: string = useSelector((state: any) => state.title)
 

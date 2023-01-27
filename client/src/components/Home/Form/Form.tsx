@@ -219,14 +219,14 @@ const Form = () => {
                                 <input required type="text" name="name" autoComplete="new-password" className="input" value={input.name} onChange={(e) => handleChange(e)} />
                                 <label className="user-label">Tu Nombre*</label>
                                 <div className="errors ErrNombres">
-                                    {errors.name.length > 1 && <p>{errors.name}</p>}
+                                    {errors.name?.length > 1 && <p>{errors.name}</p>}
                                 </div>
                             </div>
                             <div className="input-groupy">
                                 <input required type="text" name="lastname" autoComplete="new-password" className="input" value={input.lastname} onChange={(e) => handleChange(e)}/>
                                 <label className="user-label">Tu Apellido*</label>
                                 <div className="errors ErrNombres">
-                                    {errors.lastname.length > 1 && <p>{errors.lastname}</p>}
+                                    {errors.lastname?.length > 1 && <p>{errors.lastname}</p>}
                                 </div>
                             </div>
                         </div>
@@ -235,13 +235,13 @@ const Form = () => {
                                 <input required type="text" name="email" autoComplete="new-password" className="input" value={input.email} onChange={(e) => handleChange(e)}/>
                                 <label className="user-label">Tu mejor email*</label>
                                 <div className="errors">
-                                    {errors.email.length > 1 && <p>{errors.email}</p>}
+                                    {errors.email?.length > 1 && <p>{errors.email}</p>}
                                 </div>
                             </div>
                         </div>
 
                         <div className="inputs-abajo">
-                            <div className={clicked === true || input.phoneNumber.length > 1 ? "div-phone-input clicked" : "div-phone-input"} onClick={() => handleClicked()}>
+                            <div className={clicked === true || input.phoneNumber?.length > 1 ? "div-phone-input clicked" : "div-phone-input"} onClick={() => handleClicked()}>
                                 <label className="user-label-phone">Tu número de teléfono*</label>
                                 <PhoneInput
                                     international
@@ -254,7 +254,7 @@ const Form = () => {
                                     labels={es} 
                                     maxlength="21"/>
                                     <div className="errors">
-                                        {errors.phoneNumber.length > 1 && <p>{errors.phoneNumber}</p>}
+                                        {errors.phoneNumber?.length > 1 && <p>{errors.phoneNumber}</p>}
                                     </div>
                             </div>
                         </div> 
@@ -270,7 +270,7 @@ const Form = () => {
                                 </select>
                                 <label className="user-label">Tus áreas de interés*</label>
                                 <div className="errors">
-                                    {errors.interests.length > 1 && <p>{errors.interests}</p>}
+                                    {errors.interests?.length > 1 && <p>{errors.interests}</p>}
                                 </div>
                             </div>
                         </div>
