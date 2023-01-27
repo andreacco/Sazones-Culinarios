@@ -49,14 +49,14 @@ const Banner = () => {
                 return (
                     <SwiperSlide>
                       <img src={pBanner.name.split(" ")[0] === "Barista" ? 
-                                "https://res.cloudinary.com/dgcn9sprj/image/upload/v1674506242/Fondos%20Banner/barista2_oftj8t.jpg" : 
+                                "https://res.cloudinary.com/dgcn9sprj/image/upload/v1674780874/Fondos%20Banner/barista_xgy4kw.jpg" : 
                                 pBanner.name.split(" ")[0] === "Bartender" ?
-                                "https://res.cloudinary.com/dgcn9sprj/image/upload/v1674506619/Fondos%20Banner/bartender_yofbku.jpg" :
+                                "https://res.cloudinary.com/dgcn9sprj/image/upload/v1674780875/Fondos%20Banner/bartender_ei6zcs.jpg" :
                                 pBanner.name.split(" ")[0] === "Chocofresas" ?
-                                "https://res.cloudinary.com/dgcn9sprj/image/upload/v1674507534/Fondos%20Banner/chocofresas_wbgixr.jpg" :
+                                "https://res.cloudinary.com/dgcn9sprj/image/upload/v1674780875/Fondos%20Banner/chocofresas_in99ja.jpg" :
                                 pBanner.name.slice(13) === "Coreana Online" ?
-                                "https://res.cloudinary.com/dgcn9sprj/image/upload/v1674508192/Fondos%20Banner/coreana_b6msma.jpg" :
-                                "https://res.cloudinary.com/dgcn9sprj/image/upload/v1674510021/Fondos%20Banner/Nikkei_s1t07h.jpg"
+                                "https://res.cloudinary.com/dgcn9sprj/image/upload/v1674780878/Fondos%20Banner/coreana_wxno1a.jpg" :
+                                "https://res.cloudinary.com/dgcn9sprj/image/upload/v1674780876/Fondos%20Banner/Nikkei_a18bvo.jpg"
                               } 
                                 alt='fondo-curso'/>
                       <div className="text">
