@@ -9,8 +9,8 @@ export const RESET = "RESET"
 
 export const getAllProducts = () => async (dispatch:any) => {
     try{
-        await axios.get('http://localhost:5000/api/getAllProducts')
-        // await axios.get('https://sazones-culinarios-back.onrender.com/api/getAllProducts')
+        // await axios.get('http://localhost:5000/api/getAllProducts')
+        await axios.get('https://sazones-culinarios-back.onrender.com/api/getAllProducts')
         .then(response => response.data)
         .then(allProducts => {
             return dispatch({type: GET_ALL_PRODUCTS, payload: allProducts})
@@ -23,8 +23,8 @@ export const getAllProducts = () => async (dispatch:any) => {
 
 export const getAllCategories = () => async (dispatch:any) => {
     try{
-        await axios.get('http://localhost:5000/api/getAllCategories')
-        // await axios.get('https://sazones-culinarios-back.onrender.com/api/getAllCategories')
+        // await axios.get('http://localhost:5000/api/getAllCategories')
+        await axios.get('https://sazones-culinarios-back.onrender.com/api/getAllCategories')
         .then(response => response.data)
         .then(allCategories => {
             return dispatch({type: GET_ALL_CATEGORIES, payload: allCategories})
@@ -37,8 +37,8 @@ export const getAllCategories = () => async (dispatch:any) => {
 
 export const getBestSellers = () => async (dispatch:any) => {
     try{
-        await axios.get('http://localhost:5000/api/getBestSellers')
-        // await axios.get('https://sazones-culinarios-back.onrender.com/api/getBestSellers')
+        // await axios.get('http://localhost:5000/api/getBestSellers')
+        await axios.get('https://sazones-culinarios-back.onrender.com/api/getBestSellers')
         .then(response => response.data)
         .then(bestSellers => {
             return dispatch({type: GET_BEST_SELLERS, payload: bestSellers})
@@ -51,8 +51,8 @@ export const getBestSellers = () => async (dispatch:any) => {
 
 export const getBannerProducts: any = () => async (dispatch:any) => {
     try{
-        await axios.get('http://localhost:5000/api/getBannerProducts')
-        // await axios.get('https://sazones-culinarios-back.onrender.com/api/getBannerProducts')
+        // await axios.get('http://localhost:5000/api/getBannerProducts')
+        await axios.get('https://sazones-culinarios-back.onrender.com/api/getBannerProducts')
         .then(response => response.data)
         .then(bannerProducts => {
             return dispatch({type: GET_BANNER_PRODUCTS, payload: bannerProducts})
@@ -66,8 +66,8 @@ export const getBannerProducts: any = () => async (dispatch:any) => {
 export const subcribeUser = (newUser: Object) => {
         return async (dispatch:any) => {
         try{
-            var res = await axios.post('http://localhost:5000/api/user/postUser', newUser)
-            // let res = await axios.post('https://sazones-culinarios-back.onrender.com/api/user/postUser', newUser)
+            // var res = await axios.post('http://localhost:5000/api/user/postUser', newUser)
+            let res = await axios.post('https://sazones-culinarios-back.onrender.com/api/user/postUser', newUser)
             return dispatch({type: SUBSCRIBE_USER, payload: res.data})
         }
         catch(error) {
