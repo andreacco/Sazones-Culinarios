@@ -46,7 +46,6 @@ const Form = () => {
 
     useEffect(() => {
         dispatch(getAllCategories())
-        dispatch(setTitle())
         handleSubscribed()
     }, [dispatch, subResponse])
     

@@ -9,7 +9,7 @@
 
 import { useEffect } from "react"
 import { useDispatch } from "react-redux"
-import { setTitle, getAllProducts } from '../../redux/actions/index'
+import { setTitle } from '../../redux/actions/index'
 import Form from "./Form/Form"
 import Banner from "./Banner/Banner"
 import BestSellers from "./BestSellers/BestSellers"
@@ -22,7 +22,6 @@ const Home = () => {
 
     useEffect(() => {
         dispatch(setTitle())
-        dispatch(getAllProducts())
     }, [dispatch])
     
     return (
