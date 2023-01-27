@@ -265,7 +265,7 @@ const Form = () => {
                             <div className="input-groupy">
                                 <select name="interests" value={input.interests} onChange={(e) => handleSelect(e)} className="input">
                                     <option>Selecciona tus áreas de interés</option>
-                                    {allCategories.map((c: any) => {
+                                    {allCategories?.map((c: any) => {
                                         return <option key={c} value={c}>{c}</option>
                                     })}
                                 </select>
@@ -276,7 +276,7 @@ const Form = () => {
                             </div>
                         </div>
                         <div className="categories">
-                            {input.interests.map((c: any) =>
+                            {input.interests?.map((c: any) =>
                                 <div className='category'>
                                     <h5>{c}</h5>
                                     <div className="div-boton" >

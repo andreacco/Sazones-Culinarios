@@ -19,7 +19,7 @@ export default function BestSellers() {
     <div className='BestSellers-container'>
       <h2>BestSellers</h2>
       <div className='cards-container'>
-        {bestSellers.map((p: any) => p.map((best: any) => {
+        {bestSellers?.map((p: any) => p.map((best: any) => {
           return (
             <div className={`container ${best.name.length > 39 ? 
                                         `${best.name.slice(22,25)}-card` : 

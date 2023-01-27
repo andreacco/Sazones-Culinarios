@@ -27,7 +27,7 @@ export default function NavBar() {
         <h3 className="title">{title}</h3>
       </div>
       <div className="right-side">
-        {pages.map((p: any) => {
+        {pages?.map((p: any) => {
           return (
             <h5 key={p} className="navBar-links">
               <Link to={p === 'Inicio' ? '/' : '/productos'}>{p}</Link>

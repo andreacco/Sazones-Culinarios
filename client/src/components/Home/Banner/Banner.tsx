@@ -45,7 +45,7 @@ const Banner = () => {
         className="mySwiper"
         loop={true}
       >
-          {bannerP.map((p: any) => p.map((pBanner: any) => {
+          {bannerP?.map((p: any) => p.map((pBanner: any) => {
                 return (
                     <SwiperSlide>
                       <img src={pBanner.name.split(" ")[0] === "Barista" ? 
@@ -72,7 +72,8 @@ const Banner = () => {
                                                       pBanner.name.slice(22,25) : 
                                                       pBanner.name.split(" ")[0] === "Curso" ?
                                                       pBanner.name.slice(13, 16) :
-                                                      pBanner.name.split(" ")[0]}`} onClick={() => {navigate("/mangas/detail/62c855e1b65f7bbce6cadc81", { replace: true })}}>
+                                                      pBanner.name.split(" ")[0]}`} 
+                                                      onClick={() => {navigate(`/productos/${pBanner.id}`, { replace: true })}}>
                             <span>Más Información</span>
                           </button>
                         </div>
