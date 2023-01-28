@@ -4,7 +4,6 @@ import ProductCard from './components/ProductCard/ProductCard';
 import './App.scss'
 import NavBar from './components/NavBar/NavBar';
 import Footer from './components/Footer/Footer';
-import VerifyEmail from './components/VerifyEmail/VerifyEmail';
 
 function App() {
 
@@ -13,11 +12,12 @@ function App() {
   return (
     <div>
       <NavBar />
-      <Routes location={location} key={location.pathname}>
+
+      {/* <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Home/>} />
         <Route path='/productos' element={<ProductCard/>}/>
         <Route path='/confirmarEmail/:id' element={<VerifyEmail/>}/>
-      </Routes>
+      </Routes> */}
       <Footer></Footer>
   </div>
   )
