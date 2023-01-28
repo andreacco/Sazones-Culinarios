@@ -1,12 +1,13 @@
 import { useEffect } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import { verifyUser } from "../../redux/actions/index";
 import { useDispatch } from "react-redux";
+import '../../scss/components/VerifyEmail.scss'
 
 const VerifyEmail = () => {
   const { id } = useParams();
   const dispatch = useDispatch();
-  const navigate = useNavigate()
+
   console.log(id);
 
   useEffect(() => {
@@ -14,16 +15,26 @@ const VerifyEmail = () => {
   }, []);
 
   return (
-    <div className="container_verificate_account">
-      <div className="container_verificate_account_content">
-        <div>
-          <h1>WELCOME !</h1>
-          <p>Thank you for verifying your account; enjoy new features. </p>
-          <button className="button_forms_send_admin_interface" onClick={()=>{
-            navigate("/")
-          }}>
-            Enjoy MANGA COFFEE
-          </button>
+    <div className="container-verify-email">
+      <div className="container-verify-email-content">
+        <div className="container-interior">
+          <h1>¡Bienvenido a Sazones Culinarios!</h1>
+          <p>¡Muchísimas gracias por tu interés en sazones culinarios 
+            <br />
+            y por verificar tu correo!
+          </p>
+            <p>
+              ¡Ahora que estás verificado empezarás a recibir 
+              <br />
+              nuestros correos, según tus intereses!
+            </p>
+          <div className='div-boton'>
+            <Link to="/">
+              <button className="boton" >
+                <span className='span-boton'>¡Quiero disfrutar del contenido!</span>
+              </button>
+            </Link>
+          </div>
         </div>
       </div>
     </div>
