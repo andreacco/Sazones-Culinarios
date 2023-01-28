@@ -14,7 +14,11 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
       <RouterProvider router={router}/>
       {/* <Router>
           <App />
-      </Router> */}
+      </Router> 
+      https://sazones-culinarios.vercel.app/
+      https://sazones-culinarios.vercel.app/productos
+      https://sazones-culinarios.vercel.app/productos
+      */}
     </Provider>
   </React.StrictMode>
 )
