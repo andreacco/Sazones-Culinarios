@@ -3,7 +3,195 @@
     align-items: center;
     justify-content: center;
     height: 100px;
-    svg {
+    #facebook, .twitter {
         margin-left: 20px;
+    }
+    .instagram{
+        height: 2.8rem;
+        width: 2.8rem;
+        background: var(--blacky);
+        border-radius: 30%;
+        span{
+            border: 0.168rem solid var(--background);
+            border-radius: 100%;
+            right: 0.7rem;
+            top: 0.7rem;
+        }
+    }
+    .instagram:before{
+        border: 0.196rem solid var(--background);
+        width: 1.75rem;
+        height: 1.75rem;
+    }
+    .instagram:after{
+        border: 0.196rem solid var(--background);
+        border-radius: 100%;
+        width: 0.7rem;
+        height: 0.7rem;
+    }
+    
+    .instagram:hover{
+        height: 2.8rem;
+        width: 2.8rem;
+        border-radius: 30%;
+        span{
+            border: 0.168rem solid var(--background);
+            border-radius: 100%;
+            right: 0.7rem;
+            top: 0.7rem;
+        }
+    }
+
+    #facebook, #second, #fix_s, #fix_t {
+        background-color: var(--blacky);
+    }
+    #fix_s, #fix_t {
+        width: 0.19035em;
+        height: 0.06345em;
+    }
+    #first, #third, #fix_f {
+        background-color: var(--background);
+    }
+    #facebook {
+        // margin: 0.6345em auto;
+        margin-top: 0.6345em;
+        margin-bottom: 0.6345em;
+        padding: 0;
+        width: 2.538em;
+        height: 2.538em;
+        border-radius: 3.807em;
+        #first {
+            width: 0.82485em;
+            height: 2.0304em;
+            left: 1.1421em;
+            top: 0.5076em;
+            border-top-left-radius: 0.57105em;
+        }
+        #second {
+            width: 0.6345em;
+            height: 1.6497em;
+            left: 1.58625em;
+            top: -1.1421em;
+            border-top-left-radius: 0.19035em;
+        }
+        #third {
+            width: 1.0152em;
+            height: 0.3807em;
+            top: -2.4111em;
+            left: 0.82485em;
+        }
+        #fix_f {
+            width: 0.19035em;
+            height: 0.38709576em;
+            top: -2.80449em;
+            left: 1.71315em;
+            transform: rotate(0.71064deg);
+        }
+        #fix_s {
+            top: -3.24234576em;
+            left: 1.71315em;
+        }
+        #fix_t {
+            top: -35.770572em;
+            left: 1.71315em;
+        }
+    }
+
+    .twitter {
+        width: 4.21875em;
+        height: 4.21875em;
+        > div {
+            background-color: var(--blacky);    
+            &[class*="-none"]{
+                background-color: var(--background);
+            }
+        }
+        .head{
+            width: 1.0125em;
+            height: 1.0125em;
+            left: 2.08125em;
+            top: 1.096875em;
+        }
+        .body{
+            top: 0.225em;
+            left: 0.21105em;
+            width: 2.896875em;
+            height: 2.8968755em;
+        }
+        .body-none{
+            top: 0.7875em;
+            left: -0.084375em;
+            width: 2.109375em;
+            height: 2.109375em;
+        }
+        .beak-bottom{
+            width: 1.40625em;
+            height: 1.40625em;
+            left: 2.039175em;
+            top: 0.295425em;
+        }
+        .beak-bottom-none{
+            width: 1.6173em;
+            height: 1.6173em;
+            left: 2.1798em;
+            top: -0.196875em;
+        }
+        .beak-top{
+            width: 0.914175em;
+            height: 0.914175em;
+            left: 2.390625em;
+            top: 0.54855em;
+        }
+        .beak-top-none{
+            width: 1.6173em;
+            height: 1.6173em;
+            left: 2.025em;
+            top: -0.351675em;
+        }
+        .wing-bottom{
+            width: 0.984375em;
+            height: 0.984375em;
+            top: 1.701675em;
+            left: 1.125em;
+        }
+        .wing-bottom-none{
+            top: 1.490625em;
+            left: 0.815625em;
+            width: 0.84375em;
+            height: 0.84375em;
+        }
+        .wing-middle{
+            width: 1.2375em;
+            height: 1.026675em;
+            top: 1.33605em;
+            left: 0.95625em;
+        }
+        .wing-middle-none{
+            width: 2.25em;
+            height: 2.25em;
+            top: -0.351675em;
+            left: 0.28125em;
+        }
+        .wing-top{
+            width: 1.2375em;
+            height: 1.082925em;
+            top: 0.914175em;
+            left: 0.95625em;
+        }
+        .wing-top-none{
+            width: 2.8125em;
+            height: 2.8125em;
+            top: -1.082925em;
+            left: 0.745425em;
+        }
+    }
+    
+    .twitter:hover{
+        > div {
+            background-color: #2daae1;
+            &[class*="-none"]{
+                background-color: var(--background);
+            }
+        }
     }
 }

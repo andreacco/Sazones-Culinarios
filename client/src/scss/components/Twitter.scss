@@ -1,0 +1,104 @@
+.twitter {
+    position: relative;
+    width: 2.8125em;
+    height: 2.8125em;
+    margin: 0 auto;
+//     margin-top: 1.875em;
+    > div {
+        position: absolute;
+        background-color: var(--background);
+        border-radius: 100%;
+
+        &[class*="-none"]{
+            background-color: var(--blacky);
+        }
+    }
+    .head{
+        width: 0.675em;
+        height: 0.675em;
+        left: 1.3875em;
+        top: 0.73125em;
+        z-index: 1;
+    }
+    .body{
+        top: 0.15em;
+        left: 0.1407em;
+        width: 1.93125em;
+        height: 1.93125em;
+    }
+    .body-none{
+        top: 0.525em;
+        left: -0.05625em;
+        width: 1.40625em;
+        height: 1.40625em;
+    }
+    .beak-bottom{
+        width: 0.9375em;
+        height: 0.9375em;
+        left: 1.35945em;
+        top: 0.19695em;
+    }
+    .beak-bottom-none{
+        width: 1.0782em;
+        height: 1.0782em;
+        left: 1.4532em;
+        top: -0.13125em;
+    }
+    .beak-top{
+        width: 0.60945em;
+        height: 0.60945em;
+        left: 1.59375em;
+        top: 0.3657em;
+    }
+    .beak-top-none{
+        width: 1.0782em;
+        height: 1.0782em;
+        left: 1.35em;
+        top: -0.23445em;
+    }
+    .wing-bottom{
+        width: 0.65625em;
+        height: 0.65625em;
+        top: 1.13445em;
+        left: 0.75em;
+    }
+    .wing-bottom-none{
+        top: 0.99375em;
+        left: 0.54375em;
+        width: 0.5625em;
+        height: 0.5625em;
+    }
+    .wing-middle{
+        width: 0.825em;
+        height: 0.68445em;
+        top: 0.8907em;
+        left: 0.6375em;
+    }
+    .wing-middle-none{
+        width: 1.5em;
+        height: 1.5em;
+        top: -0.23445em;
+        left: 0.1875em;
+    }
+    .wing-top{
+        width: 0.825em;
+        height: 0.72195em;
+        top: 0.60945em;
+        left: 0.6375em;
+    }
+    .wing-top-none{
+        width: 1.875em;
+        height: 1.875em;
+        top: -0.72195em;
+        left: 0.49695em;
+    }
+}
+
+.twitter:hover{
+    > div {
+        background-color: #2daae1;
+        &[class*="-none"]{
+            background-color: var(--blacky);
+        }
+    }
+}

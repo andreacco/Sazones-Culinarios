@@ -13,9 +13,11 @@ import { setTitle } from '../../redux/actions/index'
 import Form from "./Form/Form"
 import Banner from "./Banner/Banner"
 import BestSellers from "./BestSellers/BestSellers"
-import { BsInstagram, BsFacebook, BsTwitter } from "react-icons/bs";
 import { Link } from "react-router-dom"
 import '../../scss/components/Home.scss'
+import Instagram from "../SocialMedia/Instagram"
+import Facebook from "../SocialMedia/Facebook"
+import Twitter from "../SocialMedia/Twitter"
 
 const Home = () => {
     const dispatch: any = useDispatch()
@@ -31,13 +33,13 @@ const Home = () => {
             <BestSellers/>
             <div className="RRSS-container">
                 <Link to='/'>
-                    <BsInstagram size={30}/>
+                    <Instagram/>
                 </Link>
                 <Link to='/'>
-                    <BsFacebook size={30}/>
+                    <Facebook/>
                 </Link>
                 <Link to='/'>
-                    <BsTwitter size={30}/>
+                    <Twitter/>
                 </Link>
             </div>
         </div>

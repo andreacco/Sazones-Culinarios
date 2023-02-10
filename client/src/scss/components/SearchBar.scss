@@ -1,0 +1,37 @@
+.container{
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  .input {
+    background: none;
+    border: none;
+    outline: none;
+    max-width: 190px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 9999px;
+    box-shadow: inset 2px 3px 13px 3px rgb(54 49 49);
+    color: #fff;
+  }
+      
+  .input:focus {
+    color: var(--yellowy);
+    background-color: #212121;
+    outline-color: var(--yellowy);
+    box-shadow: -0px -1px 15px 2px var(--yellowy);
+    transition: .1s;
+    transition-property: box-shadow;
+  }
+  .search{
+    position: absolute;
+    background: none;
+    svg{
+      color: var(--background);
+      margin-right: 10px;
+    }
+    svg:hover{
+      color: var(--redy);
+    }
+  }
+}
