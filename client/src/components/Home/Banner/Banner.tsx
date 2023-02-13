@@ -22,6 +22,11 @@ const Banner = () => {
 
   const bannerP = useSelector((state: any) => state.bannerProducts)
   
+  const handleClick = (name: any) => {
+    const productName = name.replace(/ /g,'')
+    navigate(`/${productName}`, { replace: true })
+  }
+
   useEffect(() => {
     dispatch(getBannerProducts())
 }, [dispatch])
@@ -73,7 +78,7 @@ const Banner = () => {
                                                       pBanner.name?.split(" ")[0] === "Curso" ?
                                                       pBanner.name?.slice(13, 16) :
                                                       pBanner.name?.split(" ")[0]}`} 
-                                                      /* onClick={() => {navigate(`/productos/${pBanner.id}`, { replace: true })}} */>
+                                                      onClick={() => handleClick(pBanner.name)}>
                             <span>Más Información</span>
                           </button>
                         </div>

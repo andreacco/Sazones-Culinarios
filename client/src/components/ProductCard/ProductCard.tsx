@@ -1,16 +1,23 @@
 import { useEffect } from "react"
 import { useDispatch, useSelector } from "react-redux"
+import { useNavigate } from "react-router-dom"
 import { getAllProducts } from "../../redux/actions"
 import '../../scss/components/Products.scss'
 
 function ProductCard() {
     const dispatch: any = useDispatch()
+    const navigate: any = useNavigate()
 
     useEffect(() => {
         dispatch(getAllProducts())
     }, [dispatch])
 
     const productsArr = useSelector((state: any) => state.products)
+
+    const handleClick = (name: any) => {
+        const productName = name.replace(/ /g,'')
+        navigate(`/${productName}`, { replace: true })
+    }
 
     return (
         <div className="products-container">
@@ -30,7 +37,7 @@ function ProductCard() {
                                     <p className="text-title">{p?.name}</p>
                                     <p className="text-body">{(p?.description).substring(0,90)}...</p>
                                 </div>
-                                <button className="card-button">Haz click para más información</button>
+                                <button className="card-button" onClick={() => handleClick(p.name)}>Haz click para más información</button>
                             </div>
                         </div>
                     )

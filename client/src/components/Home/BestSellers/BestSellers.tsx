@@ -1,11 +1,18 @@
 import { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
+import { useNavigate } from 'react-router-dom'
 import { getBestSellers } from '../../../redux/actions'
 import '../../../scss/components/BestSellers.scss'
 
 export default function BestSellers() {
 
   const dispatch: any = useDispatch()
+  const navigate: any = useNavigate()
+
+  const handleClick = (name: any) => {
+    const productName = name.replace(/ /g,'')
+    navigate(`/${productName}`, { replace: true })
+  }
 
   useEffect(() => {
       dispatch(getBestSellers())
@@ -40,7 +47,7 @@ export default function BestSellers() {
                               } alt="" className='imagen'/>
                       <h5>{best.name}</h5>
                       <div className='div-boton'>
-                        <button className="boton" >
+                        <button className="boton" onClick={() => handleClick(best.name)}>
                           <span className='span-boton'>Más Información</span>
                         </button>  
                       </div>

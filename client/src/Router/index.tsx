@@ -3,6 +3,7 @@ import Home from "../components/Home/Home";
 import ProductCard from '../components/ProductCard/ProductCard';
 import VerifyEmail from '../components/VerifyEmail/VerifyEmail';
 import NotFound from "../components/NotFound";
+import ProductDetail from "../components/ProductDetail";
 import Layout from "../Layout";
 
 
@@ -24,6 +25,14 @@ export const router = createBrowserRouter([
                 path: "/confirmarEmail/:id",
                 element: <VerifyEmail/>,
             },
+            {
+                path: "/search/:input",
+                element: <ProductDetail/>,
+            },
         ],
+    },
+    {
+        path: "/:name",
+        element: <ProductDetail/>,
     },
 ])
