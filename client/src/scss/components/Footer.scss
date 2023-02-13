@@ -3,7 +3,34 @@
     color: var(--background);
     height: 10rem;
     display: flex;
-    align-items: center;
     justify-content: center;
     font-size: 50px;
+    .container-info{
+        margin-left: 0;
+        display: flex;
+        align-items: center;
+        .img-logo{
+            margin-right: 0.2em;
+        }
+        .container-correo{
+            display: flex;
+            height: 100px;
+            align-items: flex-end;
+            .email-logo{
+                margin-bottom: 1px;
+            }
+            .correo{
+                margin-left: 5px;
+            }
+        }
+    }
+    .copyright{
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        margin-right: 0;
+        .texto-copyright{
+            color: rgb(128, 128, 128);
+        }
+    }
 }

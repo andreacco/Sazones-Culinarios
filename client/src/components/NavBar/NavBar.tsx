@@ -1,7 +1,7 @@
 import { useSelector } from "react-redux";
 import logo from '../../assets/logo.png'
 import SearchBar from "./SearchBar";
-import { Link, NavLink, useLocation, useNavigate } from 'react-router-dom'
+import { NavLink, useLocation } from 'react-router-dom'
 import { setTitle } from '../../redux/actions/index'
 import { useDispatch } from "react-redux";
 import { useEffect } from "react";
