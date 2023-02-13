@@ -1,7 +1,7 @@
 import { useSelector } from "react-redux";
 import logo from '../../assets/logo.png'
 import SearchBar from "./SearchBar";
-import { NavLink, useLocation } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import { setTitle } from '../../redux/actions/index'
 import { useDispatch } from "react-redux";
 import { useEffect } from "react";
@@ -14,9 +14,6 @@ import Twitter from "../SocialMedia/Twitter";
 export default function NavBar() {
   const dispatch: any = useDispatch()
   const goUp: any = useGoUp()
-  const location: any = useLocation()
-  console.log(location);
-  
 
   const pages = ['Inicio', 'Nuestros Productos'];
 

@@ -2,6 +2,7 @@ import axios from "axios"
 export const GET_ALL_PRODUCTS = "GET_ALL_PRODUCTS"
 export const GET_BEST_SELLERS = "GET_BEST_SELLERS"
 export const GET_BANNER_PRODUCTS = "GET_BANNER_PRODUCTS"
+export const GET_SEARCH_PRODUCTS = "GET_SEARCH_PRODUCTS"
 export const SUBSCRIBE_USER = "SUBSCRIBE_USER"
 export const GET_ALL_CATEGORIES = "GET_ALL_CATEGORIES"
 export const SET_TITLE = "SET_TITLE"
@@ -56,6 +57,20 @@ export const getBannerProducts: any = () => async (dispatch:any) => {
         .then(response => response.data)
         .then(bannerProducts => {
             return dispatch({type: GET_BANNER_PRODUCTS, payload: bannerProducts})
+        })
+    }
+    catch(error) {
+        console.log(error, "error, actions");
+    }
+}
+
+export const getBySearch: any = (name: any) => async (dispatch:any) => {
+    try{
+        await axios.get(`http://localhost:5000/api/getBySearch?name=${name}`)
+        // await axios.get('https://sazones-culinarios-back.onrender.com/api/getBySearch?name=${name}')
+        .then(response => response.data)
+        .then(foundProducts => {
+            return dispatch({type: GET_SEARCH_PRODUCTS, payload: foundProducts})
         })
     }
     catch(error) {
