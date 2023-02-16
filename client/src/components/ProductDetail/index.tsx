@@ -2,12 +2,13 @@ import { useEffect } from 'react'
 import { useDispatch } from 'react-redux'
 import { useParams } from 'react-router-dom'
 import { getProductDetail, reset } from '../../redux/actions'
-import '../../scss/components/ProductDetail.scss'
+import NavBar from './components/NavBar'
+import '../../scss/components/ProductDetail/ProductDetail.scss'
+import Title from './components/Title'
 
 export default function ProductDetail() {
     const dispatch: any = useDispatch()
     const { name, id } = useParams()
-    console.log(id)
 
     useEffect(() => {
         dispatch(getProductDetail(id))
@@ -18,7 +19,8 @@ export default function ProductDetail() {
 
     return (
         <div className='product-detail-container'>
-            <h1>{name}</h1>
+            <NavBar/>
+            <Title/>
         </div>
     )
 }

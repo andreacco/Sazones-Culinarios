@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Adamina&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Finlandica&display=swap');
 
 :root {
   /* fonts */
@@ -8,11 +11,16 @@
   font-family: --primary-font;
   --titulo-font: 'Lobster', cursive;
   --comida-font: 'Merienda', cursive;
+  --producto-titulos-font: 'Oswald', sans-serif;
+  --producto-subtitulos-font: 'Mulish', sans-serif;;
+  --producto-parrafos-font: 'Finlandica', sans-serif;
+
 
 
   /* colors */
   --blacky: #080808;
   --yellowy: #FFFD98;
+  --yellowy-stronger: #ffdb12;
   --redy: #E53D00;
   --navbarBackground: rgba(233, 233, 233, 0.747);
   --background: #fbfbfd;

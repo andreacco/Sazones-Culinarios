@@ -1,0 +1,11 @@
+.title-product-detail-container{
+    display: flex;
+    text-align: center;
+    .title-product-detail{
+        color: black;
+        font-family: var(--producto-titulos-font);
+        font-size: 6.5em;
+        font-weight: bolder;
+        text-transform: uppercase;
+    }
+}
