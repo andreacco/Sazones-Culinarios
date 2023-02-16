@@ -9,6 +9,7 @@ import PutUsers from './Users/PutUsers/index'
 import UnsubscribeUsers from './Users/UnsubscribeEmail/index'
 import EmailVerification from './Users/EmailVerification/index'
 import getBySearch from './Products/GetBySearch/index'
+import getById from './Products/GetProductById/index'
 
 const router = Router();
 
@@ -22,6 +23,7 @@ router.use('/', PostProducts)
 router.use('/', GetBestSellers)
 router.use('/', GetBannerProducts)
 router.use('/', getBySearch)
+router.use('/', getById)
 router.use('/user', PostUsers)
 router.use('/user', PutUsers)
 router.use('/user', UnsubscribeUsers)

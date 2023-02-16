@@ -1,7 +1,7 @@
 import { useEffect } from "react"
 import { useDispatch, useSelector } from "react-redux"
 import { useLocation } from "react-router-dom"
-import { getAllProducts } from "../../redux/actions"
+import { getAllProducts, getProductDetail } from "../../redux/actions"
 import ProductNotFound from "../NavBar/ProductNotFound"
 import Loader from "../Loader"
 import '../../scss/components/Products.scss'
@@ -17,9 +17,10 @@ function ProductCard() {
     const productsArr = useSelector((state: any) => state.products)
     const seachProductsArr = useSelector((state: any) => state.productSearch)
 
-    const handleClick = (name: any) => {
+    const handleClick = (name: any, id: any) => {
+        dispatch(getProductDetail(id))
         const productName = name.replace(/ /g,'')
-        window.open(`/${productName}`,'_blank')
+        window.open(`/${id}/${productName}`,'_blank')
     }
 
     const productsReturn = (p: any) => {
@@ -37,7 +38,7 @@ function ProductCard() {
                         <p className="text-title">{p?.name}</p>
                         <p className="text-body">{(p?.description).substring(0,90)}...</p>
                     </div>
-                    <button className="card-button" onClick={() => handleClick(p.name)}>Haz click para más información</button>
+                    <button className="card-button" onClick={() => handleClick(p.name, p._id)}>Haz click para más información</button>
                 </div>
             </div>
         )

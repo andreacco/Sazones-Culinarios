@@ -7,9 +7,9 @@ export default function BestSellers() {
 
   const dispatch: any = useDispatch()
 
-  const handleClick = (name: any) => {
+  const handleClick = (name: any, id: any) => {
     const productName = name.replace(/ /g,'')
-    window.open(`/${productName}`,'_blank')
+    window.open(`/${id}/${productName}`,'_blank')
   }
 
   useEffect(() => {
@@ -30,7 +30,7 @@ export default function BestSellers() {
                                         best.name?.split(" ")[0] === "Curso" ?
                                         `${best.name?.slice(13, 16)}-card` :
                                         `${best.name?.split(" ")[0]}-card`}`}
-                  key={best.id}>
+                  key={best._id}>
                 <div className="card_box">
                     <span className={`cinta-tarjeta ${best.name?.length > 39 ? 
                                                       best.name?.slice(22,25) : 
@@ -46,7 +46,7 @@ export default function BestSellers() {
                               } alt="" className='imagen'/>
                       <h5>{best.name}</h5>
                       <div className='div-boton'>
-                        <button className="boton" onClick={() => handleClick(best.name)}>
+                        <button className="boton" onClick={() => handleClick(best.name, best._id)}>
                           <span className='span-boton'>Más Información</span>
                         </button>  
                       </div>

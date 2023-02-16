@@ -20,9 +20,9 @@ const Banner = () => {
 
   const bannerP = useSelector((state: any) => state.bannerProducts)
   
-  const handleClick = (name: any) => {
+  const handleClick = (name: any, id: any) => {
     const productName = name.replace(/ /g,'')
-    window.open(`/${productName}`,'_blank')
+    window.open(`/${id}/${productName}`,'_blank')
   }
 
   useEffect(() => {
@@ -76,7 +76,7 @@ const Banner = () => {
                                                       pBanner.name?.split(" ")[0] === "Curso" ?
                                                       pBanner.name?.slice(13, 16) :
                                                       pBanner.name?.split(" ")[0]}`} 
-                                                      onClick={() => handleClick(pBanner.name)}>
+                                                      onClick={() => handleClick(pBanner.name, pBanner._id)}>
                             <span>Más Información</span>
                           </button>
                         </div>
