@@ -1,17 +1,20 @@
 import { useEffect } from 'react'
 import { useDispatch } from 'react-redux'
 import { useParams } from 'react-router-dom'
-import { getProductDetail } from '../../redux/actions'
+import { getProductDetail, reset } from '../../redux/actions'
 import '../../scss/components/ProductDetail.scss'
 
 export default function ProductDetail() {
     const dispatch: any = useDispatch()
     const { name, id } = useParams()
     console.log(id)
-    
+
     useEffect(() => {
         dispatch(getProductDetail(id))
-    })
+        return () => {
+            dispatch(reset());
+        }
+    }, [dispatch, id])
 
     return (
         <div className='product-detail-container'>
