@@ -22,12 +22,12 @@ export const router = createBrowserRouter([
                 element: <ProductCard/>,
             },
             {
-                path: "/confirmarEmail/:id",
-                element: <VerifyEmail/>,
+                path: "/productos/search/:input",
+                element: <ProductCard/>,
             },
             {
-                path: "/search/:input",
-                element: <ProductDetail/>,
+                path: "/confirmarEmail/:id",
+                element: <VerifyEmail/>,
             },
         ],
     },

@@ -6,6 +6,7 @@ export const GET_SEARCH_PRODUCTS = "GET_SEARCH_PRODUCTS"
 export const SUBSCRIBE_USER = "SUBSCRIBE_USER"
 export const GET_ALL_CATEGORIES = "GET_ALL_CATEGORIES"
 export const SET_TITLE = "SET_TITLE"
+export const RESET_SUB = "RESET_SUB"
 export const RESET = "RESET"
 
 export const getAllProducts = () => async (dispatch:any) => {
@@ -105,6 +106,12 @@ export const setTitle = () => {
 }
 
 export const resetSub = () => {
+    return { 
+        type: RESET_SUB
+    }
+}
+
+export const reset = () => {
     return { 
         type: RESET
     }

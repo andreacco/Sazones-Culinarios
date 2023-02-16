@@ -1,17 +1,15 @@
 import { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { useNavigate } from 'react-router-dom'
 import { getBestSellers } from '../../../redux/actions'
 import '../../../scss/components/BestSellers.scss'
 
 export default function BestSellers() {
 
   const dispatch: any = useDispatch()
-  const navigate: any = useNavigate()
 
   const handleClick = (name: any) => {
     const productName = name.replace(/ /g,'')
-    navigate(`/${productName}`, { replace: true })
+    window.open(`/${productName}`,'_blank')
   }
 
   useEffect(() => {
@@ -31,7 +29,8 @@ export default function BestSellers() {
                                         `${best.name?.slice(22,25)}-card` : 
                                         best.name?.split(" ")[0] === "Curso" ?
                                         `${best.name?.slice(13, 16)}-card` :
-                                        `${best.name?.split(" ")[0]}-card`}`}>
+                                        `${best.name?.split(" ")[0]}-card`}`}
+                  key={best.id}>
                 <div className="card_box">
                     <span className={`cinta-tarjeta ${best.name?.length > 39 ? 
                                                       best.name?.slice(22,25) : 

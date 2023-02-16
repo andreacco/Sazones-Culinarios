@@ -6,6 +6,7 @@ interface IProducts {
     products: any
     bestSellers: any
     bannerProducts: any
+    productSearch: any
     productDetail: any
     categories: any
     title: any

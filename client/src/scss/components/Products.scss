@@ -1,6 +1,7 @@
 .products-container{
     display: flex;
-    min-height: 100em;
+    justify-content: center;
+    min-height: 40em;
     // justify-content: space-between;
     .all-products{
       display: flex;
@@ -25,6 +26,7 @@
             justify-content: center;
             padding: 1em;
             .imagen{
+              border-radius: 0.8em;
               height: 17.5em;
             }
           }

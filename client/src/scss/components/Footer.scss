@@ -16,11 +16,15 @@
             display: flex;
             height: 100px;
             align-items: flex-end;
-            .email-logo{
-                margin-bottom: 1px;
-            }
-            .correo{
-                margin-left: 5px;
+            a{
+                color: white;
+                display: flex;
+                .email-logo{
+                    margin-bottom: 1px;
+                }
+                .correo{
+                    margin-left: 5px;
+                }
             }
         }
     }

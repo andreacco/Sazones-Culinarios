@@ -28,10 +28,12 @@ export default function StickyFooter() {
             src={logo}
           />
           <Container maxWidth="sm" className='container-correo'>
-            <MdEmail className='email-logo' size={25}/>
-            <Typography variant="body1" className='correo'>
-              sazonesculinarios9@gmail.com
-            </Typography>
+            <a href='mailto:sazonesculinarios9@gmail.com?Subject=Hola%20Sazones!%20Me%20gustaría%20contactarte'>
+              <MdEmail className='email-logo' size={25}/>
+              <Typography variant="body1" className='correo'>
+                sazonesculinarios9@gmail.com
+              </Typography>
+            </a>
           </Container>
         </Container>
         <Container maxWidth="sm" className='copyright'>

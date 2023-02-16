@@ -9,7 +9,6 @@ import "swiper/css/navigation";
 
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper";
-import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 import { useSelector } from 'react-redux';
@@ -18,13 +17,12 @@ import { useSelector } from 'react-redux';
 
 const Banner = () => {
   const dispatch = useDispatch()
-  const navigate = useNavigate()
 
   const bannerP = useSelector((state: any) => state.bannerProducts)
   
   const handleClick = (name: any) => {
     const productName = name.replace(/ /g,'')
-    navigate(`/${productName}`, { replace: true })
+    window.open(`/${productName}`,'_blank')
   }
 
   useEffect(() => {

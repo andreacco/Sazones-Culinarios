@@ -12,14 +12,21 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+/* eslint-disable @typescript-eslint/no-explicit-any */
 const express_1 = require("express");
 const Products_1 = __importDefault(require("../../../models/Products/Products"));
 const router = (0, express_1.Router)();
 router.get('/getBySearch', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     try {
         const { name } = req.query;
-        const productsFound = yield Products_1.default.find({ name: `${name}` });
-        res.status(200).send(productsFound);
+        const allProducts = yield Products_1.default.find();
+        const productsFound = allProducts.filter((p) => p.name.toLowerCase().includes(name.toLowerCase()));
+        if (productsFound.length) {
+            res.status(200).send(productsFound);
+        }
+        else {
+            res.status(201).send("not Found");
+        }
     }
     catch (error) {
         console.log(error);

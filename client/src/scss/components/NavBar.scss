@@ -13,16 +13,21 @@
         align-items: center;
         width: 15.5em;
         margin-left: 0.9em;
-        .logo{
-            height: 100px;
-        }
-        .title{
-            font-family: var(--titulo-font);
-            font-size: 27px;
-            text-align-last: right;
-            margin-left: 10px;
-            color: var(--background);
-            font-weight: 100;
+        .link-logo{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .logo{
+                height: 100px;
+            }
+            .title{
+                font-family: var(--titulo-font);
+                font-size: 27px;
+                text-align-last: right;
+                margin-left: 10px;
+                color: var(--background);
+                font-weight: 100;
+            }
         }
     }
     .right-side{

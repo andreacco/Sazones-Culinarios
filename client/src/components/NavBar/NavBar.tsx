@@ -1,8 +1,8 @@
 import { useSelector } from "react-redux";
 import logo from '../../assets/logo.png'
 import SearchBar from "./SearchBar";
-import { NavLink } from 'react-router-dom'
-import { setTitle } from '../../redux/actions/index'
+import { Link, NavLink } from 'react-router-dom'
+import { reset, setTitle } from '../../redux/actions/index'
 import { useDispatch } from "react-redux";
 import { useEffect } from "react";
 import '../../scss/components/NavBar.scss'
@@ -19,15 +19,22 @@ export default function NavBar() {
 
   const title: string = useSelector((state: any) => state.title)
 
-    useEffect(() => {
-        dispatch(setTitle())
-    }, [dispatch])
+  useEffect(() => {
+      dispatch(setTitle())
+  }, [dispatch])
+
+  const handleClick = () => {
+    goUp()
+    dispatch(reset())
+  }
 
   return (
     <div className="appNavbar">
       <div className="left-side">
-        <img src={logo} alt="logo-sazones-culinarios" className="logo"/>
-        <h3 className="title">{title}</h3>
+        <Link to='/' className="link-logo" onClick={() => handleClick()}>
+          <img src={logo} alt="logo-sazones-culinarios" className="logo"/>
+          <h3 className="title">{title}</h3>
+        </Link>
       </div>
       <div className="right-side">
         {pages?.map((p: any) => {
@@ -35,7 +42,8 @@ export default function NavBar() {
             <NavLink 
             to={p === 'Inicio' ? '/' : '/productos'} 
             className={({isActive}) => isActive ? "navBar-links active" : "navBar-links"} 
-            onClick={() => goUp()}>
+            onClick={() => handleClick()}
+            key={p} >
               {p}
             </NavLink>
           )
