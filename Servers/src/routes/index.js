@@ -15,6 +15,7 @@ const index_8 = __importDefault(require("./Users/UnsubscribeEmail/index"));
 const index_9 = __importDefault(require("./Users/EmailVerification/index"));
 const index_10 = __importDefault(require("./Products/GetBySearch/index"));
 const index_11 = __importDefault(require("./Products/GetProductById/index"));
+const index_12 = __importDefault(require("./Products/PutProducts/index"));
 const router = (0, express_1.Router)();
 router.get('/', (req, res) => {
     res.send('it works!');
@@ -26,6 +27,7 @@ router.use('/', index_4.default);
 router.use('/', index_5.default);
 router.use('/', index_10.default);
 router.use('/', index_11.default);
+router.use('/', index_12.default);
 router.use('/user', index_6.default);
 router.use('/user', index_7.default);
 router.use('/user', index_8.default);
