@@ -12,18 +12,19 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const express_1 = require("express");
 const Products_1 = __importDefault(require("../../../models/Products/Products"));
+const express_1 = require("express");
 const router = (0, express_1.Router)();
-router.get('/getById/:id', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+router.post('/putProduct/:id', (req, res, next) => __awaiter(void 0, void 0, void 0, function* () {
+    const updates = req.body;
+    const { id } = req.params;
     try {
-        const { id } = req.params;
-        const producto = yield Products_1.default.find({ _id: id });
-        const found = producto.shift();
-        res.status(200).send(found);
+        // eslint-disable-next-line max-len
+        yield Products_1.default.findByIdAndUpdate((id), { $push: { beMaster: [updates] } });
+        res.status(200).send('Product updated succesfully');
     }
     catch (error) {
-        console.log(error);
+        next(error);
     }
 }));
 exports.default = router;

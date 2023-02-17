@@ -5,17 +5,21 @@ import { getProductDetail, reset } from '../../redux/actions'
 import NavBar from './components/NavBar'
 import '../../scss/components/ProductDetail/ProductDetail.scss'
 import Title from './components/Title'
+import { useSelector } from 'react-redux'
 
 export default function ProductDetail() {
     const dispatch: any = useDispatch()
-    const { name, id } = useParams()
+    const { id } = useParams()
 
     useEffect(() => {
-        dispatch(getProductDetail(id))
+        dispatch(getProductDetail(id));
         return () => {
-            dispatch(reset());
-        }
-    }, [dispatch, id])
+          // willUnmount
+          //limpiar el estado cuando se desmonte
+        dispatch(reset());
+        };
+    }, [id, dispatch]);
+
 
     return (
         <div className='product-detail-container'>

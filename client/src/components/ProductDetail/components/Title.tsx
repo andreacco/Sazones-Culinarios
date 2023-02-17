@@ -15,7 +15,7 @@ export default function Title() {
             }}
         >
             <Typography variant="body1" className='title-product-detail'>
-                {product[0].name}
+                {product.name}
             </Typography>
         </Box>
     )
