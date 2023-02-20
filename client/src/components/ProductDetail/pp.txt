@@ -1,0 +1,135 @@
+
+Gastronomía Internacional Online: 7 cursos incluidos
+{
+    "fondo-titulo": "",
+    "fondo-texto": "",
+    "video": "",
+}
+
+Diplomado Online en Gastronomía Internacional
+{
+    "fondo-titulo": "",
+    "fondo-texto": "",
+    "video": "",
+}
+
+Diplomado Online en Cocina Internacional
+{
+    "fondo-titulo": "",
+    "fondo-texto": "",
+    "video": "",
+}
+
+Diplomado Online de Repostería y Pastelería
+{
+    "fondo-titulo": "",
+    "fondo-texto": "",
+    "video": "",
+}
+
+Pasteles con Diseño Interno
+{
+    "fondo-titulo": "",
+    "fondo-texto": "",
+    "video": "",
+}
+
+Aprende Cocina Vegana
+{
+    "fondo-titulo": "",
+    "fondo-texto": "",
+    "video": "",
+}
+
+Barista Principiante
+{
+    "fondo-titulo": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1676914312/Product%20pages/barista/barista_cpvgea.jpg",
+    "fondo-texto": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1676914031/Product%20pages/barista/coffee-3_fqxsv8.jpg",
+    "video": "https://youtu.be/a1XW2yO_sYA",
+}
+
+Bartender para Princpiantes
+{
+    "fondo-titulo": "",
+    "fondo-texto": "",
+    "video": "",
+}
+
+Chocofresas Irresistibles
+{
+    "fondo-titulo": "",
+    "fondo-texto": "",
+    "video": "",
+}
+
+Cocina Mexicana
+{
+    "fondo-titulo": "",
+    "fondo-texto": "",
+    "video": "",
+}
+
+Curso Chocolatería Online
+{
+    "fondo-titulo": "",
+    "fondo-texto": "",
+    "video": "",
+}
+
+Curso Cocina Árabe Online
+{
+    "fondo-titulo": "",
+    "fondo-texto": "",
+    "video": "",
+}
+
+Curso Cocina Brasilera Online
+{
+    "fondo-titulo": "",
+    "fondo-texto": "",
+    "video": "",
+}
+
+Curso Cocina Coreana Online
+{
+    "fondo-titulo": "",
+    "fondo-texto": "",
+    "video": "",
+}
+
+Curso Cocina Francesa Online
+{
+    "fondo-titulo": "",
+    "fondo-texto": "",
+    "video": "",
+}
+
+Curso Cocina India Online
+{
+    "fondo-titulo": "",
+    "fondo-texto": "",
+    "video": "",
+}
+
+Curso Cocina Mexicana Online
+{
+    "fondo-titulo": "",
+    "fondo-texto": "",
+    "video": "",
+}
+
+Curso Cocina Nikkei Online
+{
+    "fondo-titulo": "",
+    "fondo-texto": "",
+    "video": "",
+}
+
+Curso Coctelería en Casa
+{
+    "fondo-titulo": "",
+    "fondo-texto": "",
+    "video": "",
+}
+
+Cerveza Artesanal Casera

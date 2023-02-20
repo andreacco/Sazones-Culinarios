@@ -2,6 +2,9 @@
     display: flex;
     flex-direction: row;
     background-color: var(--redy);
+    position: fixed;
+    z-index: 100;
+    width: 100%;
     .navBar-product-detail{
         display: flex;
         justify-content: center;
@@ -18,7 +21,7 @@
             font-size: 1em;
             font-weight: bolder;
             border-radius: 2em;
-            box-shadow: -0px -1px 15px 2px #7c036c;
+            box-shadow: -0px -1px 15px 2px #ffae00;
         }
     }
 }
