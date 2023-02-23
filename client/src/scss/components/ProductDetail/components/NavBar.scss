@@ -1,10 +1,12 @@
 .navBar-product-detail-container{
     display: flex;
+    justify-content: center;
     flex-direction: row;
     background-color: var(--redy);
     position: fixed;
     z-index: 100;
     width: 100%;
+    padding: 1em;
     .navBar-product-detail{
         display: flex;
         justify-content: center;
@@ -15,13 +17,13 @@
             color: var(--background);
         }
         .boton-product-detail{
-            background-color: var(--yellowy);
             background-color: var(--yellowy-stronger);
             color: var(--blacky);
             font-size: 1em;
             font-weight: bolder;
             border-radius: 2em;
             box-shadow: -0px -1px 15px 2px #ffae00;
+            margin-right: 1.5em;
         }
     }
 }

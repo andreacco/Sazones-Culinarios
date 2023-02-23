@@ -1,0 +1,14 @@
+.description-container{
+    height: 10em;
+    padding: 1em;
+    padding-top: 3em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .descripcion-texts-container{
+        margin-left: 4em;
+    }
+    .info-boxes-container{
+        margin-right: 5em;
+    }
+}

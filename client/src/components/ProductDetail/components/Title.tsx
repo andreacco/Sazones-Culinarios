@@ -11,41 +11,21 @@ export default function Title() {
     const { name } = useParams()
 
     return (
-        <Box className='title-product-detail-container'
-            component="div"
-            sx={{
-            py: 3,
-            px: 2,
-            mt: 'auto',
-            padding: 0
-            }}
-        >
-            <Box
-            className="img-fondo"
-            component="img"
-            sx={{ height: 120 }}
-            alt="img-fondo"
-            src="https://res.cloudinary.com/dgcn9sprj/image/upload/v1674780874/Fondos%20Banner/barista_xgy4kw.jpg"
-            />
-            <Box
-                className="content-title-container"
-                component="div"
-            >
-                <Typography className={`title-product-detail ${name}`} variant='h1'>
-                    {product.name}
-                </Typography>
-                <Box className='video-container'
-                    component="div"
-                    sx={{
-                    py: 3,
-                    px: 2,
-                    mt: 'auto',
-                    padding: 0
-                    }}
-                >
-                    <iframe className='video'/* width="560" height="315" */ src="https://www.youtube.com/embed/a1XW2yO_sYA" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen/>
-                </Box>
-            </Box>
-        </Box>
+        <div className='title-product-detail-container'>
+            <div className='image-div'>
+                <img className="img-fondo"
+                    alt="img-fondo"
+                    src="https://res.cloudinary.com/dgcn9sprj/image/upload/v1674780874/Fondos%20Banner/barista_xgy4kw.jpg"
+                />
+                <h1 className={`title-product-detail ${name}`}>
+                {product.name}
+                </h1>
+                <iframe className='video' /* width="560" height="315"  */
+                        src="https://www.youtube.com/embed/a1XW2yO_sYA"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowFullScreen
+                />
+            </div>
+        </div>
     )
 }

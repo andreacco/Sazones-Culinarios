@@ -1,0 +1,12 @@
+.separator-container{
+    background-color: var(--yellowy-stronger);
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    box-shadow: -3px 1px 15px black;
+    .separator-text{
+        font-family: var(--producto-subtitulos-font);
+        font-size: 1.5em;
+        font-weight: bolder;
+    }
+}

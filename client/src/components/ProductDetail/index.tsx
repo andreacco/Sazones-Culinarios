@@ -3,9 +3,10 @@ import { useDispatch } from 'react-redux'
 import { useParams } from 'react-router-dom'
 import { getProductDetail, reset } from '../../redux/actions'
 import NavBar from './components/NavBar'
-import '../../scss/components/ProductDetail/ProductDetail.scss'
 import Title from './components/Title'
-import { useSelector } from 'react-redux'
+import Separator from './components/Separator'
+import Description from './components/Description'
+import '../../scss/components/ProductDetail/ProductDetail.scss'
 
 export default function ProductDetail() {
     const dispatch: any = useDispatch()
@@ -14,8 +15,6 @@ export default function ProductDetail() {
     useEffect(() => {
         dispatch(getProductDetail(id));
         return () => {
-          // willUnmount
-          //limpiar el estado cuando se desmonte
         dispatch(reset());
         };
     }, [id, dispatch]);
@@ -25,6 +24,8 @@ export default function ProductDetail() {
         <div className='product-detail-container'>
             <NavBar/>
             <Title/>
+            <Separator/>
+            <Description/>
         </div>
     )
 }

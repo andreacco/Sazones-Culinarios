@@ -1,0 +1,9 @@
+.timer-container{
+    display: flex;
+    align-items: center;
+    right: 0;
+    font-size: 1.3em;
+    color: var(--background);
+    z-index: 99;
+    width: 115px;
+}

@@ -1,5 +1,12 @@
 .product-detail-container{
     background-color: var(--background);
+    .separador-container{
+        background-color: aqua;
+        z-index: 100;
+        .separador-detail{
+            color: black;
+        }
+    }
     // height: 30em;
     // display: flex;
     // align-content: center;

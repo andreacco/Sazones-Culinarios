@@ -1,24 +1,18 @@
 .title-product-detail-container{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    height: 40em;
-    font-weight: bold;
-    .img-fondo{
+    .image-div{
         position: relative;
-        z-index: -1;
-        height: fit-content;
-        width: 99.4vw;
-    }
-    .content-title-container{
+        text-align: center;
+        width: 100%;
         display: flex;
-        justify-content: center;
-        flex-direction: column;
         align-items: center;
+        flex-direction: column;
+        .img-fondo{
+            width: 100%;
+            height: 110vh;
+        }
         .title-product-detail{
+            position: absolute;
+
             -webkit-text-stroke: 3px var(--background) /* var(--redy) */ /* var(--blacky) */ /* var(--yellowy) */;
             color: transparent;
             text-align: center;
@@ -27,9 +21,7 @@
             font-size: 8em;
             font-weight: bolder;
             position: absolute;
-            margin-top: -9em;
-    
-            // background-image: url('../../../../Images/coffee-3.jpg');
+            margin-top: 0.7em;
             background-size: cover;
             background-clip: text;
             -webkit-background-clip: text;
@@ -38,15 +30,11 @@
         .BaristaPrincipiante{
             background-image: url('../../../../Images/coffee-3.jpg');
         }
-    
-        .video-container{
-            display: flex;
-            position: absolute;
-            margin-top: -19em;
-            .video{
-                height: 35em;
-                width: 70em;
-            }
+        .video{
+            height: 39em;
+            width: 70em;
+            margin-top: -16em;
+            margin-bottom: 2.5em;
         }
     }
 }

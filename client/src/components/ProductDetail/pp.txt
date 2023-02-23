@@ -4,6 +4,25 @@ Gastronomía Internacional Online: 7 cursos incluidos
     "fondo-titulo": "",
     "fondo-texto": "",
     "video": "",
+    "dato": "",
+    "descripcion": "",
+    "detalles": "",
+    "malla": {
+        "": "",
+    },
+    "beneficios": {
+        "": "",
+    },
+    "alumnos": {
+        "": "",
+    },
+    "preguntas": {
+        "": "",
+    },
+    "": "",
+    "": "",
+    "": "",
+    "": "",
 }
 
 Diplomado Online en Gastronomía Internacional
@@ -11,6 +30,25 @@ Diplomado Online en Gastronomía Internacional
     "fondo-titulo": "",
     "fondo-texto": "",
     "video": "",
+    "dato": "",
+    "descripcion": "",
+    "detalles": "",
+    "malla": {
+        "": "",
+    },
+    "beneficios": {
+        "": "",
+    },
+    "alumnos": {
+        "": "",
+    },
+    "preguntas": {
+        "": "",
+    },
+    "": "",
+    "": "",
+    "": "",
+    "": "",
 }
 
 Diplomado Online en Cocina Internacional
@@ -18,6 +56,25 @@ Diplomado Online en Cocina Internacional
     "fondo-titulo": "",
     "fondo-texto": "",
     "video": "",
+    "dato": "",
+    "descripcion": "",
+    "detalles": "",
+    "malla": {
+        "": "",
+    },
+    "beneficios": {
+        "": "",
+    },
+    "alumnos": {
+        "": "",
+    },
+    "preguntas": {
+        "": "",
+    },
+    "": "",
+    "": "",
+    "": "",
+    "": "",
 }
 
 Diplomado Online de Repostería y Pastelería
@@ -25,6 +82,25 @@ Diplomado Online de Repostería y Pastelería
     "fondo-titulo": "",
     "fondo-texto": "",
     "video": "",
+    "dato": "",
+    "descripcion": "",
+    "detalles": "",
+    "malla": {
+        "": "",
+    },
+    "beneficios": {
+        "": "",
+    },
+    "alumnos": {
+        "": "",
+    },
+    "preguntas": {
+        "": "",
+    },
+    "": "",
+    "": "",
+    "": "",
+    "": "",
 }
 
 Pasteles con Diseño Interno
@@ -32,6 +108,25 @@ Pasteles con Diseño Interno
     "fondo-titulo": "",
     "fondo-texto": "",
     "video": "",
+    "dato": "",
+    "descripcion": "",
+    "detalles": "",
+    "malla": {
+        "": "",
+    },
+    "beneficios": {
+        "": "",
+    },
+    "alumnos": {
+        "": "",
+    },
+    "preguntas": {
+        "": "",
+    },
+    "": "",
+    "": "",
+    "": "",
+    "": "",
 }
 
 Aprende Cocina Vegana
@@ -39,6 +134,25 @@ Aprende Cocina Vegana
     "fondo-titulo": "",
     "fondo-texto": "",
     "video": "",
+    "dato": "",
+    "descripcion": "",
+    "detalles": "",
+    "malla": {
+        "": "",
+    },
+    "beneficios": {
+        "": "",
+    },
+    "alumnos": {
+        "": "",
+    },
+    "preguntas": {
+        "": "",
+    },
+    "": "",
+    "": "",
+    "": "",
+    "": "",
 }
 
 Barista Principiante
@@ -46,6 +160,25 @@ Barista Principiante
     "fondo-titulo": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1676914312/Product%20pages/barista/barista_cpvgea.jpg",
     "fondo-texto": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1676914031/Product%20pages/barista/coffee-3_fqxsv8.jpg",
     "video": "https://youtu.be/a1XW2yO_sYA",
+    "dato": "",
+    "descripcion": "",
+    "detalles": "",
+    "malla": {
+        "": "",
+    },
+    "beneficios": {
+        "": "",
+    },
+    "alumnos": {
+        "": "",
+    },
+    "preguntas": {
+        "": "",
+    },
+    "": "",
+    "": "",
+    "": "",
+    "": "",
 }
 
 Bartender para Princpiantes
@@ -53,6 +186,25 @@ Bartender para Princpiantes
     "fondo-titulo": "",
     "fondo-texto": "",
     "video": "",
+    "dato": "",
+    "descripcion": "",
+    "detalles": "",
+    "malla": {
+        "": "",
+    },
+    "beneficios": {
+        "": "",
+    },
+    "alumnos": {
+        "": "",
+    },
+    "preguntas": {
+        "": "",
+    },
+    "": "",
+    "": "",
+    "": "",
+    "": "",
 }
 
 Chocofresas Irresistibles
@@ -60,6 +212,25 @@ Chocofresas Irresistibles
     "fondo-titulo": "",
     "fondo-texto": "",
     "video": "",
+    "dato": "",
+    "descripcion": "",
+    "detalles": "",
+    "malla": {
+        "": "",
+    },
+    "beneficios": {
+        "": "",
+    },
+    "alumnos": {
+        "": "",
+    },
+    "preguntas": {
+        "": "",
+    },
+    "": "",
+    "": "",
+    "": "",
+    "": "",
 }
 
 Cocina Mexicana
@@ -67,6 +238,25 @@ Cocina Mexicana
     "fondo-titulo": "",
     "fondo-texto": "",
     "video": "",
+    "dato": "",
+    "descripcion": "",
+    "detalles": "",
+    "malla": {
+        "": "",
+    },
+    "beneficios": {
+        "": "",
+    },
+    "alumnos": {
+        "": "",
+    },
+    "preguntas": {
+        "": "",
+    },
+    "": "",
+    "": "",
+    "": "",
+    "": "",
 }
 
 Curso Chocolatería Online
@@ -74,6 +264,25 @@ Curso Chocolatería Online
     "fondo-titulo": "",
     "fondo-texto": "",
     "video": "",
+    "dato": "",
+    "descripcion": "",
+    "detalles": "",
+    "malla": {
+        "": "",
+    },
+    "beneficios": {
+        "": "",
+    },
+    "alumnos": {
+        "": "",
+    },
+    "preguntas": {
+        "": "",
+    },
+    "": "",
+    "": "",
+    "": "",
+    "": "",
 }
 
 Curso Cocina Árabe Online
@@ -81,6 +290,25 @@ Curso Cocina Árabe Online
     "fondo-titulo": "",
     "fondo-texto": "",
     "video": "",
+    "dato": "",
+    "descripcion": "",
+    "detalles": "",
+    "malla": {
+        "": "",
+    },
+    "beneficios": {
+        "": "",
+    },
+    "alumnos": {
+        "": "",
+    },
+    "preguntas": {
+        "": "",
+    },
+    "": "",
+    "": "",
+    "": "",
+    "": "",
 }
 
 Curso Cocina Brasilera Online
@@ -88,6 +316,25 @@ Curso Cocina Brasilera Online
     "fondo-titulo": "",
     "fondo-texto": "",
     "video": "",
+    "dato": "",
+    "descripcion": "",
+    "detalles": "",
+    "malla": {
+        "": "",
+    },
+    "beneficios": {
+        "": "",
+    },
+    "alumnos": {
+        "": "",
+    },
+    "preguntas": {
+        "": "",
+    },
+    "": "",
+    "": "",
+    "": "",
+    "": "",
 }
 
 Curso Cocina Coreana Online
@@ -95,6 +342,25 @@ Curso Cocina Coreana Online
     "fondo-titulo": "",
     "fondo-texto": "",
     "video": "",
+    "dato": "",
+    "descripcion": "",
+    "detalles": "",
+    "malla": {
+        "": "",
+    },
+    "beneficios": {
+        "": "",
+    },
+    "alumnos": {
+        "": "",
+    },
+    "preguntas": {
+        "": "",
+    },
+    "": "",
+    "": "",
+    "": "",
+    "": "",
 }
 
 Curso Cocina Francesa Online
@@ -102,6 +368,25 @@ Curso Cocina Francesa Online
     "fondo-titulo": "",
     "fondo-texto": "",
     "video": "",
+    "dato": "",
+    "descripcion": "",
+    "detalles": "",
+    "malla": {
+        "": "",
+    },
+    "beneficios": {
+        "": "",
+    },
+    "alumnos": {
+        "": "",
+    },
+    "preguntas": {
+        "": "",
+    },
+    "": "",
+    "": "",
+    "": "",
+    "": "",
 }
 
 Curso Cocina India Online
@@ -109,6 +394,25 @@ Curso Cocina India Online
     "fondo-titulo": "",
     "fondo-texto": "",
     "video": "",
+    "dato": "",
+    "descripcion": "",
+    "detalles": "",
+    "malla": {
+        "": "",
+    },
+    "beneficios": {
+        "": "",
+    },
+    "alumnos": {
+        "": "",
+    },
+    "preguntas": {
+        "": "",
+    },
+    "": "",
+    "": "",
+    "": "",
+    "": "",
 }
 
 Curso Cocina Mexicana Online
@@ -116,6 +420,25 @@ Curso Cocina Mexicana Online
     "fondo-titulo": "",
     "fondo-texto": "",
     "video": "",
+    "dato": "",
+    "descripcion": "",
+    "detalles": "",
+    "malla": {
+        "": "",
+    },
+    "beneficios": {
+        "": "",
+    },
+    "alumnos": {
+        "": "",
+    },
+    "preguntas": {
+        "": "",
+    },
+    "": "",
+    "": "",
+    "": "",
+    "": "",
 }
 
 Curso Cocina Nikkei Online
@@ -123,6 +446,25 @@ Curso Cocina Nikkei Online
     "fondo-titulo": "",
     "fondo-texto": "",
     "video": "",
+    "dato": "",
+    "descripcion": "",
+    "detalles": "",
+    "malla": {
+        "": "",
+    },
+    "beneficios": {
+        "": "",
+    },
+    "alumnos": {
+        "": "",
+    },
+    "preguntas": {
+        "": "",
+    },
+    "": "",
+    "": "",
+    "": "",
+    "": "",
 }
 
 Curso Coctelería en Casa
@@ -130,6 +472,25 @@ Curso Coctelería en Casa
     "fondo-titulo": "",
     "fondo-texto": "",
     "video": "",
+    "dato": "",
+    "descripcion": "",
+    "detalles": "",
+    "malla": {
+        "": "",
+    },
+    "beneficios": {
+        "": "",
+    },
+    "alumnos": {
+        "": "",
+    },
+    "preguntas": {
+        "": "",
+    },
+    "": "",
+    "": "",
+    "": "",
+    "": "",
 }
 
 Cerveza Artesanal Casera
