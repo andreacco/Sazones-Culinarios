@@ -12,6 +12,10 @@ export default function ProductDetail() {
     const dispatch: any = useDispatch()
     const { id } = useParams()
 
+    const textos: any = ["CURSO COMPLETO DE BARISTA PARA PRINCIPIANTES", "6 BENEFICIOS AL COMPRAR EL CURSO DE BARISTA"]
+    const texto1: any = textos.shift()
+    const texto2: any = textos.pop()
+    
     useEffect(() => {
         dispatch(getProductDetail(id));
         return () => {
@@ -24,8 +28,9 @@ export default function ProductDetail() {
         <div className='product-detail-container'>
             <NavBar/>
             <Title/>
-            <Separator/>
+            <Separator texto={texto1} />
             <Description/>
+            {/* <Separator texto={texto2} /> */}
         </div>
     )
 }

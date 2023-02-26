@@ -1,10 +1,10 @@
 import '../../../scss/components/ProductDetail/components/Separator.scss'
 
-export default function Separator() {
+export default function Separator({texto}: any) {
     return (
         <div className='separator-container'>
             <p className='separator-text'>
-                CURSO COMPLETO DE BARISTA PARA PRINCIPIANTES
+                {texto}
             </p>
         </div>
     )

@@ -1,14 +1,86 @@
 .description-container{
-    height: 10em;
-    padding: 1em;
-    padding-top: 3em;
+    // height: 10em;
+    padding: 3em 6em;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    .descripcion-texts-container, .info-boxes-container{
+        font-family: var(--producto-parrafos-font);
+        font-size: 1.29em;
+    }
     .descripcion-texts-container{
-        margin-left: 4em;
+        width: 33em;
     }
     .info-boxes-container{
-        margin-right: 5em;
+        width: 16em;
+        text-align: center;
+        .header-inscripcion{
+            background-color: var(--yellowy-stronger);
+            height: 5em;
+            border-top-right-radius: 1em;
+            border-top-left-radius: 1em;
+            padding: 0.8em;
+            h2{
+                font-family: var(--producto-titulos-font);
+                font-size: 1.3em;
+            }
+            p{
+                margin-top: 0.4em;
+            }
+        }
+        .content-inscripcion{
+            background-color: #cacaca98;
+            padding: 1em;
+            margin-bottom: 1em;
+            border-bottom-left-radius: 1em;
+            border-bottom-right-radius: 1em;
+            ul{
+                .list{
+                    .info{
+                        display: flex;
+                        justify-content: center;
+                        svg{
+                            color: green;
+                            margin-top: 0.9em;
+                            margin-right: 0.2em;
+                        }
+                        li{
+                            font-size: 0.95em;
+                            margin-top: 1em;
+                            margin-bottom: 1em;
+                        }
+                    }
+                    .divider{
+                        border: 1px solid #b4b4b4;
+                        width: 10em;
+                        margin-left: 2em;
+                    }
+                }
+            }
+        }
+
+        .pagos{
+            background-color: #cacaca98;
+            border-top-left-radius: 1em;
+            border-top-right-radius: 1em;
+            border-bottom-left-radius: 1em;
+            border-bottom-right-radius: 1em;
+            .header-pago, .content-pago-after{
+                padding: 1em;
+                h2{
+                    font-family: var(--producto-titulos-font);
+                    font-size: 1.2em;
+                }
+                p{
+                    margin-top: 0.6em;
+                }
+            }
+            .content-pago{
+                .pagos-img{
+                    height: 16em;
+                    width: 16em;
+                }
+            }
+        }
     }
 }
