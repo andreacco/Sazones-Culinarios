@@ -4,12 +4,25 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    // PARA EL FONDO NEGRO
+    background-color: var(--blacky);
+    
     .descripcion-texts-container, .info-boxes-container{
         font-family: var(--producto-parrafos-font);
         font-size: 1.29em;
     }
     .descripcion-texts-container{
         width: 33em;
+        
+        // PARA EL FONDO NEGRO
+        color: white;
+
+        .aqui-va-la-img{
+            margin-top: 1em;
+            width: 681.109px;
+            height: 722.391px;
+        }
     }
     .info-boxes-container{
         width: 16em;
@@ -34,6 +47,9 @@
             margin-bottom: 1em;
             border-bottom-left-radius: 1em;
             border-bottom-right-radius: 1em;
+
+            // PARA EL FONDO NEGRO
+            background-color: #DDDDDE;
             ul{
                 .list{
                     .info{
@@ -65,6 +81,9 @@
             border-top-right-radius: 1em;
             border-bottom-left-radius: 1em;
             border-bottom-right-radius: 1em;
+
+            // PARA EL FONDO NEGRO
+            background-color: #DDDDDE;
             .header-pago, .content-pago-after{
                 padding: 1em;
                 h2{

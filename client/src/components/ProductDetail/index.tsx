@@ -7,6 +7,15 @@ import Title from './components/Title'
 import Separator from './components/Separator'
 import Description from './components/Description'
 import '../../scss/components/ProductDetail/ProductDetail.scss'
+import Beneficios from './components/Beneficios'
+import BotonCompra from './components/BotonCompra'
+import Preparaciones from './components/Preparaciones'
+import PreguntasFrecuentes from './components/PreguntasFrecuentes'
+import BannerCompra from './components/BannerCompra'
+import Certificado from './components/Certificado'
+import Opiniones from './components/Opiniones'
+import Comunidad from './components/Comunidad'
+import Precios from './components/Precios'
 
 export default function ProductDetail() {
     const dispatch: any = useDispatch()
@@ -30,7 +39,16 @@ export default function ProductDetail() {
             <Title/>
             <Separator texto={texto1} />
             <Description/>
+            <Beneficios/>
             {/* <Separator texto={texto2} /> */}
+            <BotonCompra/>
+            <Preparaciones/>
+            <PreguntasFrecuentes/>
+            <BannerCompra/>
+            <Certificado/>
+            <Opiniones/>
+            <Comunidad/>
+            <Precios/>
         </div>
     )
 }

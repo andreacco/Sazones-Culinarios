@@ -15,6 +15,10 @@
         cursor: pointer;
         transition: all .5s ease;
         box-shadow: 4px -1px var(--blacky);
+
+        // PARA EL FONDO NEGRO
+        // background-color: #DDDDDE;
+        color: var(--blacky);
         svg{
             margin-right: 0.5em;
         }
@@ -36,6 +40,10 @@
         box-shadow: -0px -1px 11px 1px var(--blacky);
         border-bottom-right-radius: 1em;
         border-bottom-left-radius: 1em;
+
+        // PARA EL FONDO NEGRO
+        background-color: #ddddde;
+        color: black;
     }
     .bloque{
         padding: 1em;
