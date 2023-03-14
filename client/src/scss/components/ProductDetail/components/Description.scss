@@ -6,7 +6,7 @@
     justify-content: space-between;
 
     // PARA EL FONDO NEGRO
-    background-color: var(--blacky);
+    // background-color: var(--blacky);
     
     .descripcion-texts-container, .info-boxes-container{
         font-family: var(--producto-parrafos-font);
@@ -16,7 +16,7 @@
         width: 33em;
         
         // PARA EL FONDO NEGRO
-        color: white;
+        // color: white;
 
         .aqui-va-la-img{
             margin-top: 1em;
@@ -49,7 +49,7 @@
             border-bottom-right-radius: 1em;
 
             // PARA EL FONDO NEGRO
-            background-color: #DDDDDE;
+            // background-color: #DDDDDE;
             ul{
                 .list{
                     .info{
@@ -82,8 +82,8 @@
             border-bottom-left-radius: 1em;
             border-bottom-right-radius: 1em;
 
-            // PARA EL FONDO NEGRO
-            background-color: #DDDDDE;
+            // // PARA EL FONDO NEGRO
+            // background-color: #DDDDDE;
             .header-pago, .content-pago-after{
                 padding: 1em;
                 h2{
