@@ -16,6 +16,8 @@ import Certificado from './components/Certificado'
 import Opiniones from './components/Opiniones'
 import Comunidad from './components/Comunidad'
 import Precios from './components/Precios'
+import BlobSeparatorOpen from './components/BlobSeparatorOpen'
+import BlobSeparatorClose from './components/BlobSeparatorClose'
 
 export default function ProductDetail() {
     const dispatch: any = useDispatch()
@@ -41,10 +43,12 @@ export default function ProductDetail() {
             <Description/>
             <Beneficios/>
             {/* <Separator texto={texto2} /> */}
+            <BlobSeparatorOpen/>
             <BotonCompra/>
             <Preparaciones/>
             <PreguntasFrecuentes/>
             <BannerCompra/>
+            <BlobSeparatorClose/>
             <Certificado/>
             <Opiniones/>
             <Comunidad/>

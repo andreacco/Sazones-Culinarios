@@ -36,14 +36,13 @@
             margin-bottom: 2.5em;
 
             // PARA EL FONDO NEGRO
-            // margin-bottom: 7em;
-            // z-index: 1;
+            margin-bottom: 7em;
+            z-index: 1;
         }
-        // svg{
-        //     position: absolute;
-        //     bottom: 0;
-            // z-index: 0;
-            // height: 1em;
-        // }
+        svg{
+            position: absolute;
+            bottom: 0;
+            z-index: 0;
+        }
     }
 }

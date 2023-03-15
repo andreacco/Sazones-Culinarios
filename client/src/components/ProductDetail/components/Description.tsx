@@ -1,6 +1,7 @@
 import { AiOutlineCheckCircle } from "react-icons/ai";
 import pagos from '../../../Images/pagos.png'
 import Accordion from "./Accordion";
+import Bar from '../../../Images/bar.png'
 import '../../../scss/components/ProductDetail/components/Description.scss'
 
 export default function Description() {
@@ -12,7 +13,7 @@ export default function Description() {
         <div className='descripcion-texts-container'>
           <p> Si quieres convertirte en un profesional del café, éste es el primer paso. Prepárate para incorporarte al mercado laboral o amplía tus conocimientos en el área al certificarte en este curso de Barista Principiante. Al finalizar este curso darás el primer paso para trabajar en cafeterías, restaurantes o bares, deleitar a tu audiencia y preparar cafés clásicos y modernos de la manera correcta. </p>
           <div className="aqui-va-la-img">
-            <img src="https://res.cloudinary.com/dgcn9sprj/image/upload/v1678589269/productos/Barista%20principiante/malla-baristaprincipiante_qoo171.png" alt="" />
+            <img src={Bar} /* "https://res.cloudinary.com/dgcn9sprj/image/upload/v1678589269/productos/Barista%20principiante/malla-baristaprincipiante_qoo171.png" */ alt="" />
           </div>
           <Accordion/>
         </div>
