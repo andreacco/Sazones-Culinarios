@@ -1,0 +1,11 @@
+.footer-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blacky);
+    height: 5em;
+    .h1{
+        color: #ddddde8c;
+        font-size: 1.3em;
+    }
+}

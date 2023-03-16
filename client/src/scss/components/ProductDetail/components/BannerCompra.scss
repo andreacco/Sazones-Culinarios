@@ -38,13 +38,14 @@
                 color: var(--blacky);
                 border: 1px solid var(--redy);
                 border-radius: 250px;
-                padding: 0.8em 2em;
+                padding: 0.5em 0.2em;
                 background: #ffdf2b;
                 transition: 0.2s;
-                font-size: 1.4em;
+                font-size: 1.5em;
                 font-weight: bolder;
                 margin-bottom: 1em;
-                width: 17em;
+                width: 13em;
+                font-family: var(--producto-titulos-font);
             }
             .BotonCompraBanner:hover {
                 color: var(--blacky);

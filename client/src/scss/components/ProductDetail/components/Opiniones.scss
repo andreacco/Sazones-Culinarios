@@ -1,0 +1,150 @@
+.banner-opiniones {
+    height: 80vh;
+    overflow: hidden;
+    position: relative;
+    background: var(--blacky);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .h1{
+        font-family: var(--producto-titulos-font);
+        font-size: 2.5em;
+        color: #ddddde;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    .swiper {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: rgba(182, 176, 176, 0);
+        
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+    
+    .card {
+        .slide-1 {
+            box-shadow: 2px 2px 20px var(--yellowy-stronger), -2px -2px 20px var(--yellowy-stronger);
+            border-radius: 10em;
+            display: grid;
+            overflow: hidden;
+            justify-self: center;
+            align-self: center;
+            gap: 1em;
+            margin-left: 5em;
+            width: 13em;
+            height: 13em;
+            .me {
+                object-fit: cover;
+                width: 13em;
+                height: 13em;
+                }
+        }
+    }
+    .text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        z-index: 2;
+        padding: 1em;
+        text-align: justify;
+        align-items: center;
+        text-align-last: center;
+        margin-right: 5em;
+        margin-left: 1em;
+        font-size: 22px;
+        color: #ddddde;
+        h1{
+            font-family: var(--producto-titulos-font);
+            font-size: 1.3em;
+            margin-bottom: .3em;
+        }
+        .star{
+            color: var(--yellowy-stronger);
+            margin-right: .2em;
+            margin-bottom: .3em;
+        }
+        p{
+            // text-align: left;
+            // text-align-last: left;
+            font-family: var(--producto-parrafos-font);
+            font-size: .9em;
+        }
+    }
+}
+
+
+@media screen and (max-width: 780px) {
+    .banner-about-me {
+        height: 100vh;
+        .swiper {
+            margin-top: 5em;
+            width: 90%;
+            height: 90%;
+        }
+        
+        .swiper-slide {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+        
+        .card {
+            .slide-1 {
+                display: flex;
+                width: 15em;
+                height: 18em;
+                justify-self: center;
+                align-self: center;
+                margin-left: 0;
+                margin-top: 2em;
+                .me {
+                    object-fit: cover;
+                    width: 100%;
+                    }
+                .nature-img {
+                    object-fit: cover;
+                    width: 100%;
+                    height: 100%;
+                    }
+            }
+        }
+        .text {
+            width: 80%;
+            margin-left: 9em;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+            top: 0;
+            z-index: 2;
+            padding: 1em;
+            text-align: justify;
+            align-items: center;
+            text-align-last: center;
+            margin-right: 10em;
+            font-size: 22px;
+        }
+    }
+}

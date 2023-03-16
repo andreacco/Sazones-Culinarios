@@ -18,6 +18,7 @@ import Comunidad from './components/Comunidad'
 import Precios from './components/Precios'
 import BlobSeparatorOpen from './components/BlobSeparatorOpen'
 import BlobSeparatorClose from './components/BlobSeparatorClose'
+import Footer from './components/Footer'
 
 export default function ProductDetail() {
     const dispatch: any = useDispatch()
@@ -48,11 +49,12 @@ export default function ProductDetail() {
             <Preparaciones/>
             <PreguntasFrecuentes/>
             <BannerCompra/>
-            <BlobSeparatorClose/>
             <Certificado/>
             <Opiniones/>
-            <Comunidad/>
+            {/* <Comunidad/> */}
+            <BlobSeparatorClose/>
             <Precios/>
+            <Footer/>
         </div>
     )
 }
