@@ -16,17 +16,6 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        // .div-izq, .div-der{
-        //     display: flex;
-        //     // flex-direction: column;
-        //     flex-wrap: wrap;
-        // }
-        // .div-izq{
-        //     width: 1em;
-        // }
-        // .div-der{
-        //     width: 5em;
-        // }
         .div-cada-pregunta{
             margin-bottom: 1em;
             margin-right: 1.5em;
@@ -40,9 +29,8 @@
                 padding-top: 0.9em;
                 padding-bottom: 0.9em;
                 border-radius: 1em;
-                // transition: display .5s ease;
                 transition: .5s all;
-                z-index: 99999999;
+                position: relative;
                 .pregunta{
                     font-family: var(--producto-subtitulos-font);
                     font-size: 1.25em;
@@ -55,54 +43,146 @@
                 }
             } 
             .div-respuesta{
-                // display: none;
                 background: #313131;
                 max-width: 31em;
                 padding: 1em;
-                // height: 0;
-                // line-height: 30px;
-                // max-height: 0;
-                // opacity: 0;
-                // transition: .5s ease-in all;
-                // z-index: -99999;
-                // visibility: hidden;
-                
-                
                 opacity: 0;
                 max-height: 0;
                 overflow: hidden;
-                transition: opacity .4s linear, max-height .25s linear;
-                will-change: opacity, max-height;
+                transition: all 0.5s linear;
                 p{
                     font-family: var(--producto-subtitulos-font);
                     color: white;
                 }
             }
-            .activeTruePreg{
+        }
+        .open{
+            .div-pregunta{
                 border-bottom-left-radius: 0;
                 border-bottom-right-radius: 0;
                 border-top: 1px solid var(--yellowy-stronger);
                 border-right: 1px solid var(--yellowy-stronger);
                 border-left: 1px solid var(--yellowy-stronger);
-                
             }
-            .activeTrueRes{
-                // display: grid;
+            .div-respuesta{
+                max-height: 1000px;
+                opacity: 1;
                 border-bottom-left-radius: 1em;
                 border-bottom-right-radius: 1em;
                 border-right: 1px solid var(--yellowy-stronger);
                 border-left: 1px solid var(--yellowy-stronger);
                 border-bottom: 1px solid var(--yellowy-stronger);
-                // transition: .5s all;
-                opacity: 1;
-	            // margin-top: 20px;
-                // min-height: 4em;
-                max-height: 100%;
-                // visibility: visible;
-                p{
-                    color: white;
-                }
             }
         }
     }
 }
+
+
+// .div-PreguntasFrecuentes{
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//     background: var(--blacky);
+//     padding-top: 3em;
+    
+//     .title{
+//         font-family: var(--producto-titulos-font);
+//         font-size: 2.5em;
+//         color: #ddddde;
+//         margin-bottom: 1em;
+//     }
+//     .div-divs-preguntas{
+//         display: flex;
+//         flex-wrap: wrap;
+//         justify-content: space-between;
+//         // .div-izq, .div-der{
+//         //     display: flex;
+//         //     // flex-direction: column;
+//         //     flex-wrap: wrap;
+//         // }
+//         // .div-izq{
+//         //     width: 1em;
+//         // }
+//         // .div-der{
+//         //     width: 5em;
+//         // }
+//         .div-cada-pregunta{
+//             margin-bottom: 1em;
+//             margin-right: 1.5em;
+//             .div-pregunta{
+//                 cursor: pointer;
+//                 background: #313131;
+//                 display: flex;
+//                 align-items: center;
+//                 justify-content: space-between;
+//                 width: 31em;
+//                 padding-top: 0.9em;
+//                 padding-bottom: 0.9em;
+//                 border-radius: 1em;
+//                 // transition: display .5s ease;
+//                 transition: .5s all;
+//                 z-index: 99999999;
+//                 .pregunta{
+//                     font-family: var(--producto-subtitulos-font);
+//                     font-size: 1.25em;
+//                     color: var(--yellowy-stronger);
+//                     margin-left: 0.8em;
+//                 }
+//                 svg{
+//                     color: var(--yellowy-stronger);
+//                     margin-right: 0.5em;
+//                 }
+//             } 
+//             .div-respuesta{
+//                 // display: none;
+//                 background: #313131;
+//                 max-width: 31em;
+//                 padding: 1em;
+//                 // height: 0;
+//                 // line-height: 30px;
+//                 // max-height: 0;
+//                 // opacity: 0;
+//                 // transition: .5s ease-in all;
+//                 // z-index: -99999;
+//                 // visibility: hidden;
+                
+                
+//                 opacity: 0;
+//                 max-height: 0;
+//                 overflow: hidden;
+//                 transition: opacity .4s linear, max-height .25s linear, border-bottom-left-radius .25s linear, border-bottom-right-radius .25s linear;
+//                 will-change: opacity, max-height;
+//                 p{
+//                     font-family: var(--producto-subtitulos-font);
+//                     color: white;
+//                 }
+//             }
+//             .activeTruePreg{
+//                 border-bottom-left-radius: 0;
+//                 border-bottom-right-radius: 0;
+//                 border-top: 1px solid var(--yellowy-stronger);
+//                 border-right: 1px solid var(--yellowy-stronger);
+//                 border-left: 1px solid var(--yellowy-stronger);
+                
+//             }
+//             .activeTrueRes{
+//                 // display: grid;
+//                 border-bottom-left-radius: 1em;
+//                 border-bottom-right-radius: 1em;
+//                 border-right: 1px solid var(--yellowy-stronger);
+//                 border-left: 1px solid var(--yellowy-stronger);
+//                 border-bottom: 1px solid var(--yellowy-stronger);
+//                 // transition: .5s all;
+//                 opacity: 1;
+// 	            // margin-top: 20px;
+//                 // min-height: 4em;
+//                 max-height: 100%;
+//                 // visibility: visible;
+//                 p{
+//                     color: white;
+//                 }
+//             }
+//         }
+//     }
+// }
