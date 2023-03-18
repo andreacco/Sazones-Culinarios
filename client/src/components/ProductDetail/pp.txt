@@ -3,12 +3,12 @@ Gastronomía Internacional Online: 7 cursos incluidos
 {
     "fondo-titulo": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679117460/productos/Gastronom%C3%ADa%20Internacional:%207%20cursos%20incluidos/fondotitulocc_ebiz9k.jpg",
     "imagen-malla": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679070051/productos/Gastronom%C3%ADa%20Internacional:%207%20cursos%20incluidos/malla-gastronomiainternacional7c_hhppnq.jpg",
-        "video": "",
+    "video": "",
     "separator": "",
     "dato": "",
     "descripcion": {
-      "parrafoUno": "",
-      "parrafoDos": ""
+        "parrafoUno": "",
+        "parrafoDos": ""
     },
     "detalles": {
         "paraTi": ["", ""],
@@ -28,12 +28,12 @@ Diplomado Online en Gastronomía Internacional
 {
     "fondo-titulo": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679117973/productos/Diplomado%20online%20en%20Gastronom%C3%ADa%20Internacional/fondotitlecc_pbjprd.jpg",
     "imagen-malla": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679070051/productos/Diplomado%20online%20en%20Gastronom%C3%ADa%20Internacional/malla-diplomadogastronomiainternacional14c_egk6on.jpg",
-        "video": "",
+    "video": "",
     "separator": "",
     "dato": "",
     "descripcion": {
-      "parrafoUno": "",
-      "parrafoDos": ""
+        "parrafoUno": "",
+        "parrafoDos": ""
     },
     "detalles": {
         "paraTi": ["", ""],
@@ -53,12 +53,12 @@ Diplomado Online en Cocina Internacional
 {
     "fondo-titulo": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679118067/productos/Diplomado%20online%20en%20cocina%20internacional/fondotitlecc_ycylkc.jpg",
     "imagen-malla": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679070049/productos/Diplomado%20online%20en%20cocina%20internacional/malla-diplomadococinainternacional_ggotrg.jpg",
-        "video": "",
+    "video": "",
     "separator": "",
     "dato": "",
     "descripcion": {
-      "parrafoUno": "",
-      "parrafoDos": ""
+        "parrafoUno": "",
+        "parrafoDos": ""
     },
     "detalles": {
         "paraTi": ["", ""],
@@ -78,12 +78,12 @@ Diplomado Online de Repostería y Pastelería
 {
     "fondo-titulo": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679118180/productos/Diplomado%20online%20en%20Reposter%C3%ADa%20y%20pasteler%C3%ADa/fondotitlecc_b4zrlg.jpg",
     "imagen-malla": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679070055/productos/Diplomado%20online%20en%20Reposter%C3%ADa%20y%20pasteler%C3%ADa/malla-diplomadoreposteriaypasteleria_s5bvma.jpg",
-        "video": "",
+    "video": "",
     "separator": "",
     "dato": "",
     "descripcion": {
-      "parrafoUno": "",
-      "parrafoDos": ""
+        "parrafoUno": "",
+        "parrafoDos": ""
     },
     "detalles": {
         "paraTi": ["", ""],
@@ -103,12 +103,12 @@ Pasteles con Diseño Interno
 {
     "fondo-titulo": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679118245/productos/Pasteles%20con%20dise%C3%B1o%20interno/fondotitlecc_c8d4gc.jpg",
     "imagen-malla": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679070051/productos/Pasteles%20con%20dise%C3%B1o%20interno/malla-pastelescondise%C3%B1ointerno_s6wrut.jpg",
-        "video": "",
+    "video": "",
     "separator": "",
     "dato": "",
     "descripcion": {
-      "parrafoUno": "",
-      "parrafoDos": ""
+        "parrafoUno": "",
+        "parrafoDos": ""
     },
     "detalles": {
         "paraTi": ["", ""],
@@ -128,12 +128,12 @@ Aprende Cocina Vegana
 {
     "fondo-titulo": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679118356/productos/Aprende%20cocina%20vegana/fondotitlecc_z0fhgw.jpg",
     "imagen-malla": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679070051/productos/Aprende%20cocina%20vegana/malla-aprendecocinavegana_l41rkn.jpg",
-    "video": "",
+"video": "",
     "separator": "",
     "dato": "",
     "descripcion": {
-      "parrafoUno": "",
-      "parrafoDos": ""
+        "parrafoUno": "",
+        "parrafoDos": ""
     },
     "detalles": {
         "paraTi": ["", ""],
@@ -213,12 +213,12 @@ Bartender para Princpiantes
 {
     "fondo-titulo": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679118600/productos/Bartender%20para%20principiantes/fondotitlecc_rv8f5m.jpg",
     "imagen-malla": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679070050/productos/Bartender%20para%20principiantes/malla-bartenderparaprincipiantes_jdnusr.jpg",
-        "video": "",
+    "video": "",
     "separator": "",
     "dato": "",
     "descripcion": {
-      "parrafoUno": "",
-      "parrafoDos": ""
+        "parrafoUno": "",
+        "parrafoDos": ""
     },
     "detalles": {
         "paraTi": ["", ""],
@@ -238,12 +238,12 @@ Chocofresas Irresistibles
 {
     "fondo-titulo": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679118666/productos/Chocofresas%20irresistibles/fondotitlecc_szxxbt.jpg",
     "imagen-malla": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679070053/productos/Chocofresas%20irresistibles/malla-chocofresasirresistibles_ubozjk.jpg",
-        "video": "",
+    "video": "",
     "separator": "",
     "dato": "",
     "descripcion": {
-      "parrafoUno": "",
-      "parrafoDos": ""
+        "parrafoUno": "",
+        "parrafoDos": ""
     },
     "detalles": {
         "paraTi": ["", ""],
@@ -263,12 +263,12 @@ Cocina Mexicana
 {
     "fondo-titulo": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679118734/productos/Cocina%20Mexicana/fondotitlecc_k8fswn.jpg",
     "imagen-malla": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679070048/productos/Cocina%20Mexicana/malla-cocinamexicana_civpcr.jpg",
-        "video": "",
+    "video": "",
     "separator": "",
     "dato": "",
     "descripcion": {
-      "parrafoUno": "",
-      "parrafoDos": ""
+        "parrafoUno": "",
+        "parrafoDos": ""
     },
     "detalles": {
         "paraTi": ["", ""],
@@ -288,12 +288,12 @@ Curso Chocolatería Online
 {
     "fondo-titulo": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679121318/productos/Curso%20Chocolater%C3%ADa%20Online/fondotitlecc_c7whsd.jpg",
     "imagen-malla": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679070041/productos/Curso%20Chocolater%C3%ADa%20Online/malla-chocolateria_j0xcnu.jpg",
-        "video": "",
+    "video": "",
     "separator": "",
     "dato": "",
     "descripcion": {
-      "parrafoUno": "",
-      "parrafoDos": ""
+        "parrafoUno": "",
+        "parrafoDos": ""
     },
     "detalles": {
         "paraTi": ["", ""],
@@ -313,12 +313,12 @@ Curso Cocina Árabe Online
 {
     "fondo-titulo": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679121372/productos/Curso%20Cocina%20%C3%81rabe/fondotitlecc_c6myql.jpg",
     "imagen-malla": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679070045/productos/Curso%20Cocina%20%C3%81rabe/malla-cocinaarabe_jkbapb.jpg",
-        "video": "",
+    "video": "",
     "separator": "",
     "dato": "",
     "descripcion": {
-      "parrafoUno": "",
-      "parrafoDos": ""
+        "parrafoUno": "",
+        "parrafoDos": ""
     },
     "detalles": {
         "paraTi": ["", ""],
@@ -338,12 +338,12 @@ Curso Cocina Brasilera Online
 {
     "fondo-titulo": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679121424/productos/Curso%20Cocina%20Brasilera/fondotitlecc_lq61zh.jpg",
     "imagen-malla": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679070048/productos/Curso%20Cocina%20Brasilera/malla-cocinabrasilera_w0vuy8.jpg",
-        "video": "",
+    "video": "",
     "separator": "",
     "dato": "",
     "descripcion": {
-      "parrafoUno": "",
-      "parrafoDos": ""
+        "parrafoUno": "",
+        "parrafoDos": ""
     },
     "detalles": {
         "paraTi": ["", ""],
@@ -363,12 +363,12 @@ Curso Cocina Coreana Online
 {
     "fondo-titulo": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679121494/productos/Curso%20Cocina%20Coreana/fondotitlecc_bdgssc.jpg",
     "imagen-malla": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679070043/productos/Curso%20Cocina%20Coreana/malla-cocinacoreana_jm6nfd.jpg",
-        "video": "",
+    "video": "",
     "separator": "",
     "dato": "",
     "descripcion": {
-      "parrafoUno": "",
-      "parrafoDos": ""
+        "parrafoUno": "",
+        "parrafoDos": ""
     },
     "detalles": {
         "paraTi": ["", ""],
@@ -388,12 +388,12 @@ Curso Cocina Francesa Online
 {
     "fondo-titulo": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679121550/productos/Curso%20Cocina%20Francesa/fondotitlecc_swxhqf.jpg",
     "imagen-malla": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679070043/productos/Curso%20Cocina%20Francesa/malla-cocinafrancesa_drzlmx.jpg",
-        "video": "",
+    "video": "",
     "separator": "",
     "dato": "",
     "descripcion": {
-      "parrafoUno": "",
-      "parrafoDos": ""
+        "parrafoUno": "",
+        "parrafoDos": ""
     },
     "detalles": {
         "paraTi": ["", ""],
@@ -413,12 +413,12 @@ Curso Cocina India Online
 {
     "fondo-titulo": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679121872/productos/Curso%20Cocina%20India/fondotitlecc_leu8qk.jpg",
     "imagen-malla": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679070045/productos/Curso%20Cocina%20India/malla-cocinaindia_ymzrcq.jpg",
-        "video": "",
+    "video": "",
     "separator": "",
     "dato": "",
     "descripcion": {
-      "parrafoUno": "",
-      "parrafoDos": ""
+        "parrafoUno": "",
+        "parrafoDos": ""
     },
     "detalles": {
         "paraTi": ["", ""],
@@ -438,12 +438,12 @@ Curso Cocina Mexicana Online
 {
     "fondo-titulo": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679121652/productos/Curso%20Cocina%20Mexicana/fondotitlecc_ghu1an.jpg",
     "imagen-malla": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679070048/productos/Curso%20Cocina%20Mexicana/malla-cocinamexicanaonlina_txj1qx.jpg",
-        "video": "",
+    "video": "",
     "separator": "",
     "dato": "",
     "descripcion": {
-      "parrafoUno": "",
-      "parrafoDos": ""
+        "parrafoUno": "",
+        "parrafoDos": ""
     },
     "detalles": {
         "paraTi": ["", ""],
@@ -467,8 +467,8 @@ Curso Cocina Nikkei Online
     "separator": "",
     "dato": "",
     "descripcion": {
-      "parrafoUno": "",
-      "parrafoDos": ""
+        "parrafoUno": "",
+        "parrafoDos": ""
     },
     "detalles": {
         "paraTi": ["", ""],
@@ -488,12 +488,12 @@ Curso Coctelería en Casa
 {
     "fondo-titulo": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679121749/productos/Curso%20cocteler%C3%ADa%20en%20casa/fondotitlecc_clvvhz.jpg",
     "imagen-malla": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679070048/productos/Curso%20cocteler%C3%ADa%20en%20casa/malla-cocteleriaencasa_rjvhpd.jpg",
-        "video": "",
+    "video": "",
     "separator": "",
     "dato": "",
     "descripcion": {
-      "parrafoUno": "",
-      "parrafoDos": ""
+        "parrafoUno": "",
+        "parrafoDos": ""
     },
     "detalles": {
         "paraTi": ["", ""],
@@ -513,12 +513,12 @@ Cerveza Artesanal Casera
 {
     "fondo-titulo": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679121935/productos/Cerveza%20artesanal%20casera/fondotitlecc_wuaz9l.jpg",
     "imagen-malla": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679070054/productos/Cerveza%20artesanal%20casera/malla-cervezaartesanal_wkwwjv.jpg",
-        "video": "",
+    "video": "",
     "separator": "",
     "dato": "",
     "descripcion": {
-      "parrafoUno": "",
-      "parrafoDos": ""
+        "parrafoUno": "",
+        "parrafoDos": ""
     },
     "detalles": {
         "paraTi": ["", ""],
