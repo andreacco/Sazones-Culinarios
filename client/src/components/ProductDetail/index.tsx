@@ -26,7 +26,6 @@ export default function ProductDetail() {
 
     const textos: any = ["CURSO COMPLETO DE BARISTA PARA PRINCIPIANTES", "6 BENEFICIOS AL COMPRAR EL CURSO DE BARISTA"]
     const texto1: any = textos.shift()
-    const texto2: any = textos.pop()
     
     useEffect(() => {
         dispatch(getProductDetail(id));
