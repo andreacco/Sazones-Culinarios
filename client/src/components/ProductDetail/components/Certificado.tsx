@@ -1,4 +1,3 @@
-import certificado from '../../../Images/certificado.jpg'
 import '../../../scss/components/ProductDetail/components/Certificado.scss'
 
 export default function Certificado() {
@@ -6,7 +5,7 @@ export default function Certificado() {
     <div className='div-certificado'>
       <h1 className='h1'>CERTIFICACIÓN</h1>
       <div className='div-contenido'>
-        <img src={certificado} alt="certificado" className='img-certificado'/>
+        <img src="https://res.cloudinary.com/dgcn9sprj/image/upload/v1679295332/Product%20pages/otras%20img/beneficios/certificado_qfhj7i.jpg" alt="certificado" className='img-certificado'/>
         <p className='texto-certificado'>{/* Somos cursosdecocina, una escuela con 5 años de experiencia capacitando a cientos de entusiastas alumnos que hoy cocinan junto a sus familias o han levantado respetados emprendimientos.
         <br />
         <br />

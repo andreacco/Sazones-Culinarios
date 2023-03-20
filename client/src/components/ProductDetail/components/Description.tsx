@@ -1,19 +1,31 @@
 import { AiOutlineCheckCircle } from "react-icons/ai";
-import pagos from '../../../Images/pagos.png'
 import Accordion from "./Accordion";
-import Bar from '../../../Images/bar.png'
+import { useSelector } from "react-redux";
+import { useParams } from "react-router-dom";
 import '../../../scss/components/ProductDetail/components/Description.scss'
 
 export default function Description() {
+  const { name } = useParams()
+
+  const productDetailInfo = useSelector((state: any) => state.productDetail.beMaster)
+  
   const info = ["Comienza desde hoy", "Pago único en tu moneda local", "Idioma: Español", "Garantía de 7 días", "Certificación al Finalizar"]
-  const imgs = [""]
 
   return (
     <div className='description-container'>
         <div className='descripcion-texts-container'>
-          <p> Si quieres convertirte en un profesional del café, éste es el primer paso. Prepárate para incorporarte al mercado laboral o amplía tus conocimientos en el área al certificarte en este curso de Barista Principiante. Al finalizar este curso darás el primer paso para trabajar en cafeterías, restaurantes o bares, deleitar a tu audiencia y preparar cafés clásicos y modernos de la manera correcta. </p>
-          <div className="aqui-va-la-img">
-            <img src={Bar} /* "https://res.cloudinary.com/dgcn9sprj/image/upload/v1678589269/productos/Barista%20principiante/malla-baristaprincipiante_qoo171.png" */ alt="" />
+        {/* ESTO ES LO QUE SE PUEDE CAMBIAR SI SE LE PUEDE HACER EL GOUP DEL DETALLE CONDICIONAL PRA CADA PRODUCTO (SOLO EL CLASSNAME)*/}
+          <p className={`datoinicial ${name}dato`}> { productDetailInfo ? 
+              typeof productDetailInfo[0][0].dato !== "string" ? productDetailInfo[0][0].dato.map((s:any) => {
+            return (
+              <div>
+                <p>{s}</p>
+                <br />
+              </div>
+            )
+          }) : productDetailInfo[0][0].dato 
+        : ""} </p>
+          <div className={`aqui-va-la-img ${name === "GastronomíaInternacionalOnline:7cursosincluidos"? "GastronomíaInternacionalOnline7cursosincluidos": name}`}>
           </div>
           <Accordion/>
         </div>
@@ -45,7 +57,7 @@ export default function Description() {
                 Si el curso no te es útil te devolvemos el 100% de tu dinero. Recibirás 10 veces el valor de los que invertirás en este completo curso.</p>
             </div>
             <div className='content-pago'>
-              <img className="pagos-img" src={pagos} alt="plataformas-de-pago" />
+              <img className="pagos-img" src="https://res.cloudinary.com/dgcn9sprj/image/upload/v1679295192/Product%20pages/otras%20img/precios/6_qie63x.jpg" alt="plataformas-de-pago" />
               <div className='content-pago-after'>
                 <h2>CONVERSIÓN DE MONEDA PARA CUALQUIER PAÍS</h2>
                 <p>Te facilitaremos la compra de nuestro curso dándote una conversión automática en tu moneda local.</p>

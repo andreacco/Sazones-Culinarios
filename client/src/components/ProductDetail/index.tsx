@@ -23,9 +23,6 @@ import Footer from './components/Footer'
 export default function ProductDetail() {
     const dispatch: any = useDispatch()
     const { id } = useParams()
-
-    const textos: any = ["CURSO COMPLETO DE BARISTA PARA PRINCIPIANTES", "6 BENEFICIOS AL COMPRAR EL CURSO DE BARISTA"]
-    const texto1: any = textos.shift()
     
     useEffect(() => {
         dispatch(getProductDetail(id));
@@ -39,10 +36,9 @@ export default function ProductDetail() {
         <div className='product-detail-container'>
             <NavBar/>
             <Title/>
-            <Separator texto={texto1} />
+            <Separator/>
             <Description/>
             <Beneficios/>
-            {/* <Separator texto={texto2} /> */}
             <BlobSeparatorOpen/>
             <BotonCompra/>
             <Preparaciones/>

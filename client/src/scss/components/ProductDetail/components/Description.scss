@@ -17,11 +17,28 @@
         
         // PARA EL FONDO NEGRO
         color: white;
-
+        // ESTO ES LO QUE SE PUEDE CAMBIAR SI SE LE PUEDE HACER EL GOUP DEL DETALLE CONDICIONAL PRA CADA PRODUCTO
+        .datoinicial {
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .BaristaPrincipiantedato{
+            line-height: 2em;
+            font-size: 1.3em;
+        }
+        // HASTA AQUI
         .aqui-va-la-img{
             margin-top: 1em;
             width: 681.109px;
             height: 722.391px;
+        }
+        .BaristaPrincipiante{
+            background-image: url('https://res.cloudinary.com/dgcn9sprj/image/upload/v1679070052/productos/Barista%20principiante/malla-baristaprincipiante_sayaqx.jpg');
+        }
+        .GastronomíaInternacionalOnline7cursosincluidos{
+            background-image: url('https://res.cloudinary.com/dgcn9sprj/image/upload/v1679070051/productos/Gastronom%C3%ADa%20Internacional:%207%20cursos%20incluidos/malla-gastronomiainternacional7c_hhppnq.jpg');
         }
     }
     .info-boxes-container{

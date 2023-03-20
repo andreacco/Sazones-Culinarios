@@ -15,7 +15,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const Products_1 = __importDefault(require("../../../models/Products/Products"));
 const express_1 = require("express");
 const router = (0, express_1.Router)();
-router.post('/putProduct/:id', (req, res, next) => __awaiter(void 0, void 0, void 0, function* () {
+router.put('/putProduct/:id', (req, res, next) => __awaiter(void 0, void 0, void 0, function* () {
     const updates = req.body;
     const { id } = req.params;
     try {

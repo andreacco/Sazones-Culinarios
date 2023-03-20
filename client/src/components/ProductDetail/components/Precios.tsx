@@ -1,14 +1,11 @@
+import { useSelector } from 'react-redux'
 import '../../../scss/components/ProductDetail/components/Precios.scss'
-import garantia from '../../../Images/7diasgarantia.png'
-import imgRoj from '../../../Images/roj.png'
-import info1 from '../../../Images/8.png'
-import info2 from '../../../Images/9.png'
-import info3 from '../../../Images/10.png'
-
 
 export default function Precios() {
 
-  const precio = 95
+  const product = useSelector((state: any) => state.productDetail)
+
+  const precio = product.price
 
   const precioMayor =  precio * 5
 
@@ -26,15 +23,15 @@ export default function Precios() {
       <div className='div-infoPago'>
         <div className='cards'>
           <div className='card'>
-            <img src={info1} alt="UN SOLO PAGO IMG" />
+            <img src="https://res.cloudinary.com/dgcn9sprj/image/upload/v1679294661/Product%20pages/otras%20img/precios/5_d1vwha.jpg" alt="UN SOLO PAGO IMG" />
             <p className='p1'>UN SOLO Y ÚNICO PAGO</p>
           </div>
           <div className='card'>
-            <img src={info2} alt="LIFETIME GUARANTEE IMG" />
+            <img src="https://res.cloudinary.com/dgcn9sprj/image/upload/v1679294658/Product%20pages/otras%20img/precios/3_ktn4uo.jpg" alt="LIFETIME GUARANTEE IMG" />
             <p className='p2'>PARA TODA LA ViDA</p>
           </div>
           <div className='card'>
-            <img src={info3} alt="PARA SIEMPRE IMG" />
+            <img src="https://res.cloudinary.com/dgcn9sprj/image/upload/v1679294659/Product%20pages/otras%20img/precios/2_wdygko.jpg" alt="PARA SIEMPRE IMG" />
             <p>SIN COBROS POSTERIORES Y<h6 className='h6'>PARA SIEMPRE</h6></p>
           </div>
         </div>
@@ -43,8 +40,8 @@ export default function Precios() {
       <button className="BotonCompraPrecios">
         ¡QUIERO INSCRIBIRME YA!
       </button>
-      <img className="img-boton-compra-precio" src= {imgRoj} alt="" />
-      <img className='img-garantia' src={garantia} alt="" />
+      <img className="img-boton-compra-precio" src="https://res.cloudinary.com/dgcn9sprj/image/upload/v1679294660/Product%20pages/otras%20img/precios/4_g5haf7.jpg" alt="" />
+      <img className='img-garantia' src="https://res.cloudinary.com/dgcn9sprj/image/upload/v1679294658/Product%20pages/otras%20img/precios/1_s4uqu0.jpg" alt="" />
     </div>
   )
 }

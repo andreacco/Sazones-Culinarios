@@ -3,7 +3,7 @@ import { Router } from "express";
 
 const router = Router()
 
-router.post('/putProduct/:id', async(req, res, next) => {
+router.put('/putProduct/:id', async(req, res, next) => {
     const updates: object = req.body
     const { id } = req.params
     try {

@@ -1,5 +1,3 @@
-import imgAma from '../../../Images/ama.png'
-import imgRoj from '../../../Images/roj.png'
 import '../../../scss/components/ProductDetail/components/BotonCompra.scss'
 
 export default function BotonCompra() {
@@ -8,7 +6,7 @@ export default function BotonCompra() {
       <button className="BotonCompra">
         ¡YA ME DECIDÍ, QUIERO COMPRAR EL CURSO!
       </button>
-      <img className="img-boton-compra" src=/* {imgAma} */ {imgRoj} alt="" />
+      <img className="img-boton-compra" src="https://res.cloudinary.com/dgcn9sprj/image/upload/v1679295001/Product%20pages/otras%20img/precios/roj_tfg9x0.png" alt="" />
     </div>
   )
 }
