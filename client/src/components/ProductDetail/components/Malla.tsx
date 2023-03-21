@@ -1,16 +1,64 @@
 import { useEffect, useState } from 'react'
 import { AiOutlineDown } from 'react-icons/ai'
 import { useSelector } from 'react-redux'
+import { useParams } from 'react-router-dom'
 import useGoUpMalla from '../../../customHooks/GoUpMalla'
 import '../../../scss/components/ProductDetail/components/Malla.scss'
 
 export default function Malla() {
 
     const productDetailInfo = useSelector((state: any) => state.productDetail.beMaster)
+    const { name } = useParams()
     
     const [active, setActive] = useState<any>({})
 
-    const upActive = useGoUpMalla()
+    var numi
+
+    name === 'GastronomíaInternacionalOnline:7cursosincluidos' ?
+    numi = 2500 :
+    name === 'DiplomadoOnlineenGastronomíaInternacional' ?
+    numi = 2800 : 
+    name === 'DiplomadoOnlineenCocinaInternacional' ?
+    numi = 250 : 
+    name === 'DiplomadoOnlinedeReposteríayPastelería' ?
+    numi = 250 : 
+    name === 'PastelesconDiseñoInterno' ?
+    numi = 250 : 
+    name === 'AprendeCocinaVegana' ?
+    numi = 250 : 
+    name === 'BaristaPrincipiante' ?
+    numi = 2250 : 
+    name === 'BartenderparaPrincpiantes' ?
+    numi = 250 : 
+    name === 'ChocofresasIrresistibles' ?
+    numi = 250 : 
+    name === 'CocinaMexicana' ?
+    numi = 250 : 
+    name === 'CursoChocolateríaOnline' ?
+    numi = 250 : 
+    name === 'CursoCocinaÁrabeOnline' ?
+    numi = 250 : 
+    name === 'CursoCocinaBrasileraOnline' ?
+    numi = 250 : 
+    name === 'CursoCocinaCoreanaOnline' ?
+    numi = 250 : 
+    name === 'CursoCocinaFrancesaOnline' ?
+    numi = 250 : 
+    name === 'CursoCocinaIndiaOnline' ?
+    numi = 250 : 
+    name === 'CursoCocinaMexicanaOnline' ?
+    numi = 250 : 
+    name === 'CursoCocinaNikkeiOnline' ?
+    numi = 250 : 
+    name === 'CursoCocteleríaenCasa' ?
+    numi = 250 : 
+    name === 'CervezaArtesanalCasera' ?
+    numi = 250 : 
+    ""
+
+    
+    const upActive = useGoUpMalla(numi)
+    
     useEffect(() => {
         var mms: any = []
         productDetailInfo ? productDetailInfo[0][0].modulos.map((m: any) => {
@@ -33,7 +81,6 @@ export default function Malla() {
     }
     
     const handleActive = (cantidady: any) => {
-        console.log(cantidady, "cantidady");
         setActive({
                 [cantidady] : !active[cantidady]
             }

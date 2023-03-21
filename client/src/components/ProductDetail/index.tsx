@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import { useDispatch } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import { useParams } from 'react-router-dom'
 import { getProductDetail, reset } from '../../redux/actions'
 import NavBar from './components/NavBar'
@@ -19,6 +19,7 @@ import Precios from './components/Precios'
 import BlobSeparatorOpen from './components/BlobSeparatorOpen'
 import BlobSeparatorClose from './components/BlobSeparatorClose'
 import Footer from './components/Footer'
+import Profesores from './components/ProfesCard'
 
 export default function ProductDetail() {
     const dispatch: any = useDispatch()
@@ -30,6 +31,11 @@ export default function ProductDetail() {
         dispatch(reset());
         };
     }, [id, dispatch]);
+
+    const productDetailInfo = useSelector((state: any) => state.productDetail.beMaster)
+    // const profes = productDetailInfo ? productDetailInfo[0][0].modulos.map((p: any) => { return(p.profesores)}) : "nope"
+    // console.log(typeof profes, profes, "PROFEEEEEES");
+    
 
 
     return (
@@ -45,6 +51,16 @@ export default function ProductDetail() {
             <PreguntasFrecuentes/>
             <BannerCompra/>
             <Certificado/>
+            {productDetailInfo ? 
+                productDetailInfo[0][0].profesores ? 
+                            <div className='div-div-profesores'>
+                                <h1>CONOCE A TUS PROFESORES</h1>
+                                <Profesores/> 
+                            </div>
+                            :
+                            ""
+                            : ""
+                            }
             <Opiniones/>
             {/* <Comunidad/> */}
             <BlobSeparatorClose/>

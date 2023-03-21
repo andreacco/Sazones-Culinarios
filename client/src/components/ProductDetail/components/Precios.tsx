@@ -4,6 +4,8 @@ import '../../../scss/components/ProductDetail/components/Precios.scss'
 export default function Precios() {
 
   const product = useSelector((state: any) => state.productDetail)
+  const productDetailInfo = useSelector((state: any) => state.productDetail.beMaster)
+
 
   const precio = product.price
 
@@ -41,7 +43,7 @@ export default function Precios() {
         ¡QUIERO INSCRIBIRME YA!
       </button>
       <img className="img-boton-compra-precio" src="https://res.cloudinary.com/dgcn9sprj/image/upload/v1679294660/Product%20pages/otras%20img/precios/4_g5haf7.jpg" alt="" />
-      <img className='img-garantia' src="https://res.cloudinary.com/dgcn9sprj/image/upload/v1679294658/Product%20pages/otras%20img/precios/1_s4uqu0.jpg" alt="" />
+      <img className='img-garantia' src={productDetailInfo ? productDetailInfo[0][0].garantiaImg : ""} alt="" />
     </div>
   )
 }

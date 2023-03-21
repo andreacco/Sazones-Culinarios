@@ -1,0 +1,75 @@
+.div-div-profesores{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--blacky);
+  h1{
+    font-family: var(--producto-titulos-font);
+        font-size: 2.5em;
+        color: #ddddde;
+  }
+  .profes-container{
+    display: flex;
+    justify-content: center;
+    min-height: 40em;
+    background-color: var(--blacky);
+    .profes-div{
+      display: flex;
+      flex-wrap: wrap;
+      padding: 2em;
+      justify-content: center;
+      margin-top: 2em;
+      .profes-card{
+        padding-right: 2em;
+        padding-bottom: 2em;
+        .card {
+          width: 23em;
+          height: 27em;
+          border-radius: 20px;
+          background: #ddddde;
+          position: relative;
+          .img-profes{
+            display: flex;
+            justify-content: center;
+            padding: 1em;
+            .imagen-profes{
+              height: 13em;
+            }
+          }
+          .profes-detalles-div {
+            font-family: var(--primary-font);
+            font-size: 10px;
+            padding: 0 1em;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: black;
+            /*Text*/
+              .profes-nombre {
+                color: var(--blacky);
+                font-family: var(--producto-subtitulos-font);
+                font-size: 1.8em;
+                font-weight: bold;
+                text-align: center;
+                margin-bottom: 0.5em;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 2px var(--yellowy-stronger) solid;
+                padding: .3em .5em;
+                border-radius: 1.3em;
+              }
+              .profes-descripcion {
+                color: rgb(70, 70, 70);
+                padding: 0.4em 1em 0 1em;
+                font-size: 1.3em;
+                text-align: center;
+              }
+          }
+        }
+      }
+    }
+  }
+}

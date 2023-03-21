@@ -15,7 +15,7 @@ export default function Description() {
     <div className='description-container'>
         <div className='descripcion-texts-container'>
         {/* ESTO ES LO QUE SE PUEDE CAMBIAR SI SE LE PUEDE HACER EL GOUP DEL DETALLE CONDICIONAL PRA CADA PRODUCTO (SOLO EL CLASSNAME)*/}
-          <p className={`datoinicial ${name}dato`}> { productDetailInfo ? 
+          <p /* className={`datoinicial ${name}dato`} */> { productDetailInfo ? 
               typeof productDetailInfo[0][0].dato !== "string" ? productDetailInfo[0][0].dato.map((s:any) => {
             return (
               <div>

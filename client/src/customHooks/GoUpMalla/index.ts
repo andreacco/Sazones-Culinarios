@@ -1,11 +1,10 @@
-const useGoUpMalla = () => {
+const useGoUpMalla = (num: any) => {
     const scrollToTop = () => {
         window.scrollTo({
-            top: 2500,
+            top: Number(num),
             behavior: 'smooth'
         });
     };
-
     return scrollToTop
 }
 
