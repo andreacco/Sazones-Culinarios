@@ -36,28 +36,36 @@ export default function NavBar() {
           <h3 className="title">{title}</h3>
         </Link>
       </div>
-      <div className="right-side">
-        {pages?.map((p: any) => {
-          return (
-            <NavLink 
-            to={p === 'Inicio' ? '/' : '/productos'} 
-            className={({isActive}) => isActive ? "navBar-links active" : "navBar-links"} 
-            onClick={() => handleClick()}
-            key={p} >
-              {p}
-            </NavLink>
-          )
-        })}
-        <SearchBar />
-        <a href='https://www.instagram.com/sazonesculinarios/' target="_blank">
-          <Instagram/>
-        </a>
-        <a href='https://www.facebook.com/SazonesCulinarios/' target="_blank">
-          <Facebook/>
-        </a>
-        <a href='/'>
-          <Twitter/>
-        </a>
+      <div className="right-side mobile">
+        <input className="input-checkbox" type="checkbox" name="" id=""/>
+        <div className="hamburger-lines">
+            <span className="line line1"></span>
+            <span className="line line2"></span>
+            <span className="line line3"></span>
+        </div>
+        <div className="menu-items">
+          {pages?.map((p: any) => {
+            return (
+              <NavLink 
+                to={p === 'Inicio' ? '/' : '/productos'} 
+                className={({isActive}) => isActive ? "navBar-links active" : "navBar-links"} 
+                onClick={() => handleClick()}
+                key={p} >
+                  {p}
+              </NavLink>
+            )
+          })}
+          <SearchBar />
+          <a href='https://www.instagram.com/sazonesculinarios/' target="_blank">
+            <Instagram/>
+          </a>
+          <a href='https://www.facebook.com/SazonesCulinarios/' target="_blank">
+            <Facebook/>
+          </a>
+          <a href='/'>
+            <Twitter/>
+          </a>
+        </div>
       </div>
     </div>
   )

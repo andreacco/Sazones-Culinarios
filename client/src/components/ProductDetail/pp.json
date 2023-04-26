@@ -1,3 +1,5 @@
+crea una lista de razones llamativas por las que un curso de  es para ti
+crea una lista de razones llamativas por las que deberias hacer un curso de 
 
 Gastronomía Internacional Online: 7 cursos incluidos
 {
@@ -211,7 +213,7 @@ Gastronomía Internacional Online: 7 cursos incluidos
     "preparaciones": ["https://res.cloudinary.com/dgcn9sprj/image/upload/v1679287739/productos/Gastronom%C3%ADa%20Internacional:%207%20cursos%20incluidos/Preparaciones/1_nep5xw.jpg", "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679287737/productos/Gastronom%C3%ADa%20Internacional:%207%20cursos%20incluidos/Preparaciones/2_akc9du.jpg", "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679287735/productos/Gastronom%C3%ADa%20Internacional:%207%20cursos%20incluidos/Preparaciones/3_fnr8xi.jpg", "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679287743/productos/Gastronom%C3%ADa%20Internacional:%207%20cursos%20incluidos/Preparaciones/4_blgub1.jpg", "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679287736/productos/Gastronom%C3%ADa%20Internacional:%207%20cursos%20incluidos/Preparaciones/5_e6hnbf.jpg", "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679287736/productos/Gastronom%C3%ADa%20Internacional:%207%20cursos%20incluidos/Preparaciones/6_w2cbhz.jpg"],
     "certificado": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679335651/productos/Gastronom%C3%ADa%20Internacional:%207%20cursos%20incluidos/certificadogastronomiacc_btoal4.jpg",
     "garantiaImg": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679294658/Product%20pages/otras%20img/precios/1_s4uqu0.jpg"
-}
+},
 
 Diplomado Online en Gastronomía Internacional
 {
@@ -605,7 +607,7 @@ Diplomado Online en Gastronomía Internacional
             }
         ],
         "garantiaImg": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679379120/Product%20pages/otras%20img/precios/certificaci%C3%B3n_1_zvmwts.png"
-}
+},
 
 Diplomado Online en Cocina Internacional
 {
@@ -613,21 +615,291 @@ Diplomado Online en Cocina Internacional
     "imagenMalla": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679070049/productos/Diplomado%20online%20en%20cocina%20internacional/malla-diplomadococinainternacional_ggotrg.jpg",
     "video": "https://www.youtube.com/embed/LLUVz6N5FqY",
     "separator": "DIPLOMADO ONLINE EN COCINA INTERNACIONAL",
-    "dato": "",
-    "descripcion": ["", ""]
+    "dato": ["Tomar un diplomado es por sobre todo un compromiso contigo mismo.Significa que te atreverás a mejorar profesionalmente, a enfrentarte a nuevos retos ya superar con éxito lo que se te ponga por delante.Toma este desafío que te entregamos cursosdecocina, la mejor escuela de gastronomía online, y puedes empezar desde hoy.", "¡Cursos de cocina sorprende otra vez! ¡Conviértete en un experto en la comida y la bebida con este sensacional diplomado!", "✓ Aprende las recetas de las cocinas más importantes de todo el mundo", "✓ Conoce todos los secretos para preparar sushi como un verdadero profesional", "✓ Prepara los más finos tragos con nuestro curso de coctelería", "Todo esto desde la comodidad de tu hogar y por una módica suma en comparación con todo el material que te ofrecemos.", "Este es el diplomado indicado si eres o quieres ser un emprendedor en el ámbito gastronómico, pues gracias a estos cursos completos que forman este diplomado podrás ampliar tu clientela."],
+    "descripcion": ["¿POR QUÉ DEBES TOMAR ESTE DIPLOMADO?", "Podrás conocer los platos más importantes de la cocina internacional: Árabe, Brasileña, Italiana, Española, Coreana, Francesa, India, Mexicana y Nikkei, además de cocina vegana y los cursos de Coctelería clásica, de Autor y Sushi Rolls.", "Es de la mayor importancia tener un buen servicio en tu establecimiento y preparar cocktails de categoría internacional con los mismos standards del mejor bar del mundo. No estamos exagerando, existen estándares mundiales en la preparación del café o en coctelería, y con nuestros cursos podrás conocerlos y practicarlos!", "Ponte en ventaja en comparación a tu competencia, desarrolla tu emprendimiento y sal de la rutina de la “comida casera”, invierte en este curso y verás como se te multiplican las ideas y los clientes en el amplio y demandado campo de la gastronomía.", "Pero no sólo este curso es para trabajo, tu que eres un sibarita, disfrutas cocinando y andas en constante búsqueda de innovar tus platos este diplomado te abrirá un mundo de sabores y aromas que te hará enamorar más de la cocina!", "No lo dudes más, aprovecha esta oferta y goza aprendiendo cientos de recetas, haz esta inversión que te dará muchos beneficios", "¡Adquiere este diplomado ahora!"],
     "detalles": {
-        "paraTi": ["", ""],
-        "aprenderas": ["", ""]
+        "paraTi": ["¿Quieres iniciarte en el mundo de la gastronomía y saber si esta profesión es para ti?", "¿Deseas aprender una nueva habilidad para entretener y deleitar a tus amigos y familiares?", "¿Deseas empezar una trayectoria nueva, una oportunidad para transformar tu vida?", "¿Disfrutas cocinando para ti y para los tuyos?"],
+        "aprenderas": ["Aprenderás las mejores técnicas de la gastronomía.", "Con 25 cursos incluidos, lograrás ir desde lo más básico a niveles más avanzados de la gastronomía Internacional", "Aprenderás variedad en diferentes cocinas a nivel Internacional.", "Lograrás aprender sobre repostería y pastelería.", "Aprenderás a preparar las recets más importantes de todo el mundo.", "Podrás deleitar a tus comensales con preparaciones exquisitas."]
     },
     "modulos": [
         {
             "id": "mm0",
-            "nombre": "Módulo 1: Introducción",
-            "lecciones": ["", ""],
+            "nombre": "Cocina Internacional",
+            "lecciones": [{
+                    "nombre": "Teoría necesaria antes de comenzar:",
+                    "contenido": ["Higiene y manipulación de los alimentos."]
+                    },
+                {
+                    "nombre": "Básicos de la cocina:",
+                    "contenido": ["Técnicas de corte con cuchillos, su uso en vegetales y proteínas"]
+                },
+                {
+                    "nombre": "Cocina básica I: Quinua y Cuscús.",
+                    "contenido": ["Aprenderás cómo preparar con éxito la nutritiva quinoa y podrás preparar quinoa con vegetales asados ​​​​y cous cous con vegetales en frío, bolitas de carne en salsa de tomate casera y una tarta tatín de plátano para el postre"]
+                },
+                {
+                    "nombre": "Cocina básica II: Legumbres y Cereales.",
+                    "contenido": ["Aprenderás las preparaciones de legumbres tales como lentejas, porotos y cereales como mote, arroz en estas ricas preparaciones: ensalada mixta con aderezo básico, guiso de mote y champiñones, lentejas con arroz, ensalada de porotos negros con pimentones, satay de pollo con cúrcuma y jengibre y arroz con leche de coco para el postre"]
+                },
+                {
+                    "nombre": "Cocina básica III: Cocina Vegetariana.",
+                    "contenido": ["Aprenderás preparar sanos platos vegetarianos como: potage de zapallo, crujientes papas asadas, lasaña de vegetales y salsa blanca y panqueques de avena para el postre"]
+                },
+                {
+                    "nombre": "Cocina internacional: Española",
+                    "contenido": ["Aprenderás las sabrosas preparaciones Ibéricas: pisto manchego, tortilla de patatas, la exquisita paella mixta y crema catalana para el postre"]
+                },
+                {
+                    "nombre": "Cocina internacional: Peruana",
+                    "contenido": ["Aprenderás los ricos platos de una de las cocinas más premiadas en el mundo: causa limeña, ají de gallina y suspiro de limeña para el postre"]
+                },
+                {
+                    "nombre": "Cocina internacional: Francesa",
+                    "contenido": ["Aprenderás las comidas tradicionales del país madre de la gastronomía: crema de coliflor, el famoso ratatouille, boeuf bourguignon y volcán de chocolate para el postre"]
+                },
+                {
+                    "nombre": "Cocina internacional: Árabe",
+                    "contenido": ["Aprenderás las tradicionales preparaciones de gran parte de países del medio oriente: arroz árabe, babaganoush, el tradicional y rico hummus, salsa de yogurt, shish kabab y ceregli para el postre."]
+                },
+                {
+                    "nombre": "Cocina internacional: Mexicana",
+                    "contenido": ["Aprenderás las sabrosas comidas mexicanas tales como.arroz mexicano, quesadillas de champiñones, mole poblano, salsa pico de gallo, tinga de cerdo y churros mexicanos para el postre"]
+                },
+                {
+                    "nombre": "Cocina internacional: Chilena",
+                    "contenido": ["Aprenderás nuestras ricas y tradicionales comidas: - preparar un sabroso pebre, sopaipillas, porotos granados, carne mechada, empanadas de pino y leche asada para el postre."]
+                },
+                {
+                    "nombre": "Cocina internacional: Italiana",
+                    "contenido": ["Aprenderás Preparar la masa básica para la tradicional pasta fresca y salsas como la pesto, salsa arrabbiata, cappelletti rellenos y pannacotta para el postre."]
+                },
+                {
+                    "nombre": "Cocina internacional: Japonesa",
+                    "contenido": ["Aprenderás los platos emblemáticos de la cocina de la nación del sol naciente: una deliciosa sopa ramen, gohan de pollo y dorayaki para el postre "]
+                },
+                {
+                    "nombre": "Cocina internacional: India",
+                    "contenido": ["Aprenderás la comida exótica de este gran país: garam masala, salsa raita, potaje de zapallo al curry, curry verde de pollo y gajar barfi para el postre."]
+                }
+            ]
+        },
+        {
+            "id": "mm1",
+            "nombre": "Cocina Vegana",
+            "lecciones": ["Bienvenida ", "Empanadas integrales", "Bolitas de  quinua", "Panqueques de espinaca", "Palitos de polenta", "Champiñones rellenos", "Quiché integral", "Falso pescado frito", "Galletas de semillas", "Pan rápido al sartén", "Hamburguesas de garbanzos", "Curry de garbanzos y zapallo", "Untable de aguacate"]
+        },
+        {
+            "id": "mm2",
+            "nombre": "Cocina Coreana",
+            "lecciones": ["Tok manduguk", "Topokki clásico", "Yeiuk muchim", "Bulgogi", "Yapché", "Bibimbáp", "Kimchi bokkeum bap vegano", "Duenyang chigve de mariscos", "Bibim guksu", "Samguiopsal", "Arroz coreano"]
+        },
+        {
+            "id": "mm3",
+            "nombre": "Cocina Nikkei",
+            "lecciones": ["Tiradito pasión", "Tiradito clásico", "Shari ", "Salsa pasión", "Sake maki", "Pulpo anticuchero", "Pulpo al olivo", "Maguro tataki", "Mayonesa de ají amarillo", "Lomo saltado", "Tiradito pasión", "Ceviche clásico", "Arroz chaufa", "Ceviche nikkei", "Cevi maki"]
+        },
+        {
+            "id": "mm4",
+            "nombre": "Cocina Brasilera",
+            "lecciones": ["Strogonoff", "Brigadeiro Na Colher", "PF (platón feito", "Rábada", "Feijoada", "Coxinha", "Caipirinha", "Camarão Na Moranga", "Manjar blanco", "Cuscús"]
+        },
+        {
+            "id": "mm5",
+            "nombre": "Cocina Mexicana",
+            "lecciones": ["Tortillas de maíz", "Tlacoyo de Haba", "Salsa borracha", "Tacos de suadero", "Pozole", "Polvorones de cacahuate", "Cóctel de mezcal", "Sopa de Bolitas de Maíz", "El Monacillo", "Mole Mancha Manteles de Jalisco", "Carlota limón", "Burritos, Tacos y Quesadillas", "Aguas Frescas"]
+        },
+        {
+            "id": "mm6",
+            "nombre": "Cocina Árabe",
+            "lecciones": ["Aprenderás la receta del sano pan pita, entre las salsas verás: la salsa de ajo, la famosa salsa tahine, base de muchas preparaciones árabes, el cremoso babaganoush y el famoso y nutritivo hummus.", "En el área de las comidas: el infaltable arroz árabe, un fresco taboulé, rica shakshuka fácil de preparar, los kubbe, bolitas tradicionales de carne con burgol, los ricos kebab, los populares falafel y los rellenos árabes.", "Para terminar ricos dulces: Harise y Ceregli."]
+        },
+        {
+            "id": "mm7",
+            "nombre": "Cocina Francesa",
+            "lecciones": ["Vainilla", "Pain Perdu (tostada francesa)", "Tarta tatin", "Tartiflette", "Soupe à L'oignon (sopa de cebolla)", "Quiché de puerro", "Pequeños choux", "Mousse de chocolate", "Dauphinois gratinado", "Flan parisino", "Croque Monsieur", "Créme Brûlée", "Cannelés"]
+        },
+        {
+            "id": "mm8",
+            "nombre": "Cocina India",
+            "lecciones": ["3 tipos de pan naan clásico", "Delicioso chutney de menta y cilantro", "Crujientes y suaves samosas clásicas", "Paneer de Queso de la India", "Receta vegetariana palak paneer", "Arroz basmati cremoso kashmiri pulao", "Deliciosos camarones para un jheega til tikka", "Vacuno con especias rogan josh", "Tikka masala en 3 estilos", "Postre esponjoso clásico gulab jamuns", "Cómo preparar un verdadero chai al estilo indio"]
+        },
+        {
+            "id": "mm9",
+            "nombre": "Coctelería Clásica",
+            "lecciones": [{
+                    "nombre": "HERRAMIENTAS DE BAR",
+                    "contenido": ["Cuales son las herramientas y tipos de cocteleras", "Reseña de copas, vasos y cristalería", "El garnish, decoraciones para cócteles.", "Cómo preparar goma / saborizada"]
+                    },
+                {
+                    "nombre": "TÉCNICAS DE BAR",
+                    "contenido": ["Uso del sifón, técnica de vanguardia", "Cómo hacer un buen descorche de espumante", "Técnica de refrescado y batido"]
+                },
+                {
+                    "nombre": "RON",
+                    "contenido": ["Cómo preparar mojito clásico y de maracuyá", "Cómo preparar un daiquiri y una refrescante piña colada"]
+                },
+                {
+                    "nombre": "PISCO",
+                    "contenido": ["Técnicas de acidez y pisco sour clásico", "Cómo preparar un pisco sour con albúmina e infusionado con té", "Cómo preparar un pisco sour peruano clásico", "Cómo preparar un pisco sour con sabor a albahaca fresca maracuyá"]
+                },
+                {
+                    "nombre": "VODKA Y TEQUILA",
+                    "contenido": ["Cómo preparar un estilo cosmopolita sex and the city", "Cómo preparar un moscow mule desde rusia", "Cómo preparar un martini espresso", "Cómo preparar un tequila sunrise y margarita"]
+                },
+                {
+                    "nombre": "GIN Y CACHAÇA",
+                    "contenido": ["Cómo preparar un clásico tom collins y un famoso gin tonic", "Cómo preparar una caipirinha clásica brasileña"]
+                },
+                {
+                    "nombre": "COCTELERÍA DE AUTOR",
+                    "contenido": ["Cómo preparar el cóctel debutante", "Receta para un buen cóctel deshuesado de sifón"]
+                },
+                {
+                    "nombre": "CÓCTELES CLÁSICOS",
+                    "contenido": ["Cómo preparar un aperol spritz y un ramazzotti clásico", "Cómo preparar un martini dry y negroni clásico", "Cómo preparar un clavo oxidado", "Cómo preparar un manhattan y un old fashioned on the rock"]
+                },
+                {
+                    "nombre": "OTROS TRAGOS",
+                    "contenido": ["Cómo preparar ruso negro y blanco", "Cómo preparar un clásico gibson y un café irlandés"]
+                }
+            ]
+        },
+        {
+            "id": "mm10",
+            "nombre": "Coctelería de Autor",
+            "lecciones": [{
+                    "nombre": "INTRODUCCIÓN A LA COCTELERÍA DE AUTOR",
+                    "contenido": ["Entrevista al profesor Rodrigo Muñoz", "Bienvenida al curso de Coctelería de Autor", "Mixología", "Barman", "Herramientas", "Cristalería", "mise-en-place", "Orden y limpieza"]
+                    },
+                {
+                    "nombre": "BOTELLAS DEL MERCADO CLÁSICAS",
+                    "contenido": ["Pisco", "Ginebra", "Vodka", "Tequila", "Ron", "Whiskies", "Aperitivos", "Aperitivos II", "Biter", "Ventas aromáticas", "Jarabes y siropes", "Hielo"]
+                },
+                {
+                    "nombre": "¿CÓMO SE CREA UN CÓCTEL? DOMINANDO LA COCTELERÍA CLÁSICA",
+                    "contenido": ["Bloody Mary", "Clover club", "Oscuro y tormentoso", "El diablo", "Francés 75", "Ginebra burbujeante", "Cuello de caballo", "Julepe de menta", "Manhattan", "Mula de Moscú", "Negroni"]
+                },
+                {
+                    "nombre": "DOMINANDO LA COCTELERÍA DE AUTOR",
+                    "contenido": ["Paloma", "Spritz venezolano", "Caramelito", "El Huerto", "Humo del cielo", "Filomena", "Rosas", "Señales", "Pasión negra", "Malta", "Vermú x3", "Alma", "Conclusión del Curso"]
+                }
+            ]
+        },
+        {
+            "id": "mm12",
+            "nombre": "Sushi Rolls",
+            "lecciones": [{
+                    "nombre": "HERRAMIENTAS BÁSICAS PARA PREPARAR SUSHI",
+                    "contenido": ["Preparación del arroz ", "El secreto de un buen sushi, la preparación del vinagre", "Variadas y fáciles técnicas de enrollado", "Verduras salteadas", "Corte de salmón y sashimi", "Salsa teriyaki y satay", "Salsa aji amarillo, acevichada y ponzu"]
+                    },
+                {
+                    "nombre": "PLAQUETAS Y ROLLO",
+                    "contenido": ["Plaqueta de palta / aguacate y queso crema", "Rolls Clásicos: california, hosomaki, nigiri y vegetarianos", "Roll vegetariano emplatado", "Rollo envuelto en salmón", "Rollo de tempura", "Roll furay-panko"]
+                }
+            ]
+        },
+        {
+            "id": "mm13",
+            "nombre": "Cocina Italiana",
+            "lecciones": ["Boloñesa de la nonna", "Salsa boscaiola", "Carne mechada", "Cocción pasta", "Un perfecto espagueti", "Los clásicos ñoquis", "Pasta de betarraga", "Pasta de espinacas", "Pasta fresca - Parte 1", "Pasta fresca - Parte 2", "Pesto", "Salsa pomodoro", "Relleno de betarraga", "Relleno de pollo", "Relleno de zapallo"]
+        },
+        {
+            "id": "mm14",
+            "nombre": "Cocina Española",
+            "lecciones": ["Pisto manchego", "Tortilla de patatas", "Paella mixta", "Crema catalana"]
         },
     ],
-    "preparaciones": ["", "", "", "", "", ""],
-}
+    "preparaciones": ["https://res.cloudinary.com/dgcn9sprj/image/upload/v1679287739/productos/Gastronom%C3%ADa%20Internacional:%207%20cursos%20incluidos/Preparaciones/1_nep5xw.jpg", "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679287737/productos/Gastronom%C3%ADa%20Internacional:%207%20cursos%20incluidos/Preparaciones/2_akc9du.jpg", "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679287735/productos/Gastronom%C3%ADa%20Internacional:%207%20cursos%20incluidos/Preparaciones/3_fnr8xi.jpg", "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679287743/productos/Gastronom%C3%ADa%20Internacional:%207%20cursos%20incluidos/Preparaciones/4_blgub1.jpg", "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679287736/productos/Gastronom%C3%ADa%20Internacional:%207%20cursos%20incluidos/Preparaciones/5_e6hnbf.jpg", "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679287736/productos/Gastronom%C3%ADa%20Internacional:%207%20cursos%20incluidos/Preparaciones/6_w2cbhz.jpg"],
+    "certificado": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1681395347/productos/Diplomado%20online%20en%20cocina%20internacional/certificaci%C3%B3n_3_mgsp8w.png",
+    "profesores": [
+        {
+            "nombre": "IVÁN SUÁREZ MENESES",
+            "descripcion": "Chef profesional dedicado al desarrollo de Cocina Internacional y Pastelería, con variada experiencia tanto en Chile como en España. Actualmente Chef ejecutivo de Escuela cursosdecocina y chef instructor docente en Instituto Culinary Chile. Encargado de los cursos online de Cocina, Repostería y Panadería.", 
+            "imagen": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679378040/Product%20pages/otras%20img/profes/1_cgtdda.png"
+        },
+        {
+            "nombre": "NICOLE PALOMINOS",
+            "descripcion": "Se convirtió a través de los años en experta en cocina y repostería vegana enseñándoles a miles de personas a través de sus clases de cocina y sus redes sociales @cocinoconplantas donde el nombre ya lo dice todo. Encargada de los cursos online Cocina y Repostería Vegana.", 
+            "imagen": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679378063/Product%20pages/otras%20img/profes/7_wdse4u.png"
+        },
+        {
+            "nombre": "INDUK IM",
+            "descripcion": "Chef de origen Coreano quien llegó a Chile junto a su familia hace más de 30 años. Dueña del restaurant \"Manna\", el cual es considerado uno de los lugares clásicos para comer delicias de uno de los países más de moda del continente asiático este último tiempo. Encargada del curso online Cocina Coreana.", 
+            "imagen": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679378085/Product%20pages/otras%20img/profes/13_iawjpr.png"
+        },
+        {
+            "nombre": "JUAN OZAKI",
+            "descripcion": "Chef de cocina internacional, originario de perú y con orígenes asiáticos, Juan se ha desempeñado en cargos de jefatura de carrera en importantes escuelas de cocina, además ha trabajado en importantes hoteles a nivel internacional. Encargado del curso online Cocina Nikkei.", 
+            "imagen": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679378051/Product%20pages/otras%20img/profes/2_j51ch3.png"
+        },
+        {
+            "nombre": "NICOLAS DE BARROS",
+            "descripcion": "Chef profesional chileno-brasileño, le encanta todo lo que tenga que ver con la gastronomía y sus sabores, las ganas de fusionar diferentes culturas de tal forma hacer una cocina moderna con los sabores tradicionales. Encargado del curso online Cocina Brasilera.", 
+            "imagen": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679378083/Product%20pages/otras%20img/profes/8_c6quao.png"
+        },
+        {
+            "nombre": "ROBERTO MUÑOZ",
+            "descripcion": "Chef Pastelero Profesional, representó a su país en varios torneos culinarios a nivel mundial, como por ejemplo el \"Trophée Passion\", Paris Francia, en Marzo 2019, logrando el primer lugar en elaboración del mejor postre y segundo puesto en menú, entrada principal y postre. Encargado del curso online Chocolatería.", 
+            "imagen": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679378104/Product%20pages/otras%20img/profes/14_lmqz3l.png"
+        },
+        {
+            "nombre": "JOSAHANDI AVILA PÉREZ",
+            "descripcion": "Cocinera por herencia y pasión, de raíces mexicanas e italianas, Josahandi fue premiada en el concurso gastronómico \"Sabor a Iberoamérica\" gracias a la receta de \"cochinita pibil\" heredada de su abuela. Encargada del curso online Cocina Mexicana.", 
+            "imagen": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679378054/Product%20pages/otras%20img/profes/3_wznla7.png"
+        },
+        {
+            "nombre": "KARIME ABU-GOSH",
+            "descripcion": "Chef Profesional egresada de instituto Culinary, especialista en Pasteleria clasica y cocina Árabe, ésta última desarrollada en base a sus orígenes directos con Palestina y toda una vida viendo a su familia cocinar deliciosas preparaciones. Encargada del curso online Cocina Árabe.", 
+            "imagen": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679378105/Product%20pages/otras%20img/profes/9_z0o3fq.png"
+        },
+        {
+            "nombre": "SÉGOLÈNE TOUZÉ",
+            "descripcion": "Originaria de Bretaña, una región costera al Noroeste de Francia, es una amante de la cocina. Apasionada por los viajes y los encuentros que conllevan con personas de distintas culturas. Ama compartir y enseñar la cultura francesa a través de la gastronomía. Encargada del curso online Cocina Francesa.", 
+            "imagen": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679378100/Product%20pages/otras%20img/profes/15_fdon3d.png"
+        },
+        {
+            "nombre": "PRISHA DASWANI",
+            "descripcion": "De origen Indio, vivió varios años en Liberia (África). Su familia al estar lejos del país hizo que la cocina fuera el lugar central para mantener la tradición familiar y cocinar los exquisitos platos de su lejana india. Así fue como Prisha comenzó su pasión. Encargada del curso online Cocina India.", 
+            "imagen": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679378046/Product%20pages/otras%20img/profes/4_ya5suq.png"
+        },
+        {
+            "nombre": "ALEXIS CONCHA",
+            "descripcion": "Bartender profesional. Tiene un vasto conocimiento de 10 años en el rubro de la coctelería. Se ha desempeñado como bartender y jefe de barra en importantes hoteles y bares, dejando una gran marca y conocimiento a muchas personas y alumnos. Encargado del curso online Coctelería Clásica.", 
+            "imagen": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679378080/Product%20pages/otras%20img/profes/10_u4bzdh.png"
+        },
+        {
+            "nombre": "RODRIGO MUÑOZ",
+            "descripcion": "Bartender profesional, Jefe de barra y emprendedor.Ha enfocado su carrera a mostrarle al mundo todo sobre la coctelería clásica y de autor, siendo profesor, jefe de barra, dueño de bares y ganador de múltiples premios internacionales en concursos de coctelería. Encargado del curso online Coctelería de Autor.", 
+            "imagen": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679378104/Product%20pages/otras%20img/profes/16_gxyl0e.png"
+        },
+        {
+            "nombre": "GONZALO VIDAL",
+            "descripcion": "Administrador gastronómico. Tiene un vasto conocimiento de 10 años en el rubro de la cocina internacional. Se ha desempeñado en distintos cargos de cocina, tales como sous chef y profesor en distintos restaurantes, banqueteras y hoteles. Encargado del curso online Sushi Rolls.", 
+            "imagen": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679378048/Product%20pages/otras%20img/profes/5_aqmnob.png"
+        },
+        {
+            "nombre": "FABIÁN MUÑOZ",
+            "descripcion": "Barista Profesional. Trainner en Italian Coffe SPA con un amplio conocimiento técnico y experimental en el mundo del café y bebidas en base a este famoso grano. Además, es especialista en el manejo de máquinas cafeteras tanto clásicas como modernas. Encargado del curso online Barista Training.",
+            "imagen": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679378085/Product%20pages/otras%20img/profes/11_lqx1rg.png"
+        },
+        {
+            "nombre": "CONSTANZA VALLEJOS",
+            "descripcion": "Luego del nacimiento de su primer hijo con alergia alimentaria, buscó opciones de recetas más sanas, menos procesadas y, en conjunto con querer llevar un estilo de vida más saludable e ir reemplazando los azúcares y grasas, descubrió un nuevo mundo de sabores igual de sabrosos y fáciles de preparar. Encargada del curso online Pastelería Vegana.", 
+            "imagen": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679378104/Product%20pages/otras%20img/profes/17_j98orr.png"
+        },
+        {
+            "nombre": "PATRICIO PONCE",
+            "descripcion": "Chef profesional con más de 5 años de experiencia. Patricio está diariamente desarrollando en su emprendimiento sus recetas de exquisitos panes y masas que son probadas y aprobadas por sus clientes. Encargado del curso online Empanadas y Rellenos.", 
+            "imagen": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679378038/Product%20pages/otras%20img/profes/6_iesiyy.png"
+        },
+        {
+            "nombre": "FRANCISCA MORALES",
+            "descripcion": "Francisca es titulada de administración en Artes culinarias y servicios de Culinary. Con pasantías en restaurante de estrella Michelin en Barcelona y hotel de lujo de la cadena relais & chateaux. Encargada del curso online Repostería Casera.",
+            "imagen": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679378074/Product%20pages/otras%20img/profes/12_pj9vgu.png"
+        }
+    ],
+    "garantiaImg": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679379120/Product%20pages/otras%20img/precios/certificaci%C3%B3n_1_zvmwts.png"
+},
 
 Diplomado Online de Repostería y Pastelería
 {
@@ -635,65 +907,279 @@ Diplomado Online de Repostería y Pastelería
     "imagenMalla": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679070055/productos/Diplomado%20online%20en%20Reposter%C3%ADa%20y%20pasteler%C3%ADa/malla-diplomadoreposteriaypasteleria_s5bvma.jpg",
     "video": "https://www.youtube.com/embed/iSiT5E1NDlc",
     "separator": "DIPLOMADO ONLINE EN REPOSTERÍA Y PASTELERÍA",
-    "dato": "",
-    "descripcion": ["", ""]
+    "dato": ["Tomar un diplomado es por sobre todo un compromiso contigo mismo. Significa que te atreverás a mejorar profesionalmente, a enfrentarte a nuevos retos ya superar con éxito lo que se te ponga por delante. Toma este desafío que te entregamos cursosdecocina, la mejor escuela de gastronomía online, y puedes empezar desde hoy.", "Tú que disfrutas preparando dulces y pasteles o trabajas en el ámbito de la panadería o repostería, tenemos una oferta especial para ti. ¡Un completo diplomado de repostería y pastelería online con 10 magníficos módulos a un precio increíble!", "Aprende desde la comodidad de tu hogar y transfórmate en un experto o experta en panadería artesanal, repostería y decoración, repostería vegana, casera, creación de tortas modernas, chocolatería, pastelería sin gluten y vegana, técnicas de cafetería y mucho más. ", "¡Haz magia con tu horno!¡Sorprende a tus amigos, familia, oa tus clientes con tus ricas creaciones!"],
+    "descripcion": ["¿POR QUÉ DEBES TOMAR ESTE DIPLOMADO?", "Con nuestro diplomado aprende a preparar desde los panes más tradicionales, hasta el exótico pan bao o el altamente cotizado bagel, las crujientes masas italianas para una rica pizza, entre otras masas; galletas, ricos pasteles, tortas clásicas, recetas sin gluten y las últimas creaciones en el ámbito de la pastelería, como lo es la pastelería vegana, o la cotizada técnica del templado del chocolate para que logres un chocolate perfecto de calidad premium! Y esto es sólamente un breve resumen de las decenas de recetas que podrás practicar. Todo esto lo podrás lograr con la ayuda de seis experimentados profesores que te explicarán en los videos en forma amena y fácil!", "El diplomado de pastelería está especialmente diseñado para que refuerces sólidamente tus conocimientos. Y está absolutamente recomendado para los que ya tienen un emprendimiento o piensan emprender en esta área.", "Con una pequeña inversión podrás multiplicar tus ganancias gracias a la variedad y calidad de productos que podrás ofrecer.", "¡Gánale a tu competencia! ¡Con nuestro diplomado y tus ganas de aprender podrás llegar muy lejos!", "¡Inscríbete en este diplomado y comienza a pensar en grande!"],
     "detalles": {
-        "paraTi": ["", ""],
-        "aprenderas": ["", ""]
+        "paraTi": ["¿Quieres iniciarte en el mundo de la repostería y saber si esta profesión es para ti?", "¿Deseas aprender una nueva habilidad para entretener y deleitar a tus amigos y familiares?", "¿Deseas empezar una trayectoria nueva, una oportunidad para transformar tu vida?", "¿Disfrutas cocinando para ti y para los tuyos?"],
+        "aprenderas": ["Aprenderás las mejores técnicas de la repostería.", "Con 10 cursos incluidos, lograrás ir desde lo más básico a niveles más avanzados de la repostería, panadería y pastelería", "Aprenderás desde panadería hasta chocolatería, pasando por repostería y pastelería.", "Lograrás aprender sobre barismo y decoracion de tortas.", "Aprenderás a preparar postres excepcionales.", "Podrás deleitar a tus comensales con preparaciones exquisitas."]
     },
     "modulos": [
         {
             "id": "mm0",
-            "nombre": "Módulo 1: Introducción",
-            "lecciones": ["", ""],
+            "nombre": "Panadería Artesanal",
+            "lecciones": [
+                    {
+                    "nombre": "Panes salados:",
+                    "contenido": ["Aprenderás una gran variedad de panes, desde la tradicional marraqueta hasta el aún desconocido pan bao pasando por el pan de molde blanco e integral, hallullas, dobladitas, bocado de dama, baguette, la crujiente ciabatta, focaccia, pan frica (para hamburguesa), de lengua, el diferente brioche, pan pita, pan de betarraga, el rico pan bagel y además una crujiente masa de pizza."]
+                    },
+                    {
+                    "nombre": "Panes dulces y masa hojaldre:",
+                    "contenido": ["Porque no sólo de panes salados se vive, aprenderás: cómo hacer una masa de hojaldre, hacer un croissant perfecto, rollitos de canela, cómo preparar el glaseado real, hacer pan dulce de amapola, berlinas horneadas y trenzas con manjar. "]
+                    }
+            ]
         },
+        {
+            "id": "mm1",
+            "nombre": "Panadería sin Gluten",
+            "lecciones": ["Bienvenida", "Conceptos básicos", "Utensilios de panadería", "Consejos de seguridad alimentaria", "Contaminación cruzada", "Quiche de vegetales", "Pan blanco de molde", "Sartén multigrano de molde", "Masa de empanadas", "Masa de pizza", "Pan de hamburguesa", "Sartén rústica", "Panettone", "Berlinés"]
+        },
+        {
+            "id": "mm2",
+            "nombre": "Pastelería sin Gluten",
+            "lecciones": ["Bienvenida", "Conceptos básicos", "Utensilios de pastelería", "Consejos de seguridad alimentaria", "Contaminación cruzada", "Gofres", "Alfajores", "Masa de tarta", "Crema pastelera", "Tarta de frutas", "Pie de limón", "Bizcocho", "Torta de lucuma", "Galletas con mermelada", "Pasteles de vainilla", "Duende", "Brazo de reina", "Despedida"]
+        },
+        {
+            "id": "mm3",
+            "nombre": "Repostería y Decoración",
+            "lecciones": [
+                {
+                    "nombre": "Bizcochos y tortas:",
+                    "contenido": ["Aprenderás lo básico como hacer bizcocho normal y de chocolate para tortas, hacer un brazo de reina, para de ahí ir evolucionando a recetas más elaboradas tales como: preparar torta moka, tres leches, de coco, marquesa de chocolate, la tradicional selva negra y la deliciosa torta de amapola"]
+                },
+                {
+                    "nombre": "Tarta de queso, tartas y kuchen:",
+                    "contenido": ["Aprenderás la masa para tarta, las masas brisée, sucrée las precisas para preparar ricos küchen de manzana, tarta de frutos rojos, cheesecake de maracuyá en frío, cheesecake de arándanos horneados y tartas saladas como la quiche caprese."]
+                },
+                {
+                    "nombre": "Los clásicos de la repostería: ",
+                    "contenido": ["Aprenderás a preparar la masa choux o escaldada, hacer masa choux para profiteroles clásicos rellenos, podrás usar la masa choux en la torta saint honoré, muffins clásicos con frutos rojos, brownies de chocolate, los ricos carrot cake y el insuperable tiramisú italiano"]
+                },
+                {
+                    "nombre": "Hojaldre, galletas y hojarasca:",
+                    "contenido": ["Aprenderás las ricas palmeritas, bocado mini lunch, torta de hojaldre, galletas de champaña, galletas de avena con chips de chocolate y delicias de frambuesa, los clásicos chilenitos, príncipes rellenos, alfajores rellenos con manjar y tortas de hojarasca."]
+                },
+                {
+                    "nombre": "Decoraciones, merengues y rellenos: ",
+                    "contenido": ["Aprenderás a poder usar y manejar boquillas y saber manguear profesionalmente, además de como preparar crema pastelera, merengues italiano y suizo, ganache de chocolate, glaseado de queso, buttercream y hacer ricos merenguitos.", "Se incluyen pequeñas pruebas al final de cada lección con preguntas de alternativas para reforzar el aprendizaje."]
+                }
+            ]
+        },
+        {
+            "id": "mm4",
+            "nombre": "Tortas Modernas",
+            "lecciones": [
+                {
+                    "nombre": "MERENGUES Y RELLENOS",
+                    "contenido": ["Merengue italiano", "Merenguitos de merengue italiano", "Merengue Suizo", "Crema de mantequilla de merengue Suizo", "Glaseado de queso crema", "Ganache de chocolate"]
+                },
+                {
+                    "nombre": "TORTAS MODERNAS",
+                    "contenido": ["Bizcocho de zanahoria", "Pastel de zanahoria armado", "Torta de vainilla bizcocho", "Torta de vainilla armada", "Bizcocho de terciopelo rojo", "Armada de terciopelo rojo", "Torta de bizcocho de chocolate", "Torta de chocolate armada"]
+                }
+            ]
+        },
+        {
+            "id": "mm5",
+            "nombre": "Entrenamiento de Barista",
+            "lecciones": [
+                {
+                    "nombre": "ENTRENAMIENTO BARISTA",
+                    "contenido": ["Tostado del café y sus procesos ", "Molienda del café ", "Diferencias entre cepa robusta v/s arábica ", "Receta para un buen café ", "Elaboración expresso / doble ", "Elaboración ristretto y largo ", "Elaboración café americano clasico ", "Puntos críticos de la texturización ", "Texturizado de espuma de leche y montaje en capuccino ", "Texturizado de espuma de leche vegetal", "Preparación café macchiato y latte"]
+                },
+                {
+                    "nombre": "BEBIDAS CLÁSICAS Y TÉCNICAS",
+                    "contenido": ["Preparación café Ahogado", "Preparación café moka chocolate", "Preparación café macchiato caramelo ", "Elaboración te chai aromático ", "Elaboración cold brew o café frío ", "Preparación tónica de café ", "Elaboración de refrescante café frapuccino"]
+                },
+                {
+                    "nombre": "MÉTODOS DE EXTRACCIÓN",
+                    "contenido": ["¿Qué es el café de especialidad? ", "Introducción a metodos de preparacion de cafe y extracción de aromas ", "Cómo utilizar la prensa francesa de café correctamente ", "Cómo usar el método v60 para café ", "Correcto uso de cafetera italiana o método greca ", "Correcto uso de prensa de café o aeropress"]
+                },
+            ]
+        },
+        {
+            "id": "mm6",
+            "nombre": "Repostería Casera",
+            "lecciones": ["La masa '1, 2, 3', base de muchos postres;", "La masa de hojarasca", "La crema pompadour", "El merengue italiano", "La salsa de maracuyá para coronar con un dulce final diversos postres", "Un rico cheesecake", "El tradicional pastel de manzana", "Ricas galletas de caramelo", "Alfajores", "Chilenitos", "Un fabuloso pastel de brownie", "La exquisita panna cotta de miel", "Las crujientes nueces garrapiñadas", "Una maravillosa torta de manjar y lúcuma", "Un rico 'chocolat chantty'"]
+        },
+        {
+            "id": "mm7",
+            "nombre": "Repostería Vegana",
+            "lecciones": ["Bienvenida ", "Galletón de maní", "Galletas arrugadas", "Tarta de queso crudo de Berries", "Prestigios", "Cremoso de tofu", "Tarta de chocolate", "Tarta de arándanos", "Tarta de maní", "Tinta barritas", "Calugas de maní", "Rollitos de canela ", "Barrita de arándano y chocolate", "Barritas energéticas de tahini", "Galette de bayas", "Torta de chocolate", "Leche de arroz, almendras y coco"]
+        },
+        {
+            "id": "mm8",
+            "nombre": "Pastelería Vegana",
+            "lecciones": ["Tipos de productos", "Tronco de mazapán y chocolate vegano", "Pastel de risa vegano", "Trufas de avellana vegana", "Mantecol versión vegana", "Granola casera vegana", "Cheesecake crudivegano con caramelo de coco", "Milhojas de chocolate y manjar sin azúcar", "Paletas de helado de espresso y chocolate vegano", "Alfajores veganos", "Tartaleta vegana de chocolate y frutos rojos", "Galletón vegano de avena y arándanos ", "Brownie vegano", "Torta vegana de vainilla"]
+        },
+        {
+            "id": "mm9",
+            "nombre": "Chocolatería",
+            "lecciones": ["Teoría del chocolate", "Bombón de maracuyá", "Pastel de chocolate naranja ", "Macaron de chocolate", "Mendigos", "Entremet chocolate de leche y avellana", "Ganache de chocolate relleno de macarrones", "Tableta de chocolate y frutos secos", "Chocolate caliente"]        },
     ],
-    "preparaciones": ["", "", "", "", "", ""],
-}
+    "profesores": [
+        {
+            "nombre": "ROBERTO MUÑOZ",
+            "descripcion": "Chef Pastelero Profesional, representó a su país en varios torneos culinarios a nivel mundial, como por ejemplo el \"Trophée Passion\", Paris Francia, en Marzo 2019, logrando el primer lugar en elaboración del mejor postre y segundo puesto en menú, entrada principal y postre. Encargado del curso online Chocolatería.", 
+            "imagen": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679378104/Product%20pages/otras%20img/profes/14_lmqz3l.png"
+        },
+        {
+            "nombre": "NICOLE PALOMINOS",
+            "descripcion": "Se convirtió a través de los años en experta en cocina y repostería vegana enseñándoles a miles de personas a través de sus clases de cocina y sus redes sociales @cocinoconplantas donde el nombre ya lo dice todo. Encargada de los cursos online Cocina y Repostería Vegana.", 
+            "imagen": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679378063/Product%20pages/otras%20img/profes/7_wdse4u.png"
+        },
+        {
+            "nombre": "CONSTANZA VALLEJOS",
+            "descripcion": "Luego del nacimiento de su primer hijo con alergia alimentaria, buscó opciones de recetas más sanas, menos procesadas y, en conjunto con querer llevar un estilo de vida más saludable e ir reemplazando los azúcares y grasas, descubrió un nuevo mundo de sabores igual de sabrosos y fáciles de preparar. Encargada del curso online Pastelería Vegana.", 
+            "imagen": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679378104/Product%20pages/otras%20img/profes/17_j98orr.png"
+        },
+        {
+            "nombre": "FRANCISCA MORALES",
+            "descripcion": "Francisca es titulada de administración en Artes culinarias y servicios de Culinary. Con pasantías en restaurante de estrella Michelin en Barcelona y hotel de lujo de la cadena relais & chateaux. Encargada del curso online Repostería Casera.",
+            "imagen": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679378074/Product%20pages/otras%20img/profes/12_pj9vgu.png"
+        }
+        {
+            "nombre": "FABIÁN MUÑOZ",
+            "descripcion": "Barista Profesional. Trainner en Italian Coffe SPA con un amplio conocimiento técnico y experimental en el mundo del café y bebidas en base a este famoso grano. Además, es especialista en el manejo de máquinas cafeteras tanto clásicas como modernas. Encargado del curso online Barista Training.",
+            "imagen": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679378085/Product%20pages/otras%20img/profes/11_lqx1rg.png"
+        },
+        {
+            "nombre": "IVÁN SUÁREZ MENESES",
+            "descripcion": "Chef profesional dedicado al desarrollo de Cocina Internacional y Pastelería, con variada experiencia tanto en Chile como en España. Actualmente Chef ejecutivo de Escuela cursosdecocina y chef instructor docente en Instituto Culinary Chile. Encargado de los cursos online de Cocina, Repostería y Panadería.", 
+            "imagen": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679378040/Product%20pages/otras%20img/profes/1_cgtdda.png"
+        }
+    ],
+    "preparaciones": ["https://res.cloudinary.com/dgcn9sprj/image/upload/v1682278149/productos/Diplomado%20online%20en%20Reposter%C3%ADa%20y%20pasteler%C3%ADa/PREPARACIONES-1-PANADERI%CC%81A-SIN-GLUTEN_y8zjxd.png", "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682278149/productos/Diplomado%20online%20en%20Reposter%C3%ADa%20y%20pasteler%C3%ADa/PREPARACIONES-1-REPOSTERIAVEGANA_mm3qa7.png", "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682278149/productos/Diplomado%20online%20en%20Reposter%C3%ADa%20y%20pasteler%C3%ADa/PREPARACIONES-3-PASTELERIA-SIN-GLUTEN_sftuv2.png", "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682278148/productos/Diplomado%20online%20en%20Reposter%C3%ADa%20y%20pasteler%C3%ADa/p2_m09sxo.png", "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682278148/productos/Diplomado%20online%20en%20Reposter%C3%ADa%20y%20pasteler%C3%ADa/p3_cpj9sh.png", "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682278148/productos/Diplomado%20online%20en%20Reposter%C3%ADa%20y%20pasteler%C3%ADa/p1_k9qzdt.png"],
+    "certificado": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682278502/productos/Diplomado%20online%20en%20Reposter%C3%ADa%20y%20pasteler%C3%ADa/certificaci%C3%B3n_4_r4a4yu.png",
+    "garantiaImg": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679294658/Product%20pages/otras%20img/precios/1_s4uqu0.jpg"
+},
 
 Pasteles con Diseño Interno
 {
     "fondoTitulo": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679118245/productos/Pasteles%20con%20dise%C3%B1o%20interno/fondotitlecc_c8d4gc.jpg",
     "imagenMalla": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679070051/productos/Pasteles%20con%20dise%C3%B1o%20interno/malla-pastelescondise%C3%B1ointerno_s6wrut.jpg",
-    "video": "",
-    "separator": "CURSO COMPLETO DE",
-    "dato": "",
-    "descripcion": ["", ""]
+    "video": "https://www.youtube.com/embed/FanR0jJIy_U",
+    "separator": "CURSO COMPLETO DE PASTELES CON DISEÑO INTERNO",
+    "dato": ["Imagina poder elaborar pasteles con diseños en su interior de manera más rápida y económica que un pastel convencional…", "► SIN tener experiencia previa", "► SIN utensilios especiales", "► SIN horarios y desde casa", "► SIN ingredientes costosos", "APROVECHA Y ACCEDE DE POR VIDA AL CURSO CON EL 80% DE DESCUENTO", "Curso 100% online"],
+    "descripcion": ["¿QUÉ VAS A LOGRAR EN EL CURSO?", "Ingresar al curso te permitirá:", "✓Conocer el procedimiento correcto para crear Pasteles con Diseño Interno.", "✓Atraerás miles de clientes a tu negocio y tus ingresos se multiplicarán.", "✓Posicionarás tu marca en el mercado y serás embajadora de la innovación.", "✓Manejarás los precios según tus propios criterios, no habrá competencia que te lo impida.", "✓Podrás elaborar cualquier diseño para cumpleaños, bodas, quinceañeros y más"],
     "detalles": {
-        "paraTi": ["", ""],
-        "aprenderas": ["", ""]
+        "paraTi": ["Te gusta la repostería", "Quieres llevar tus pasteles y diseños a otros niveles", " quieres causar sensación con nuevas técnicas reposteras", "Te gustaría agregar algo diferente y divertido a tus pasteles"],
+        "aprenderas": ["Los diferentes tipos de masa que te ayudará a crear tus diseños increíbles", "Tendrás la oportunidad de ser la pionera en tu ciudad y trabajar sin competencia.", "El uso de los utensilios, los colores, las bases y el procedimiento para hacer creaciones inigualables", "Como crear hermosos diseños interiores", "«Al vender tu primer pastel, este curso se habrá pagado solo»"]
     },
     "modulos": [
         {
             "id": "mm0",
             "nombre": "Módulo 1: Introducción",
-            "lecciones": ["", ""],
+            "lecciones": [
+                    {
+                    "nombre": "El primer módulo empieza explicando los principales ingredientes que deben incluirse en los pasteles así como también, una breve explicación de cómo elaborarlos.",
+                    "contenido": ["Ingredientes", "Tipos de masa", "¿Cómo hacer el diseño interior?"]
+                    }
+            ]
+        },
+        {
+            "id": "mm1",
+            "nombre": "Módulo 2: PREPARACIÓN DE LA MASA Y USO DE COLORES",
+            "lecciones": [
+                    {
+                    "nombre": "En este módulo muestra los utensilios e ingredientes básicos que se deben tomar en cuenta para la elaboración de las masas, así como también ciertos criterios principales a incluir en los mismos, tanto como los colores como algunas técnicas.",
+                    "contenido": ["Guía de preparación", "Movimientos y procedimiento", "Bases", "Utensilios"]
+                    }
+            ]
+        },
+        {
+            "id": "mm2",
+            "nombre": "Módulo 3: PROCEDIMIENTO DE ENTRENAMIENTO",
+            "lecciones": [
+                {
+                    "nombre": "En esta sección se incluye un procedimiento de entrenamiento para la elaboración del pastel con diseño interno, de esta forma te adaptarás a la técnica como una primera experiencia.",
+                    "contenido": ["Proceso", "Guía didáctica", "Elaboración del diseño", "Medición de ingredientes correctos"]
+                }
+            ]
+        },
+        {
+            "id": "mm3",
+            "nombre": "Módulo 4: Preparación",
+            "lecciones": [
+                {
+                    "nombre": "En este módulo se muestran la preparación de distintos diseños, además de la variación de la técnica adaptada para diversos usos y procesos.",
+                    "contenido": ["Diseño paisajes", "Diseño de animales", "Diseño mixto", "Uso correcto de la masa.", "Uso correcto del Horno", "Variaciones de la técnica", "Estructura interna", "Actualizaciones..."]
+                }
+            ]
         },
     ],
-    "preparaciones": ["", "", "", "", "", ""],
-}
+    "preparaciones": ["https://res.cloudinary.com/dgcn9sprj/image/upload/v1682288057/productos/Pasteles%20con%20dise%C3%B1o%20interno/201384828_796220877762455_6330862406640823370_n_1_uuxz6d.jpg", "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682288059/productos/Pasteles%20con%20dise%C3%B1o%20interno/pastel_delfines_004_1_xf33ga.png", "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682288058/productos/Pasteles%20con%20dise%C3%B1o%20interno/210180467_2049146135236742_91239335765377656_n_1_kfxzrq.jpg", "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682288057/productos/Pasteles%20con%20dise%C3%B1o%20interno/167542122_146659103954208_8925372141519723175_n_jwkotf.jpg", "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682288061/productos/Pasteles%20con%20dise%C3%B1o%20interno/Pastel_elefante_interno_cxbqhv.png", "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682288057/productos/Pasteles%20con%20dise%C3%B1o%20interno/221394196_351392613036395_7606993571913554243_n_bu4nrv.jpg"],
+    "certificado": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682288272/productos/Pasteles%20con%20dise%C3%B1o%20interno/certificado_oc6p47.png",
+    "garantiaImg": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679294658/Product%20pages/otras%20img/precios/1_s4uqu0.jpg"
+},
 
 Aprende Cocina Vegana
 {
     "fondoTitulo": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679118356/productos/Aprende%20cocina%20vegana/fondotitlecc_z0fhgw.jpg",
     "imagenMalla": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679070051/productos/Aprende%20cocina%20vegana/malla-aprendecocinavegana_l41rkn.jpg",
-"video": "",
-    "separator": "CURSO COMPLETO DE",
-    "dato": "",
-    "descripcion": ["", ""]
+    "video": "https://www.youtube.com/embed/bGad4x9qu2c",
+    "separator": "CURSO COMPLETO PARA APRENDER COCINA VEGANA",
+    "dato": ["Actualmente hay más de 234 millones de veganos alrededor del planeta, esta estadística crece en proporción a la preocupación por el planeta, los animales y la sostenibilidad.", "Aprende con nuestro curso online a preparar exquisitos platos y recetas veganas 100% balanceadas y saludables.", "Conoce diferentes menús que jamás imaginaste que existían, sus ingredientes y su proceso de preparación."],
+    "descripcion": ["Desarrollado por Radha Sanchéz, chef especializado en cocina vegana, con una experiencia de mas de 10 años, tomo sus conocimientos en lugares como India, Bangladesh y diferentes países de sur América tales como Perú, Ecuador y Chile.", "A través de nuestro curso online completo, aprenderás todo lo relacionado a la preparación de platos 100% saludables, por lo que lograrás aimentarte de forma saludable sin dejar de darte los gustos que desees"],
     "detalles": {
-        "paraTi": ["", ""],
-        "aprenderas": ["", ""]
+        "paraTi": ["Deseas alimentarte de forma saludable", "Quieres darle un giro y cambio de rumbo a tu alimentación", "Quieres cocinar platos deliciosos y a la vez comer nutritiva y saldablemente"],
+        "aprenderas": ["● Aprenderás a preparar un menú completo basado en quinua, arroz oriental, cúrcuma y chía.", "● Aprenderás los principales sustitutos de los productos de origen animal como las carnes y leches.", "● Conocerás 5 ideas de recetas para implementar en almuerzos y cenas.", "● Para que no te vuelvas a quedar sin ideas para desayunar te enseñaremos 5 preparaciones que puedes probar para tus desayunos.", "● Si tu debilidad son los dulces no te preocupes, pues con nuestro curso aprenderás a preparar deliciosos postres 100% saludables."]
     },
     "modulos": [
         {
             "id": "mm0",
-            "nombre": "Módulo 1: Introducción",
-            "lecciones": ["", ""],
+            "nombre": "Módulo 1: Creación de menú completo",
+            "lecciones": [
+                {
+                    "nombre": "Tu primera clase en vivo práctica cocinando un plato completo basado en plantas.",
+                    "contenido": ["▸ Sopa de quinua", "▸ Arroz oriental", "▸ Ensalada verde", "▸ Infusión de cúrcuma", "▸ Mermelada de chía"]
+                }
+            ]
         },
+        {
+            "id": "mm1",
+            "nombre": "Módulo 2: PROTEÍNAS Y LECHES",
+            "lecciones": [
+                {
+                    "nombre": "Aprenderás los principales sustitutos de los productos de origen animal como las carnes y las leches:",
+                    "contenido": ["▸ Tofu o queso de soya", "▸ Carne de garbanzo", "▸ Leche de coco", "▸ Croquetas de lenteja", "▸ Salsa mayonesa"]
+                }
+            ]
+        },
+        {
+            "id": "mm2",
+            "nombre": "Módulo 3: ALMUERZOS Y CENAS", 
+            "lecciones": [
+                {
+                    "nombre": "Veremos 5 ideas de recetas para implementar en estos momentos del día:", 
+                    "contenido": ["▸ Empanadas al sartén ", "▸ Arroz integral y amaranto", "▸ Coctel de Jamaica", "▸ Ceviche de palmitos", "▸ Crema de tomate"]
+                }
+            ]
+        },
+        {
+            "id": "mm3",
+            "nombre": "Módulo 4: DESAYUNOS", 
+            "lecciones": [
+                {
+                    "nombre": "Para que no te vuelvas a quedar sin ideas para desayunar te enseñaré 5 preparaciones que puedes probar en este momento del día:", 
+                    "contenido": ["▸ Galletas de frutos secos", "▸ Pancakes de avena", "▸ Mantequilla de manÍ", "▸ Leche de almendra", "▸ Arepas de yuca"]
+                }
+            ]
+        },
+        {
+            "id": "mm4",
+            "nombre": "Módulo 5: POSTRES Y SNACKS", 
+            "lecciones": [
+                {
+                    "nombre": "La debilidad de muchos son las preparaciones dulces por eso te compartiré muchas opciones de postres saludables:", 
+                    "contenido": ["▸ Pie de frutos rojos", "▸ Brownie sin gluten", "▸ Helado vegano", "▸ Flan de fruta", "▸ Crema de chocolate"]
+                }
+            ]
+        }
     ],
-    "preparaciones": ["", "", "", "", "", ""],
-}
+    "preparaciones": ["https://res.cloudinary.com/dgcn9sprj/image/upload/v1682298991/productos/Aprende%20cocina%20vegana/1_cgiod3.jpg", "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682298991/productos/Aprende%20cocina%20vegana/2_qibwsi.jpg", "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682298991/productos/Aprende%20cocina%20vegana/3_e3sins.jpg", "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682298991/productos/Aprende%20cocina%20vegana/4_x6ilfm.jpg", "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682298991/productos/Aprende%20cocina%20vegana/5_awhxrk.jpg", "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682298991/productos/Aprende%20cocina%20vegana/6_jllpfg.jpg"],
+    "certificado": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682298992/productos/Aprende%20cocina%20vegana/CERTIFICADO_gkwx7a.jpg",
+    "garantiaImg": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679294658/Product%20pages/otras%20img/precios/1_s4uqu0.jpg"
+},
 
 Barista Principiante
 {
@@ -758,284 +1244,1015 @@ Bartender para Princpiantes
 {
     "fondoTitulo": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679118600/productos/Bartender%20para%20principiantes/fondotitlecc_rv8f5m.jpg",
     "imagenMalla": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679070050/productos/Bartender%20para%20principiantes/malla-bartenderparaprincipiantes_jdnusr.jpg",
-    "video": "",
-    "separator": "CURSO COMPLETO DE",
-    "dato": "",
-    "descripcion": ["", ""]
+    "video": "https://www.youtube.com/embed/EuANuQ2HRyY",
+    "separator": "CURSO COMPLETO DE BARTENDER PARA PRINCIPIANTES",
+    "dato": "Si quieres convertirte en un profesional de la barra, éste es el primer paso. Prepárate para incorporarte al mercado laboral o amplía tus conocimientos en el área al certificarte en este curso de Bartender Para Principiantes. Al finalizar este curso estarás listo para trabajar en bares, deleitar a tu audiencia y preparar cocteles clásicos y modernos de la manera correcta.",
+    "descripcion": ["El mundo de la coctelería es fascinante y tiene infinitas posibilidades. No solo permite vivir experiencias de sabor con las bebidas, sino que nos sumerge en un sinfín de vivencias sensoriales mientras nos asombramos con historias detrás de cada preparación.", "Bajo la guía de Will Mateo Huertas, bartender profesional hace más de 10 años. Para quien el bartending, más que su profesión, es su su vocación y estilo de vida. En el 2019 compitió a nivel mundial en el World Class, en la cual se seleccionan los mejores bartenders del mundo, y fue seleccionado en el Top 8 de los mejores bartenders a nivel nacional y Top 1 a nivel local. De su mano lograrás enamorarte de este maravilloso mundo."],
     "detalles": {
-        "paraTi": ["", ""],
-        "aprenderas": ["", ""]
+        "paraTi": ["Quieres iniciarte en el mundo de la coctelería y saber si esta profesión es para ti", "Deseas aprender una nueva habilidad para entretener y deleitar a tus amigos y familiares", "Deseas empezar una trayectoria nueva, una oportunidad para transformar tu vida", "Te encantan los cócteles y quieres aprender las mejores técnicas para prepararlos"],
+        "aprenderas": ["Aprenderás las mejores técnicas de elaboración de cócteles clásicos y modernos", "Lograrás conocer todos los utensilios, crístalería y sus funciones en la barra", "Aprenderás a preparar cócteles agitados, refrescados, shots, frozen y muchos más", "Aprenderás las mejores técnicas de garnish o decoración de cócteles", "Lograrás contar tu propia historia a través de los conceptos de la coctelería", "Aprenderás a hacer tu propio cóctel de creación con todo lo aprendido en el curso"]
     },
     "modulos": [
         {
             "id": "mm0",
-            "nombre": "Módulo 1: Introducción",
-            "lecciones": ["", ""],
+            "nombre": "Módulo 1: Introducción al Curso", 
+            "lecciones": ["Lección 1: Bienvenida", "Lección 2: Quién soy", "Lección 3: Grupo privado", "Lección 4: Qué aprenderás", "Lección 5: Cómo sacarle el mejor provecho a este curso"],
+        },
+        {
+            "id": "mm1",
+            "nombre": "Módulo 2: Introducción al Mundo de la Coctelería", 
+            "lecciones": ["Lección 1: Historia de la coctelería", "Lección 2: Técnicas de elaboración", "Lección 3: Partes del bar", "Lección 4: Reconocimiento de utensilios y cristalería del bar", "Lección 5: Práctica elaboración de cócteles directos (gin tonic y mojito)"],
+        },
+        {
+            "id": "mm2",
+            "nombre": "Módulo 3: Spirits y Licores", 
+            "lecciones": ["Lección 1: Diferencia de un destilado a un licor, terminología del alcohol, historia de la destilación y proceso de elaboración", "Lección 2: Tipos de alambiques y sus partes", "Lección 3: Categorías de destilados", "Lección 4: Denominación de origen", "Lección 5: Especificación de cada Spirit", "Lección 6: Práctica cata de Spirits y cócteles agitados"],
+        },
+        {
+            "id": "mm3",
+            "nombre": "Módulo 4: Bitters, Syrops y Premixes", 
+            "lecciones": ["Lección 1: ¿Qué es un bitter?, historia y funciones", "Lección 2: ¿Qué es un syrop?, métodos de elaboración, clasificación y funciones", "Lección 3: ¿Qué es un premix?, métodos de elaboración", "Lección 4: Subprocesos y técnicas antiguas", "Lección 5: Práctica shots y cócteles refrescados"],
+        },
+        {
+            "id": "mm4",
+            "nombre": "Módulo 5: Garnish", 
+            "lecciones": ["Lección 1: Aprende a afilar un cuchillo", "Lección 2: Técnicas de corte y arte en diferentes clases de fruta", "Lección 3: Práctica cócteles frozen y sodas naturales"],
+        },
+        {
+            "id": "mm5",
+            "nombre": "Módulo 6: BONO - Creación", 
+            "lecciones": ["Lección 1: Conceptos de la coctelería", "Lección 2: Práctica creación"],
         },
     ],
-    "preparaciones": ["", "", "", "", "", ""],
-}
+    "preparaciones": ["https://res.cloudinary.com/dgcn9sprj/image/upload/v1682300821/productos/Bartender%20para%20principiantes/1_nbaqhb.jpg", "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682300821/productos/Bartender%20para%20principiantes/2_szkqri.jpg", "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682300821/productos/Bartender%20para%20principiantes/3_evhnhn.jpg", "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682300821/productos/Bartender%20para%20principiantes/4_elcch7.jpg", "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682300821/productos/Bartender%20para%20principiantes/5_dz1vlq.jpg", "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682300822/productos/Bartender%20para%20principiantes/6_c5bajl.jpg"],
+    "certificado": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682300822/productos/Bartender%20para%20principiantes/certificado_cm5rhn.jpg",
+    "garantiaImg": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679294658/Product%20pages/otras%20img/precios/1_s4uqu0.jpg"
+},
 
 Chocofresas Irresistibles
 {
     "fondoTitulo": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679118666/productos/Chocofresas%20irresistibles/fondotitlecc_szxxbt.jpg",
     "imagenMalla": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679070053/productos/Chocofresas%20irresistibles/malla-chocofresasirresistibles_ubozjk.jpg",
-    "video": "",
-    "separator": "CURSO COMPLETO DE",
-    "dato": "",
-    "descripcion": ["", ""]
+    "imgVideo": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682341546/productos/Chocofresas%20irresistibles/MOCKUP_bi8b8h.png",
+    "separator": "CURSO COMPLETO DE CHOCOFRESAS IRRESISTIBLES",
+    "dato": "Sabías que con poco presupuesto, un toque de creatividad y ganas de generar ingresos, puedes iniciar tu propio negocio de fresas con chocolate, lo mejor de todo, desde la comodidad de tu casa.",
+    "descripcion": ["En este curso encontrarás más de 40 lecciones con las que podrás empezar completamente desde cero a elaborar tus propios productos para consentir a todos tus seres queridos o también una oportunidad para iniciar el emprendimiento de tus sueños en el dulce mundo de las fresas con chocolate.", "Bajo la guía de, Jazmín Moncada Cano, Profesional en el área de Pastelería y Repostería con más de 10 años de experiencia en este campo, además fundadora y emprendedora de la empresa Pastelería Creativa; Comenzarás a dar tus primeros pasos dentro del mundo de las Chocofresas, donde aprenderás a conocer paso a paso y desde cero el proceso de elaboración, cómo adquirir, preservar y decorar tu producto final para que siempre hagas entregas de altísima calidad.", "Al finalizar este curso estarás listo para emprender la conquista del mundo de la pastelería creativa preparando unas Chocofresas irresistibles."],
     "detalles": {
-        "paraTi": ["", ""],
-        "aprenderas": ["", ""]
+        "paraTi": ["¿Deseas generar ingresos desde tu hogar?", "¿Quieres emprender con las Chocofresas, pero no sabes cómo?", "¿Disfrutas consentir a tu familia e invitados con detalles especiales y deliciosos?", "¿Otros cursos sobre Chocofresas te han parecido muy costosos, aburridos y no te enseñaron lo que querías saber?", "¿Quieres emprender en algo que realmente te apasione?", "¿Te sientes atrapado en tu actual trabajo y quieres ser independiente?"],
+        "aprenderas": ["Conocer paso a paso y desde cero el proceso de elaboración de las Chocofresas.", "Cómo hacer un correcto almacenamiento, cuidado y pigmentación del chocolate.", "Realizar técnicas de decoración para tus productos y creación de una mesa de dulces completa.", "Cómo manejar correctamente los distintos tipos de rellenos y trazos sobre chocolate."]
     },
     "modulos": [
         {
             "id": "mm0",
-            "nombre": "Módulo 1: Introducción",
-            "lecciones": ["", ""],
+            "nombre": "Módulo 1: Bienvenida", 
+            "lecciones": ["Lección 1: Bienvenida e Introducción al programa.", "Lección 2: Quién es el creador del programa.", "Lección 3: Recomendaciones."],
+        },
+        {
+            "id": "mm1",
+            "nombre": "Módulo 2: Preparaciones.", 
+            "lecciones": ["Lección 1: Coberturas de chocolate.", "Lección 2: Compra de chocolate.", "Lección 3: Almacenamiento de chocolate.", "Lección 4: Derretido del chocolate.", "Lección 5: Lecitina de soya.", "Lección 6: Pigmento dorado.", "Lección 7: Qué hacer con el chocolate pastoso.", "Lección 8: Toppings.", "Lección 9: Rellenos.", "Lección 10: Compra de fresas.", "Lección 11: Almacenamiento de fresas.", "Lección 12: Lavado de fresas.", "Lección 13: Uso correcto de los pinchos.", "Lección 14: Como cubrir una fresa.", "Lección 15: Pigmento dorado en fresa.", "Lección 16: Pigmentación en fresas.", "Lección 17: Moldes de silicona.", "Lección 18: Moldes de acetato.", "Lección 19: Corazones con Toppings.", "Lección 20: Apliques.", "Lección 21: Pintado de azúcar.", "Lección 22: Azúcar oro rosa.", "Lección 23: Choco paleta.", "Lección 24: Tips.", "Lección 25: Idea de trabajo.", "Lección 26: Fresa con coco.", "Lección 27: Fresa con maní.", "Lección 28: Fresa con oro rosa.", "Lección 29: Líneas en fresa.", "Lección 30: Fresa con Toppings.", "Lección 31: Caja de fresas.", "Lección 32: Caja decorada.", "Lección 33: Trazos.", "Lección 34: Diseños.", "Lección 35: Paleta unicornio.", "Lección 36: Bombones.", "Lección 37: Oso piñata.", "Lección 38: Ganache de chocolate.", "Lección 39: Relleno de torta."],
+        },
+        {
+            "id": "mm2",
+            "nombre": "Módulo 3: Bonos adicionales", 
+            "lecciones": ["Bono 1: Receta Postre con ganache de chocolate.", "Bono 2: Receta Manzana de baby shower.", "Bono 3: Receta Manzana día de la mujer.", "Bono 4: Receta Masmelos con chocolate.", "Bono 5: Receta Muñeco de Masmelos."],
         },
     ],
-    "preparaciones": ["", "", "", "", "", ""],
-}
+    "preparaciones": ["https://res.cloudinary.com/dgcn9sprj/image/upload/v1682342229/productos/Chocofresas%20irresistibles/1_z015l7.jpg", "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682342229/productos/Chocofresas%20irresistibles/2_ippqcy.jpg", "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682342229/productos/Chocofresas%20irresistibles/3_bnrpyo.jpg", "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682342229/productos/Chocofresas%20irresistibles/4_xgy3yv.jpg", "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682342229/productos/Chocofresas%20irresistibles/5_tzkfld.jpg", "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682342229/productos/Chocofresas%20irresistibles/6_spzklt.jpg"],
+    "certificado": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682342230/productos/Chocofresas%20irresistibles/certificado_ujcuif.jpg",
+    "garantiaImg": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679294658/Product%20pages/otras%20img/precios/1_s4uqu0.jpg"
+},
 
 Cocina Mexicana
 {
     "fondoTitulo": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679118734/productos/Cocina%20Mexicana/fondotitlecc_k8fswn.jpg",
     "imagenMalla": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679070048/productos/Cocina%20Mexicana/malla-cocinamexicana_civpcr.jpg",
-    "video": "",
-    "separator": "CURSO COMPLETO DE",
-    "dato": "",
-    "descripcion": ["", ""]
+    "imgVideo": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682343995/productos/Cocina%20Mexicana/MOCKUP_1_dpzpuh.png",
+    "separator": "CURSO COMPLETO DE COCINA MEXICANA",
+    "dato": ["¿Quieres aprender a cocinar antojitos mexicanos?", "Descubre lo fácil y delicioso que puede ser cocinar utilizando diferentes chiles, maíz en diferentes formas, con diferentes ingredientes y semillas que quizá jamás imaginaste que se pudieran combinar para preparar los más exquisitos platillos. Aprende las bases para realizar la comida más solicitada en los restaurantes mexicanos, con las mejores recetas.", "En este programa conocerás todo lo necesario para preparar deliciosa comida como si fueras todo un experto, comenzando desde cero la preparación de la comida, hasta el momento de llevar a la mesa. ¡Podrás iniciar tu propio negocio de comida!"],
+    "descripcion": ["Desarrollado por Norma Neri,  quien desde niña creció aprendiendo a cocinar al lado de sus padres y hermanos (dueños de una cenaduría mexicana)  los platillos mexicanos más solicitados.", "Con experiencia de más de 30 años dedicada a la cocina, Norma Nery te enseñará a preparar distintas recetas cargadas de mucho color y sabor, como el pozole, tamales en diferentes sabores, enchiladas entre otro más; para deleitar tu paladar y el de los que te rodean."], 
     "detalles": {
-        "paraTi": ["", ""],
-        "aprenderas": ["", ""]
+        "paraTi": ["Eres amante de la cocina y quieres aprender a realizar platillos mexicanos", "Quieres emprender un negocio o simplemente consentir a tu familia", "Estás interesado/a en aprender a cocinar deliciosa comida pero no tienes idea de cómo hacerlo", "Ya cuentas con un negocio de comida pero no estás obteniendo los resultados esperados.", "Quieres mejorar el sabor y la calidad de tus platillos", "Quieres aumentar la rentabilidad de tu negocio, ofreciendo nuevas opciones en el menú",],
+        "aprenderas": ["Conocerás todos los ingredientes que necesitas para cocinar como si fueras un experto en la cocina mexicana", "Explorarás poco a poco la cocina mexicana y descubrirás cuan exquisita puede ser", "Obtendrás las habilidades necesarias para crear tus propios platillos", "Conocerás diferentes técnicas de trabajar con el maíz y los chiles para realzar la elaboración de tu comida", "Desarrollarás la habilidad de hacer varios platillos a la vez con los mismos ingredientes",]
     },
     "modulos": [
         {
             "id": "mm0",
-            "nombre": "Módulo 1: Introducción",
-            "lecciones": ["", ""],
+            "nombre": "Módulo 1: Presentación del curso", 
+            "lecciones": ["Lección 1: Bienvenida", "Lección 2: ¿Quién soy?", "Lección 3: ¿Qué esperar de este curso?", "Lección 4: ¿A quién contacto si tengo dudas?"],
+        },
+        {
+            "id": "mm1",
+            "nombre": "Módulo 2: Enchiladas Rojas", 
+            "lecciones": ["Lección 1: Ingredientes", "Lección 2: Dorado de tortillas", "Lección 3: Cómo servir"],
+        },
+        {
+            "id": "mm2",
+            "nombre": "Módulo 3: Flautas", 
+            "lecciones": ["Lección 1: Lavado de pechuga", "Lección 2: Cocción pechuga", "Lección 3: Preparación", "Lección 4: Preparación de salsa", "Lección 5: Cómo servir"],
+        },
+        {
+            "id": "mm3",
+            "nombre": "Módulo 4: Tacos Dorados", 
+            "lecciones": ["Lección 1: Ingredientes", "Lección 2: Preparación", "Lección 3: Diferentes rellenos", "Lección 4: Cómo servir"],
+        },
+        {
+            "id": "mm4",
+            "nombre": "Módulo 5: Tacos de Carne Molida", 
+            "lecciones": ["Lección 1: Ingredientes", "Lección 2: Preparación", "Lección 3: Cómo servir"],
+        },
+        {
+            "id": "mm5",
+            "nombre": "Módulo 6: Pozole Rojo", 
+            "lecciones": ["Lección 1: Ingredientes", "Lección 2: Lavado de maíz y desvenado de chile", "Lección 3: Agregar carne", "Lección 4: Licuado de chile", "Lección 5: colado de chile", "Lección 6: Orégano", "Lección 7: Cómo servir"],
+        },
+        {
+            "id": "mm6",
+            "nombre": "Módulo 7: Enchiladas Verdes", 
+            "lecciones": ["Lección 1: Ingredientes", "Lección 2: Preparación salsa verde", "Lección 3: Dorada de tortillas", "Lección 4: Cómo servir"],
+        },
+        {
+            "id": "mm7",
+            "nombre": "Módulo 8: Sopes", 
+            "lecciones": ["Lección 1: Ingredientes", "Lección 2: Guisada de frijoles y dorada de sopes", "Lección 3: Cómo servir"],
+        },
+        {
+            "id": "mm8",
+            "nombre": "Módulo 9: Costillas de Puerco en Salsa Verde", 
+            "lecciones": ["Lección 1: Ingredientes", "Lección 2: Cocción carne", "Lección 3: Preparación de chile", "Lección 4: Agregar nopales", "Lección 5: Cómo servir"],
+        },
+        {
+            "id": "mm9",
+            "nombre": "Módulo 10: Macita Verde con Arroz", 
+            "lecciones": ["Lección 1: Ingredientes", "Lección 2: Cocción carne", "Lección 3: Agregar sal a la carne", "Lección 4: Tostado de chiles y jitomates", "Lección 5: Tip de cocina", "Lección 6: Preparación chile", "Lección 7: Mezcla de carne con chile", "Lección 8: Ingredientes arroz", "Lección 9: Preparación de insumos", "Lección 10: Dorado del arroz", "Lección 11: Agregar jitomate al arroz", "Lección 12: Arroz cocido", "Lección 13: Cómo servir"],
+        },
+        {
+            "id": "mm10",
+            "nombre": "Módulo 11: Despedida", 
+            "lecciones": ["Lección 1: Despedida del curso"],
         },
     ],
-    "preparaciones": ["", "", "", "", "", ""],
-}
+    "preparaciones": ["https://res.cloudinary.com/dgcn9sprj/image/upload/v1682344717/productos/Cocina%20Mexicana/1_d4d4mh.jpg", "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682344672/productos/Cocina%20Mexicana/2_wa5auj.jpg", "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682344672/productos/Cocina%20Mexicana/3_ehneji.jpg", "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682344672/productos/Cocina%20Mexicana/4_kbhexw.jpg", "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682344672/productos/Cocina%20Mexicana/5_fbffhm.jpg", "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682344672/productos/Cocina%20Mexicana/6_xdslhg.jpg"],
+    "certificado": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682344672/productos/Cocina%20Mexicana/certificado_tqiu6l.jpg",
+    "garantiaImg": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679294658/Product%20pages/otras%20img/precios/1_s4uqu0.jpg"
+},
 
 Curso Chocolatería Online
 {
     "fondoTitulo": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679121318/productos/Curso%20Chocolater%C3%ADa%20Online/fondotitlecc_c7whsd.jpg",
     "imagenMalla": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679070041/productos/Curso%20Chocolater%C3%ADa%20Online/malla-chocolateria_j0xcnu.jpg",
-    "video": "",
-    "separator": "CURSO COMPLETO DE",
-    "dato": "",
-    "descripcion": ["", ""]
+    "video": "https://www.youtube.com/embed/q9qjPYfhrzk",
+    "videoProfe": "https://www.youtube.com/embed/Q_wruttSxnY",
+    "separator": "CURSO COMPLETO DE CHOCOLATERÍA ONLINE",
+    "dato": "Con este curso podrás aprender la elaboración de productos de chocolatería usando técnicas de atemperado de chocolate en sus distintas variedades, cuidados del producto, armonía en combinación de sabores aplicados en bombonería, rellenos y postres con énfasis en sacar las mejores cualidades visuales y organolépticas de éste producto tan apreciado a nivel mundial.",
+    "descripcion": ["Dale el toque especial a tus postres y preparaciones dulces aprendiendo técnicas y nuevas recetas con nuestro curso de chocolatería.", "¿POR QUÉ DEBES TOMAR ESTE CURSO?", "La chocolatería es indispensable para alguien que como tu, quiere desarrollarse en las técnicas más modernas de la pastelería, y poder preparar pasteles, dulces y bocados con sofisticadas técnicas y usando ingredientes especiales.", "Sin duda este curso te servirá mucho si tienes un emprendimiento en el ámbito de la pastelería, pues podrás obtener mayores ganancias y poder ofrecer tus creaciones a un grupo de consumidores de gustos más sofisticados.", "¡NO IMPORTA TU EDAD, O EN EL LUGAR QUE ESTÉS, SIEMPRE HAY TIEMPO DE CUMPLIR TUS SUEÑOS!"],
     "detalles": {
-        "paraTi": ["", ""],
-        "aprenderas": ["", ""]
+        "paraTi": ["Te encanta el chocolate y quieres aprender a hacerlo tú mismo/a con ingredientes de calidad y técnicas profesionales.", "Quieres disfrutar de una experiencia divertida y relajante, donde podrás expresar tu creatividad y satisfacer tu paladar.", "Te gustaría sorprender a tus seres queridos con regalos originales y deliciosos, hechos por ti con mucho cariño.", "Te interesa conocer más sobre la historia, la cultura y los beneficios del chocolate, un alimento milenario y universal.", "Te planteas la posibilidad de emprender tu propio negocio de chocolatería o trabajar en el sector."],
+        "aprenderas": ["Aprenderás a elaborar deliciosos chocolates con diferentes sabores, formas y rellenos.", "Podrás sorprender a tus familiares y amigos con tus creaciones de chocolate personalizadas y originales.", "Desarrollarás tu creatividad y tu pasión por el chocolate, un alimento que tiene muchos beneficios para la salud y el ánimo.", "Podrás convertir tu hobby en una fuente de ingresos si decides vender tus chocolates o abrir tu propio negocio de chocolatería."]
     },
     "modulos": [
         {
             "id": "mm0",
-            "nombre": "Módulo 1: Introducción",
-            "lecciones": ["", ""],
+            "nombre": "Módulo 1.",
+            "lecciones": ["Presentación profesor: Roberto Muñoz"]
+        },
+        {
+            "id": "mm1",
+            "nombre": "Módulo 2.",
+            "lecciones": ["Tronco de mazapán y chocolate vegano"]
+        },
+        {
+            "id": "mm2",
+            "nombre": "Módulo 3.",
+            "lecciones": ["Teoría del Chocolate"]
+        },
+        {
+            "id": "mm3",
+            "nombre": "Módulo 4.",
+            "lecciones": ["Bombón de Maracuyá parte 1"]
+        },
+        {
+            "id": "mm4",
+            "nombre": "Módulo 5.",
+            "lecciones": ["Bombón de Maracuyá parte 2"]
+        },
+        {
+            "id": "mm5",
+            "nombre": "Módulo 6.",
+            "lecciones": ["Macarrón de chocolate"]
+        },
+        {
+            "id": "mm6",
+            "nombre": "Módulo 7.",
+            "lecciones": ["Ganache de chocolate relleno de macarrones"]
+        },
+        {
+            "id": "mm7",
+            "nombre": "Módulo 8.",
+            "lecciones": ["Cake de Chocolate Naranja parte 1"]
+        },
+        {
+            "id": "mm8",
+            "nombre": "Módulo 9.",
+            "lecciones": ["Cake de Chocolate Naranja parte 2"]
+        },
+        {
+            "id": "mm9",
+            "nombre": "Módulo 10.",
+            "lecciones": ["Mendigos"]
+        },
+        {
+            "id": "mm10",
+            "nombre": "Módulo 11.",
+            "lecciones": ["Entremet Chocolate de Leche y Avellana"]
+        },
+        {
+            "id": "mm11",
+            "nombre": "Módulo 12.",
+            "lecciones": ["Tableta de Chocolate y Frutos secos"]
+        },
+        {
+            "id": "mm12",
+            "nombre": "Módulo 13.",
+            "lecciones": ["Chocolate caliente"]
         },
     ],
-    "preparaciones": ["", "", "", "", "", ""],
-}
+    "preparaciones": ["https://res.cloudinary.com/dgcn9sprj/image/upload/v1682354465/productos/Curso%20Chocolater%C3%ADa%20Online/1_yzhs9d.jpg", "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682354465/productos/Curso%20Chocolater%C3%ADa%20Online/2_jgjo8v.jpg", "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682354465/productos/Curso%20Chocolater%C3%ADa%20Online/3_sy3rta.jpg", "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682354465/productos/Curso%20Chocolater%C3%ADa%20Online/4_dpyxkr.jpg", "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682354465/productos/Curso%20Chocolater%C3%ADa%20Online/5_qx0rjo.jpg", "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682354465/productos/Curso%20Chocolater%C3%ADa%20Online/6_cz89zf.jpg"],
+    "certificado": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682354483/productos/Curso%20Chocolater%C3%ADa%20Online/E-BOOCK-WEB-CHOCOLATERIA_kdal0x.png",
+    "garantiaImg": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679294658/Product%20pages/otras%20img/precios/1_s4uqu0.jpg"
+},
 
 Curso Cocina Árabe Online
 {
     "fondoTitulo": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679121372/productos/Curso%20Cocina%20%C3%81rabe/fondotitlecc_c6myql.jpg",
     "imagenMalla": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679070045/productos/Curso%20Cocina%20%C3%81rabe/malla-cocinaarabe_jkbapb.jpg",
-    "video": "",
-    "separator": "CURSO COMPLETO DE",
-    "dato": "",
-    "descripcion": ["", ""]
+    "video": "https://www.youtube.com/embed/uzhxnB5s_8w",
+    "videoProfe": "https://www.youtube.com/embed/RUWS3xLXU8w",
+    "separator": "CURSO COMPLETO DE COCINA ÁRABE",
+    "dato": ["La cocina árabe abarca la comida tradicional de los países bajo esta influencia cultural que, más allá de la Península Arábiga, se extienden por todo el Norte y el Este de África. Comparten idioma, religión y recetario. Su manera de entender la gastronomía, de sentarse a la mesa, está íntimamente ligada a la reunión social, a la hospitalidad. Cocinar es pasar tiempo en familia y, así como el ritual del té es un símbolo de hospitalidad, comer unidos es honrar a los comensales", "La gastronomía árabe está llena de acentuados, aromáticos y exquisitos sabores. Pero también la rodean muchísimas tradiciones.", "A través de este increíble curso podrás ver con tus propios ojos todo ésto que te estamos contando y aplicar todo lo que sin duda aprenderás en él."],
+    "descripcion": ["Si te apasiona conocer culturas y gastronomías distintas a la tuya ¡Este es el curso indicado!", "¿POR QUÉ DEBES TOMAR ESTE CURSO?", "Karime, tu profesora, develará sus secretos relativos a la rica cocina árabe para que aprendas de primera mano sus recetas y sorprender a tu familia y amigos con las preparaciones de esta extensa y milenaria cultura.", "Este es el curso adecuado si tienes en mente emprender gastronómicamente o simplemente quieres sorprender a tu entorno familiar y amigos con las ricas preparaciones árabes dulces y saladas.", "Te invitamos cordialmente a expandir tus conocimientos gastronómicos con las atractivas recetas y sabores de esta cocina milenaria.", "¡NO TE PIERDAS ESTA VALIOSA OPORTUNIDAD!"],
     "detalles": {
-        "paraTi": ["", ""],
-        "aprenderas": ["", ""]
+        "paraTi": ["Te apasiona conocer culturas y gastronomías distintas a la tuya y quieres descubrir los sabores, aromas y colores de la cocina árabe.", "Quieres sorprender a tus invitados con recetas originales, saludables y variadas, que combinan legumbres, cereales, verduras, frutos secos, especias y carnes halal.", "Quieres conocer más sobre la historia, la cultura y las tradiciones de los países árabes, así como sus costumbres culinarias y sus rituales a la hora de comer.", "Quieres ampliar tus conocimientos y habilidades culinarias y enriquecer tu repertorio gastronómico con recetas de una de las cocinas más antiguas y diversas del mundo."],
+        "aprenderas": ["A preparar platos típicos de la cocina árabe, como el hummus, el tabulé, el falafel, el cuscús, el kebab o el baklava, entre otros.", "A utilizar ingredientes de calidad y técnicas profesionales para elaborar recetas deliciosas, saludables y variadas.", "A combinar legumbres, cereales, verduras, frutos secos, especias y carnes halal para crear sabores, aromas y colores únicos.", "A conocer la historia, la cultura y las tradiciones de los países árabes, así como sus costumbres culinarias y sus rituales a la hora de comer.", "A ampliar tus conocimientos y habilidades culinarias y enriquecer tu repertorio gastronómico con recetas originales y sorprendentes."]
     },
     "modulos": [
         {
             "id": "mm0",
-            "nombre": "Módulo 1: Introducción",
-            "lecciones": ["", ""],
+            "nombre": "Módulo 1.", 
+            "lecciones": ["Presentación profesor: Karime Abu-Gosh."],
+        },
+        {
+            "id": "mm1",
+            "nombre": "Módulo 2.", 
+            "lecciones": ["Pan Pita."],
+        },
+        {
+            "id": "mm2",
+            "nombre": "Módulo 3.", 
+            "lecciones": ["Hummus."],
+        },
+        {
+            "id": "mm3",
+            "nombre": "Módulo 4.", 
+            "lecciones": ["Baba Ganoush."],
+        },
+        {
+            "id": "mm4",
+            "nombre": "Módulo 5.", 
+            "lecciones": ["Salsa Tahine."],
+        },
+        {
+            "id": "mm5",
+            "nombre": "Módulo 6.", 
+            "lecciones": ["Shakshuka."],
+        },
+        {
+            "id": "mm6",
+            "nombre": "Módulo 7.", 
+            "lecciones": ["Kubbe."],
+        },
+        {
+            "id": "mm7",
+            "nombre": "Módulo 8.", 
+            "lecciones": ["Falafel."],
+        },
+        {
+            "id": "mm8",
+            "nombre": "Módulo 9.", 
+            "lecciones": ["Arroz Árabe."],
+        },
+        {
+            "id": "mm9",
+            "nombre": "Módulo 10.", 
+            "lecciones": ["Kebab."],
+        },
+        {
+            "id": "mm10",
+            "nombre": "Módulo 11.", 
+            "lecciones": ["Salsa de Ajo."],
+        },
+        {
+            "id": "mm11",
+            "nombre": "Módulo 12.", 
+            "lecciones": ["Tabouleh."],
+        },
+        {
+            "id": "mm12",
+            "nombre": "Módulo 13.", 
+            "lecciones": ["Rellenos Árabe."],
+        },
+        {
+            "id": "mm13",
+            "nombre": "Módulo 14.", 
+            "lecciones": ["Harise."],
+        },
+        {
+            "id": "mm14",
+            "nombre": "Módulo 15.", 
+            "lecciones": ["Ceregli y Baklava."],
         },
     ],
-    "preparaciones": ["", "", "", "", "", ""],
-}
+    "preparaciones": ["https://res.cloudinary.com/dgcn9sprj/image/upload/v1682364669/productos/Curso%20Cocina%20Coreana/1_zpyn1i.jpg", "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682364670/productos/Curso%20Cocina%20Coreana/2_pf1qoh.jpg", "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682364670/productos/Curso%20Cocina%20Coreana/3_oo4dqz.jpg", "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682364670/productos/Curso%20Cocina%20Coreana/4_sm9s3y.jpg", "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682364670/productos/Curso%20Cocina%20Coreana/5_ggbubu.jpg", "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682364671/productos/Curso%20Cocina%20Coreana/6_ifeliw.jpg"],
+    "certificado": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682364417/productos/Curso%20Cocina%20Coreana/E-BOOCK-WEB-ARABE_hksmyq.png",
+    "garantiaImg": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679294658/Product%20pages/otras%20img/precios/1_s4uqu0.jpg"
+},
 
 Curso Cocina Brasilera Online
 {
     "fondoTitulo": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679121424/productos/Curso%20Cocina%20Brasilera/fondotitlecc_lq61zh.jpg",
     "imagenMalla": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679070048/productos/Curso%20Cocina%20Brasilera/malla-cocinabrasilera_w0vuy8.jpg",
-    "video": "",
-    "separator": "CURSO COMPLETO DE",
-    "dato": "",
-    "descripcion": ["", ""]
+    "video": "https://www.youtube.com/embed/3QIFvbDum5Y",
+    "videoProfe": "https://www.youtube.com/embed/Ky-jYcjifUE",
+    "separator": "CURSO COMPLETO DE COCINA BRASILERA",
+    "dato": ["¡Imagínate toda la alegría del Brasil en tu mesa!", "La comida brasileña con sus platos más representativos y con los ingredientes más típicos que se pueden encontrar también en chile, sin perder la sazón brasileña para que los disfruten en sus casas, enseñados de forma fácil, rápida y con sabores increíbles!"],
+    "descripcion": ["Si eres fanático de la comida brasileña este curso es perfecto para ti. Podrás deslumbrar con las típicas preparaciones del Brasil a tu familia y amigos, algunas son: “Strogonoff”, una rica “Feijoada”, “brigadeiros”. entre otras exquisiteces.", "¿POR QUÉ DEBES TOMAR ESTE CURSO?", "Si te gusta aprender de distintas culturas gastronómicas debes tomar este curso, no tan solo vas a ser un experto cocinero , además podrás emprender con unas de las cocinas emergentes destacadas a nivel mundial como lo es la brasileña. La gente hoy en día está interesada en probar cosas nuevas por lo que aprender de este el arte culinario de Brasil te será muy útil.", "Aprenderás en este curso : Útiles datos y técnicas,tipos de carnes, platos típicos, sabores de las diversas culturas que forman este gran país sudamericano.", "Nos encargamos de hacer un curso profesional, entretenido y cercano en cuanto al aprendizaje para que esté al alcance de todos, incluso si no eres cocinero.", "¡NO ESPERES MÁS Y ÚNETE A ESTA EXPERIENCIA GASTRONÓMICA QUE CURSOS DE COCINA TIENE PARA TI!"],
     "detalles": {
-        "paraTi": ["", ""],
-        "aprenderas": ["", ""]
+        "paraTi": ["Te gusta la cocina variada, colorida y sabrosa, que mezcla influencias indígenas, africanas, europeas y asiáticas.", "Quieres conocer más sobre la cultura, la historia y la diversidad de Brasil, un país con una riqueza gastronómica impresionante.", "Quieres disfrutar de una experiencia divertida y didáctica, donde podrás compartir tu pasión por la cocina con otras personas que tienen el mismo interés.", "Quieres recibir un ebook con todas las recetas y una certificación online al completar el curso de cocina brasilera."],
+        "aprenderas": ["A preparar platos típicos de la cocina brasilera, como la feijoada, el strogonoff, la caipirinha o el brigadeiro, entre otros.", "A utilizar ingredientes frescos, naturales y variados, que te permitirán crear recetas deliciosas, saludables y coloridas.", "A conocer las influencias indígenas, africanas, europeas y asiáticas que han dado forma a la gastronomía de Brasil, un país con una riqueza culinaria impresionante.", "A disfrutar de una experiencia divertida y didáctica, donde podrás compartir tu pasión por la cocina con otras personas que tienen el mismo interés."]
     },
     "modulos": [
         {
             "id": "mm0",
-            "nombre": "Módulo 1: Introducción",
-            "lecciones": ["", ""],
+            "nombre": "Módulo 1.", 
+            "lecciones": ["Presentación Profesor: Nicolas de Barros"]
+        },
+        {
+            "id": "mm1",
+            "nombre": "Módulo 2.", 
+            "lecciones": ["Strogonoff"]
+        },
+        {
+            "id": "mm2",
+            "nombre": "Módulo 3.", 
+            "lecciones": ["Brigadeiro Na Colher"]
+        },
+        {
+            "id": "mm3",
+            "nombre": "Módulo 4.", 
+            "lecciones": ["Prato Feito"]
+        },
+        {
+            "id": "mm4",
+            "nombre": "Módulo 5.", 
+            "lecciones": ["Rabada"]
+        },
+        {
+            "id": "mm5",
+            "nombre": "Módulo 6.", 
+            "lecciones": ["Feijoada"]
+        },
+        {
+            "id": "mm6",
+            "nombre": "Módulo 7.", 
+            "lecciones": ["Coxinha + Caipirinha"]
+        },
+        {
+            "id": "mm7",
+            "nombre": "Módulo 8.", 
+            "lecciones": ["Camarão Na Moranga"]
+        },
+        {
+            "id": "mm8",
+            "nombre": "Módulo 9.", 
+            "lecciones": ["Manjar Blanco (dulce de coco)"]
+        },
+        {
+            "id": "mm9",
+            "nombre": "Módulo 10.", 
+            "lecciones": ["Cuscús"]
         },
     ],
-    "preparaciones": ["", "", "", "", "", ""],
-}
+    "preparaciones": ["https://res.cloudinary.com/dgcn9sprj/image/upload/v1682366125/productos/Curso%20Cocina%20Brasilera/1_ijeqrk.jpg", "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682366125/productos/Curso%20Cocina%20Brasilera/2_ptx2hx.jpg", "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682366126/productos/Curso%20Cocina%20Brasilera/3_xxqjqa.jpg", "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682366126/productos/Curso%20Cocina%20Brasilera/4_qcvi1l.jpg", "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682366126/productos/Curso%20Cocina%20Brasilera/5_gvvimo.jpg", "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682366126/productos/Curso%20Cocina%20Brasilera/6_loyvop.jpg"],
+    "certificado": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682365953/productos/Curso%20Cocina%20Brasilera/E-BOOCK-WEB-BRASILERA_guoq7w.png",
+    "garantiaImg": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679294658/Product%20pages/otras%20img/precios/1_s4uqu0.jpg"
+},
 
 Curso Cocina Coreana Online
 {
     "fondoTitulo": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679121494/productos/Curso%20Cocina%20Coreana/fondotitlecc_bdgssc.jpg",
     "imagenMalla": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679070043/productos/Curso%20Cocina%20Coreana/malla-cocinacoreana_jm6nfd.jpg",
-    "video": "",
-    "separator": "CURSO COMPLETO DE",
-    "dato": "",
-    "descripcion": ["", ""]
+    "video": "https://www.youtube.com/embed/fVDIo9K39mo",
+    "videoProfe": "https://www.youtube.com/embed/3RmCGBWmQIQ",
+    "separator": "CURSO COMPLETO DE COCINA COREANA",
+    "dato": "Con este curso conocerás las artes culinarias coreanas, la exquisitez de sus preparaciones en un entretenido viaje que harás junto a nuestra profesora: Induk Im , que logra plasmar los sabores típicos de este país asiático con los ingredientes y especias que podrás encontrar en tu localidad , pero siempre respetando el sabor tradicional de las recetas tal como si estuvieras comiendo en Corea.",
+    "descripcion": ["Si gustas de comidas diferentes, de diversos países, este es el curso ideal para ti! Te enseñaremos la cocina coreana con Induk, nuestra profesora, para que así puedas aprender de primera mano sus recetas y cautivar a los tuyos con los sabrosos platillos de este atractivo país.", "¿POR QUÉ DEBES TOMAR ESTE CURSO?", "Este es el curso perfecto si buscas emprender en el ámbito de la gastronomía, pues la cocina coreana aún es poco conocida o simplemente sorprende a tu familia con ricas y diferentes comidas.", "En el curso aprenderás las ricas recetas coreanas más populares,y a preparar sabores realmente increíbles ¿Te doy un consejo? No te pierdas este curso!", "¡ADQUIERE NUEVOS CONOCIMIENTOS PARA TU VIDA Y TE SORPRENDERÁS DE LO QUE PUEDES HACER!"],
     "detalles": {
-        "paraTi": ["", ""],
-        "aprenderas": ["", ""]
+        "paraTi": ["Te gusta la cocina sana, equilibrada y sabrosa, que utiliza ingredientes naturales y frescos, como verduras, cereales, legumbres, carnes y pescados.", "Quieres conocer más sobre la cultura, la historia y las tradiciones de Corea, un país con una riqueza gastronómica milenaria.", "Quieres disfrutar de una experiencia divertida y enriquecedora, donde podrás compartir tu pasión por la cocina con otras personas que tienen el mismo interés.", "Quieres ampliar tus conocimientos y habilidades culinarias y enriquecer tu repertorio gastronómico con recetas originales y exóticas."],
+        "aprenderas": ["A utilizar ingredientes naturales y frescos, como verduras, cereales, legumbres, carnes y pescados, que te permitirán crear recetas sanas, equilibradas y sabrosas.", "A conocer las técnicas y los secretos de la cocina coreana, como el uso de las salsas, las especias, los fermentados y los métodos de cocción.", "A conocer la cultura, la historia y las tradiciones de Corea, un país con una riqueza gastronómica milenaria.", "A disfrutar de una experiencia divertida y enriquecedora, donde podrás compartir tu pasión por la cocina con otras personas que tienen el mismo interés."]
     },
     "modulos": [
         {
             "id": "mm0",
-            "nombre": "Módulo 1: Introducción",
-            "lecciones": ["", ""],
+            "nombre": "Módulo 1.", 
+            "lecciones": ["Presentación profesor: Induk Im"]
+        },
+        {
+            "id": "mm1",
+            "nombre": "Módulo 2.", 
+            "lecciones": ["Tok Manduguk"]
+        },
+        {
+            "id": "mm2",
+            "nombre": "Módulo 3.", 
+            "lecciones": ["Topokki Clásico"]
+        },
+        {
+            "id": "mm3",
+            "nombre": "Módulo 4.", 
+            "lecciones": ["Yeyuk Muchim"]
+        },
+        {
+            "id": "mm4",
+            "nombre": "Módulo 5.", 
+            "lecciones": ["Bulgogi"]
+        },
+        {
+            "id": "mm5",
+            "nombre": "Módulo 6.", 
+            "lecciones": ["Yapche"]
+        },
+        {
+            "id": "mm6",
+            "nombre": "Módulo 7.", 
+            "lecciones": ["Bibimbap"]
+        },
+        {
+            "id": "mm7",
+            "nombre": "Módulo 8.", 
+            "lecciones": ["Kimchi Bokkeum Bap Vegano"]
+        },
+        {
+            "id": "mm8",
+            "nombre": "Módulo 9.", 
+            "lecciones": ["Duenyang Chigve de Mariscos"]
+        },
+        {
+            "id": "mm9",
+            "nombre": "Módulo 10.", 
+            "lecciones": ["Bibim Guksu"]
+        },
+        {
+            "id": "mm10",
+            "nombre": "Módulo 11.", 
+            "lecciones": ["Samguiopsal"]
+        },
+        {
+            "id": "mm11",
+            "nombre": "Módulo 12.", 
+            "lecciones": ["Arroz Coreano"]
         },
     ],
-    "preparaciones": ["", "", "", "", "", ""],
+    "preparaciones": ["https://res.cloudinary.com/dgcn9sprj/image/upload/v1682368125/productos/Curso%20Cocina%20Coreana/1c_sv8i67.jpg", "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682368125/productos/Curso%20Cocina%20Coreana/2c_ijetqq.jpg", "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682368126/productos/Curso%20Cocina%20Coreana/3c_krxn0x.jpg", "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682368125/productos/Curso%20Cocina%20Coreana/4c_lvgmwm.jpg", "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682368125/productos/Curso%20Cocina%20Coreana/5c_cqtult.jpg", "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682368125/productos/Curso%20Cocina%20Coreana/6c_nxqcvs.jpg"],
+    "certificado": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682367721/productos/Curso%20Cocina%20Coreana/E-BOOCK-WEB-COREANA_wmidyf.png",
+    "garantiaImg": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679294658/Product%20pages/otras%20img/precios/1_s4uqu0.jpg"
 }
 
 Curso Cocina Francesa Online
 {
     "fondoTitulo": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679121550/productos/Curso%20Cocina%20Francesa/fondotitlecc_swxhqf.jpg",
     "imagenMalla": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679070043/productos/Curso%20Cocina%20Francesa/malla-cocinafrancesa_drzlmx.jpg",
-    "video": "",
-    "separator": "CURSO COMPLETO DE",
-    "dato": "",
-    "descripcion": ["", ""]
+    "video": "https://www.youtube.com/embed/EWsJgZR7zhc",
+    "videoProfe": "https://www.youtube.com/embed/HQiq-wz1mNU",
+    "separator": "CURSO COMPLETO DE COCINA FRANCESA",
+    "dato": ["¿Quieres aprender recetas típicas francesas?  Francia es más que “omelette au fromage” o baguette!  Si quieres impresionar a tus amigos con platos o postres franceses, debes comprar este curso.", "¡Aquí te enseñaremos recetas simples que puedas reproducir en la comodidad de tu casa!  Y como se dice en francés, “Bon appétit” !", "¡Capacítate desde hoy y mejora tus conocimientos!"],
+    "descripcion": ["En este curso aprenderás de la cocina más tradicional del mundo, la cocina francesa. Aprenderás las recetas típicas francesas como el rico crême brûlée, la deliciosa tarte tatin, una fácil y rápida masa choux, que te harán sentir como un verdadero cocinero profesional y de seguro te transportará a Francia, podrás sorprender a tu familia y amigos con estas exquisitas preparaciones aplicando los conocimientos aprendidos.", "¿POR QUÉ DEBES TOMAR ESTE CURSO?", "La comida francesa es la madre de todas las cocinas en el mundo, por lo que adquirir este conocimiento te servirá de base para todo. Si también tu deseo es querer emprender en el rubro gastronómico la comida francesa es tremendamente atractiva. Este curso contiene todo el contenido que necesitas saber, explicado por una gran profesional y así puedas desarrollarte como un experto cocinero francés.", "En este curso aprenderás técnicas básicas y clásicas para la elaboración de más de 10 recetas clásicas de la cocina francesa conocidas a nivel mundial, usos de la vaina de vainilla, azúcar, masas quebradas, ganache de chocolate, entre muchas otras técnicas que sin duda las usarás siempre.", "Éste es uno de los cursos más entretenidos y bien explicados que podrás encontrar de cocina francesa, de seguro lo pasaras increíble, pero además aprenderás todo lo que necesitas saber en cuanto a cocina francesa clásica.", "¡NO ESPERES MÁS Y COMIENZA A COCINAR COMO UN VERDADERO CHEF FRANCÉS Y SACARÁS APLAUSOS DE TODOS QUIENES PRUEBEN TUS PREPARACIONES!"],
     "detalles": {
-        "paraTi": ["", ""],
-        "aprenderas": ["", ""]
+        "paraTi": ["Si eres un amante de la buena comida y quieres explorar la cultura gastronómica francesa", "Si eres un amante de la cocina y quieres ampliar tus conocimientos culinarios y perfeccionar tus habilidades.", "Si quieres conocer ingredientes locales frescos y de alta calidad, y cómo utilizarlos para crear platos deliciosos.", "Si quieres experimentar con nuevos sabores y crear platos únicos y deliciosos"],
+        "aprenderas": ["Prepararás platos deliciosos y sofisticados que impresionarán a tus invitados.", "Descubrirás los secretos de la gastronomía francesa, una de las más reconocidas y variadas del mundo.", "Mejorarás tus habilidades culinarias y tu creatividad en la cocina.", "Ampliarás tus horizontes gastronómicos y podrás degustar nuevos sabores e ingredientes."]
     },
     "modulos": [
         {
             "id": "mm0",
-            "nombre": "Módulo 1: Introducción",
-            "lecciones": ["", ""],
+            "nombre": "Módulo 1: Introducción al curso.", 
+            "lecciones": ["Presentación Profesora: Iségoléne Touzé"]
+        },
+        {
+            "id": "mm1",
+            "nombre": "Módulo 2: Cannelés", 
+            "lecciones": ["Esponjosos Cannelés"]
+        },
+        {
+            "id": "mm2",
+            "nombre": "Módulo 3: Crême brûlée", 
+            "lecciones": ["La original Creme Brûlée"]
+        },
+        {
+            "id": "mm3",
+            "nombre": "Módulo 4: Vainilla", 
+            "lecciones": ["Cómo abrir una vaina de vainilla"]
+        },
+        {
+            "id": "mm4",
+            "nombre": "Módulo 5: Flan Parisino", 
+            "lecciones": ["Nos vamos de viaje con este Flan Parisino"]
+        },
+        {
+            "id": "mm5",
+            "nombre": "Módulo 6: Petits choux", 
+            "lecciones": ["Petits Choux, bocados pequeños cremosos"]
+        },
+        {
+            "id": "mm6",
+            "nombre": "Módulo 7: Gratin Dauphinois", 
+            "lecciones": ["Suaves papitas gratinadas gratin dauphinois"]
+        },
+        {
+            "id": "mm7",
+            "nombre": "Módulo 8: Quiche de Puerro", 
+            "lecciones": ["Quiche de puerro super fácil"]
+        },
+        {
+            "id": "mm8",
+            "nombre": "Módulo 9: Mousse de Chocolate", 
+            "lecciones": ["Clásico Mousse de Chocolate"]
+        },
+        {
+            "id": "mm9",
+            "nombre": "Módulo 10: Croque Monsieur", 
+            "lecciones": ["Sandwich crujiente croque monsieur"]
+        },
+        {
+            "id": "mm10",
+            "nombre": "Módulo 11: Soupe à l’oignon", 
+            "lecciones": ["Deliciosa sopa de cebolla"]
+        },
+        {
+            "id": "mm11",
+            "nombre": "Módulo 12: Tartiflette", 
+            "lecciones": ["La Tartiflette, cebolla, papas y tocino"]
+        },
+        {
+            "id": "mm12",
+            "nombre": "Módulo 13: Pain Perdu", 
+            "lecciones": ["Tostadas Francesas o Pain Perdu"]
+        },
+        {
+            "id": "mm13",
+            "nombre": "Módulo 14: Tarte Tatin", 
+            "lecciones": ["Manzanas con caramelo en esta Tarte Tatin"]
         },
     ],
-    "preparaciones": ["", "", "", "", "", ""],
-}
+    "preparaciones": ["https://res.cloudinary.com/dgcn9sprj/image/upload/v1682448095/productos/Curso%20Cocina%20Francesa/1_mhc1wv.jpg", "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682448096/productos/Curso%20Cocina%20Francesa/2_grz283.jpg", "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682448096/productos/Curso%20Cocina%20Francesa/3_ipt5jm.jpg", "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682448096/productos/Curso%20Cocina%20Francesa/4_pttrk0.jpg", "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682448096/productos/Curso%20Cocina%20Francesa/5_wmvbmt.jpg", "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682448096/productos/Curso%20Cocina%20Francesa/6_g4ffdi.jpg"],
+    "certificado": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682448088/productos/Curso%20Cocina%20Francesa/E-BOOCK-WEB-FRANCESA_i6ky1u.png",
+    "garantiaImg": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679294658/Product%20pages/otras%20img/precios/1_s4uqu0.jpg"
+},
 
 Curso Cocina India Online
 {
     "fondoTitulo": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679121872/productos/Curso%20Cocina%20India/fondotitlecc_leu8qk.jpg",
     "imagenMalla": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679070045/productos/Curso%20Cocina%20India/malla-cocinaindia_ymzrcq.jpg",
-    "video": "",
-    "separator": "CURSO COMPLETO DE",
-    "dato": "",
-    "descripcion": ["", ""]
+    "video": "https://www.youtube.com/embed/SwgLSZmYzAU",
+    "videoProfe": "https://www.youtube.com/embed/CZpgq3EZN60",
+    "separator": "CURSO COMPLETO DE COCINA INDIA",
+    "dato": ["Conocerás las artes culinarias Indias, las cualidades de los condimentos que a su vez son usados por sus propiedades medicinales ancestrales, y que son aplicados a las comidas en India.", "Así comienza un viaje, junto a Prisha Daswani que logra plasmar los sabores típicos de India con los ingredientes disponibles en Chile. Siempre rescatando el sabor original de cada uno de los condimentos y pudiendo modificar los sabores para dar gusto a cada uno de los paladares.", "Durante las clases aprenderán desde las típicas y sabrosas delicias que se disfrutan en las calles de India hasta los platos más típicos de restaurantes exclusivos.", "Las clases están enfocadas a la comida India, sus sabores y su cultura y cocinar sus milenarias recetas adaptándonos a veces con ingredientes que podemos encontrar en nuestros mercados.", "¡Capacítate desde hoy y mejora tus conocimientos!"],
+    "descripcion": ["Si eres fanático de las comidas diferentes, exóticas este es el curso indicado! Te enseñaremos la cocina india con Prisha Daswani , nuestra profesora, para que así puedas aprender de primera mano sus recetas y así sorprender y cautivar con los sabores de este atractivo país.", "¿POR QUÉ DEBES TOMAR ESTE CURSO?", "Este es un curso ideal si tienes en mente emprender gastronómicamente o simplemente quieres sorprender a tu entorno familiar y amigos con unas ricas preparaciones indias.", "Aprenderás técnicas clásicas de la India, el uso de condimentos y la mezcla de sabores tan característicos, además recibirás útiles tips para cocinar en casa y en donde encontrar ingredientes específicos o cómo reemplazarlos.", "Es el curso perfecto para que aprendas las recetas indias más famosas, a preparar sabores realmente increíbles y llenos de especias. Es el momento de agregar nuevos aprendizajes a tu vida y sorprenderte no solo a ti mismo, si no también a quienes prueben tus preparaciones.", "NO PIERDAS ESTA OPORTUNIDAD DE APRENDER Y DESARROLLAR TUS DESTREZAS  ¡EL FUTURO ES HOY!"],
     "detalles": {
-        "paraTi": ["", ""],
-        "aprenderas": ["", ""]
+        "paraTi": ["Te gusta descubrir nuevos y únicos sabores", "Si quieres soprender a tus amigo y familiares adquiriendo nuevas habilidades culinaras", "Si te gusta experimentar con sabores distintos cada vez", "Si quieres perfeccionar y aprendes nuevas técnicas culinarias"],
+        "aprenderas": ["Descubrirás una nueva cultura culinaria", "Aprenderás a cocinar platos exóticos", "Mejorarás tus habilidades culinarias", "Experimentarás una dieta más saludable", "Te beneficiarás de los efectos saludables de las especias", "Serás capaz de preparar comidas auténticas en casa"]
     },
     "modulos": [
         {
             "id": "mm0",
-            "nombre": "Módulo 1: Introducción",
-            "lecciones": ["", ""],
+            "nombre": "Módulo 1: Introducción", 
+            "lecciones": ["Presentación Profesora: Prisha Daswani"]
         },
+        {
+            "id": "mm1",
+            "nombre": "Módulo 2: Samosas", 
+            "lecciones": ["Crujientes y suaves samosas clásicas"]
+        },
+        {
+            "id": "mm2",
+            "nombre": "Módulo 3: Chutney (Conserva)", 
+            "lecciones": ["Delicioso chutney de menta y cilantro"]
+        },
+        {
+            "id": "mm3",
+            "nombre": "Módulo 4: Jheenga Til Tikka", 
+            "lecciones": ["Deliciosos camarones para un jheega til tikka"]
+        },
+        {
+            "id": "mm4",
+            "nombre": "Módulo 5: Tikka Masala", 
+            "lecciones": ["Tikka masala en 3 estilos"]
+        },
+        {
+            "id": "mm5",
+            "nombre": "Módulo 6: Naan", 
+            "lecciones": ["3 tipos de pan clásico naan"]
+        },
+        {
+            "id": "mm6",
+            "nombre": "Módulo 7: Paneer (Quesillo)", 
+            "lecciones": ["Queso de India paneer"]
+        },
+        {
+            "id": "mm7",
+            "nombre": "Módulo 8: Palak Paneer (Guiso de Espinaca y Quesillo)", 
+            "lecciones": ["Receta vegetariana palak paneer"]
+        },
+        {
+            "id": "mm8",
+            "nombre": "Módulo 9: Chai", 
+            "lecciones": ["Cómo preparar un verdadero Chai al estilo Indio"]
+        },
+        {
+            "id": "mm9",
+            "nombre": "Módulo 10: Rogan Hosh", 
+            "lecciones": ["Vacuno con especias rogan josh"]
+        },
+        {
+            "id": "mm10",
+            "nombre": "Módulo 11: Kashmiri Pulao", 
+            "lecciones": ["Arroz basmati cremoso kashmiri pulao"]
+        },
+        {
+            "id": "mm11",
+            "nombre": "Módulo 12: Gulab Jamuns", 
+            "lecciones": ["Postre esponjoso clásico gulab jamuns"]
+        }
     ],
-    "preparaciones": ["", "", "", "", "", ""],
-}
+    "preparaciones": ["https://res.cloudinary.com/dgcn9sprj/image/upload/v1682451523/productos/Curso%20Cocina%20India/1_k6wbbr.jpg", "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682451523/productos/Curso%20Cocina%20India/2_rwdpzu.jpg", "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682451523/productos/Curso%20Cocina%20India/3_ekrzea.jpg", "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682451523/productos/Curso%20Cocina%20India/4_y1n3c7.jpg", "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682451523/productos/Curso%20Cocina%20India/5_ovb3vj.jpg", "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682451524/productos/Curso%20Cocina%20India/6_fiy7rd.jpg"],
+    "certificado": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682451523/productos/Curso%20Cocina%20India/E-BOOCK-WEB-INDIA_d7mpow.png",
+    "garantiaImg": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679294658/Product%20pages/otras%20img/precios/1_s4uqu0.jpg"
+},
 
 Curso Cocina Mexicana Online
 {
     "fondoTitulo": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679121652/productos/Curso%20Cocina%20Mexicana/fondotitlecc_ghu1an.jpg",
     "imagenMalla": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679070048/productos/Curso%20Cocina%20Mexicana/malla-cocinamexicanaonlina_txj1qx.jpg",
-    "video": "",
-    "separator": "CURSO COMPLETO DE",
-    "dato": "",
-    "descripcion": ["", ""]
+    "video": "https://www.youtube.com/embed/1ed1kk73m58",
+    "videoProfe": "https://www.youtube.com/embed/wjxM8EGJrfY",
+    "separator": "CURSO COMPLETO DE COCINA MEXICANA",
+    "dato": ["Un breve recorrido por la historia de México a través de su gastronomía.", "Comenzaremos por las bases Prehispánicas y su aporte con la Milpa, donde los ingredientes principales son el maíz, frijol y las habas. Pasaremos por algunas recetas en la época Virreinal cuando los  españoles llegaron a México y su fusión en cuanto a ingredientes de Oriente, Europa  y África. Y terminaremos con algunas recetas más contemporáneas, muy  consumidas en las calles de Ciudad de México."],
+    "descripcion": ["La cocina mexicana es más que tacos y tequila!", "¿POR QUÉ DEBES TOMAR ESTE CURSO?", "La cocina mexicana es la fusión de milenarias culturas gastronómicas indígenas, la cultura gastronómica hispana y posteriormente la de inmigrantes de otras latitudes la cual generó exquisitas recetas llenas de color y sabor que tú podrás aprender gracias a nuestro nuevo curso y de la mano de nuestra profesora Josahandi Avila en forma fácil y amena.", "Si te gusta conocer y probar recetas de diversos países estamos seguros que este curso te gustará, hemos hecho para tí este curso online en la forma más profesional, cercana y entretenida para que lo puedas aprovechar al 100% Aunque tengas pocas nociones de cocina.", "¡NO DUDES MÁS Y PONTE MANOS A LA OBRA APRENDIENDO Y PRACTICANDO EXQUISITOS PLATOS CON NUESTRO CURSO DE COCINA MEXICANA ONLINE!"],
     "detalles": {
-        "paraTi": ["", ""],
-        "aprenderas": ["", ""]
+        "paraTi": ["Si te gusta explorar culturas a través del mundo culinario", "Si quieres aprender técnicas para que tu omida tenga el abor y la textura perfecta", "Si sientes un pasión gigante por la cocina y te gusta cocinar con estilo", "Si te gusta agregar tus toques personales a los platos que cocinas"],
+        "aprenderas": ["Cómo hacer auténticos platillos mexicanos", "Cómo utilizar los ingredientes tradicionales mexicanos", "Cómo utilizar diferentes técnicas de cocción", "Cómo presentar los platillos de manera atractiva"]
     },
     "modulos": [
         {
             "id": "mm0",
-            "nombre": "Módulo 1: Introducción",
-            "lecciones": ["", ""],
+            "nombre": "Módulo 1.",
+            "lecciones": ["Presentación profesora: Josahandi Avila Pérez"],
+        },
+        {
+            "id": "mm1",
+            "nombre": "Módulo 2.",
+            "lecciones": ["Tortillas de Maíz"],
+        },
+        {
+            "id": "mm2",
+            "nombre": "Módulo 3.",
+            "lecciones": ["Tlacoyo de Habas"],
+        },
+        {
+            "id": "mm3",
+            "nombre": "Módulo 4.",
+            "lecciones": ["Salsa Borracha"],
+        },
+        {
+            "id": "mm4",
+            "nombre": "Módulo 5.",
+            "lecciones": ["Tacos de Suadero"],
+        },
+        {
+            "id": "mm5",
+            "nombre": "Módulo 6.",
+            "lecciones": ["Pozole"],
+        },
+        {
+            "id": "mm6",
+            "nombre": "Módulo 7.",
+            "lecciones": ["Polvorón de Cacahuate"],
+        },
+        {
+            "id": "mm7",
+            "nombre": "Módulo 8.",
+            "lecciones": ["Coctel de Mezcal"],
+        },
+        {
+            "id": "mm8",
+            "nombre": "Módulo 9.",
+            "lecciones": ["Sopa de Bolitas de Maíz"],
+        },
+        {
+            "id": "mm9",
+            "nombre": "Módulo 10.",
+            "lecciones": ["El Monacillo"],
+        },
+        {
+            "id": "mm10",
+            "nombre": "Módulo 11.",
+            "lecciones": ["Mole Mancha Manteles de Jalisco"],
+        },
+        {
+            "id": "mm11",
+            "nombre": "Módulo 12.",
+            "lecciones": ["Carlota de Limón"],
+        },
+        {
+            "id": "mm12",
+            "nombre": "Módulo 13.",
+            "lecciones": ["Burritos, Tacos y Quesadillas"],
+        },
+        {
+            "id": "mm13",
+            "nombre": "Módulo 14.",
+            "lecciones": ["Aguas Frescas"],
         },
     ],
-    "preparaciones": ["", "", "", "", "", ""],
-}
+    "preparaciones": ["https://res.cloudinary.com/dgcn9sprj/image/upload/v1682454619/productos/Cocina%20Mexicana/1_vraizj.jpg", "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682454619/productos/Cocina%20Mexicana/2_q1t10r.jpg", "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682454619/productos/Cocina%20Mexicana/3_hecohi.jpg", "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682454619/productos/Cocina%20Mexicana/4_pcz5zr.jpg", "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682454619/productos/Cocina%20Mexicana/5_lcufni.jpg", "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682454619/productos/Cocina%20Mexicana/6_asmcat.jpg"],
+    "certificado": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682454620/productos/Cocina%20Mexicana/E-BOOCK-WEB-MEXICANA_r9kgik.png",
+    "garantiaImg": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679294658/Product%20pages/otras%20img/precios/1_s4uqu0.jpg"
+},
 
 Curso Cocina Nikkei Online
 {
     "fondoTitulo": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679121690/productos/Curso%20Cocina%20Nikkei/fondotitlecc_hzt5ta.jpg",
     "imagenMalla": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679070045/productos/Curso%20Cocina%20Nikkei/malla-cocinanikkei_guar8i.jpg",
-        "video": "",
-    "separator": "CURSO COMPLETO DE",
-    "dato": "",
-    "descripcion": ["", ""]
+    "video": "https://www.youtube.com/embed/DpFkMlRKAx0",
+    "videoProfe": "https://www.youtube.com/embed/WndPn2FBw6E",
+    "separator": "CURSO COMPLETO DE COCINA NIKKEI",
+    "dato": ["¡La unión de las culturas gastronómicas peruana y japonesa en 8 recetas!", "En este curso revisaremos las técnicas y sabores de 2 culturas gastronómicas de Japón y Perú, fusionadas en la llamada cocina nikkei.", "Aprenderemos Técnicas, como corte Usuzukuri en pescado para hacer tiraditos, haremos diferentes tipos de ceviche, aprenderemos hacer una cocción de pulpo al estilo nikkei, ", "también pasaremos por los reconocidos Makis con todas sus salsas y muchas preparaciones más."],
+    "descripcion": ["Si has probado la cocina peruana y/o la japonesa y te gustó, ¡Este curso te encantará!", "¿POR QUÉ DEBES TOMAR ESTE CURSO?", "Te enseñaremos la cocina nikkei, una cocina fusión entre la peruana y la japonesa que causa sensación a nivel mundial y que podrás aprender gracias a nuestro profesor Juan Ozaki en forma simple y amena.", "Este es un fantástico curso si tienes en mente emprender gastronómicamente o simplemente quieres sorprender a tu entorno familiar y amigos con unos ricos platos nikkei.", "Aprenderás técnicas tradicionales y las mezclas de sabores de culturas tan diversas como la peruana y la japonesa en unas sensacionales preparaciones tales como el lomo saltado, los ceviches, muguro tataki, entre otras exquisiteces.", "Sorprende a tu familia, amigos o aumenta tus ventas aprendiendo con este imperdible curso de cocina nikkei, lleno de sabores increíbles, que cambiarán positivamente tu percepción de la comida.", "¡NO DEJES PASAR ESTA OPORTUNIDAD IMPERDIBLE DE APRENDER UNA COCINA EMERGENTE DE RENOMBRE MUNDIAL!"],
     "detalles": {
-        "paraTi": ["", ""],
-        "aprenderas": ["", ""]
+        "paraTi": ["Si quieres aprender a mezclar dos estilos culinarios para crear platos únicos y deliciosos.", "Si te gusta innovar en la cocina, sacando a relucir tu creatividad", "Si quieres estar a la vanguardia de las tendencias culinarias emergentes", "Si te gusta experimentar fusiones únicas de sabores y disfrutar de platos deliciosos y sorprendentes."],
+        "aprenderas": ["Cómo utilizar ingredientes tradicionales japoneses y peruanos", "Técnicas de cocción japonesas y peruanas", "Cómo utilizar ingredientes frescos y saludables", "Cómo presentar los platillos de manera atractiva", "Cómo crear platos innovadores", "Cómo preparar diversos platos como el ceviche, Shari, Sake, y más"]
     },
     "modulos": [
         {
             "id": "mm0",
-            "nombre": "Módulo 1: Introducción",
-            "lecciones": ["", ""],
+            "nombre": "Módulo 1.",
+            "lecciones": ["Presentación Profesor: Juan Ozaki"],
+        },
+        {
+            "id": "mm1",
+            "nombre": "Módulo 2.",
+            "lecciones": ["Tiradito Pasión"],
+        },
+        {
+            "id": "mm2",
+            "nombre": "Módulo 3.",
+            "lecciones": ["Tiradito Clásico"],
+        },
+        {
+            "id": "mm3",
+            "nombre": "Módulo 4.",
+            "lecciones": ["Shari"],
+        },
+        {
+            "id": "mm4",
+            "nombre": "Módulo 5.",
+            "lecciones": ["Salsa Pasión"],
+        },
+        {
+            "id": "mm5",
+            "nombre": "Módulo 6.",
+            "lecciones": ["Sake Maki"],
+        },
+        {
+            "id": "mm6",
+            "nombre": "Módulo 7.",
+            "lecciones": ["Pulpo Anticuchero"],
+        },
+        {
+            "id": "mm7",
+            "nombre": "Módulo 8.",
+            "lecciones": ["Pulpo al olivo"],
+        },
+        {
+            "id": "mm8",
+            "nombre": "Módulo 9.",
+            "lecciones": ["Maguro Tataki"],
+        },
+        {
+            "id": "mm9",
+            "nombre": "Módulo 10.",
+            "lecciones": ["Mayonesa de ají amarillo"],
+        },
+        {
+            "id": "mm10",
+            "nombre": "Módulo 11.",
+            "lecciones": ["Lomo Saltado"],
+        },
+        {
+            "id": "mm11",
+            "nombre": "Módulo 12.",
+            "lecciones": ["Ceviche Clásico"],
+        },
+        {
+            "id": "mm12",
+            "nombre": "Módulo 13.",
+            "lecciones": ["Arroz Chaufa"],
+        },
+        {
+            "id": "mm13",
+            "nombre": "Módulo 14.",
+            "lecciones": ["Ceviche Nikkei"],
+        },
+        {
+            "id": "mm14",
+            "nombre": "Módulo 15.",
+            "lecciones": ["Cevi Maki"],
         },
     ],
-    "preparaciones": ["", "", "", "", "", ""],
-}
+    "preparaciones": ["https://res.cloudinary.com/dgcn9sprj/image/upload/v1682455035/productos/Curso%20Cocina%20Nikkei/1_crgs0y.jpg", "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682455035/productos/Curso%20Cocina%20Nikkei/2_tzj1ej.jpg", "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682455035/productos/Curso%20Cocina%20Nikkei/3_ibcfbh.jpg", "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682455035/productos/Curso%20Cocina%20Nikkei/4_v29ywg.jpg", "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682455035/productos/Curso%20Cocina%20Nikkei/5_hjjsdm.jpg", "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682455035/productos/Curso%20Cocina%20Nikkei/6_c5dne2.jpg"],
+    "certificado": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682455036/productos/Curso%20Cocina%20Nikkei/E-BOOCK-WEB-NIKKEI_h1rdnw.png",
+    "garantiaImg": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679294658/Product%20pages/otras%20img/precios/1_s4uqu0.jpg"
+},
 
 Curso Coctelería en Casa
 {
     "fondoTitulo": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679121749/productos/Curso%20cocteler%C3%ADa%20en%20casa/fondotitlecc_clvvhz.jpg",
     "imagenMalla": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679070048/productos/Curso%20cocteler%C3%ADa%20en%20casa/malla-cocteleriaencasa_rjvhpd.jpg",
-    "video": "",
-    "separator": "CURSO COMPLETO DE",
-    "dato": "",
-    "descripcion": ["", ""]
+    "video": "https://www.youtube.com/embed/2b0I4yTM-Vo",
+    "separator": "CURSO COMPLETO DE COCTELERÍA EN CASA",
+    "dato": ["En este curso online aprenderás el paso a paso para preparar los mejores tragos y cócteles, bien sea con licor o sin licor.", "Además conocerás las mejores técnicas caseras para que sorprendas a tus invitados. Se explicarán los diferentes tipos de licores que puedes utilizar. También diferenciar la coctelería clásica vs la coctelería moderna y por último bonos sorpresas sobre coctelería de autor que te harán explotar la cabeza y tu paladar."],
+    "descripcion": ["¿Cómo aprenderás?", "La coctelería es el estudio de la relación entre las bebidas, frutas, hierbas, helados y cualquier otro ingrediente comestible que pueda ser transformado en líquido a través de distintos métodos de preparación.", "Con una estructura sencilla, fácil, práctica y divertida, donde podrás convertirte en el mejor anfitrión para que tus invitados queden sorprendidos con los mejores tragos y cócteles que les prepararás. Con más de 17 módulos que te llevarán a aprender el paso a paso de cómo hacerlo y varios bonos adicionales de obsequio, para que puedas generar resultados en tu primera semana de haber finalizado el programa.", "En este proceso de aprendizaje irás de la mano de Manuel Silva, Mixólogo, consultor en el área de alimentos y bebidas, con más de 10 años de experiencia en el área de hotelería, actualmente es embajador de la marca de licor Ron Diplomático en Ecuador."],
     "detalles": {
-        "paraTi": ["", ""],
-        "aprenderas": ["", ""]
+        "paraTi": ["Si te gusta preparar bebidas y cócteles deliciosos", "Si te gustaría sorprender a tus invitados con tus habilidades y conocimientos de coctelería.", "Si quieres aprender una habilidad súper útil y que te durará toda la vida", "Si te gusta experimentar con diferentes sabores y licores"],"aprenderas": ["Técnicas básicas de mezcla de bebidas", "Conocimientos sobre licores y destilados", "Decoración de los cócteles", "Elaboración de siropes y mezclas", "Cócteles clásicos y modernos"]
     },
     "modulos": [
         {
             "id": "mm0",
-            "nombre": "Módulo 1: Introducción",
-            "lecciones": ["", ""],
+            "nombre": "Módulo 1.",
+            "lecciones": ["Presentación y Bienvenida."]
         },
+        {
+            "id": "mm1",
+            "nombre": "Módulo 2.",
+            "lecciones": ["Recomendaciones antes de iniciar."]
+        },
+        {
+            "id": "mm2",
+            "nombre": "Módulo 3.",
+            "lecciones": ["Conocimiento de los destilados"]
+        },
+        {
+            "id": "mm3",
+            "nombre": "Módulo 4.",
+            "lecciones": ["Materiales e insumos"]
+        },
+        {
+            "id": "mm4",
+            "nombre": "Módulo 5.",
+            "lecciones": ["Bases de tragos y cocteles"]
+        },
+        {
+            "id": "mm5",
+            "nombre": "Módulo 6.",
+            "lecciones": ["Técnicas caseras"]
+        },
+        {
+            "id": "mm6",
+            "nombre": "Módulo 7.",
+            "lecciones": ["Coctel sin alcohol 1 – A base de cítricos"]
+        },
+        {
+            "id": "mm7",
+            "nombre": "Módulo 8.",
+            "lecciones": ["Coctel sin alcohol 2 – a base de frutos rojos"]
+        },
+        {
+            "id": "mm8",
+            "nombre": "Módulo 9.",
+            "lecciones": ["Coctel sin alcohol 3 – Como maridar cítricos y frutos rojos"]
+        },
+        {
+            "id": "mm9",
+            "nombre": "Módulo 10.",
+            "lecciones": ["Coctel integral"]
+        },
+        {
+            "id": "mm10",
+            "nombre": "Módulo 11.",
+            "lecciones": ["Coctelería clásica con alcohol"]
+        },
+        {
+            "id": "mm11",
+            "nombre": "Módulo 12.",
+            "lecciones": ["Cocteleria clásica - Masterclass de mojito"]
+        },
+        {
+            "id": "mm12",
+            "nombre": "Módulo 13.",
+            "lecciones": ["Cocteleria clásica – Masterclass gin tonic"]
+        },
+        {
+            "id": "mm13",
+            "nombre": "Módulo 14.",
+            "lecciones": ["Cocteleria clásica – Fabriquemos un nuevo coctel"]
+        },
+        {
+            "id": "mm14",
+            "nombre": "Módulo 15.",
+            "lecciones": ["Cocteleria Moderna – Moscow Mule"]
+        },
+        {
+            "id": "mm15",
+            "nombre": "Módulo 16.",
+            "lecciones": ["Cocteleria Moderna – Ron Mule"]
+        },
+        {
+            "id": "mm16",
+            "nombre": "BONOS:",
+            "lecciones": [
+                    {
+                    "nombre": "Módulo 17.",
+                    "contenido": ["Cocteleria de autor – Bitter"]
+                    },
+                    {
+                    "nombre": "Módulo 18.",
+                    "contenido": ["Cocteleria de autor – reducciones"]
+                    },
+                    {
+                    "nombre": "Módulo 19.",
+                    "contenido": ["Preguntas y respuestas"]
+                    },
+                    {
+                    "nombre": "Módulo 20.",
+                    "contenido": ["Conclusiones y despedida"]
+                    }
+            ]
+        }
     ],
-    "preparaciones": ["", "", "", "", "", ""],
-}
+    "preparaciones": ["https://res.cloudinary.com/dgcn9sprj/image/upload/v1682455417/productos/Curso%20cocteler%C3%ADa%20en%20casa/1_tfin03.jpg", "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682455417/productos/Curso%20cocteler%C3%ADa%20en%20casa/2_nqilui.jpg", "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682455417/productos/Curso%20cocteler%C3%ADa%20en%20casa/3_sxfaqv.jpg", "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682455417/productos/Curso%20cocteler%C3%ADa%20en%20casa/4_iolbga.jpg", "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682455417/productos/Curso%20cocteler%C3%ADa%20en%20casa/5_rqfxlg.jpg", "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682455417/productos/Curso%20cocteler%C3%ADa%20en%20casa/6_dwjgmt.jpg"],
+    "certificado": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682455418/productos/Curso%20cocteler%C3%ADa%20en%20casa/Mockups-cocteles_pn2aho.png",
+    "garantiaImg": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679294658/Product%20pages/otras%20img/precios/1_s4uqu0.jpg"
+},
 
 Cerveza Artesanal Casera
 {
     "fondoTitulo": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679121935/productos/Cerveza%20artesanal%20casera/fondotitlecc_wuaz9l.jpg",
     "imagenMalla": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679070054/productos/Cerveza%20artesanal%20casera/malla-cervezaartesanal_wkwwjv.jpg",
-    "video": "",
-    "separator": "CURSO COMPLETO DE",
-    "dato": "",
-    "descripcion": ["", ""]
+    "video": "https://www.youtube.com/embed/aKyU2vX76aQ",
+    "separator": "CURSO COMPLETO DE CERVEZA ARTESANAL CASERA",
+    "dato": ["¿Te gustaría ser el creador de tu propia cerveza?", "    Con este curso básico podrás aprender a elaborar tu propia cerveza artesanal desde casa, sin tener que invertir mucho dinero en implementos costosos y finalmente brindar con ella.", "    Te enseñaremos, a partir de nuestra experiencia, las bases de la producción de cerveza casera comenzando por los diferentes ingredientes, pasando por los procesos, equipos y técnicas, hasta obtener una buena “pola” que, nunca se sabe, podría ser la siguiente estrella del mundo cervecero.", "    ¿Te dejas tentar?"],
+    "descripcion": ["Bajo la guía de Amarga Compañía Cervecería Artesanal, una nano-cervecería de Medellín – Colombia, que lleva cuatro años elaborando cerveza artesanal en equipos caseros. Los amargos son los hermanos Alejo, Cata y Juli, acompañados por un amigo de la casa, Juan."],
+
     "detalles": {
-        "paraTi": ["", ""],
-        "aprenderas": ["", ""]
+        "paraTi": ["¿Te apasiona la cervecería y quieres crear tu propia cerveza en casa?", "¿Te gustaría iniciar tu propio negocio de cerveza artesanal?", "¿Te encantaría deleitar el paladar de tus amigos y familiares con tu propia cerveza hecha en casa?", "¿Ya tienes experiencia en gastronomía y quieres ir a otro nivel cocinando cerveza?", "¿Te encanta jugar con aromas y sabores y vivir nuevas experiencias sensoriales?", "¿Simplemente quieres probar algo nuevo?"],
+        "aprenderas": ["Aprenderás paso a paso y desde cero todo el proceso para realizar tu primera cerveza artesanal en casa", "Aprenderás todos los ingredientes de una cerveza de gran calidad y para qué sirve cada uno de ellos", "Aprenderás las mejores técnicas de cocción para que tu cerveza tenga mucho sabor y aroma", "Lograrás elaborar tus primeros litros de cerveza artesanal con los implementos que tienes en tu cocina"]
     },
     "modulos": [
         {
             "id": "mm0",
             "nombre": "Módulo 1: Introducción",
-            "lecciones": ["", ""],
+            "lecciones": ["Lección 1: Bienvenida y quiénes somos.", "Lección 2: ¿Cómo terminamos haciendo cerveza?", "Lección 3: ¿Qué aprenderás?", "Lección 4: Grupo privado."],
+        },
+        {
+            "id": "mm1",
+            "nombre": "Módulo 2: ¿De qué está hecha la cerveza?",
+            "lecciones": ["Lección 1: Los cuatro jinetes.", "Lección 2: Agua, el todo.", "Lección 3: Maltas, pura dulzura, puro sabor.", "Lección 4: Lúpulos, los reyes del amargor y guardianes de la cerveza.", "Lección 5: Levaduras, las verdaderas maestras cerveceras.", "Lección 6: Adjuntos, el toque de cada cual."],
+        },
+        {
+            "id": "mm2",
+            "nombre": "Módulo 3: ¿Cómo se hace la cerveza?",
+            "lecciones": ["Lección 1: Agrupando a los cuatro jinetes.", "Lección 2: Molienda.", "Lección 3: Maceración.", "Lección 4: Cocción.", "Lección 5: Enfriado y oxigenación.", "Lección 6: Fermentación y maduración.", "Lección 7: Envasado y carbonatación.", "Lección 8: ¡A brindar!"],
+        },
+        {
+            "id": "mm3",
+            "nombre": "Módulo 4: Ahora sí, encendamos fogones",
+            "lecciones": ["Lección 1: Que no te pinten pajaritos en el aire.", "Lección 2: El método de la bolsa.", "Lección 3: Pero, ¿cuánto cuesta?", "Lección 4: ¡Manos a la olla!"],
+        },
+        {
+            "id": "mm4",
+            "nombre": "Módulo 5: Al infinito y más allá",
+            "lecciones": ["Lección 1: Preparación previa", "Lección 2: Molienda", "Lección 3: Maceración", "Lección 4: Cocción", "Lección 5: Enfriado y oxigenación", "Lección 6: Fermentación y maduración", "Lección 7: Carbonatación", "Lección 8: ¡Disfruta tu cerveza!"],
+        },
+        {
+            "id": "mm5",
+            "nombre": "Módulo 6: Bonus Track",
+            "lecciones": ["Lección 1: Limpieza, limpieza, limpieza.", "Lección 2: Responsabilidad con el planeta."],
+        },
+        {
+            "id": "mm6",
+            "nombre": "Módulo 7: Despedida",
+            "lecciones": ["Lección 1: Últimas sugerencias", "Lección 2: Despedida del curso"],
         },
     ],
-    "preparaciones": ["", "", "", "", "", ""],
-}
+    "preparaciones": ["https://res.cloudinary.com/dgcn9sprj/image/upload/v1682519459/productos/Cerveza%20artesanal%20casera/1_k6dav7.jpg", "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682519458/productos/Cerveza%20artesanal%20casera/2_fzdcpb.jpg", "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682519458/productos/Cerveza%20artesanal%20casera/3_wlzy9v.jpg", "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682519458/productos/Cerveza%20artesanal%20casera/4_etebdy.jpg", "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682519459/productos/Cerveza%20artesanal%20casera/5_ki2hfz.jpg", "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682519459/productos/Cerveza%20artesanal%20casera/6_srgqjz.jpg"],
+    "certificado": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1682455728/productos/Cerveza%20artesanal%20casera/ccc_ldh5eo.jpg",
+    "garantiaImg": "https://res.cloudinary.com/dgcn9sprj/image/upload/v1679294658/Product%20pages/otras%20img/precios/1_s4uqu0.jpg"
+},

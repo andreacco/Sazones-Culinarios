@@ -10,7 +10,12 @@ export const SET_TITLE = "SET_TITLE"
 export const RESET_SUB = "RESET_SUB"
 export const RESET = "RESET"
 
+// import prods from '../../components/ProductDetail/prods.json'
+
 export const getAllProducts = () => async (dispatch:any) => {
+    
+    // return dispatch({type: GET_ALL_PRODUCTS, payload: prods})
+
     try{
         await axios.get('http://localhost:5000/api/getAllProducts')
         // await axios.get('https://sazones-culinarios-back.onrender.com/api/getAllProducts')

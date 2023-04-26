@@ -19,41 +19,41 @@ export default function Malla() {
     name === 'DiplomadoOnlineenGastronomíaInternacional' ?
     numi = 2800 : 
     name === 'DiplomadoOnlineenCocinaInternacional' ?
-    numi = 250 : 
+    numi = 3050 : 
     name === 'DiplomadoOnlinedeReposteríayPastelería' ?
-    numi = 250 : 
+    numi = 2550 : 
     name === 'PastelesconDiseñoInterno' ?
-    numi = 250 : 
+    numi = 2450 : 
     name === 'AprendeCocinaVegana' ?
-    numi = 250 : 
+    numi = 2350 : 
     name === 'BaristaPrincipiante' ?
     numi = 2250 : 
     name === 'BartenderparaPrincpiantes' ?
-    numi = 250 : 
+    numi = 2220 : 
     name === 'ChocofresasIrresistibles' ?
-    numi = 250 : 
+    numi = 2180 : 
     name === 'CocinaMexicana' ?
-    numi = 250 : 
+    numi = 2440 : 
     name === 'CursoChocolateríaOnline' ?
-    numi = 250 : 
+    numi = 2680 : 
     name === 'CursoCocinaÁrabeOnline' ?
-    numi = 250 : 
+    numi = 2920 : 
     name === 'CursoCocinaBrasileraOnline' ?
-    numi = 250 : 
+    numi = 2720 : 
     name === 'CursoCocinaCoreanaOnline' ?
-    numi = 250 : 
+    numi = 2720 : 
     name === 'CursoCocinaFrancesaOnline' ?
-    numi = 250 : 
+    numi = 2780 : 
     name === 'CursoCocinaIndiaOnline' ?
-    numi = 250 : 
+    numi = 3040 : 
     name === 'CursoCocinaMexicanaOnline' ?
-    numi = 250 : 
+    numi = 2780 : 
     name === 'CursoCocinaNikkeiOnline' ?
-    numi = 250 : 
+    numi = 2850 : 
     name === 'CursoCocteleríaenCasa' ?
-    numi = 250 : 
+    numi = 2330 : 
     name === 'CervezaArtesanalCasera' ?
-    numi = 250 : 
+    numi = 2440 : 
     ""
 
     

@@ -43,8 +43,71 @@
             width: 519px;
             margin-left: 4em;
         }
+        .DiplomadoOnlineenCocinaInternacional{
+            background-image: url('https://res.cloudinary.com/dgcn9sprj/image/upload/v1679070049/productos/Diplomado%20online%20en%20cocina%20internacional/malla-diplomadococinainternacional_ggotrg.jpg');
+            height: 1080px;
+            width: 707px;
+        }
+        .DiplomadoOnlinedeReposteríayPastelería{
+            background-image: url('https://res.cloudinary.com/dgcn9sprj/image/upload/v1679070055/productos/Diplomado%20online%20en%20Reposter%C3%ADa%20y%20pasteler%C3%ADa/malla-diplomadoreposteriaypasteleria_s5bvma.jpg');
+        }
+        .PastelesconDiseñoInterno{
+            background-image: url('https://res.cloudinary.com/dgcn9sprj/image/upload/v1679070051/productos/Pasteles%20con%20dise%C3%B1o%20interno/malla-pastelescondise%C3%B1ointerno_s6wrut.jpg');
+        }
+        .AprendeCocinaVegana{
+            background-image: url('https://res.cloudinary.com/dgcn9sprj/image/upload/v1679070051/productos/Aprende%20cocina%20vegana/malla-aprendecocinavegana_l41rkn.jpg');
+        }
         .BaristaPrincipiante{
             background-image: url('https://res.cloudinary.com/dgcn9sprj/image/upload/v1679070052/productos/Barista%20principiante/malla-baristaprincipiante_sayaqx.jpg');
+        }
+        .BartenderparaPrincpiantes{
+            background-image: url('https://res.cloudinary.com/dgcn9sprj/image/upload/v1679070050/productos/Bartender%20para%20principiantes/malla-bartenderparaprincipiantes_jdnusr.jpg');
+        }
+        .ChocofresasIrresistibles{
+            background-image: url('https://res.cloudinary.com/dgcn9sprj/image/upload/v1679070053/productos/Chocofresas%20irresistibles/malla-chocofresasirresistibles_ubozjk.jpg');
+        }
+        .CocinaMexicana{
+            background-image: url('https://res.cloudinary.com/dgcn9sprj/image/upload/v1679070048/productos/Cocina%20Mexicana/malla-cocinamexicana_civpcr.jpg');
+        }
+        .CursoChocolateríaOnline{
+            background-image: url('https://res.cloudinary.com/dgcn9sprj/image/upload/v1679070041/productos/Curso%20Chocolater%C3%ADa%20Online/malla-chocolateria_j0xcnu.jpg');
+        }
+        .CursoCocinaÁrabeOnline{
+            background-image: url('https://res.cloudinary.com/dgcn9sprj/image/upload/v1679070045/productos/Curso%20Cocina%20%C3%81rabe/malla-cocinaarabe_jkbapb.jpg');
+        }
+        .CursoCocinaBrasileraOnline{
+            background-image: url('https://res.cloudinary.com/dgcn9sprj/image/upload/v1679070048/productos/Curso%20Cocina%20Brasilera/malla-cocinabrasilera_w0vuy8.jpg');
+        }
+        .CursoCocinaCoreanaOnline{
+            background-image: url('https://res.cloudinary.com/dgcn9sprj/image/upload/v1679070043/productos/Curso%20Cocina%20Coreana/malla-cocinacoreana_jm6nfd.jpg');
+        }
+        .CursoCocinaFrancesaOnline{
+            background-image: url('https://res.cloudinary.com/dgcn9sprj/image/upload/v1679070043/productos/Curso%20Cocina%20Francesa/malla-cocinafrancesa_drzlmx.jpg');
+        }
+        .CursoCocinaIndiaOnline{
+            background-image: url('https://res.cloudinary.com/dgcn9sprj/image/upload/v1679070045/productos/Curso%20Cocina%20India/malla-cocinaindia_ymzrcq.jpg');
+        }
+        .CursoCocinaMexicanaOnline{
+            background-image: url('https://res.cloudinary.com/dgcn9sprj/image/upload/v1679070048/productos/Curso%20Cocina%20Mexicana/malla-cocinamexicanaonlina_txj1qx.jpg');
+        }
+        .CursoCocinaNikkeiOnline{
+            background-image: url('https://res.cloudinary.com/dgcn9sprj/image/upload/v1679070045/productos/Curso%20Cocina%20Nikkei/malla-cocinanikkei_guar8i.jpg');
+        }
+        .CursoCocteleríaenCasa{
+            background-image: url('https://res.cloudinary.com/dgcn9sprj/image/upload/v1679070048/productos/Curso%20cocteler%C3%ADa%20en%20casa/malla-cocteleriaencasa_rjvhpd.jpg');
+        }
+        .CervezaArtesanalCasera{
+            background-image: url('https://res.cloudinary.com/dgcn9sprj/image/upload/v1679070054/productos/Cerveza%20artesanal%20casera/malla-cervezaartesanal_wkwwjv.jpg');
+        }
+        .video-entrevista-profe{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 1em;
+            .video-profe{
+                margin-top: 1em;
+            }
         }
     }
     .info-boxes-container{
