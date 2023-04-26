@@ -12,52 +12,52 @@ export default function Malla() {
     
     const [active, setActive] = useState<any>({})
 
-    var numi
+    // var numi
 
-    name === 'GastronomíaInternacionalOnline:7cursosincluidos' ?
-    numi = 2500 :
-    name === 'DiplomadoOnlineenGastronomíaInternacional' ?
-    numi = 2800 : 
-    name === 'DiplomadoOnlineenCocinaInternacional' ?
-    numi = 3050 : 
-    name === 'DiplomadoOnlinedeReposteríayPastelería' ?
-    numi = 2550 : 
-    name === 'PastelesconDiseñoInterno' ?
-    numi = 2450 : 
-    name === 'AprendeCocinaVegana' ?
-    numi = 2350 : 
-    name === 'BaristaPrincipiante' ?
-    numi = 2250 : 
-    name === 'BartenderparaPrincpiantes' ?
-    numi = 2220 : 
-    name === 'ChocofresasIrresistibles' ?
-    numi = 2180 : 
-    name === 'CocinaMexicana' ?
-    numi = 2440 : 
-    name === 'CursoChocolateríaOnline' ?
-    numi = 2680 : 
-    name === 'CursoCocinaÁrabeOnline' ?
-    numi = 2920 : 
-    name === 'CursoCocinaBrasileraOnline' ?
-    numi = 2720 : 
-    name === 'CursoCocinaCoreanaOnline' ?
-    numi = 2720 : 
-    name === 'CursoCocinaFrancesaOnline' ?
-    numi = 2780 : 
-    name === 'CursoCocinaIndiaOnline' ?
-    numi = 3040 : 
-    name === 'CursoCocinaMexicanaOnline' ?
-    numi = 2780 : 
-    name === 'CursoCocinaNikkeiOnline' ?
-    numi = 2850 : 
-    name === 'CursoCocteleríaenCasa' ?
-    numi = 2330 : 
-    name === 'CervezaArtesanalCasera' ?
-    numi = 2440 : 
-    ""
+    // name === 'GastronomíaInternacionalOnline:7cursosincluidos' ?
+    // numi = 2500 :
+    // name === 'DiplomadoOnlineenGastronomíaInternacional' ?
+    // numi = 2800 : 
+    // name === 'DiplomadoOnlineenCocinaInternacional' ?
+    // numi = 3050 : 
+    // name === 'DiplomadoOnlinedeReposteríayPastelería' ?
+    // numi = 2550 : 
+    // name === 'PastelesconDiseñoInterno' ?
+    // numi = 2450 : 
+    // name === 'AprendeCocinaVegana' ?
+    // numi = 2350 : 
+    // name === 'BaristaPrincipiante' ?
+    // numi = 2250 : 
+    // name === 'BartenderparaPrincpiantes' ?
+    // numi = 2220 : 
+    // name === 'ChocofresasIrresistibles' ?
+    // numi = 2180 : 
+    // name === 'CocinaMexicana' ?
+    // numi = 2440 : 
+    // name === 'CursoChocolateríaOnline' ?
+    // numi = 2680 : 
+    // name === 'CursoCocinaÁrabeOnline' ?
+    // numi = 2920 : 
+    // name === 'CursoCocinaBrasileraOnline' ?
+    // numi = 2720 : 
+    // name === 'CursoCocinaCoreanaOnline' ?
+    // numi = 2720 : 
+    // name === 'CursoCocinaFrancesaOnline' ?
+    // numi = 2780 : 
+    // name === 'CursoCocinaIndiaOnline' ?
+    // numi = 3040 : 
+    // name === 'CursoCocinaMexicanaOnline' ?
+    // numi = 2780 : 
+    // name === 'CursoCocinaNikkeiOnline' ?
+    // numi = 2850 : 
+    // name === 'CursoCocteleríaenCasa' ?
+    // numi = 2330 : 
+    // name === 'CervezaArtesanalCasera' ?
+    // numi = 2440 : 
+    // ""
 
     
-    const upActive = useGoUpMalla(numi)
+    // const upActive = useGoUpMalla(numi)
     
     useEffect(() => {
         var mms: any = []
@@ -82,10 +82,11 @@ export default function Malla() {
     
     const handleActive = (cantidady: any) => {
         setActive({
+                ...active,
                 [cantidady] : !active[cantidady]
             }
         )
-        upActive()
+        // upActive()
     }
 
     return (
