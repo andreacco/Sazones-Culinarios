@@ -34,25 +34,22 @@ export default function ProductDetail() {
     }, [id, dispatch]);
 
     const productDetailInfo = useSelector((state: any) => state.productDetail.beMaster)
-    const productName = useSelector((state: any) => state.productDetail.name)
-        changePageTitle(`${productName} - Sazones Culinarios`)
-    // const profes = productDetailInfo ? productDetailInfo[0][0].modulos.map((p: any) => { return(p.profesores)}) : "nope"
-    // console.log(typeof profes, profes, "PROFEEEEEES");
-    
-
+    const productInfor = useSelector((state: any) => state.productDetail)
+    changePageTitle(`${productInfor.name} - Sazones Culinarios`)
+    const linkCompra = productInfor.links ? productInfor.links[0].materialDivulgacion.checkoutFull : ""
 
     return (
         <div className='product-detail-container'>
-            <NavBar/>
+            <NavBar link = {linkCompra}/>
             <Title/>
             <Separator/>
             <Description/>
             <Beneficios/>
             <BlobSeparatorOpen/>
-            <BotonCompra/>
+            <BotonCompra link = {linkCompra}/>
             <Preparaciones/>
             <PreguntasFrecuentes/>
-            <BannerCompra/>
+            <BannerCompra link = {linkCompra}/>
             <Certificado/>
             {productDetailInfo ? 
                 productDetailInfo[0][0].profesores ? 
@@ -67,7 +64,7 @@ export default function ProductDetail() {
             <Opiniones/>
             {/* <Comunidad/> */}
             <BlobSeparatorClose/>
-            <Precios/>
+            <Precios link = {linkCompra}/>
             <Footer/>
         </div>
     )

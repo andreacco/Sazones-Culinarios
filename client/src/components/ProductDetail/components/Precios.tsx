@@ -1,16 +1,17 @@
 import { useSelector } from 'react-redux'
 import '../../../scss/components/ProductDetail/components/Precios.scss'
 
-export default function Precios() {
-
+export default function Precios( link : any ) {
   const product = useSelector((state: any) => state.productDetail)
   const productDetailInfo = useSelector((state: any) => state.productDetail.beMaster)
-
 
   const precio = product.price
 
   const precioMayor =  precio * 5
 
+      const handleClick = () => {
+        window.open(link.link, '_blank')
+    }
 
   return (
     <div className='div-precio'>
@@ -39,7 +40,7 @@ export default function Precios() {
         </div>
       </div>
 
-      <button className="BotonCompraPrecios">
+      <button className="BotonCompraPrecios" onClick={() => handleClick()}>
         ¡QUIERO INSCRIBIRME YA!
       </button>
       <img className="img-boton-compra-precio" src="https://res.cloudinary.com/dgcn9sprj/image/upload/v1679294660/Product%20pages/otras%20img/precios/4_g5haf7.jpg" alt="" />
