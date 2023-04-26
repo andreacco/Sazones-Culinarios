@@ -17,8 +17,8 @@ const Products_1 = __importDefault(require("../../../models/Products/Products"))
 const router = (0, express_1.Router)();
 router.get('/getBannerProducts', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     try {
-        const primero = yield Products_1.default.find({ name: "Barista Princpiante" });
-        const segundo = yield Products_1.default.find({ name: "Bartender para Princpiantes" });
+        const primero = yield Products_1.default.find({ name: "Barista Principiante" });
+        const segundo = yield Products_1.default.find({ name: "Bartender para Principiantes" });
         const tercero = yield Products_1.default.find({ name: "Chocofresas Irresistibles" });
         const cuarto = yield Products_1.default.find({ name: "Curso Cocina Coreana Online" });
         const quinto = yield Products_1.default.find({ name: "Curso Cocina Nikkei Online" });

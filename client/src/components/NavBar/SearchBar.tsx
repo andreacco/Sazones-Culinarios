@@ -5,6 +5,7 @@ import { getBySearch } from '../../redux/actions/index'
 import { useDispatch } from 'react-redux';
 import { useLocation, useNavigate } from 'react-router-dom';
 import useGoUp from '../../customHooks/GoUp';
+import changePageTitle from '../../customHooks/ChangeTitle'
 
 const SearchBar = () => {
   const dispatch = useDispatch()
@@ -12,15 +13,16 @@ const SearchBar = () => {
   const { pathname } = useLocation()
   const navigate = useNavigate()
   const goUp = useGoUp()
-
+  
   const handleChange = (e: any) => {
     e.preventDefault()
     setInput(e.target.value)
   }
-
+  
   const handleSubmit = (e: any) => {
     e.preventDefault()
     dispatch(getBySearch(e.target.value))
+    changePageTitle(`Resultados para "${e.target.value}" - Sazones Culinarios`)
     setInput('')
     goUp()
     if (pathname !== "/productos") {

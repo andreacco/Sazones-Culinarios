@@ -14,7 +14,6 @@ import { useEffect } from 'react';
 import { useSelector } from 'react-redux';
 
 
-
 const Banner = () => {
   const dispatch = useDispatch()
 
@@ -28,8 +27,6 @@ const Banner = () => {
   useEffect(() => {
     dispatch(getBannerProducts())
 }, [dispatch])
-  
-
 
   return (
     <section className="banner-container">
@@ -65,7 +62,7 @@ const Banner = () => {
                       <div className="text">
                         <div className="div-Texto">
                           <h2 className="titulo">{pBanner?.name}</h2>
-                          <p className="parrafo">{pBanner.description?.slice(0, 100)}</p>
+                          <p className="parrafo">{pBanner.bannerCopy}</p>
                         </div>
                         <div className="picture">
                           <section className="portada">
@@ -87,7 +84,6 @@ const Banner = () => {
             )
           }
         </Swiper>
-          
       </section>
   )
 };

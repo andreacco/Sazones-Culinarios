@@ -18,9 +18,11 @@ import '../../scss/components/Home.scss'
 import Instagram from "../SocialMedia/Instagram"
 import Facebook from "../SocialMedia/Facebook"
 import Twitter from "../SocialMedia/Twitter"
+import changePageTitle from '../../customHooks/ChangeTitle'
 
 const Home = () => {
     const dispatch: any = useDispatch()
+        changePageTitle("Sazones Culinarios")
 
     useEffect(() => {
         dispatch(setTitle())

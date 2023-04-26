@@ -1,16 +1,16 @@
 import { useEffect } from "react"
 import { useDispatch, useSelector } from "react-redux"
-import { useLocation, useNavigate } from "react-router-dom"
+import { useLocation } from "react-router-dom"
 import { getAllProducts, getProductDetail } from "../../redux/actions"
 import ProductNotFound from "../NavBar/ProductNotFound"
 import Loader from "../Loader"
 import '../../scss/components/Products.scss'
+import changePageTitle from '../../customHooks/ChangeTitle'
 
 function ProductCard() {
     const dispatch: any = useDispatch()
     const { pathname } = useLocation()
-    const navigate: any = useNavigate()
-
+    
     useEffect(() => {
         dispatch(getAllProducts())
     }, [dispatch])
@@ -18,10 +18,11 @@ function ProductCard() {
     const productsArr = useSelector((state: any) => state.products)
     const seachProductsArr = useSelector((state: any) => state.productSearch)
 
+    seachProductsArr.length? "" : changePageTitle("Productos - Sazones Culinarios")
+
     const handleClick = (name: any, id: any) => {
         dispatch(getProductDetail(id))
         const productName = name.replace(/ /g,'')
-        // navigate(`/${id}/${productName}`, {replace: true})
         window.open(`/${id}/${productName}`,'_blank')
     }
 

@@ -3,10 +3,12 @@ import { Link, useNavigate, useParams } from "react-router-dom";
 import { verifyUser } from "../../redux/actions/index";
 import { useDispatch } from "react-redux";
 import '../../scss/components/VerifyEmail.scss'
+import changePageTitle from '../../customHooks/ChangeTitle'
 
 const VerifyEmail = () => {
   const { id } = useParams();
   const dispatch = useDispatch();
+      changePageTitle("Gracias por verificar tu e-mail! - Sazones Culinarios")
 
   console.log(id);
 

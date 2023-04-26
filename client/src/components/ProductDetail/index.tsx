@@ -20,6 +20,7 @@ import BlobSeparatorOpen from './components/BlobSeparatorOpen'
 import BlobSeparatorClose from './components/BlobSeparatorClose'
 import Footer from './components/Footer'
 import Profesores from './components/ProfesCard'
+import changePageTitle from '../../customHooks/ChangeTitle'
 
 export default function ProductDetail() {
     const dispatch: any = useDispatch()
@@ -33,6 +34,8 @@ export default function ProductDetail() {
     }, [id, dispatch]);
 
     const productDetailInfo = useSelector((state: any) => state.productDetail.beMaster)
+    const productName = useSelector((state: any) => state.productDetail.name)
+        changePageTitle(`${productName} - Sazones Culinarios`)
     // const profes = productDetailInfo ? productDetailInfo[0][0].modulos.map((p: any) => { return(p.profesores)}) : "nope"
     // console.log(typeof profes, profes, "PROFEEEEEES");
     
