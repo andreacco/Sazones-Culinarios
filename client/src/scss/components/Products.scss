@@ -1,13 +1,17 @@
 .products-container{
     display: flex;
     justify-content: center;
+    align-items: center;
     min-height: 40em;
+    width: 100%;
+    overflow: hidden;
     // justify-content: space-between;
     .all-products{
       display: flex;
+      justify-content: center;
+      align-items: center;
       flex-wrap: wrap;
       padding: 2em;
-      justify-content: center;
       margin-top: 6em;
       .card-container{
         padding-right: 2em;
@@ -209,4 +213,18 @@
         opacity: 1;
       }
     }
+}
+
+@media (max-width: 414px){
+  .products-container{
+    width: 350px;
+    margin-left: 2em;
+  }
+}
+
+@media (max-width: 383px){
+  .products-container{
+    width: 350px;
+    margin-left: 1.5em;
+  }
 }

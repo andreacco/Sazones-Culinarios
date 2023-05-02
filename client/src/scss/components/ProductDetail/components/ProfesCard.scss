@@ -73,3 +73,19 @@
     }
   }
 }
+
+
+
+@media (max-width: 414px){
+  .div-div-profesores{
+    text-align: center;
+    h1{
+      font-size: 2.3em;
+    }
+    .profes-container{
+      .profes-div{
+        margin-left: 2em;
+      }
+    }
+  }
+}

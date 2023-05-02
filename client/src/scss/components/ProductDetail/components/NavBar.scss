@@ -27,3 +27,22 @@
         }
     }
 }
+
+@media (max-width: 414px){
+    .navBar-product-detail-container{
+        padding: .4em;
+        display: flex;
+        flex-direction: column;
+        .navBar-product-detail{
+            align-items: center;
+            justify-content: center;
+            .titulo-product-detail{
+                width: 20em;
+                font-size: 1em;
+            }
+            .boton-product-detail{
+                font-size: .6em;
+            }
+        }
+    }
+}

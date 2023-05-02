@@ -37,3 +37,16 @@
         }
     }
 }
+
+
+@media (max-width: 414px){
+    .div-preparaciones {
+        h1{
+            font-size: 2em;
+            text-align: center;
+        }
+        .preparaciones-grid {
+            flex-direction: column;
+        }
+    }
+}

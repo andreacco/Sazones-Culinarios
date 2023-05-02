@@ -48,10 +48,6 @@
       z-index: 2;
       align-items: center;
       padding: 1em;
-      
-      // background-color: rgba(211, 205, 205, 0.404);
-      // padding: 1em;
-      // border-radius: 1em;
 
       .div-Texto {
         text-align: left;
@@ -161,13 +157,42 @@
       }
     }
   }
-  
-  @media screen and (max-width: 620px) {
-    .banner-manga {
-      .text {
-        grid-template-columns: 1fr;
-        .picture {
-          display: none;
+  @media (max-width: 900px) {
+    .banner-container {
+      .swiper {
+        width: 100%;
+      }
+      .swiper-slide {
+        .text {
+          display: flex;
+          flex-direction: column-reverse;
+          justify-content: center;
+          align-items: center;
+          .div-Texto {
+            margin-left: 0;
+            margin-top: 1em;
+            margin-bottom: 2em;
+            width: 90%;
+            .titulo{
+              font-size: 1.5em;
+              text-align: center;
+            }
+            .parrafo{
+              font-size: 0.6em;
+            }
+          }
+          .picture {
+            .portada {
+              img {
+                height: 11em;
+                opacity: 1;
+              }
+            }
+            .boton {
+              width: 12em;
+              font-size: 10px;
+            }
+          }
         }
       }
     }
@@ -185,8 +210,4 @@
   
     75% {margin-left: -300%;}
     100% {margin-left: -300%;}
-  }
-
-  @media (max-width: 414px){
-    
   }

@@ -32,7 +32,7 @@ export default function Description() {
               productDetailInfo[0][0].videoProfe ?
                 <div className="video-entrevista-profe">
                   <p>Mira este breve video hasta el final y conoce por que es el curso más completo del mercado.</p>
-                  <iframe className="video-profe" width="670" height="365" src={productDetailInfo ? productDetailInfo[0][0].videoProfe : ""} 
+                  <iframe className="video-profe" src={productDetailInfo ? productDetailInfo[0][0].videoProfe : ""} 
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" />
                 </div>
               : ""

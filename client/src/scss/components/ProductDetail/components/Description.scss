@@ -107,6 +107,8 @@
             margin-top: 1em;
             .video-profe{
                 margin-top: 1em;
+                width: 670px; 
+                height: 365px; 
             }
         }
     }
@@ -186,6 +188,43 @@
                     width: 16em;
                 }
             }
+        }
+    }
+}
+
+@media (max-width: 414px){
+    .description-container{
+        padding: 2em;
+        .descripcion-texts-container{
+            width: 100%;
+            text-align: center;
+            .aqui-va-la-img{
+                margin-top: 1em;
+                margin-left: -.9em;
+                width: 19em;
+                height: 20em;
+            }
+            .GastronomíaInternacionalOnline7cursosincluidos, .DiplomadoOnlineenGastronomíaInternacional, .DiplomadoOnlineenCocinaInternacional .DiplomadoOnlinedeReposteríayPastelería, .PastelesconDiseñoInterno, .AprendeCocinaVegana, .BaristaPrincipiante, .BartenderparaPrincpiantes, .ChocofresasIrresistibles, .CocinaMexicana, .CursoChocolateríaOnline, .CursoCocinaÁrabeOnline, .CursoCocinaBrasileraOnline, .CursoCocinaCoreanaOnline, .CursoCocinaFrancesaOnline, .CursoCocinaIndiaOnline, .CursoCocinaMexicanaOnline, .CursoCocinaNikkeiOnline, .CursoCocteleríaenCasa, .CervezaArtesanalCasera{
+                background-size: 19em;
+            }
+            .DiplomadoOnlineenGastronomíaInternacional{
+                height: 39.6em;
+            }
+            .DiplomadoOnlineenCocinaInternacional{
+                height: 29em;
+            }        
+            .video-entrevista-profe{
+                .video-profe{
+                    width: 19em;
+                    height: 10.8em;
+                }
+            }
+        }
+        .info-boxes-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 20em;
         }
     }
 }

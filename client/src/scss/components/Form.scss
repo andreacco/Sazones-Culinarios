@@ -437,3 +437,63 @@
         }
     }
 }
+
+@media (max-width: 499px){
+    .div-form{
+        .form-container{
+            width: 23em;
+            .already-subscribed{
+            }
+            .sub-error{
+            }
+            .no-suscrito{
+            }
+            .titulo-form{
+                text-align: center;
+                h2{
+                }
+                p{
+                }
+            }
+
+
+
+            .form{
+                .registration{
+                    .nombres{
+                        .input-groupy {
+                            .input{
+                                width: 10em;
+                            }
+                        }
+                    }
+                    .inputs-abajo{
+                        .div-phone-input{
+                            width: 20em;
+                            .phone-input{
+                                width: 20em;
+                            }
+                        }
+                        .input-groupy {
+                            .input{
+                                width: 20em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .suscrito {
+            .titulo-form{
+            }
+            .form{
+            }
+            .gracias{
+                h2{
+                }
+                p{
+                }
+            }
+        }
+    }
+}

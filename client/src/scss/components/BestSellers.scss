@@ -3,12 +3,16 @@
         font-family: var(--primary-font);
         display: flex;
         justify-content: center;
+        align-items: center;
         font-size: 2em;
         margin-top: 1em;
+        flex-wrap: wrap;
     }
     .cards-container{
         display: flex;
         justify-content: space-between;
+        justify-content: center;
+        align-items: center;
         padding: 3em;
         flex-wrap: wrap;
         .container {
@@ -16,10 +20,13 @@
           align-items: center;
           justify-content: center;
           z-index: 99;
+          
+          padding-right: 2em;
+          padding-bottom: 3.5em;
         }
         .card_box {
-          width: 23em;
-          height: 28em;
+          width: 22em;
+          height: 29em;
           border-radius: 20px;
           background: linear-gradient(0deg,rgba(109,77,53,1) 0%, rgba(177,135,104,1) 57%, rgba(227,195,171,1) 100%);
           background: linear-gradient(0deg,rgba(98,10,4,1) 0%, rgba(156,50,42,1) 57%, rgba(213,106,98,1) 100%);
@@ -162,4 +169,29 @@
           background-color: var(--producto-once);
         }
       }
+}
+
+@media (max-width: 499px) {
+  .BestSellers-container{
+    .cards-container{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .card_box {
+        width: 20em;
+        height: 25em;
+        .content{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          .imagen{
+            height: 17.5em;
+            width: 16em;
+          }
+        }
+      }
+    }
+  }
 }

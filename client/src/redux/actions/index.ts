@@ -10,7 +10,7 @@ export const SET_TITLE = "SET_TITLE"
 export const RESET_SUB = "RESET_SUB"
 export const RESET = "RESET"
 
-// import prods from '../../components/ProductDetail/prods.json'
+import prods from '../../components/ProductDetail/prods.json'
 
 export const getAllProducts = () => async (dispatch:any) => {
     

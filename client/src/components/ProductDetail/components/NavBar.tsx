@@ -36,7 +36,7 @@ export default function NavBar( link : any ) {
                     {`¡ÚLTIMOS ${cupos} CUPOS SOLO POR HOY!`}
                 </p>
                 <Button variant="contained" className='boton-product-detail' onClick={() => handleClick()}>
-                    LO QUIERO COMPRAR YA MISMO  
+                    LO QUIERO COMPRAR YA MISMO!  
                 </Button>
             </div>
             <Timer/>

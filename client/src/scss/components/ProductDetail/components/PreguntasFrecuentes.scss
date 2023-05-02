@@ -77,6 +77,36 @@
     }
 }
 
+@media (max-width: 414px){
+    .div-PreguntasFrecuentes{
+        .title{
+            font-size: 2em;
+        }
+        .div-divs-preguntas{
+            margin-left: 2em;
+            .div-cada-pregunta{
+                margin-bottom: .5em;
+                margin-right: 1.5em;
+                .div-pregunta{
+                    width: 24em;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // .div-PreguntasFrecuentes{
 //     display: flex;

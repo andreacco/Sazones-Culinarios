@@ -29,7 +29,7 @@ const Home = () => {
     }, [dispatch])
     
     return (
-        <div>
+        <div className="home-div">
             <Banner/>
             <Form/>
             <BestSellers/>

@@ -36,3 +36,15 @@
         height: 4.5em;
     }
 }
+
+@media (max-width: 414px){
+    .div-BotonCompra{
+        margin-top: -1em;
+        .BotonCompra {
+            font-size: 1.1em;
+        }
+        .img-boton-compra{
+            height: 2.5em;
+        }
+    }
+}

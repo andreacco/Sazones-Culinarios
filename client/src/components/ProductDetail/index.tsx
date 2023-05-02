@@ -6,7 +6,6 @@ import NavBar from './components/NavBar'
 import Title from './components/Title'
 import Separator from './components/Separator'
 import Description from './components/Description'
-import '../../scss/components/ProductDetail/ProductDetail.scss'
 import Beneficios from './components/Beneficios'
 import BotonCompra from './components/BotonCompra'
 import Preparaciones from './components/Preparaciones'
@@ -21,6 +20,7 @@ import BlobSeparatorClose from './components/BlobSeparatorClose'
 import Footer from './components/Footer'
 import Profesores from './components/ProfesCard'
 import changePageTitle from '../../customHooks/ChangeTitle'
+import '../../scss/components/ProductDetail/ProductDetail.scss'
 
 export default function ProductDetail() {
     const dispatch: any = useDispatch()
@@ -35,7 +35,7 @@ export default function ProductDetail() {
 
     const productDetailInfo = useSelector((state: any) => state.productDetail.beMaster)
     const productInfor = useSelector((state: any) => state.productDetail)
-    changePageTitle(`${productInfor.name} - Sazones Culinarios`)
+    changePageTitle(`${productInfor.name ? `${productInfor.name} - `  : "" }Sazones Culinarios`)
     const linkCompra = productInfor.links ? productInfor.links[0].materialDivulgacion.checkoutFull : ""
 
     return (

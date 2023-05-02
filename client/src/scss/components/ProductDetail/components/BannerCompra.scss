@@ -1,6 +1,6 @@
 .div-bannerCompra{
     position: relative;
-    background: #000;
+    background: var(--blacky);
     .div-img-banner{
         height: 30em;
         object-fit: cover;
@@ -63,3 +63,21 @@
     }
 }
 
+@media (max-width: 414px){
+    .div-bannerCompra{
+        .div-img-banner{
+            height: 15.4em;
+            .div-texts-banner{
+                text-align: center;
+                top: 6%;
+                .h3, .h2{
+                    font-size: 1.3em;
+                }
+                .BotonCompraBanner{
+                    font-size: 1em;
+                    margin-bottom: 2em;
+                }
+            }
+        }
+    }
+}

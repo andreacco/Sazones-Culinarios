@@ -109,3 +109,43 @@
         margin-bottom: 1em;
     }
 }
+
+
+@media (max-width: 414px) {
+    .div-precio{
+        .quote{
+            font-size: 1.7em;
+            margin-top: 1em;
+            margin-bottom: 2em;
+        }
+        .precioMayor{
+            font-size: 3em;
+        }
+        .div-PrecioReal{
+            font-size: 2.5em;
+            margin-bottom: 2em;
+        }
+        .div-infoPago{
+            
+            margin-top: 2em;
+            margin-bottom: em;
+            .cards{
+                flex-direction: column;
+                .card{
+                    margin-bottom: 3em;
+                }
+            }
+        }
+        .BotonCompraPrecios{
+            font-size: 1.4em;
+            margin-top: -1em;
+        }
+        .img-boton-compra-precio{
+            height: 2.5em;
+            margin-bottom: 2em;
+        }
+        .img-garantia{
+            height: 7em;
+        }
+    }
+}

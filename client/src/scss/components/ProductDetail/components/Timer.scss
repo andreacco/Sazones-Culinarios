@@ -7,3 +7,16 @@
     z-index: 99;
     width: 115px;
 }
+
+@media (max-width: 414px){
+    .timer-container{
+        font-size: .8em;
+
+        display: flex;
+        align-items: center;
+        right: 0;
+        color: var(--background);
+        z-index: 99;
+        width: 115px;
+    }
+}

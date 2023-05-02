@@ -44,7 +44,7 @@ export default function BestSellers() {
                                 best.mockups[0]?.cent :
                                 best.mockups[0]?.der
                               } alt="" className='imagen'/>
-                      <h5>{best.name}</h5>
+                      <h5>{best.name.includes(":") === true ? best.name.slice(0, -20) : best.name}</h5>
                       <div className='div-boton'>
                         <button className="boton" onClick={() => handleClick(best.name, best._id)}>
                           <span className='span-boton'>Más Información</span>
