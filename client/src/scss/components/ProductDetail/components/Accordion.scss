@@ -78,7 +78,7 @@
     }
 }
 
-@media (max-width: 414px){
+@media (max-width: 600px){
     .contenedor{
         margin-bottom: 2em;
         text-align: left;
@@ -87,11 +87,21 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            width: 5.65em;
+            width: 100%;
             svg{
                 margin-bottom: 0.2em;
                 margin-right: 0.5em;
             }
+        }
+    }
+}
+
+
+@media (max-width: 406px){
+    .contenedor{
+        .li{
+            font-size: .6em;
+            width: 100%;
         }
     }
 }

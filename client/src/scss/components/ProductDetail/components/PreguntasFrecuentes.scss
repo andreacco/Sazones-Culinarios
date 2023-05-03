@@ -13,9 +13,14 @@
         margin-bottom: 1em;
     }
     .div-divs-preguntas{
-        display: flex;
+        // display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        // justify-content: space-between;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 2em;
         .div-cada-pregunta{
             margin-bottom: 1em;
             margin-right: 1.5em;
@@ -77,18 +82,24 @@
     }
 }
 
-@media (max-width: 414px){
+@media (max-width: 600px){
     .div-PreguntasFrecuentes{
         .title{
             font-size: 2em;
         }
         .div-divs-preguntas{
+            display: flex;
+            justify-content: center;
+            align-items: center;
             margin-left: 2em;
+            // width: 100%;
             .div-cada-pregunta{
+                // width: 100%;
                 margin-bottom: .5em;
-                margin-right: 1.5em;
+                // margin-right: 1.5em;
                 .div-pregunta{
-                    width: 24em;
+                    // width: 24em;
+                    width: 100%;
                 }
             }
         }

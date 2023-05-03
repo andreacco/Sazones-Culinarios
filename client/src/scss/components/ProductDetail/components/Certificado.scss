@@ -31,10 +31,11 @@
 }
 
 
-@media (max-width: 414px){
+@media (max-width: 832px){
     .div-certificado{
         .div-contenido{
             flex-direction: column;
+            padding: 1em;
             .img-certificado{
                 width: 22em;
                 margin-bottom: 1em;

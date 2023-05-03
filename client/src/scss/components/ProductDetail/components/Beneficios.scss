@@ -1,17 +1,21 @@
 .beneficios-div {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    width: 100%;
     overflow: hidden;
+    text-align: center;
     h1{
         font-family: var(--producto-titulos-font);
         font-size: 2.5em;
     }
     .beneficios-grid {
         display: flex;
-        flex-wrap: wrap;
         justify-content: space-evenly;
-        width: 80em;
+        align-items: center;
+        flex-wrap: wrap;
+        // width: 80em;
         padding-top: 2em;
         // display: grid;
         // padding: 3em;
@@ -55,7 +59,25 @@
 
 
 
-@media (max-width: 414px){
+@media (max-width: 1212px){
+    .beneficios-div {
+        text-align: center;
+        display: flex;
+        h1{
+            font-family: var(--producto-titulos-font);
+            font-size: 2em;
+        }
+        .beneficios-grid {
+            margin-bottom: 2em;
+            .Beneficio-card {
+                width: 20em;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 600px){
     .beneficios-div {
         text-align: center;
 

@@ -8,15 +8,22 @@
     width: 115px;
 }
 
-@media (max-width: 414px){
+@media (max-width: 600px){
     .timer-container{
         font-size: .8em;
-
+        width: 100%;
         display: flex;
+        justify-content: center;
         align-items: center;
-        right: 0;
-        color: var(--background);
-        z-index: 99;
-        width: 115px;
+    }
+}
+
+@media (max-width: 905px){
+    .timer-container{
+        font-size: 1em;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }

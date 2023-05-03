@@ -7,14 +7,14 @@
 
     // PARA EL FONDO NEGRO
     background-color: var(--blacky);
-    
+
     .descripcion-texts-container, .info-boxes-container{
         font-family: var(--producto-parrafos-font);
         font-size: 1.29em;
     }
     .descripcion-texts-container{
         width: 33em;
-        
+
         // PARA EL FONDO NEGRO
         color: white;
         // ESTO ES LO QUE SE PUEDE CAMBIAR SI SE LE PUEDE HACER EL GOUP DEL DETALLE CONDICIONAL PRA CADA PRODUCTO
@@ -107,8 +107,8 @@
             margin-top: 1em;
             .video-profe{
                 margin-top: 1em;
-                width: 670px; 
-                height: 365px; 
+                width: 670px;
+                height: 365px;
             }
         }
     }
@@ -192,12 +192,17 @@
     }
 }
 
-@media (max-width: 414px){
+
+@media (max-width: 1212px){
     .description-container{
         padding: 2em;
         .descripcion-texts-container{
             width: 100%;
             text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             .aqui-va-la-img{
                 margin-top: 1em;
                 margin-left: -.9em;
@@ -212,7 +217,58 @@
             }
             .DiplomadoOnlineenCocinaInternacional{
                 height: 29em;
-            }        
+            }
+            .video-entrevista-profe{
+                .video-profe{
+                    width: 19em;
+                    height: 10.8em;
+                }
+            }
+        }
+        .info-boxes-container{
+            display: flex;
+            // flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 100%;
+            margin-top: 1.5em;
+            .inscripcion{
+                margin-right: 1em;
+                max-width: 55em;
+            }
+            .pagos{
+                max-width: 35em;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 668px){
+    .description-container{
+        padding: 2em;
+        justify-content: center;
+        .descripcion-texts-container{
+            width: 100%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .aqui-va-la-img{
+                margin-left: 0;
+                width: 19em;
+                height: 20em;
+            }
+            .GastronomíaInternacionalOnline7cursosincluidos, .DiplomadoOnlineenGastronomíaInternacional, .DiplomadoOnlineenCocinaInternacional, .DiplomadoOnlinedeReposteríayPastelería, .PastelesconDiseñoInterno, .AprendeCocinaVegana, .BaristaPrincipiante, .BartenderparaPrincpiantes, .ChocofresasIrresistibles, .CocinaMexicana, .CursoChocolateríaOnline, .CursoCocinaÁrabeOnline, .CursoCocinaBrasileraOnline, .CursoCocinaCoreanaOnline, .CursoCocinaFrancesaOnline, .CursoCocinaIndiaOnline, .CursoCocinaMexicanaOnline, .CursoCocinaNikkeiOnline, .CursoCocteleríaenCasa, .CervezaArtesanalCasera{
+                background-size: 19em;
+            }
+            .DiplomadoOnlineenGastronomíaInternacional{
+                height: 39.6em;
+            }
+            .DiplomadoOnlineenCocinaInternacional{
+                height: 29em;
+            }
             .video-entrevista-profe{
                 .video-profe{
                     width: 19em;
@@ -223,8 +279,15 @@
         .info-boxes-container{
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            align-items: center;
             width: 20em;
+            .inscripcion{
+                margin-right: 0;
+                width: 100%;
+            }
+            .pagos{
+                width: 100%;
+            }
         }
     }
 }

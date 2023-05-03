@@ -41,24 +41,26 @@ export default function Description() {
           <Accordion/>
         </div>
         <div className='info-boxes-container'>
-          <div className='header-inscripcion'>
-            <h2>INSCRÍBETE AHORA</h2>
-            <p>Promoción por tiempo limitado</p>
-          </div>
-          <div className='content-inscripcion'>
-            <ul>
-              {info.map((i:any) => {
-                return(
-                  <div className='list' key={i}>
-                    <div className="info">
-                      <AiOutlineCheckCircle size={24}/>
-                      <li key={i}>{i}</li>
+          <div className="inscripcion">
+            <div className='header-inscripcion'>
+              <h2>INSCRÍBETE AHORA</h2>
+              <p>Promoción por tiempo limitado</p>
+            </div>
+            <div className='content-inscripcion'>
+              <ul>
+                {info.map((i:any) => {
+                  return(
+                    <div className='list' key={i}>
+                      <div className="info">
+                        <AiOutlineCheckCircle size={24}/>
+                        <li key={i}>{i}</li>
+                      </div>
+                      <div className='divider'></div>
                     </div>
-                    <div className='divider'></div>
-                  </div>
-                )
-              })}
-            </ul>
+                  )
+                })}
+              </ul>
+            </div>
           </div>
           
           <div className="pagos">

@@ -37,11 +37,13 @@
         // height: 10em;
         margin-top: 2em;
         margin-bottom: 2em;
+        width: 90%;
         .cards{
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-around;
             align-items: center;
-            width: 65em;
+            // width: 65em;
             .card{
                 padding: 0 2em;
                 border: 3px solid var(--redy);
@@ -52,6 +54,7 @@
                 flex-direction: column;
                 align-items: center;
                 background-color: #e53d0010;
+                margin-top: 3em;
                 img{
                     height: 15em;
                     border-radius: 1em;
@@ -72,6 +75,9 @@
                     margin-top: 2.3em;
                 }
             }
+            // :nth-last-child(1){
+            //     margin-top: 3em;
+            // }
         }
     }
     .BotonCompraPrecios{
@@ -111,7 +117,7 @@
 }
 
 
-@media (max-width: 414px) {
+@media (max-width: 600px) {
     .div-precio{
         .quote{
             font-size: 1.7em;
@@ -131,6 +137,7 @@
             margin-bottom: em;
             .cards{
                 flex-direction: column;
+                width: 100%;
                 .card{
                     margin-bottom: 3em;
                 }
@@ -146,6 +153,20 @@
         }
         .img-garantia{
             height: 7em;
+        }
+    }
+}
+
+@media (max-width: 846px){
+    .div-precio{
+        .BotonCompraPrecios{
+            font-size: 1.5em;
+        }
+        .img-boton-compra-precio{
+            height: 2.5em;
+        }
+        .img-garantia{
+            height: 5em;
         }
     }
 }
