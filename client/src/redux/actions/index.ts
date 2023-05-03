@@ -26,7 +26,7 @@ export const getAllProducts = () => async (dispatch:any) => {
         })
     }
     catch(error) {
-        console.log(error, "error, actions");
+        console.log(error, "error, actions 1");
     }
 }
 
@@ -41,7 +41,7 @@ export const getAllCategories = () => async (dispatch:any) => {
         })
     }
     catch(error) {
-        console.log(error, "error, actions");
+        console.log(error, "error, actions 2");
     }
 }
 
@@ -56,7 +56,7 @@ export const getBestSellers = () => async (dispatch:any) => {
         })
     }
     catch(error) {
-        console.log(error, "error, actions");
+        console.log(error, "error, actions 3");
     }
 }
 
@@ -71,7 +71,7 @@ export const getBannerProducts: any = () => async (dispatch:any) => {
         })
     }
     catch(error) {
-        console.log(error, "error, actions");
+        console.log(error, "error, actions 4");
     }
 }
 
@@ -86,7 +86,7 @@ export const getBySearch: any = (name: any) => async (dispatch:any) => {
         })
     }
     catch(error) {
-        console.log(error, "error, actions");
+        console.log(error, "error, actions 5");
     }
 }
 
@@ -101,7 +101,7 @@ export const getProductDetail: any = (id: any) => async (dispatch:any) => {
         })
     }
     catch(error) {
-        console.log(error, "error, actions");
+        console.log(error, "error, actions 6");
     }
 }
 
@@ -114,7 +114,7 @@ export const subcribeUser = (newUser: Object) => {
             return dispatch({type: SUBSCRIBE_USER, payload: res.data})
         }
         catch(error) {
-            console.log(error, "error, actions");
+            console.log(error, "error, actions 7");
             return dispatch({type: SUBSCRIBE_USER, payload: error})
         }
     }
@@ -127,7 +127,7 @@ export const setTitle = () => {
             dispatch({type: SET_TITLE, payload: title})
         }
         catch(error) {
-            console.log(error, "error, actions");
+            console.log(error, "error, actions 8");
         }
     }
 }
@@ -153,7 +153,7 @@ export const verifyUser: any = (id: any) => {
             // await axios.get(`https://sazones-culinarios-back.onrender.com/api/user/verified/${id}`)
         }
         catch(error) {
-            console.log(error, "error, actions");
+            console.log(error, "error, actions 9");
         }
     }
 }
