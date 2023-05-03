@@ -28,11 +28,11 @@ server.use((_req, res, next) => {
 });
 //--------------------------------------------------//
 server.use('/api', index_1.default);
-// server.use(cors())
-server.use((0, cors_1.default)({
-    credentials: false,
-    origin: '*',
-}));
+server.use((0, cors_1.default)());
+// server.use(cors({
+//   credentials: false,
+//   origin: '*',
+// }));
 // eslint-disable-next-line @typescript-eslint/no-explicit-any, @typescript-eslint/no-unused-vars
 server.use((err, _req, res, _next) => {
     const status = err.status || 500;
