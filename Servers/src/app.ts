@@ -31,7 +31,7 @@ server.use(cors());
 server.use((err:any, _req:any, res:any, _next:any) => {
   const status = err.status || 500;
   const message = err.message || err;
-  console.error(err, "es este");
+  console.error(err);
   res.status(status).send({message});
 });
 
