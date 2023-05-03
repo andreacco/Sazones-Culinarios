@@ -1,6 +1,6 @@
 import { useEffect } from "react"
 import { useDispatch, useSelector } from "react-redux"
-import { useLocation, useNavigate } from "react-router-dom"
+import { useLocation } from "react-router-dom"
 import { getAllProducts, getProductDetail } from "../../redux/actions"
 import ProductNotFound from "../NavBar/ProductNotFound"
 import Loader from "../Loader"
@@ -9,7 +9,6 @@ import changePageTitle from '../../customHooks/ChangeTitle'
 
 function ProductCard() {
     const dispatch: any = useDispatch()
-    const navigate = useNavigate();
     const { pathname } = useLocation()
     
     useEffect(() => {
@@ -24,8 +23,7 @@ function ProductCard() {
     const handleClick = (name: any, id: any) => {
         dispatch(getProductDetail(id))
         const productName = name.replace(/ /g,'')
-        navigate(`/${id}/${productName}`, { replace: true })
-        // window.open(`/${id}/${productName}`/* ,'_blank' */)
+        window.open(`/${id}/${productName}`,'_blank')
     }
 
     const productsReturn = (p: any) => {
