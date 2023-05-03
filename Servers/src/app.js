@@ -7,25 +7,25 @@ exports.server = void 0;
 const express_1 = __importDefault(require("express"));
 const index_1 = __importDefault(require("./routes/index"));
 // import passport from 'passport';
-const cookie_parser_1 = __importDefault(require("cookie-parser"));
-const body_parser_1 = __importDefault(require("body-parser"));
-const morgan_1 = __importDefault(require("morgan"));
+// import cookieParser from 'cookie-parser';
+// import bodyParser from 'body-parser';
+// import morgan from 'morgan';
 require("./config/MongoDb/Db");
 const cors_1 = __importDefault(require("cors"));
 const server = (0, express_1.default)();
 exports.server = server;
 //-------------------cors config--------------------//
-server.use(body_parser_1.default.urlencoded({ extended: true, limit: '50mb' }));
-server.use(body_parser_1.default.json({ limit: '50mb' }));
-server.use((0, cookie_parser_1.default)());
-server.use((0, morgan_1.default)('dev'));
-server.use((_req, res, next) => {
-    res.setHeader('Access-Control-Allow-Origin', '*');
-    res.setHeader('Access-Control-Allow-Credentials', 'true');
-    res.setHeader('Access-Control-Allow-Headers', '*');
-    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, DELETE');
-    next();
-});
+// server.use(bodyParser.urlencoded({ extended: true, limit: '50mb' }));
+// server.use(bodyParser.json({ limit: '50mb' }));
+// server.use(cookieParser());
+// server.use(morgan('dev'));
+// server.use((_req, res, next) => {
+//   res.header('Access-Control-Allow-Origin', '*');  
+//   res.header('Access-Control-Allow-Credentials', 'true');
+//   res.header('Access-Control-Allow-Headers', '*');
+//   res.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, DELETE');
+//   next();
+// });
 //--------------------------------------------------//
 server.use('/api', index_1.default);
 server.use((0, cors_1.default)());
