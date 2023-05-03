@@ -27,5 +27,16 @@
     }
     h2{
         bottom: 2em;
+        transform: translate(0, 90%);
+    }
+}
+
+@media (max-width: 524px) {
+    .not-found-container{
+        h2{
+            width: 15em;
+            text-align: center;
+            transform: translate(0, 90%);
+        }
     }
 }
