@@ -23,7 +23,7 @@ function ProductCard() {
     const handleClick = (name: any, id: any) => {
         dispatch(getProductDetail(id))
         const productName = name.replace(/ /g,'')
-        window.open(`/${id}/${productName}`,'_blank')
+        window.open(`/${id}/${productName}`/* ,'_blank' */)
     }
 
     const productsReturn = (p: any) => {
