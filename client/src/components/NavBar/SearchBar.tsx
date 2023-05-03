@@ -7,7 +7,11 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import useGoUp from '../../customHooks/GoUp';
 import changePageTitle from '../../customHooks/ChangeTitle'
 
-const SearchBar = () => {
+type Props = {
+  setOpen: React.Dispatch<React.SetStateAction<boolean>>
+}
+
+const SearchBar = ({setOpen}: Props) => {
   const dispatch = useDispatch()
   const [input, setInput] = useState<any>()
   const { pathname } = useLocation()
@@ -28,6 +32,7 @@ const SearchBar = () => {
     if (pathname !== "/productos") {
       navigate(`/productos/search/${input}`, { replace: true })
     }
+    setOpen(false)
   }
 
   return (

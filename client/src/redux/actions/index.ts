@@ -10,7 +10,7 @@ export const SET_TITLE = "SET_TITLE"
 export const RESET_SUB = "RESET_SUB"
 export const RESET = "RESET"
 
-import prods from '../../components/ProductDetail/prods.json'
+// import prods from '../../components/ProductDetail/prods.json'
 
 export const getAllProducts = () => async (dispatch:any) => {
     
@@ -18,6 +18,7 @@ export const getAllProducts = () => async (dispatch:any) => {
 
     try{
         await axios.get('http://localhost:5000/api/getAllProducts')
+        // await axios.get('https://sazones-culinarios-production.up.railway.app/api/getAllProducts')
         // await axios.get('https://sazones-culinarios-back.onrender.com/api/getAllProducts')
         .then(response => response.data)
         .then(allProducts => {
@@ -32,6 +33,7 @@ export const getAllProducts = () => async (dispatch:any) => {
 export const getAllCategories = () => async (dispatch:any) => {
     try{
         await axios.get('http://localhost:5000/api/getAllCategories')
+        // await axios.get('https://sazones-culinarios-production.up.railway.app/api/getAllCategories')
         // await axios.get('https://sazones-culinarios-back.onrender.com/api/getAllCategories')
         .then(response => response.data)
         .then(allCategories => {
@@ -46,6 +48,7 @@ export const getAllCategories = () => async (dispatch:any) => {
 export const getBestSellers = () => async (dispatch:any) => {
     try{
         await axios.get('http://localhost:5000/api/getBestSellers')
+        // await axios.get('https://sazones-culinarios-production.up.railway.app/api/getBestSellers')
         // await axios.get('https://sazones-culinarios-back.onrender.com/api/getBestSellers')
         .then(response => response.data)
         .then(bestSellers => {
@@ -60,6 +63,7 @@ export const getBestSellers = () => async (dispatch:any) => {
 export const getBannerProducts: any = () => async (dispatch:any) => {
     try{
         await axios.get('http://localhost:5000/api/getBannerProducts')
+        // await axios.get('https://sazones-culinarios-production.up.railway.app/api/getBannerProducts')
         // await axios.get('https://sazones-culinarios-back.onrender.com/api/getBannerProducts')
         .then(response => response.data)
         .then(bannerProducts => {
@@ -74,6 +78,7 @@ export const getBannerProducts: any = () => async (dispatch:any) => {
 export const getBySearch: any = (name: any) => async (dispatch:any) => {
     try{
         await axios.get(`http://localhost:5000/api/getBySearch?name=${name}`)
+        // await axios.get('https://sazones-culinarios-production.up.railway.app/api/getBySearch?name=${name}')
         // await axios.get('https://sazones-culinarios-back.onrender.com/api/getBySearch?name=${name}')
         .then(response => response.data)
         .then(foundProducts => {
@@ -88,6 +93,7 @@ export const getBySearch: any = (name: any) => async (dispatch:any) => {
 export const getProductDetail: any = (id: any) => async (dispatch:any) => {
     try{
         await axios.get(`http://localhost:5000/api/getById/${id}`)
+        // await axios.get('https://sazones-culinarios-production.up.railway.app/api/getById/${id}')
         // await axios.get('https://sazones-culinarios-back.onrender.com/api/getById/${id}')
         .then(response => response.data)
         .then(foundProduct => {
@@ -103,6 +109,7 @@ export const subcribeUser = (newUser: Object) => {
         return async (dispatch:any) => {
         try{
             var res = await axios.post('http://localhost:5000/api/user/postUser', newUser)
+            // let res = await axios.post('https://sazones-culinarios-production.up.railway.app/api/user/postUser', newUser)
             // let res = await axios.post('https://sazones-culinarios-back.onrender.com/api/user/postUser', newUser)
             return dispatch({type: SUBSCRIBE_USER, payload: res.data})
         }
@@ -142,6 +149,8 @@ export const verifyUser: any = (id: any) => {
         return async () => {
         try{
             await axios.get(`http://localhost:5000/api/user/verified/${id}`)
+            // await axios.get(`https://sazones-culinarios-production.up.railway.app/api/user/verified/${id}`)
+            // await axios.get(`https://sazones-culinarios-back.onrender.com/api/user/verified/${id}`)
         }
         catch(error) {
             console.log(error, "error, actions");
