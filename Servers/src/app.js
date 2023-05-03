@@ -11,6 +11,7 @@ const cookie_parser_1 = __importDefault(require("cookie-parser"));
 const body_parser_1 = __importDefault(require("body-parser"));
 const morgan_1 = __importDefault(require("morgan"));
 require("./config/MongoDb/Db");
+const cors_1 = __importDefault(require("cors"));
 const server = (0, express_1.default)();
 exports.server = server;
 //-------------------cors config--------------------//
@@ -27,7 +28,10 @@ server.use((_req, res, next) => {
 });
 //--------------------------------------------------//
 server.use('/api', index_1.default);
-// server.use(cors());
+server.use((0, cors_1.default)({
+    credentials: true,
+    origin: '*',
+}));
 // eslint-disable-next-line @typescript-eslint/no-explicit-any, @typescript-eslint/no-unused-vars
 server.use((err, _req, res, _next) => {
     const status = err.status || 500;

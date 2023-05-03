@@ -25,7 +25,10 @@ server.use((_req, res, next) => {
 //--------------------------------------------------//
 
 server.use('/api', routes);
-// server.use(cors());
+server.use(cors({
+  credentials: true,
+  origin: '*',
+}));
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any, @typescript-eslint/no-unused-vars
 server.use((err:any, _req:any, res:any, _next:any) => {
