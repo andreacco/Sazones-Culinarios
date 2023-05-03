@@ -27,7 +27,7 @@ server.use((_req, res, next) => {
 server.use('/api', routes);
 server.use(cors({
   credentials: true,
-  origin: '*',
+  origin: 'sazones-culinarios.vercel.app/',
 }));
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any, @typescript-eslint/no-unused-vars
