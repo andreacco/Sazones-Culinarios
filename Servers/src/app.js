@@ -21,7 +21,7 @@ server.use((0, cookie_parser_1.default)());
 server.use((0, morgan_1.default)('dev'));
 server.use((_req, res, next) => {
     res.header('Access-Control-Allow-Origin', '*');
-    res.header('Access-Control-Allow-Credentials', 'true');
+    res.header('Access-Control-Allow-Credentials', 'false');
     res.header('Access-Control-Allow-Headers', '*');
     res.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, DELETE');
     next();
@@ -29,8 +29,8 @@ server.use((_req, res, next) => {
 //--------------------------------------------------//
 server.use('/api', index_1.default);
 server.use((0, cors_1.default)({
-    credentials: true,
-    origin: 'sazones-culinarios.vercel.app/',
+    credentials: false,
+    origin: '*',
 }));
 // eslint-disable-next-line @typescript-eslint/no-explicit-any, @typescript-eslint/no-unused-vars
 server.use((err, _req, res, _next) => {
