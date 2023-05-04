@@ -15,13 +15,12 @@ server.use(bodyParser.urlencoded({ extended: true, limit: '50mb' }));
 server.use(bodyParser.json({ limit: '50mb' }));
 server.use(cookieParser());
 server.use(morgan('dev'));
-// server.use((_req, res, next) => {
-//   res.header('Access-Control-Allow-Origin', '*');  
-//   res.header('Access-Control-Allow-Credentials', 'false'); //true
-//   res.header('Access-Control-Allow-Headers', '*');
-//   res.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, DELETE');
-//   next();
-// });
+server.use(function (req, res, next) {
+  res.setHeader('Access-Control-Allow-Origin', 'https://sazones-culinarios.vercel.app');
+  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
+  res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
+  next();
+});
 //--------------------------------------------------//
 
 // -------------------------------PRUEBA CORS NUEVA ---------------------------- //
@@ -38,14 +37,14 @@ server.use(morgan('dev'));
 // server.use(cors(options));
 
 
-server.use(cors({
-  origin: 'https://sazones-culinarios.vercel.app'
-}))
+// server.use(cors({
+//   origin: 'https://sazones-culinarios.vercel.app'
+// }))
 // ------------------------------- FIN PRUEBA CORS NUEVA ----------------------- //
 
 
 server.use('/api', routes);
-// server.use(cors())
+server.use(cors())
 // server.use(cors({
 //   credentials: false,
 //   origin: '*',

@@ -28,13 +28,16 @@ server.use((0, morgan_1.default)('dev'));
 // });
 //--------------------------------------------------//
 // -------------------------------PRUEBA CORS NUEVA ---------------------------- //
-server.use((0, cors_1.default)());
-server.use(express_1.default.json());
-const allowedOrigins = ['http://localhost:3000', 'https://sazones-culinarios.vercel.app'];
-const options = {
-    origin: allowedOrigins
-};
-server.use((0, cors_1.default)(options));
+// server.use(cors())
+// server.use(express.json());
+// const allowedOrigins = ['http://localhost:3000', 'https://sazones-culinarios.vercel.app'];
+// const options: cors.CorsOptions = {
+//   origin: allowedOrigins
+// };
+// server.use(cors(options));
+server.use((0, cors_1.default)({
+    origin: 'https://sazones-culinarios.vercel.app'
+}));
 // ------------------------------- FIN PRUEBA CORS NUEVA ----------------------- //
 server.use('/api', index_1.default);
 // server.use(cors())
