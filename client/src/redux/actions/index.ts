@@ -78,7 +78,7 @@ export const getBannerProducts: any = () => async (dispatch:any) => {
 export const getBySearch: any = (name: any) => async (dispatch:any) => {
     try{
         // await axios.get(`http://localhost:5000/api/getBySearch?name=${name}`)
-        await axios.get('https://sazones-culinarios-production.up.railway.app/api/getBySearch?name=${name}')
+        await axios.get(`https://sazones-culinarios-production.up.railway.app/api/getBySearch?name=${name}`)
         // await axios.get('https://sazones-culinarios-back.onrender.com/api/getBySearch?name=${name}')
         .then(response => response.data)
         .then(foundProducts => {
@@ -93,7 +93,7 @@ export const getBySearch: any = (name: any) => async (dispatch:any) => {
 export const getProductDetail: any = (id: any) => async (dispatch:any) => {
     try{
         // await axios.get(`http://localhost:5000/api/getById/${id}`)
-        await axios.get('https://sazones-culinarios-production.up.railway.app/api/getById/${id}')
+        await axios.get(`https://sazones-culinarios-production.up.railway.app/api/getById/${id}`)
         // await axios.get('https://sazones-culinarios-back.onrender.com/api/getById/${id}')
         .then(response => response.data)
         .then(foundProduct => {
