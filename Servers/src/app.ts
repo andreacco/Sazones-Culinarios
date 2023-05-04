@@ -39,7 +39,7 @@ server.use(morgan('dev'));
 
 
 server.use(cors({
-  origin: 'https://localhost:3000'
+  origin: 'https://sazones-culinarios.vercel.app'
 }))
 // ------------------------------- FIN PRUEBA CORS NUEVA ----------------------- //
 
