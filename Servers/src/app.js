@@ -19,9 +19,8 @@ server.use(body_parser_1.default.urlencoded({ extended: true, limit: '50mb' }));
 server.use(body_parser_1.default.json({ limit: '50mb' }));
 server.use((0, cookie_parser_1.default)());
 server.use((0, morgan_1.default)('dev'));
-const allowedOrigins = ['http://localhost:3000', 'https://sazones-culinarios.vercel.app'];
 server.use(function (req, res, next) {
-    res.setHeader('Access-Control-Allow-Origin', allowedOrigins /* 'https://sazones-culinarios.vercel.app' */);
+    res.setHeader('Access-Control-Allow-Origin', 'https://sazones-culinarios.vercel.app');
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
     res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
     next();
