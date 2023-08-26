@@ -1,0 +1,85 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+type ProductsLinks {
+  encuestaAfiliados   String?
+  grupoTelegram       String?
+  hotmart             String
+  infoAfiliados       String?
+  materialDivulgacion ProductsLinksMaterialDivulgacion
+  paginaProductor     String
+  paginaVentas        String
+}
+
+type ProductsLinksMaterialDivulgacion {
+  carpetaDrive       String?
+  cdc                String?
+  checkPersonalizado String?
+  checkout24         String?
+  checkout30         String?
+  checkout35         String?
+  checkout50         String?
+  checkout70         String?
+  checkout80         String?
+  checkout89         String?
+  checkoutFull       String?
+  checkoutFull_      String?                                  @map("checkoutFull ")
+  crashing           String?
+  driveMaterial      String?
+  linkCrashing       String?
+  masterclass        String?
+  modeloTweet        String?
+  paginaProducto     String?
+  paginaVentas       String
+  parrilla           String?
+  video1             String?
+  video2             String?
+  youtube            ProductsLinksMaterialDivulgacionYoutube?
+}
+
+type ProductsLinksMaterialDivulgacionYoutube {
+  Masterclass       String
+  carpetaDrive      String
+  presentacionCurso String
+  presentacionProfe String
+}
+
+type ProductsMockups {
+  cent String
+  der  String
+  izq  String
+}
+
+model products {
+  id          String            @id @default(auto()) @map("_id") @db.ObjectId
+  v           Int               @map("__v")
+  bannerCopy  String?
+  beMaster    Json
+  category    String[]
+  cover_image String
+  description String
+  links       ProductsLinks[]
+  mockups     ProductsMockups[]
+  name        String
+  price       Int
+  producer    String
+  rating      Int[]
+}
+
+model users {
+  id          String   @id @default(auto()) @map("_id") @db.ObjectId
+  v           Int      @map("__v")
+  email       String   @unique(map: "email_1")
+  interests   String[]
+  lastname    String
+  name        String
+  phoneNumber String
+  unsuscribed Boolean
+  verified    Boolean
+}
